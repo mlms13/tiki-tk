@@ -1,0 +1,11 @@
+-cp src
+-lib doom
+-lib dots
+-lib thx.core
+
+Tiki
+tiki.Button
+
+-cp demo/00.components/src
+-main Main
+-js demo/00.components/www/bundle.js

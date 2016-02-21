@@ -1,0 +1,17 @@
+{
+  "name": "tiki-tk",
+  "version": "0.1.0",
+  "description": "The Tiki Toolkit is a UI toolkit for Doom",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Michael Martin-Smucker <mlmartin13@gmail.com> (http://www.martinsmucker.com/)",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-stylus": "^2.3.0"
+  }
+}

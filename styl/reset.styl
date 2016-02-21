@@ -1,0 +1,25 @@
+// Reset
+// --------------------------------
+
+// Inspired by normalize.css and Bootstrap 4's "Reboot",  this document sets
+// slightly-opinionated default styles for a variety of elements. It ensures
+// consistent rendering of basic elements across browsers.
+//
+// For Tiki-specific defaults and overrides, see `base.styl`.
+
+
+
+// Better box-sizing reset, credit Bootstrap 4 and CSS Tricks
+html
+  box-sizing border-box
+
+*
+*::before
+*::after
+  box-sizing inherit
+
+body
+  margin 0
+
+img
+  border 0
