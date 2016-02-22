@@ -215,12 +215,12 @@ body {
   line-height: 1.4;
 }
 a {
-  color: #1999b3;
+  color: #2693b3;
   text-decoration: none;
 }
 a:hover,
 a:focus {
-  color: #1db0ce;
+  color: #2ba7cb;
   text-decoration: underline;
 }
 p {
@@ -299,11 +299,9 @@ hr {
   margin-bottom: 2rem;
 }
 .btn {
-  background-color: #eee;
-  border: 1px solid transparent;
+  border: 1px solid;
   border-radius: 3px;
-  box-shadow: 1px 1px 1px rgba(0,0,0,0.15);
-  color: #444;
+  box-shadow: 1px 1px 0px rgba(0,0,0,0.15);
   cursor: pointer;
   display: inline-block;
   font-weight: normal;
@@ -316,6 +314,9 @@ hr {
           user-select: none;
   vertical-align: middle;
   white-space: nowrap;
+  background-color: #eee;
+  border-color: #eee;
+  color: #444;
 }
 .btn:hover,
 .btn:focus,
@@ -334,4 +335,24 @@ hr {
   cursor: not-allowed;
   opacity: 0.5;
   pointer-events: none;
+}
+.btn-primary {
+  background-color: #2693b3;
+  border-color: #2693b3;
+  color: #fff;
+}
+.btn-success {
+  background-color: #28bd35;
+  border-color: #28bd35;
+  color: #fff;
+}
+.btn-warning {
+  background-color: #e69529;
+  border-color: #e69529;
+  color: #fff;
+}
+.btn-danger {
+  background-color: #da3229;
+  border-color: #da3229;
+  color: #fff;
 }

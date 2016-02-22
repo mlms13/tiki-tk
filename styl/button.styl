@@ -1,9 +1,7 @@
 .btn
-  background-color $btn-default-bg
-  border $btn-border-width solid transparent
+  border $btn-border-width solid
   border-radius $btn-border-radius
   box-shadow $btn-box-shadow
-  color $btn-default-color
   cursor pointer
   display inline-block
   font-weight $btn-font-weight
@@ -13,6 +11,7 @@
   user-select none
   vertical-align middle
   white-space nowrap
+  button-variant($btn-default-color, $btn-default-bg, $btn-default-border)
 
   &:hover
   &:focus
@@ -31,3 +30,15 @@
     cursor $cursor-disabled
     opacity 0.5
     pointer-events none
+
+  &-primary
+    button-variant($btn-primary-color, $btn-primary-bg, $btn-primary-border)
+
+  &-success
+    button-variant($btn-success-color, $btn-success-bg, $btn-success-border)
+
+  &-warning
+    button-variant($btn-warning-color, $btn-warning-bg, $btn-warning-border)
+
+  &-danger
+    button-variant($btn-danger-color, $btn-danger-bg, $btn-danger-border)
