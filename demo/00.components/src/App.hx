@@ -21,11 +21,11 @@ class App extends Doom {
         fillerText(),
       ]),
       demoSection("Buttons", [
-        button({ type: Default }, "Default"),
-        button({ type: Primary }, "Primary"),
-        button({ type: Success }, "Success"),
-        button({ type: Warning }, "Warning"),
-        button({ type: Danger }, "Danger"),
+        inlineExample([button({ type: Default }, "Default")]),
+        inlineExample([button({ type: Primary }, "Primary")]),
+        inlineExample([button({ type: Success }, "Success")]),
+        inlineExample([button({ type: Warning }, "Warning")]),
+        inlineExample([button({ type: Danger }, "Danger")]),
       ])
     ]);
   }
@@ -37,6 +37,10 @@ class App extends Doom {
       h2([ "class" => "section-title" ], title),
       div([ "class" => "section-body" ], children)
     ]);
+  }
+
+  function inlineExample(children : Array<Node>) : Node {
+    return div([ "class" => "example-inline"], children);
   }
 
   function fillerText() : Node {

@@ -19,3 +19,7 @@ section .section-title {
 section .section-body {
   padding: 20px;
 }
+section .example-inline {
+  display: inline-block;
+  margin-right: 10px;
+}

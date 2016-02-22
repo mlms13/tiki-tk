@@ -298,3 +298,40 @@ hr {
   margin-top: 0;
   margin-bottom: 2rem;
 }
+.btn {
+  background-color: #eee;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  box-shadow: 1px 1px 1px rgba(0,0,0,0.15);
+  color: #444;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: normal;
+  line-height: 1.25;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+.btn:hover,
+.btn:focus,
+.btn.focus {
+  text-decoration: none;
+}
+.btn:active,
+.btn.active {
+  background-image: none;
+  outline: 0;
+}
+.btn:disabled,
+.btn.disabled,
+.btn[disabled] {
+  box-shadow: none;
+  cursor: not-allowed;
+  opacity: 0.5;
+  pointer-events: none;
+}

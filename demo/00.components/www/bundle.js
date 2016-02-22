@@ -483,7 +483,7 @@ App["with"] = function(children) {
 App.__super__ = Doom;
 App.prototype = $extend(Doom.prototype,{
 	render: function() {
-		return doom__$Node_Node_$Impl_$.el("article",null,[this.demoSection("Typography",[doom__$Node_Node_$Impl_$.el("h1",null,null,doom_NodeImpl.Text("h1 heading")),this.fillerText(),doom__$Node_Node_$Impl_$.el("h2",null,null,doom_NodeImpl.Text("h2 heading")),this.fillerText(),doom__$Node_Node_$Impl_$.el("h3",null,null,doom_NodeImpl.Text("h3 heading")),this.fillerText(),doom__$Node_Node_$Impl_$.el("h4",null,null,doom_NodeImpl.Text("h4 heading")),this.fillerText(),doom__$Node_Node_$Impl_$.el("h5",null,null,doom_NodeImpl.Text("h5 heading")),this.fillerText(),doom__$Node_Node_$Impl_$.el("h6",null,null,doom_NodeImpl.Text("h6 heading")),this.fillerText()]),this.demoSection("Buttons",[Tiki.button({ type : tiki_ButtonType.Default},[doom_NodeImpl.Text("Default")]),Tiki.button({ type : tiki_ButtonType.Primary},[doom_NodeImpl.Text("Primary")]),Tiki.button({ type : tiki_ButtonType.Success},[doom_NodeImpl.Text("Success")]),Tiki.button({ type : tiki_ButtonType.Warning},[doom_NodeImpl.Text("Warning")]),Tiki.button({ type : tiki_ButtonType.Danger},[doom_NodeImpl.Text("Danger")])])],null);
+		return doom__$Node_Node_$Impl_$.el("article",null,[this.demoSection("Typography",[doom__$Node_Node_$Impl_$.el("h1",null,null,doom_NodeImpl.Text("h1 heading")),this.fillerText(),doom__$Node_Node_$Impl_$.el("h2",null,null,doom_NodeImpl.Text("h2 heading")),this.fillerText(),doom__$Node_Node_$Impl_$.el("h3",null,null,doom_NodeImpl.Text("h3 heading")),this.fillerText(),doom__$Node_Node_$Impl_$.el("h4",null,null,doom_NodeImpl.Text("h4 heading")),this.fillerText(),doom__$Node_Node_$Impl_$.el("h5",null,null,doom_NodeImpl.Text("h5 heading")),this.fillerText(),doom__$Node_Node_$Impl_$.el("h6",null,null,doom_NodeImpl.Text("h6 heading")),this.fillerText()]),this.demoSection("Buttons",[this.inlineExample([Tiki.button({ type : tiki_ButtonType.Default},[doom_NodeImpl.Text("Default")])]),this.inlineExample([Tiki.button({ type : tiki_ButtonType.Primary},[doom_NodeImpl.Text("Primary")])]),this.inlineExample([Tiki.button({ type : tiki_ButtonType.Success},[doom_NodeImpl.Text("Success")])]),this.inlineExample([Tiki.button({ type : tiki_ButtonType.Warning},[doom_NodeImpl.Text("Warning")])]),this.inlineExample([Tiki.button({ type : tiki_ButtonType.Danger},[doom_NodeImpl.Text("Danger")])])])],null);
 	}
 	,demoSection: function(title,children) {
 		var _g = new haxe_ds_StringMap();
@@ -498,6 +498,12 @@ App.prototype = $extend(Doom.prototype,{
 		var value2 = doom__$AttributeValue_AttributeValue_$Impl_$.fromString("section-body");
 		if(__map_reserved["class"] != null) _g2.setReserved("class",value2); else _g2.h["class"] = value2;
 		return doom__$Node_Node_$Impl_$.el("section",attributes,[tmp,doom__$Node_Node_$Impl_$.el("div",_g2,children,null)],null);
+	}
+	,inlineExample: function(children) {
+		var _g = new haxe_ds_StringMap();
+		var value = doom__$AttributeValue_AttributeValue_$Impl_$.fromString("example-inline");
+		if(__map_reserved["class"] != null) _g.setReserved("class",value); else _g.h["class"] = value;
+		return doom__$Node_Node_$Impl_$.el("div",_g,children,null);
 	}
 	,fillerText: function() {
 		return doom__$Node_Node_$Impl_$.el("p",null,null,doom_NodeImpl.Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean\n              sed hendrerit libero, et tempor orci. Nam facilisis neque at diam\n              blandit, vitae lacinia erat imperdiet."));

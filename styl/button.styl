@@ -1,0 +1,33 @@
+.btn
+  background-color $btn-default-bg
+  border $btn-border-width solid transparent
+  border-radius $btn-border-radius
+  box-shadow $btn-box-shadow
+  color $btn-default-color
+  cursor pointer
+  display inline-block
+  font-weight $btn-font-weight
+  line-height $btn-line-height
+  padding $btn-padding-y $btn-padding-x
+  text-align center
+  user-select none
+  vertical-align middle
+  white-space nowrap
+
+  &:hover
+  &:focus
+  &.focus
+    text-decoration none
+
+  &:active
+  &.active
+    background-image none
+    outline 0
+
+  &:disabled
+  &.disabled
+  &[disabled]
+    box-shadow none
+    cursor $cursor-disabled
+    opacity 0.5
+    pointer-events none
