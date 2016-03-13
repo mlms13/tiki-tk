@@ -1,5 +1,6 @@
 .btn
-  border $btn-border-width solid
+  border-width $btn-border-width
+  border-style solid
   border-radius $btn-border-radius
   box-shadow $btn-box-shadow
   cursor pointer
@@ -15,11 +16,10 @@
 
   &:hover
   &:focus
-  &.focus
+    outline 0
     text-decoration none
 
   &:active
-  &.active
     background-image none
     outline 0
 
