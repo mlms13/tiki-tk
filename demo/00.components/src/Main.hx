@@ -1,5 +1,5 @@
 class Main {
   public static function main() {
-    Doom.mount(App.with(), js.Browser.document.querySelector("#root"));
+    Doom.browser.mount(new App({}), js.Browser.document.querySelector("#root"));
   }
 }

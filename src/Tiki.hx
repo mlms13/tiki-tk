@@ -1,5 +1,5 @@
 import tiki.Button;
 
 class Tiki {
-  public static var button(default, null) = Button.with;
+  public inline static function button(p : ButtonProps, children) return new Button(p, children);
 }

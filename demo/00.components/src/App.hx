@@ -1,9 +1,10 @@
-import Doom.*;
-import doom.Node;
+import doom.core.VChild;
+import doom.core.VChildren;
+import doom.html.Html.*;
 import Tiki.*;
 import tiki.Button;
 
-class App extends Doom {
+class App extends doom.html.Component<{}> {
   override function render() {
     return article([
       demoSection("Typography", [
@@ -21,16 +22,31 @@ class App extends Doom {
         fillerText(),
       ]),
       demoSection("Buttons", [
-        inlineExample([button({ type: Default }, "Default")]),
-        inlineExample([button({ type: Primary }, "Primary")]),
-        inlineExample([button({ type: Success }, "Success")]),
-        inlineExample([button({ type: Warning }, "Warning")]),
-        inlineExample([button({ type: Danger }, "Danger")]),
+        inlineExample([button({
+          type: Default,
+          click: function () {}
+        }, "Default")]),
+        inlineExample([button({
+          type: Primary,
+          click: function () {}
+        }, "Primary")]),
+        inlineExample([button({
+          type: Success,
+          click: function () {}
+        }, "Success")]),
+        inlineExample([button({
+          type: Warning,
+          click: function () {}
+        }, "Warning")]),
+        inlineExample([button({
+          type: Danger,
+          click: function () {}
+        }, "Danger")]),
       ])
     ]);
   }
 
-  function demoSection(title : String, children : Array<Node>) : Node {
+  function demoSection(title : String, children : VChildren) : VChild {
     return section([
       "class" => "demo-section"
     ], [
@@ -39,11 +55,11 @@ class App extends Doom {
     ]);
   }
 
-  function inlineExample(children : Array<Node>) : Node {
+  function inlineExample(children : VChildren) : VChild {
     return div([ "class" => "example-inline"], children);
   }
 
-  function fillerText() : Node {
+  function fillerText() : VChild {
     return p("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
               sed hendrerit libero, et tempor orci. Nam facilisis neque at diam
               blandit, vitae lacinia erat imperdiet.");
