@@ -2,7 +2,6 @@ import doom.core.VNode;
 import doom.core.VNodes;
 import doom.html.Html.*;
 import Tiki.*;
-import tiki.Button;
 
 class App extends doom.html.Component<{}> {
   override function render() {
@@ -42,6 +41,34 @@ class App extends doom.html.Component<{}> {
           type: Danger,
           click: function () {}
         }, "Danger")]),
+      ]),
+      demoSection("Basic Nav", [
+        nav({ layout: Inline }, [
+          navLink({ href: "#" }, "Foo"),
+          navLink({ href: "#" }, "Bar"),
+          navLink({ href: "#" }, "Baz")
+        ])
+      ]),
+      demoSection("Nav Pills", [
+        nav({ layout: Pills }, [
+          navLink({ href: "#" }, "Foo"),
+          navLink({ href: "#" }, "Bar"),
+          navLink({ href: "#" }, "Baz")
+        ])
+      ]),
+      demoSection("Nav Tabs", [
+        nav({ layout: Tabs }, [
+          navLink({ href: "#" }, "Foo"),
+          navLink({ href: "#" }, "Bar"),
+          navLink({ href: "#" }, "Baz")
+        ])
+      ]),
+      demoSection("Nav Stacked", [
+        nav({ stacked: true}, [
+          navLink({ href: "#" }, "Foo"),
+          navLink({ href: "#" }, "Bar"),
+          navLink({ href: "#" }, "Baz")
+        ])
       ])
     ]);
   }

@@ -5,6 +5,7 @@
 
 Tiki
 tiki.Button
+tiki.Nav
 
 -cp demo/00.components/src
 -main Main
