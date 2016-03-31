@@ -1,5 +1,5 @@
-import doom.core.VChild;
-import doom.core.VChildren;
+import doom.core.VNode;
+import doom.core.VNodes;
 import doom.html.Html.*;
 import Tiki.*;
 import tiki.Button;
@@ -46,7 +46,7 @@ class App extends doom.html.Component<{}> {
     ]);
   }
 
-  function demoSection(title : String, children : VChildren) : VChild {
+  function demoSection(title : String, children : VNodes) : VNode {
     return section([
       "class" => "demo-section"
     ], [
@@ -55,11 +55,11 @@ class App extends doom.html.Component<{}> {
     ]);
   }
 
-  function inlineExample(children : VChildren) : VChild {
+  function inlineExample(children : VNodes) : VNode {
     return div([ "class" => "example-inline"], children);
   }
 
-  function fillerText() : VChild {
+  function fillerText() : VNode {
     return p("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
               sed hendrerit libero, et tempor orci. Nam facilisis neque at diam
               blandit, vitae lacinia erat imperdiet.");
