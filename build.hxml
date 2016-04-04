@@ -1,4 +1,5 @@
 -cp src
+-cp css
 -lib doom
 -lib dots
 -lib thx.core

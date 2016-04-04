@@ -1,4 +1,6 @@
-.btn
+@import "../../styl/variables"
+
+#ns
   border-width $btn-border-width
   border-style solid
   border-radius $btn-border-radius
@@ -32,14 +34,14 @@
     opacity 0.5
     pointer-events none
 
-  &-primary
+  &.primary
     button-variant($btn-primary-color, $btn-primary-bg, $btn-primary-border)
 
-  &-success
+  &.success
     button-variant($btn-success-color, $btn-success-bg, $btn-success-border)
 
-  &-warning
+  &.warning
     button-variant($btn-warning-color, $btn-warning-bg, $btn-warning-border)
 
-  &-danger
+  &.danger
     button-variant($btn-danger-color, $btn-danger-bg, $btn-danger-border)

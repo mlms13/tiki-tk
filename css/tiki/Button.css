@@ -1,0 +1,33 @@
+#ns {
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 3px;
+  box-shadow: 1px 1px 0px rgba(0,0,0,0.15);
+  cursor: pointer;
+  display: inline-block;
+  font-weight: normal;
+  line-height: 1.25;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+#ns:hover,
+#ns:focus {
+  outline: 0;
+  text-decoration: none;
+}
+#ns:active,
+#ns.active {
+  background-image: none;
+  outline: 0;
+}
+#ns:disabled,
+#ns.disabled,
+#ns[disabled] {
+  box-shadow: none;
+  cursor: not-allowed;
+  opacity: 0.5;
+  pointer-events: none;
+}
