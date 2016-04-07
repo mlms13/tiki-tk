@@ -1,0 +1,19 @@
+button-variant($text, $bg, $border)
+  background-color $bg
+  border-color $border
+  color $text
+
+  &:hover
+  &:focus
+    background-color darken($bg, 10%)
+    border-color darken($border, 10%)
+
+  &:focus
+    box-shadow 0 0 0 3px rgba($border, 25%)
+
+  &:active
+  &.active
+    background-color darken($bg, 18%)
+    border-color darken($border, 10%)
+    // needed here in the mixin, otherwise :focus has more specificity
+    box-shadow $btn-active-box-shadow
