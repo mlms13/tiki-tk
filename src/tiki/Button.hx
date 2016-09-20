@@ -4,20 +4,20 @@ class Button extends doom.html.Component<ButtonProps> {
   override function render() {
     return doom.html.Html.button([
       "type" => "button",
-      "class" => getClasses(props),
+      "class" => getClasses(classes(), props),
       "disabled" => props.disabled == true,
       "click" => props.click
     ], children);
   }
 
-  static function getClasses(state : ButtonProps) : String {
-    var classes = ["btn"];
+  static function getClasses(base : String, state : ButtonProps) : String {
+    var classes = [base];
 
     var styleClass = switch state.type {
-      case Primary: "btn-primary";
-      case Success: "btn-success";
-      case Warning: "btn-warning";
-      case Danger: "btn-danger";
+      case Primary: "primary";
+      case Success: "success";
+      case Warning: "warning";
+      case Danger: "danger";
       case null, Default: "";
     };
 
@@ -33,8 +33,8 @@ class Button extends doom.html.Component<ButtonProps> {
       classes.push("disabled");
 
     classes = classes.concat(switch state.size {
-      case Large : ["btn-large"];
-      case Small : ["btn-small"];
+      case Large : ["large"];
+      case Small : ["small"];
       case null, Default : [];
     });
 

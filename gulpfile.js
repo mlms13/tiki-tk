@@ -29,6 +29,12 @@ gulp.task('tiki-stylus', function () {
   }, task);
 })
 
+gulp.task('tiki-components', function () {
+  return gulp.src('./src/**/*.styl')
+    .pipe(stylus())
+    .pipe(gulp.dest('./css'));
+})
+
 gulp.task('demo-stylus', function () {
   var task = gulp.src('./demo/demo.styl')
     .pipe(stylus())
@@ -47,12 +53,13 @@ gulp.task('html', function () {
   }, gulp.src('./demo/index.html'));
 })
 
-gulp.task('build', ['tiki-stylus', 'demo-stylus', 'html']);
+gulp.task('build', ['tiki-stylus', 'tiki-components', 'demo-stylus', 'html']);
 
 gulp.task('watch', ['build'], function () {
   gulp.watch(['./demo/*.html'], ['html']);
   gulp.watch(['./demo/*.styl'], ['demo-stylus']);
   gulp.watch(['./styl/**/*.styl'], ['tiki-stylus']);
+  gulp.watch(['./src/**/*.styl'], ['tiki-components']);
 });
 
 gulp.task('default', ['watch']);

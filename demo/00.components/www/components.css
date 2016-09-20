@@ -1,0 +1,33 @@
+.tiki_button {
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 3px;
+  box-shadow: 1px 1px 0px rgba(0,0,0,0.15);
+  cursor: pointer;
+  display: inline-block;
+  font-weight: normal;
+  line-height: 1.25;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+.tiki_button:hover,
+.tiki_button:focus {
+  outline: 0;
+  text-decoration: none;
+}
+.tiki_button:active,
+.tiki_button.active {
+  background-image: none;
+  outline: 0;
+}
+.tiki_button:disabled,
+.tiki_button.disabled,
+.tiki_button[disabled] {
+  box-shadow: none;
+  cursor: not-allowed;
+  opacity: 0.5;
+  pointer-events: none;
+}
