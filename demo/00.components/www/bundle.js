@@ -93,12 +93,20 @@ App.__name__ = ["App"];
 App.__super__ = doom_html_Component;
 App.prototype = $extend(doom_html_Component.prototype,{
 	render: function() {
-		return doom_core__$VNode_VNode_$Impl_$.el("article",null,doom_core__$VNodes_VNodes_$Impl_$.children([this.demoSection("Typography",doom_core__$VNodes_VNodes_$Impl_$.children([doom_core__$VNode_VNode_$Impl_$.el("h1",null,doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("h1 heading")])),this.fillerText(),doom_core__$VNode_VNode_$Impl_$.el("h2",null,doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("h2 heading")])),this.fillerText(),doom_core__$VNode_VNode_$Impl_$.el("h3",null,doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("h3 heading")])),this.fillerText(),doom_core__$VNode_VNode_$Impl_$.el("h4",null,doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("h4 heading")])),this.fillerText(),doom_core__$VNode_VNode_$Impl_$.el("h5",null,doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("h5 heading")])),this.fillerText(),doom_core__$VNode_VNode_$Impl_$.el("h6",null,doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("h6 heading")])),this.fillerText()])),this.demoSection("Buttons",doom_core__$VNodes_VNodes_$Impl_$.children([this.inlineExample(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Comp(new tiki_Button({ type : tiki_ButtonType.Default, click : function() {
+		var tmp = this.demoSection("Typography",doom_core__$VNodes_VNodes_$Impl_$.children([doom_core__$VNode_VNode_$Impl_$.el("h1",null,doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("h1 heading")])),this.fillerText(),doom_core__$VNode_VNode_$Impl_$.el("h2",null,doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("h2 heading")])),this.fillerText(),doom_core__$VNode_VNode_$Impl_$.el("h3",null,doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("h3 heading")])),this.fillerText(),doom_core__$VNode_VNode_$Impl_$.el("h4",null,doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("h4 heading")])),this.fillerText(),doom_core__$VNode_VNode_$Impl_$.el("h5",null,doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("h5 heading")])),this.fillerText(),doom_core__$VNode_VNode_$Impl_$.el("h6",null,doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("h6 heading")])),this.fillerText()]));
+		var tmp1 = this.demoSection("Buttons",doom_core__$VNodes_VNodes_$Impl_$.children([this.inlineExample(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Comp(new tiki_Button({ type : tiki_ButtonType.Default, click : function() {
 		}},doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Default")])))])),this.inlineExample(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Comp(new tiki_Button({ type : tiki_ButtonType.Primary, click : function() {
 		}},doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Primary")])))])),this.inlineExample(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Comp(new tiki_Button({ type : tiki_ButtonType.Success, click : function() {
 		}},doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Success")])))])),this.inlineExample(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Comp(new tiki_Button({ type : tiki_ButtonType.Warning, click : function() {
 		}},doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Warning")])))])),this.inlineExample(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Comp(new tiki_Button({ type : tiki_ButtonType.Danger, click : function() {
-		}},doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Danger")])))]))])),this.demoSection("Basic Nav",doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Comp(new tiki_Nav({ layout : tiki_NavLayout.Inline},[new tiki_NavLink({ href : "#"},doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Foo")])),new tiki_NavLink({ href : "#"},doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Bar")])),new tiki_NavLink({ href : "#"},doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Baz")]))]))])),this.demoSection("Nav Pills",doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Comp(new tiki_Nav({ layout : tiki_NavLayout.Pills},[new tiki_NavLink({ href : "#"},doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Foo")])),new tiki_NavLink({ href : "#"},doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Bar")])),new tiki_NavLink({ href : "#"},doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Baz")]))]))])),this.demoSection("Nav Tabs",doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Comp(new tiki_Nav({ layout : tiki_NavLayout.Tabs},[new tiki_NavLink({ href : "#"},doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Foo")])),new tiki_NavLink({ href : "#"},doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Bar")])),new tiki_NavLink({ href : "#"},doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Baz")]))]))])),this.demoSection("Nav Stacked",doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Comp(new tiki_Nav({ stacked : true},[new tiki_NavLink({ href : "#"},doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Foo")])),new tiki_NavLink({ href : "#"},doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Bar")])),new tiki_NavLink({ href : "#"},doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Baz")]))]))]))]));
+		}},doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Danger")])))]))]));
+		var tmp2 = this.demoSection("Basic Nav",doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Comp(new tiki_Nav({ layout : tiki_NavLayout.Inline},[new tiki_NavLink({ href : "#"},doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Foo")])),new tiki_NavLink({ href : "#"},doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Bar")])),new tiki_NavLink({ href : "#"},doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Baz")]))]))]));
+		var tmp3 = this.demoSection("Nav Pills",doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Comp(new tiki_Nav({ layout : tiki_NavLayout.Pills},[new tiki_NavLink({ href : "#"},doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Foo")])),new tiki_NavLink({ href : "#"},doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Bar")])),new tiki_NavLink({ href : "#"},doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Baz")]))]))]));
+		var tmp4 = this.demoSection("Nav Tabs",doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Comp(new tiki_Nav({ layout : tiki_NavLayout.Tabs},[new tiki_NavLink({ href : "#"},doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Foo")])),new tiki_NavLink({ href : "#"},doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Bar")])),new tiki_NavLink({ href : "#"},doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Baz")]))]))]));
+		var tmp5 = this.demoSection("Nav Stacked",doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Comp(new tiki_Nav({ stacked : true},[new tiki_NavLink({ href : "#"},doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Foo")])),new tiki_NavLink({ href : "#"},doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Bar")])),new tiki_NavLink({ href : "#"},doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Baz")]))]))]));
+		var _0 = null;
+		var t = null == _0?null:_0;
+		return doom_core__$VNode_VNode_$Impl_$.el("article",null,doom_core__$VNodes_VNodes_$Impl_$.children([tmp,tmp1,tmp2,tmp3,tmp4,tmp5,this.demoSection("Messages",doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Comp(new tiki_Message(t != null?t:{ },doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("My first message")])))]))]));
 	}
 	,demoSection: function(title,children) {
 		var _g = new haxe_ds_StringMap();
@@ -998,6 +1006,10 @@ var Tiki = function() { };
 Tiki.__name__ = ["Tiki"];
 Tiki.button = function(p,children) {
 	return new tiki_Button(p,children);
+};
+Tiki.message = function(p,children) {
+	var t = null == p?null:p;
+	return new tiki_Message(t != null?t:{ },children);
 };
 Tiki.nav = function(p,children) {
 	return new tiki_Nav(p,children);
@@ -7168,6 +7180,8 @@ thx_NonEmptyList.ConsNel = function(x,xs) { var $x = ["ConsNel",1,x,xs]; $x.__en
 var thx_Nil = { __ename__ : ["thx","Nil"], __constructs__ : ["nil"] };
 thx_Nil.nil = ["nil",0];
 thx_Nil.nil.__enum__ = thx_Nil;
+var thx_Nulls = function() { };
+thx_Nulls.__name__ = ["thx","Nulls"];
 var thx_Objects = function() { };
 thx_Objects.__name__ = ["thx","Objects"];
 thx_Objects.compare = function(a,b) {
@@ -10020,6 +10034,30 @@ tiki_ButtonSize.Small = ["Small",1];
 tiki_ButtonSize.Small.__enum__ = tiki_ButtonSize;
 tiki_ButtonSize.Default = ["Default",2];
 tiki_ButtonSize.Default.__enum__ = tiki_ButtonSize;
+var tiki_Message = function(props,children) {
+	doom_html_Component.call(this,props,children);
+};
+tiki_Message.__name__ = ["tiki","Message"];
+tiki_Message.getClasses = function(base,state) {
+	return [base].join(" ");
+};
+tiki_Message.__super__ = doom_html_Component;
+tiki_Message.prototype = $extend(doom_html_Component.prototype,{
+	render: function() {
+		var _g = new haxe_ds_StringMap();
+		var value = doom_core__$AttributeValue_AttributeValue_$Impl_$.fromString(tiki_Message.getClasses(this.classes(),this.props));
+		if(__map_reserved["class"] != null) {
+			_g.setReserved("class",value);
+		} else {
+			_g.h["class"] = value;
+		}
+		return doom_core__$VNode_VNode_$Impl_$.el("div",_g,this.children);
+	}
+	,classes: function() {
+		return "tiki_message";
+	}
+	,__class__: tiki_Message
+});
 var tiki_Nav = function(props,children) {
 	doom_html_Component.call(this,props,doom_core__$VNodes_VNodes_$Impl_$.children(children.map(function(c) {
 		var _g = new haxe_ds_StringMap();

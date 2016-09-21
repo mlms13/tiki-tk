@@ -69,6 +69,9 @@ class App extends doom.html.Component<{}> {
           navLink({ href: "#" }, "Bar"),
           navLink({ href: "#" }, "Baz")
         ])
+      ]),
+      demoSection("Messages", [
+        message(["My first message"])
       ])
     ]);
   }

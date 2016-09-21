@@ -1,3 +1,8 @@
+.tiki_message {
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 3px;
+}
 .tiki_button {
   border-width: 1px;
   border-style: solid;
