@@ -18,7 +18,9 @@ function getFolders(dir) {
 
 gulp.task('tiki-stylus', function () {
   var task = gulp.src('./styl/index.styl')
-    .pipe(stylus())
+    .pipe(stylus({
+      // 'paths' : [__dirname]//, __dirname + '/styl']
+    }))
     .pipe(prefix())
     .pipe(rename('tiki.css'))
     .pipe(gulp.dest('./dist'));
@@ -31,7 +33,9 @@ gulp.task('tiki-stylus', function () {
 
 gulp.task('tiki-components', function () {
   return gulp.src('./src/**/*.styl')
-    .pipe(stylus())
+    .pipe(stylus({
+      paths : [__dirname, __dirname + "/styl"]
+    }))
     .pipe(gulp.dest('./css'));
 })
 

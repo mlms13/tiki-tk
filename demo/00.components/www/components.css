@@ -12,6 +12,23 @@
   user-select: none;
   vertical-align: middle;
   white-space: nowrap;
+  background-color: #eee;
+  border-color: #eee;
+  color: #444;
+}
+.tiki_button:hover,
+.tiki_button:focus {
+  background-color: #d6d6d6;
+  border-color: #d6d6d6;
+}
+.tiki_button:focus {
+  box-shadow: 0 0 0 3px rgba(238,238,238,0.25);
+}
+.tiki_button:active,
+.tiki_button.active {
+  background-color: #c3c3c3;
+  border-color: #d6d6d6;
+  box-shadow: inset 0 1px 2px rgba(0,0,0,0.2);
 }
 .tiki_button:hover,
 .tiki_button:focus {
@@ -30,4 +47,80 @@
   cursor: not-allowed;
   opacity: 0.5;
   pointer-events: none;
+}
+.tiki_button.primary {
+  background-color: #2693b3;
+  border-color: #2693b3;
+  color: #fff;
+}
+.tiki_button.primary:hover,
+.tiki_button.primary:focus {
+  background-color: #2284a1;
+  border-color: #2284a1;
+}
+.tiki_button.primary:focus {
+  box-shadow: 0 0 0 3px rgba(38,147,179,0.25);
+}
+.tiki_button.primary:active,
+.tiki_button.primary.active {
+  background-color: #1f7993;
+  border-color: #2284a1;
+  box-shadow: inset 0 1px 2px rgba(0,0,0,0.2);
+}
+.tiki_button.success {
+  background-color: #28bd35;
+  border-color: #28bd35;
+  color: #fff;
+}
+.tiki_button.success:hover,
+.tiki_button.success:focus {
+  background-color: #24aa30;
+  border-color: #24aa30;
+}
+.tiki_button.success:focus {
+  box-shadow: 0 0 0 3px rgba(40,189,53,0.25);
+}
+.tiki_button.success:active,
+.tiki_button.success.active {
+  background-color: #219b2b;
+  border-color: #24aa30;
+  box-shadow: inset 0 1px 2px rgba(0,0,0,0.2);
+}
+.tiki_button.warning {
+  background-color: #e69529;
+  border-color: #e69529;
+  color: #fff;
+}
+.tiki_button.warning:hover,
+.tiki_button.warning:focus {
+  background-color: #da881a;
+  border-color: #da881a;
+}
+.tiki_button.warning:focus {
+  box-shadow: 0 0 0 3px rgba(230,149,41,0.25);
+}
+.tiki_button.warning:active,
+.tiki_button.warning.active {
+  background-color: #c77c17;
+  border-color: #da881a;
+  box-shadow: inset 0 1px 2px rgba(0,0,0,0.2);
+}
+.tiki_button.danger {
+  background-color: #da3229;
+  border-color: #da3229;
+  color: #fff;
+}
+.tiki_button.danger:hover,
+.tiki_button.danger:focus {
+  background-color: #c72b22;
+  border-color: #c72b22;
+}
+.tiki_button.danger:focus {
+  box-shadow: 0 0 0 3px rgba(218,50,41,0.25);
+}
+.tiki_button.danger:active,
+.tiki_button.danger.active {
+  background-color: #b5271f;
+  border-color: #c72b22;
+  box-shadow: inset 0 1px 2px rgba(0,0,0,0.2);
 }
