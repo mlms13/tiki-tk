@@ -5,6 +5,53 @@
   border-width $btn-border-width
   border-style solid
   border-radius $btn-border-radius
+  background-color $message-default-bg
+  color $message-default-color
+  border-color $message-default-border
+  padding-left $message-padding-x
+  padding-right $message-padding-x
+  padding-top $message-padding-y
+  padding-bottom $message-padding-y
+  margin-bottom $message-margin
+
+  .close
+    position: relative;
+    top: -.125rem;
+    right: -1rem;
+    color: inherit;
+
+    padding: 0;
+    cursor: pointer;
+    background: 0 0;
+    border: 0;
+    -webkit-appearance: none;
+
+    float: right;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1;
+    text-shadow: 0 1px 0 #fff;
+    opacity: .2;
+
+  &.info
+    background-color $message-info-bg
+    color $message-info-color
+    border-color $message-info-border
+
+  &.success
+    background-color $message-success-bg
+    color $message-success-color
+    border-color $message-success-border
+
+  &.warning
+    background-color $message-warning-bg
+    color $message-warning-color
+    border-color $message-warning-border
+
+  &.danger
+    background-color $message-danger-bg
+    color $message-danger-color
+    border-color $message-danger-border
   // box-shadow $btn-box-shadow
   // cursor pointer
   // display inline-block

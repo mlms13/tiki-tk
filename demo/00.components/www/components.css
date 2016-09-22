@@ -2,6 +2,51 @@
   border-width: 1px;
   border-style: solid;
   border-radius: 3px;
+  background-color: #fcfcfc;
+  color: #444;
+  border-color: #eee;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+.tiki_message .close {
+  position: relative;
+  top: -0.125rem;
+  right: -1rem;
+  color: inherit;
+  padding: 0;
+  cursor: pointer;
+  background: 0 0;
+  border: 0;
+  -webkit-appearance: none;
+  float: right;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1;
+  text-shadow: 0 1px 0 #fff;
+  opacity: 0.2;
+}
+.tiki_message.info {
+  background-color: #cfecf5;
+  color: #17586b;
+  border-color: #6ec6e0;
+}
+.tiki_message.success {
+  background-color: #d1f5d4;
+  color: #187120;
+  border-color: #74e27d;
+}
+.tiki_message.warning {
+  background-color: #faead4;
+  color: #925a11;
+  border-color: #f0bf7f;
+}
+.tiki_message.danger {
+  background-color: #f8d6d4;
+  color: #841c17;
+  border-color: #e9847f;
 }
 .tiki_button {
   border-width: 1px;

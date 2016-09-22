@@ -106,7 +106,15 @@ App.prototype = $extend(doom_html_Component.prototype,{
 		var tmp5 = this.demoSection("Nav Stacked",doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Comp(new tiki_Nav({ stacked : true},[new tiki_NavLink({ href : "#"},doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Foo")])),new tiki_NavLink({ href : "#"},doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Bar")])),new tiki_NavLink({ href : "#"},doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Baz")]))]))]));
 		var _0 = null;
 		var t = null == _0?null:_0;
-		return doom_core__$VNode_VNode_$Impl_$.el("article",null,doom_core__$VNodes_VNodes_$Impl_$.children([tmp,tmp1,tmp2,tmp3,tmp4,tmp5,this.demoSection("Messages",doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Comp(new tiki_Message(t != null?t:{ },doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("My first message")])))]))]));
+		var _01 = { type : tiki_MessageType.Info};
+		var t1 = null == _01?null:_01;
+		var _02 = { type : tiki_MessageType.Success};
+		var t2 = null == _02?null:_02;
+		var _03 = { type : tiki_MessageType.Warning};
+		var t3 = null == _03?null:_03;
+		var _04 = { type : tiki_MessageType.Danger, dismissible : true};
+		var t4 = null == _04?null:_04;
+		return doom_core__$VNode_VNode_$Impl_$.el("article",null,doom_core__$VNodes_VNodes_$Impl_$.children([tmp,tmp1,tmp2,tmp3,tmp4,tmp5,this.demoSection("Messages",doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Comp(new tiki_Message(t != null?t:{ },doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Default message")]))),doom_core_VNodeImpl.Comp(new tiki_Message(t1 != null?t1:{ },doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Info message")]))),doom_core_VNodeImpl.Comp(new tiki_Message(t2 != null?t2:{ },doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Success message")]))),doom_core_VNodeImpl.Comp(new tiki_Message(t3 != null?t3:{ },doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Warning message")]))),doom_core_VNodeImpl.Comp(new tiki_Message(t4 != null?t4:{ },doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Danger message with dismissible")])))]))]));
 	}
 	,demoSection: function(title,children) {
 		var _g = new haxe_ds_StringMap();
@@ -4039,6 +4047,19 @@ thx_Arrays.intersperse = function(array,value) {
 		acc[i * 2] = v;
 		return acc;
 	},thx_Arrays.create(array.length * 2 - 1,value));
+};
+thx_Arrays.interspersef = function(array,f) {
+	if(array.length == 0) {
+		return [];
+	}
+	var acc = [array[0]];
+	var _g1 = 1;
+	var _g = array.length;
+	while(_g1 < _g) {
+		acc.push(f());
+		acc.push(array[_g1++]);
+	}
+	return acc;
 };
 thx_Arrays.isEmpty = function(array) {
 	if(null != array) {
@@ -10039,25 +10060,114 @@ var tiki_Message = function(props,children) {
 };
 tiki_Message.__name__ = ["tiki","Message"];
 tiki_Message.getClasses = function(base,state) {
-	return [base].join(" ");
+	var classes = [base];
+	var _g = state.type;
+	if(_g != null) {
+		switch(_g[1]) {
+		case 0:
+			break;
+		case 1:
+			classes.push("info");
+			break;
+		case 2:
+			classes.push("success");
+			break;
+		case 3:
+			classes.push("warning");
+			break;
+		case 4:
+			classes.push("danger");
+			break;
+		}
+	}
+	return classes.join(" ");
 };
 tiki_Message.__super__ = doom_html_Component;
 tiki_Message.prototype = $extend(doom_html_Component.prototype,{
 	render: function() {
-		var _g = new haxe_ds_StringMap();
-		var value = doom_core__$AttributeValue_AttributeValue_$Impl_$.fromString(tiki_Message.getClasses(this.classes(),this.props));
-		if(__map_reserved["class"] != null) {
-			_g.setReserved("class",value);
-		} else {
-			_g.h["class"] = value;
+		if(this.props.closed) {
+			var _g = new haxe_ds_StringMap();
+			var value = doom_core__$AttributeValue_AttributeValue_$Impl_$.fromString("display:none");
+			if(__map_reserved.style != null) {
+				_g.setReserved("style",value);
+			} else {
+				_g.h["style"] = value;
+			}
+			var value1 = doom_core__$AttributeValue_AttributeValue_$Impl_$.fromString("empty node");
+			if(__map_reserved["data-comment"] != null) {
+				_g.setReserved("data-comment",value1);
+			} else {
+				_g.h["data-comment"] = value1;
+			}
+			return doom_core__$VNode_VNode_$Impl_$.el("div",_g);
 		}
-		return doom_core__$VNode_VNode_$Impl_$.el("div",_g,this.children);
+		var prefix;
+		if(this.props.dismissible == true) {
+			var _g1 = new haxe_ds_StringMap();
+			var value2 = doom_core__$AttributeValue_AttributeValue_$Impl_$.fromString("button");
+			if(__map_reserved.type != null) {
+				_g1.setReserved("type",value2);
+			} else {
+				_g1.h["type"] = value2;
+			}
+			var value3 = doom_core__$AttributeValue_AttributeValue_$Impl_$.fromString("close");
+			if(__map_reserved["class"] != null) {
+				_g1.setReserved("class",value3);
+			} else {
+				_g1.h["class"] = value3;
+			}
+			var value4 = doom_core__$AttributeValue_AttributeValue_$Impl_$.fromString("Close");
+			if(__map_reserved["aria-label"] != null) {
+				_g1.setReserved("aria-label",value4);
+			} else {
+				_g1.h["aria-label"] = value4;
+			}
+			var value5 = doom_core__$AttributeValue_AttributeValue_$Impl_$.fromHandler($bind(this,this.close));
+			if(__map_reserved.click != null) {
+				_g1.setReserved("click",value5);
+			} else {
+				_g1.h["click"] = value5;
+			}
+			var _g11 = new haxe_ds_StringMap();
+			var value6 = doom_core__$AttributeValue_AttributeValue_$Impl_$.fromBool(true);
+			if(__map_reserved["aria-hidden"] != null) {
+				_g11.setReserved("aria-hidden",value6);
+			} else {
+				_g11.h["aria-hidden"] = value6;
+			}
+			prefix = [doom_core__$VNode_VNode_$Impl_$.el("button",_g1,doom_core__$VNodes_VNodes_$Impl_$.children([doom_core__$VNode_VNode_$Impl_$.el("span",_g11,doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("×")]))]))];
+		} else {
+			prefix = [];
+		}
+		var _g2 = new haxe_ds_StringMap();
+		var value7 = doom_core__$AttributeValue_AttributeValue_$Impl_$.fromString(tiki_Message.getClasses(this.classes(),this.props));
+		if(__map_reserved["class"] != null) {
+			_g2.setReserved("class",value7);
+		} else {
+			_g2.h["class"] = value7;
+		}
+		return doom_core__$VNode_VNode_$Impl_$.el("div",_g2,doom_core__$VNodes_VNodes_$Impl_$.children(prefix.concat(this.children)));
+	}
+	,close: function() {
+		var o = this.props;
+		this.update({ closed : true, dismissible : o.dismissible, onDismiss : o.onDismiss, type : o.type});
 	}
 	,classes: function() {
 		return "tiki_message";
 	}
 	,__class__: tiki_Message
 });
+var tiki_MessageType = { __ename__ : ["tiki","MessageType"], __constructs__ : ["Default","Info","Success","Warning","Danger"] };
+tiki_MessageType.Default = ["Default",0];
+tiki_MessageType.Default.__enum__ = tiki_MessageType;
+tiki_MessageType.Info = ["Info",1];
+tiki_MessageType.Info.__enum__ = tiki_MessageType;
+tiki_MessageType.Success = ["Success",2];
+tiki_MessageType.Success.__enum__ = tiki_MessageType;
+tiki_MessageType.Warning = ["Warning",3];
+tiki_MessageType.Warning.__enum__ = tiki_MessageType;
+tiki_MessageType.Danger = ["Danger",4];
+tiki_MessageType.Danger.__enum__ = tiki_MessageType;
 var tiki_Nav = function(props,children) {
 	doom_html_Component.call(this,props,doom_core__$VNodes_VNodes_$Impl_$.children(children.map(function(c) {
 		var _g = new haxe_ds_StringMap();

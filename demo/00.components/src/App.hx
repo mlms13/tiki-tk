@@ -71,7 +71,11 @@ class App extends doom.html.Component<{}> {
         ])
       ]),
       demoSection("Messages", [
-        message(["My first message"])
+        message(["Default message"]),
+        message({ type: Info }, ["Info message"]),
+        message({ type: Success }, ["Success message"]),
+        message({ type: Warning }, ["Warning message"]),
+        message({ type: Danger, dismissible : true }, ["Danger message with dismissible"])
       ])
     ]);
   }
