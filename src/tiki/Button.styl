@@ -15,6 +15,9 @@
   user-select none
   vertical-align middle
   white-space nowrap
+  button-variant($btn-default-color, $btn-default-bg, $btn-default-border)
+  &.hollow
+    button-variant-hollow($gray-dark)
 
   &:hover
   &:focus
@@ -32,32 +35,22 @@
     cursor $cursor-disabled
     opacity 0.5
 
-  &.default
-    button-variant($btn-default-color, $btn-default-bg, $btn-default-border)
-
   &.primary
     button-variant($btn-primary-color, $btn-primary-bg, $btn-primary-border)
+    &.hollow
+      button-variant-hollow($primary)
 
   &.success
     button-variant($btn-success-color, $btn-success-bg, $btn-success-border)
+    &.hollow
+      button-variant-hollow($success)
 
   &.warning
     button-variant($btn-warning-color, $btn-warning-bg, $btn-warning-border)
+    &.hollow
+      button-variant-hollow($warning)
 
   &.danger
     button-variant($btn-danger-color, $btn-danger-bg, $btn-danger-border)
-
-  &.default-hollow
-    button-variant-hollow($gray-dark)
-
-  &.primary-hollow
-    button-variant-hollow($primary)
-
-  &.success-hollow
-    button-variant-hollow($success)
-
-  &.warning-hollow
-    button-variant-hollow($warning)
-
-  &.danger-hollow
-    button-variant-hollow($danger)
+    &.hollow
+      button-variant-hollow($danger)

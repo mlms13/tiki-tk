@@ -12,6 +12,32 @@
   user-select: none;
   vertical-align: middle;
   white-space: nowrap;
+  background-color: #eee;
+  border-color: #eee;
+  color: #444;
+}
+#ns:not([disabled]):hover,
+#ns:not([disabled]):focus {
+  background-color: #d6d6d6;
+  border-color: #d6d6d6;
+}
+#ns:not([disabled]):focus {
+  box-shadow: 0 0 0 3px rgba(238,238,238,0.25);
+}
+#ns:not([disabled]):active,
+#ns:not([disabled]).active {
+  border-color: #d6d6d6;
+  box-shadow: inset 0 1px 2px rgba(0,0,0,0.2);
+}
+#ns.hollow {
+  background-color: transparent;
+  border-color: #444;
+  color: #292929;
+}
+#ns.hollow:hover,
+#ns.hollow:focus {
+  border-color: #444;
+  background-color: #dadada;
 }
 #ns:hover,
 #ns:focus {
@@ -29,25 +55,6 @@
   cursor: not-allowed;
   opacity: 0.5;
 }
-#ns.default {
-  background-color: #eee;
-  border-color: #eee;
-  color: #444;
-}
-#ns.default:not([disabled]):hover,
-#ns.default:not([disabled]):focus {
-  background-color: #d6d6d6;
-  border-color: #d6d6d6;
-}
-#ns.default:not([disabled]):focus {
-  box-shadow: 0 0 0 3px rgba(238,238,238,0.25);
-}
-#ns.default:not([disabled]):active,
-#ns.default:not([disabled]).active {
-  background-color: #c3c3c3;
-  border-color: #d6d6d6;
-  box-shadow: inset 0 1px 2px rgba(0,0,0,0.2);
-}
 #ns.primary {
   background-color: #2693b3;
   border-color: #2693b3;
@@ -63,9 +70,18 @@
 }
 #ns.primary:not([disabled]):active,
 #ns.primary:not([disabled]).active {
-  background-color: #1f7993;
   border-color: #2284a1;
   box-shadow: inset 0 1px 2px rgba(0,0,0,0.2);
+}
+#ns.primary.hollow {
+  background-color: transparent;
+  border-color: #2693b3;
+  color: #17586b;
+}
+#ns.primary.hollow:hover,
+#ns.primary.hollow:focus {
+  border-color: #2693b3;
+  background-color: #cfecf5;
 }
 #ns.success {
   background-color: #28bd35;
@@ -82,9 +98,18 @@
 }
 #ns.success:not([disabled]):active,
 #ns.success:not([disabled]).active {
-  background-color: #219b2b;
   border-color: #24aa30;
   box-shadow: inset 0 1px 2px rgba(0,0,0,0.2);
+}
+#ns.success.hollow {
+  background-color: transparent;
+  border-color: #28bd35;
+  color: #187120;
+}
+#ns.success.hollow:hover,
+#ns.success.hollow:focus {
+  border-color: #28bd35;
+  background-color: #d1f5d4;
 }
 #ns.warning {
   background-color: #e69529;
@@ -101,9 +126,18 @@
 }
 #ns.warning:not([disabled]):active,
 #ns.warning:not([disabled]).active {
-  background-color: #c77c17;
   border-color: #da881a;
   box-shadow: inset 0 1px 2px rgba(0,0,0,0.2);
+}
+#ns.warning.hollow {
+  background-color: transparent;
+  border-color: #e69529;
+  color: #925a11;
+}
+#ns.warning.hollow:hover,
+#ns.warning.hollow:focus {
+  border-color: #e69529;
+  background-color: #faead4;
 }
 #ns.danger {
   background-color: #da3229;
@@ -120,52 +154,16 @@
 }
 #ns.danger:not([disabled]):active,
 #ns.danger:not([disabled]).active {
-  background-color: #b5271f;
   border-color: #c72b22;
   box-shadow: inset 0 1px 2px rgba(0,0,0,0.2);
 }
-#ns.default-hollow {
-  background-color: transparent;
-  border-color: #444;
-  color: #292929;
-}
-#ns.default-hollow:hover {
-  border-color: #444;
-  background-color: #dadada;
-}
-#ns.primary-hollow {
-  background-color: transparent;
-  border-color: #2693b3;
-  color: #17586b;
-}
-#ns.primary-hollow:hover {
-  border-color: #2693b3;
-  background-color: #cfecf5;
-}
-#ns.success-hollow {
-  background-color: transparent;
-  border-color: #28bd35;
-  color: #187120;
-}
-#ns.success-hollow:hover {
-  border-color: #28bd35;
-  background-color: #d1f5d4;
-}
-#ns.warning-hollow {
-  background-color: transparent;
-  border-color: #e69529;
-  color: #925a11;
-}
-#ns.warning-hollow:hover {
-  border-color: #e69529;
-  background-color: #faead4;
-}
-#ns.danger-hollow {
+#ns.danger.hollow {
   background-color: transparent;
   border-color: #da3229;
   color: #841c17;
 }
-#ns.danger-hollow:hover {
+#ns.danger.hollow:hover,
+#ns.danger.hollow:focus {
   border-color: #da3229;
   background-color: #f8d6d4;
 }

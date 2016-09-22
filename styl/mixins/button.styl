@@ -14,7 +14,6 @@ button-variant($text, $bg, $border)
 
     &:active
     &.active
-      background-color darken($bg, 18%)
       border-color darken($border, 10%)
       // needed here in the mixin, otherwise :focus has more specificity
       box-shadow $btn-active-box-shadow
@@ -25,5 +24,6 @@ button-variant-hollow($accent)
   color darken($accent, 40%)
 
   &:hover
+  &:focus
     border-color $accent
     background-color lighten($accent, 80%)
