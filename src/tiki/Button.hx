@@ -1,6 +1,10 @@
 package tiki;
 
 class Button extends doom.html.Component<ButtonProps> {
+  override public function new(props: ButtonProps, label: String) {
+    super(props, label);
+  }
+
   override function render() {
     return doom.html.Html.button([
       "type" => "button",

@@ -3,7 +3,7 @@ package tiki;
 import doom.html.Html;
 
 class Nav extends doom.html.Component<NavProps> {
-  override public function new(props : NavProps, ?children : Array<NavLink>) {
+  override public function new(props: NavProps, children: Array<NavLink>) {
     super(props, children.map(function (c) {
       return Html.li(["class" => "nav-item"], c);
     }));
