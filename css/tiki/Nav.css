@@ -6,7 +6,7 @@
   margin-bottom: 0;
   padding-left: 0;
 }
-#ns.inline > li {
+#ns.inline > .nav-item {
   float: left;
   margin-left: 1rem;
 }

@@ -1,28 +1,28 @@
 package tiki;
 
-class Button extends doom.html.Component<ButtonProps> {
-  override public function new(props: ButtonProps, label: String) {
-    super(props, label);
-  }
+import haxe.ds.Option;
+using thx.Options;
+using thx.Objects;
 
+class Button extends doom.html.Component<ButtonProps> {
   override function render() {
     return doom.html.Html.button([
       "type" => "button",
       "class" => getClasses(classes(), props),
-      "disabled" => props.disabled == true,
-      "click" => props.click
+      "disabled" => props.disabled,
+      "click" => props.click.get()
     ], children);
   }
 
   static function getClasses(base : String, state : ButtonProps) : String {
     var classes = [base];
 
-    var styleClass = switch state.type {
+    var styleClass = switch state.style {
       case Primary: "primary";
       case Success: "success";
       case Warning: "warning";
       case Danger: "danger";
-      case null, Default: "";
+      case Default: "default";
     };
 
     if (state.hollow == true)
@@ -33,20 +33,35 @@ class Button extends doom.html.Component<ButtonProps> {
     if (state.active == true)
       classes.push("active");
 
-    if (state.disabled == true)
-      classes.push("disabled");
-
     classes = classes.concat(switch state.size {
-      case Large : ["large"];
       case Small : ["small"];
-      case null, Default : [];
+      case Medium : [];
+      case Large : ["large"];
     });
 
     return classes.join(" ");
   }
+
+  public function style(s: ButtonStyle)
+    return new Button(props.with(style, s), children);
+
+  public function size(s: ButtonSize)
+    return new Button(props.with(size, s), children);
+
+  public function hollow()
+    return new Button(props.with(hollow, true), children);
+
+  public function active()
+    return new Button(props.with(active, true), children);
+
+  public function disabled()
+    return new Button(props.with(disabled, true), children);
+
+  public function click(fn: Void -> Void)
+    return new Button(props.with(click, Some(fn)), children);
 }
 
-enum ButtonType {
+enum ButtonStyle {
   Default;
   Primary;
   Success;
@@ -55,16 +70,16 @@ enum ButtonType {
 }
 
 enum ButtonSize {
-  Large;
   Small;
-  Default;
+  Medium;
+  Large;
 }
 
 typedef ButtonProps = {
-  ?active : Bool,
-  ?disabled : Bool,
-  ?hollow : Bool,
-  ?size : ButtonSize,
-  ?type : ButtonType,
-  click : Void -> Void // TODO: provide event and target?
+  active: Bool,
+  disabled: Bool,
+  hollow: Bool,
+  size: ButtonSize,
+  style: ButtonStyle,
+  click: Option<Void -> Void>
 }

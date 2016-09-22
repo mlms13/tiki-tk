@@ -21,26 +21,25 @@ class App extends doom.html.Component<{}> {
         fillerText(),
       ]),
       demoSection("Buttons", [
-        inlineExample([button({
-          type: Default,
-          click: function () {}
-        }, "Default")]),
-        inlineExample([button({
-          type: Primary,
-          click: function () {}
-        }, "Primary")]),
-        inlineExample([button({
-          type: Success,
-          click: function () {}
-        }, "Success")]),
-        inlineExample([button({
-          type: Warning,
-          click: function () {}
-        }, "Warning")]),
-        inlineExample([button({
-          type: Danger,
-          click: function () {}
-        }, "Danger")]),
+        inlineExample([button("Default")]),
+        inlineExample([button("Primary").style(Primary)]),
+        inlineExample([button("Success").style(Success)]),
+        inlineExample([button("Warning").style(Warning)]),
+        inlineExample([button("Danger").style(Danger)]),
+      ]),
+      demoSection("Hollow Buttons", [
+        inlineExample([button("Default").hollow()]),
+        inlineExample([button("Primary").style(Primary).hollow()]),
+        inlineExample([button("Success").style(Success).hollow()]),
+        inlineExample([button("Warning").style(Warning).hollow()]),
+        inlineExample([button("Danger").style(Danger).hollow()]),
+      ]),
+      demoSection("Disabled Buttons", [
+        inlineExample([button("Default").disabled()]),
+        inlineExample([button("Primary").style(Primary).disabled()]),
+        inlineExample([button("Success").style(Success).disabled()]),
+        inlineExample([button("Warning").style(Warning).disabled()]),
+        inlineExample([button("Danger").style(Danger).disabled()]),
       ]),
       demoSection("Basic Nav", [
         nav({ orientation: Inline }, [

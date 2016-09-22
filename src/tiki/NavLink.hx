@@ -1,15 +1,16 @@
 package tiki;
 
 class NavLink extends doom.html.Component<NavLinkProps> {
+
   override function render() {
     return doom.html.Html.a([
-      "class" => getClasses(props),
+      "class" => getClasses(classes(), props),
       "href" => props.href
     ], children);
   }
 
-  static function getClasses(state : NavLinkProps) : String {
-    var classes = ["nav-link"];
+  static function getClasses(base: String,  state: NavLinkProps): String {
+    var classes = [base];
 
     if (state.active == true)
       classes.push("active");
