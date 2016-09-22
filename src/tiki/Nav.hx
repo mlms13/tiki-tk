@@ -10,37 +10,39 @@ class Nav extends doom.html.Component<NavProps> {
   }
 
   override function render() {
-    return Html.nav(Html.ul(["class" => getClasses(props)], children));
+    return Html.nav(Html.ul(["class" => getClasses(classes(), props)], children));
   }
 
-  static function getClasses(state : NavProps) : String {
-    var classes = ["nav"];
+  static function getClasses(base: String, state: NavProps): String {
+    var classes = [base];
 
-    classes.push(switch state.layout {
-      case Inline: "nav-inline";
-      case Stacked: "nav-stacked";
-      case Tabs: "nav-tabs";
-      case Pills: "nav-pills";
+    classes.push(switch state.style {
+      case Tabs: "tabs";
+      case Pills: "pills";
       case null, Default: "";
     });
 
-    if (state.stacked == true) {
-      classes.push("nav-stacked");
-    }
+    classes.push(switch state.orientation {
+      case null, Inline: "inline";
+      case Stacked: "stacked";
+    });
 
     return classes.join(" ");
   }
 }
 
-enum NavLayout {
-  Inline;
-  Stacked;
+enum NavStyle {
   Tabs;
   Pills;
   Default;
 }
 
+enum NavOrientation {
+  Inline;
+  Stacked;
+}
+
 typedef NavProps = {
-  ?layout: NavLayout,
-  ?stacked: Bool
+  ?style: NavStyle,
+  ?orientation: NavOrientation
 }

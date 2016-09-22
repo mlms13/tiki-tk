@@ -1,0 +1,13 @@
+@import "variables"
+@import "mixins/clearfix"
+
+#ns
+  clearfix()
+  list-style none
+  margin-bottom 0
+  padding-left 0
+
+  &.inline
+    > li
+      float left
+      margin-left $floated-margin-left

@@ -3,7 +3,8 @@ package tiki;
 class NavLink extends doom.html.Component<NavLinkProps> {
   override function render() {
     return doom.html.Html.a([
-      "class" => getClasses(props)
+      "class" => getClasses(props),
+      "href" => props.href
     ], children);
   }
 

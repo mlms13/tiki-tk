@@ -1,0 +1,12 @@
+#ns {
+  clear: both;
+  content: "";
+  display: table;
+  list-style: none;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+#ns.inline > li {
+  float: left;
+  margin-left: 1rem;
+}
