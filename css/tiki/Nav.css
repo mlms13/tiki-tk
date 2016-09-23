@@ -7,6 +7,9 @@
   margin-bottom: 0;
   padding-left: 0;
 }
+#ns .nav-link {
+  color: #2693b3;
+}
 #ns.inline .nav-item {
   float: left;
 }
@@ -33,5 +36,14 @@
   margin-bottom: -1px;
 }
 #ns.tabs .nav-link.active {
+  background-color: #fff;
   border-color: #bbb #bbb #fff;
+  color: #2693b3;
+}
+#ns.pills .nav-link {
+  border-radius: 3px;
+}
+#ns.pills .nav-link.active {
+  background-color: #2693b3;
+  color: #fff;
 }

@@ -8,6 +8,9 @@
   margin-bottom 0
   padding-left 0
 
+  .nav-link
+    color $nav-link-color
+
   &.inline
     .nav-item
       float left
@@ -35,4 +38,14 @@
       margin-bottom 0 - $tab-border-width
 
       &.active
+        background-color $tab-active-bg
         border-color $tab-active-border-color
+        color $tab-active-color
+
+  &.pills
+    .nav-link
+      border-radius $border-radius
+
+      &.active
+        background-color $pill-active-bg
+        color $pill-active-color

@@ -7,6 +7,9 @@
   margin-bottom: 0;
   padding-left: 0;
 }
+.tiki_nav .nav-link {
+  color: #2693b3;
+}
 .tiki_nav.inline .nav-item {
   float: left;
 }
@@ -33,7 +36,16 @@
   margin-bottom: -1px;
 }
 .tiki_nav.tabs .nav-link.active {
+  background-color: #fff;
   border-color: #bbb #bbb #fff;
+  color: #2693b3;
+}
+.tiki_nav.pills .nav-link {
+  border-radius: 3px;
+}
+.tiki_nav.pills .nav-link.active {
+  background-color: #2693b3;
+  color: #fff;
 }
 .tiki_message {
   border-width: 1px;

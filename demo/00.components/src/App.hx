@@ -59,7 +59,7 @@ class App extends doom.html.Component<{}> {
       demoSection("Nav Pills", [
         nav([
           navLink({ href: "#" }, "Foo"),
-          navLink({ href: "#" }, "Bar"),
+          navLink({ active: true, href: "#" }, "Bar"),
           navLink({ href: "#" }, "Baz")
         ]).orientation(Inline).style(Pills)
       ]),
@@ -67,8 +67,8 @@ class App extends doom.html.Component<{}> {
         nav([
           navLink({ href: "#" }, "Foo"),
           navLink({ href: "#" }, "Bar"),
-          navLink({ href: "#" }, "Baz")
-        ]).orientation(Stacked)
+          navLink({ active: true, href: "#" }, "Baz")
+        ]).orientation(Stacked).style(Pills)
       ]),
       demoSection("Messages", [
         message(["Default message"]),
