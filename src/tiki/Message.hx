@@ -45,15 +45,6 @@ class Message extends TikiElement<Message> {
   }
 }
 
-// support fading
-// .uk-alert-large for larger spacing?
-// big icons on the left: http://semantic-ui.com/collections/message.html
-// floating http://semantic-ui.com/collections/message.html#floating
-// compact http://semantic-ui.com/collections/message.html#floating
-// attached http://semantic-ui.com/collections/message.html#attached
-// colored http://semantic-ui.com/collections/message.html#colored
-// size http://semantic-ui.com/collections/message.html#colored
-
 enum MessageStyle {
   Info;
   Success;
