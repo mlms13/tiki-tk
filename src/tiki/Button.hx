@@ -1,49 +1,41 @@
 package tiki;
 
-class Button extends doom.html.Component<ButtonProps> {
+import haxe.ds.Option;
+using thx.Options;
+using thx.Objects;
+
+class Button extends TikiElement<Button, {}> {
+
+  public function new(children)
+    super({}, new Map(), children);
+
   override function render() {
-    return doom.html.Html.button([
-      "type" => "button",
-      "class" => getClasses(classes(), props),
-      "disabled" => props.disabled == true,
-      "click" => props.click
-    ], children);
+    setStringAttribute("type", "button");
+    return doom.html.Html.button(attributes, children);
   }
 
-  static function getClasses(base : String, state : ButtonProps) : String {
-    var classes = [base];
-
-    var styleClass = switch state.type {
+  public function style(s: ButtonStyle) {
+    return addClass(switch s {
       case Primary: "primary";
       case Success: "success";
       case Warning: "warning";
       case Danger: "danger";
-      case null, Default: "";
-    };
-
-    if (state.hollow == true)
-      styleClass += "-hollow";
-
-    classes.push(styleClass);
-
-    if (state.active == true)
-      classes.push("active");
-
-    if (state.disabled == true)
-      classes.push("disabled");
-
-    classes = classes.concat(switch state.size {
-      case Large : ["large"];
-      case Small : ["small"];
-      case null, Default : [];
     });
-
-    return classes.join(" ");
   }
+
+  public function size(s: ButtonSize) {
+    return addClass(switch s {
+      case Small : "small";
+      case Medium : "";
+      case Large : "large";
+    });
+  }
+
+  public function hollow()
+    return addClass("hollow");
 }
 
-enum ButtonType {
-  Default;
+enum ButtonStyle {
   Primary;
   Success;
   Warning;
@@ -51,16 +43,7 @@ enum ButtonType {
 }
 
 enum ButtonSize {
-  Large;
   Small;
-  Default;
-}
-
-typedef ButtonProps = {
-  ?active : Bool,
-  ?disabled : Bool,
-  ?hollow : Bool,
-  ?size : ButtonSize,
-  ?type : ButtonType,
-  click : Void -> Void // TODO: provide event and target?
+  Medium;
+  Large;
 }
