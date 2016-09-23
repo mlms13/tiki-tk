@@ -281,6 +281,8 @@ doom_html_Render.prototype = {
 			return this.applyTextToNode(node[2],dom,parent,post);
 		case 4:
 			return this.applyComponentToNode(node[2],dom,parent,post);
+		case 5:
+			return this.applyToNode(node[2](),dom,parent,post,tryUnmount);
 		}
 	}
 	,applyNodeToNode: function(srcDom,dstDom,parent,tryUnmount) {
@@ -407,7 +409,7 @@ doom_html_Render.prototype = {
 		} catch( e ) {
 			haxe_CallStack.lastException = e;
 			if (e instanceof js__$Boot_HaxeError) e = e.val;
-			throw new thx_error_ErrorWrapper("unable to render " + thx_Types.toString(Type["typeof"](comp)),e,null,{ fileName : "Render.hx", lineNumber : 229, className : "doom.html.Render", methodName : "renderComponent"});
+			throw new thx_error_ErrorWrapper("unable to render " + thx_Types.toString(Type["typeof"](comp)),e,null,{ fileName : "Render.hx", lineNumber : 231, className : "doom.html.Render", methodName : "renderComponent"});
 		}
 	}
 	,unmountComponent: function(comp) {
@@ -572,6 +574,8 @@ doom_html_Render.prototype = {
 			});
 			this.domComponentMap.set(comp,dom);
 			return dom;
+		case 5:
+			return this.generateDom(node[2](),post);
 		}
 	}
 	,createElement: function(name,attributes,children,post) {
@@ -583,7 +587,7 @@ doom_html_Render.prototype = {
 			var _this = this.namespaces;
 			var ns = __map_reserved[prefix] != null?_this.getReserved(prefix):_this.h[prefix];
 			if(null == ns) {
-				throw new thx_Error("element prefix \"" + prefix + "\" is not associated to any namespace. Add the right namespace to Doom.namespaces.",null,{ fileName : "Render.hx", lineNumber : 374, className : "doom.html.Render", methodName : "createElement"});
+				throw new thx_Error("element prefix \"" + prefix + "\" is not associated to any namespace. Add the right namespace to Doom.namespaces.",null,{ fileName : "Render.hx", lineNumber : 378, className : "doom.html.Render", methodName : "createElement"});
 			}
 			el = this.doc.createElementNS(ns,name1);
 		} else {
@@ -1471,15 +1475,22 @@ doom_core__$VNode_VNode_$Impl_$.el = function(name,attributes,children) {
 	}
 	return doom_core_VNodeImpl.Element(name,attributes,children);
 };
+doom_core__$VNode_VNode_$Impl_$.lazy = function(fn) {
+	return doom_core_VNodeImpl.Lazy(fn);
+};
+doom_core__$VNode_VNode_$Impl_$.renderer = function(t) {
+	return doom_core_VNodeImpl.Lazy(t.render);
+};
 doom_core__$VNode_VNode_$Impl_$.asNodes = function(this1) {
 	return doom_core__$VNodes_VNodes_$Impl_$.children([this1]);
 };
-var doom_core_VNodeImpl = { __ename__ : ["doom","core","VNodeImpl"], __constructs__ : ["Element","Comment","Raw","Text","Comp"] };
+var doom_core_VNodeImpl = { __ename__ : ["doom","core","VNodeImpl"], __constructs__ : ["Element","Comment","Raw","Text","Comp","Lazy"] };
 doom_core_VNodeImpl.Element = function(name,attributes,children) { var $x = ["Element",0,name,attributes,children]; $x.__enum__ = doom_core_VNodeImpl; return $x; };
 doom_core_VNodeImpl.Comment = function(comment) { var $x = ["Comment",1,comment]; $x.__enum__ = doom_core_VNodeImpl; return $x; };
 doom_core_VNodeImpl.Raw = function(code) { var $x = ["Raw",2,code]; $x.__enum__ = doom_core_VNodeImpl; return $x; };
 doom_core_VNodeImpl.Text = function(text) { var $x = ["Text",3,text]; $x.__enum__ = doom_core_VNodeImpl; return $x; };
 doom_core_VNodeImpl.Comp = function(comp) { var $x = ["Comp",4,comp]; $x.__enum__ = doom_core_VNodeImpl; return $x; };
+doom_core_VNodeImpl.Lazy = function(render) { var $x = ["Lazy",5,render]; $x.__enum__ = doom_core_VNodeImpl; return $x; };
 var doom_core__$VNodes_VNodes_$Impl_$ = {};
 doom_core__$VNodes_VNodes_$Impl_$.__name__ = ["doom","core","_VNodes","VNodes_Impl_"];
 doom_core__$VNodes_VNodes_$Impl_$.child = function(child) {

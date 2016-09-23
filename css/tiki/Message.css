@@ -13,8 +13,8 @@
 }
 #ns .close {
   position: relative;
-  top: -0.85rem;
-  right: -1rem;
+  top: -0.6rem;
+  right: -0.75rem;
   color: #fff;
   padding: 0;
   cursor: pointer;
@@ -22,7 +22,7 @@
   border: transparent;
   -webkit-appearance: none;
   float: right;
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   font-weight: 700;
   line-height: 1;
   text-shadow: 0 0 1px #000;
