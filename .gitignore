@@ -2,9 +2,15 @@
 .DS_Store
 Thumbs.db
 
+# Git
+*.orig
+
 # Node
 node_modules/
 npm-debug.log
+
+# Haxe
+.haxelib
 
 # Generated
 public/
