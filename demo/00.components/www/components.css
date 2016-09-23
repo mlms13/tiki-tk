@@ -2,13 +2,38 @@
   clear: both;
   content: "";
   display: table;
+  background-color: #fff;
   list-style: none;
   margin-bottom: 0;
   padding-left: 0;
 }
-.tiki_nav.inline > .nav-item {
+.tiki_nav.inline .nav-item {
   float: left;
+}
+.tiki_nav.inline .nav-item + .nav-item {
   margin-left: 1rem;
+}
+.tiki_nav.tabs .nav-item + .nav-item,
+.tiki_nav.pills .nav-item + .nav-item {
+  margin-left: 0;
+}
+.tiki_nav.tabs .nav-link,
+.tiki_nav.pills .nav-link {
+  display: block;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+}
+.tiki_nav.tabs {
+  border-bottom: 1px solid #bbb;
+}
+.tiki_nav.tabs .nav-link {
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+  border: 1px solid transparent;
+  margin-bottom: -1px;
+}
+.tiki_nav.tabs .nav-link.active {
+  border-color: #bbb #bbb #fff;
 }
 .tiki_message {
   border-width: 1px;

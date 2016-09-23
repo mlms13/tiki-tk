@@ -2,32 +2,30 @@ package tiki;
 
 import doom.html.Html;
 
-class Nav extends doom.html.Component<NavProps> {
-  override public function new(props: NavProps, children: Array<NavLink>) {
-    super(props, children.map(function (c) {
+class Nav extends TikiElement<Nav> {
+  public function new(children: Array<NavLink>) {
+    super(children.map(function (c) {
       return Html.li(["class" => "nav-item"], c);
     }));
   }
 
   override function render() {
-    return Html.nav(Html.ul(["class" => getClasses(classes(), props)], children));
+    return Html.nav(Html.ul(attributes, children));
   }
 
-  static function getClasses(base: String, state: NavProps): String {
-    var classes = [base];
-
-    classes.push(switch state.style {
+  public function style(s: NavStyle) {
+    return addClass(switch s {
       case Tabs: "tabs";
       case Pills: "pills";
-      case null, Default: "";
+      case Default: "";
     });
+  }
 
-    classes.push(switch state.orientation {
-      case null, Inline: "inline";
+  public function orientation(o: NavOrientation) {
+    return addClass(switch o {
+      case Inline: "inline";
       case Stacked: "stacked";
     });
-
-    return classes.join(" ");
   }
 }
 
@@ -40,9 +38,4 @@ enum NavStyle {
 enum NavOrientation {
   Inline;
   Stacked;
-}
-
-typedef NavProps = {
-  ?style: NavStyle,
-  ?orientation: NavOrientation
 }

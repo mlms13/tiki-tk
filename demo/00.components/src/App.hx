@@ -43,32 +43,32 @@ class App extends doom.html.Component<{}> {
         inlineExample([button("Danger").style(Danger).disabled()]),
       ]),
       demoSection("Basic Nav", [
-        nav({ orientation: Inline }, [
+        nav([
           navLink({ href: "#" }, "Foo"),
           navLink({ href: "#" }, "Bar"),
           navLink({ href: "#" }, "Baz")
-        ])
-      ]),
-      demoSection("Nav Pills", [
-        nav({ style: Pills }, [
-          navLink({ href: "#" }, "Foo"),
-          navLink({ href: "#" }, "Bar"),
-          navLink({ href: "#" }, "Baz")
-        ])
+        ]).orientation(Inline)
       ]),
       demoSection("Nav Tabs", [
-        nav({ style: Tabs }, [
+        nav([
+          navLink({ active: true, href: "#" }, "Foo"),
+          navLink({ href: "#" }, "Bar"),
+          navLink({ href: "#" }, "Baz")
+        ]).orientation(Inline).style(Tabs)
+      ]),
+      demoSection("Nav Pills", [
+        nav([
           navLink({ href: "#" }, "Foo"),
           navLink({ href: "#" }, "Bar"),
           navLink({ href: "#" }, "Baz")
-        ])
+        ]).orientation(Inline).style(Pills)
       ]),
       demoSection("Nav Stacked", [
-        nav({ orientation: Stacked}, [
+        nav([
           navLink({ href: "#" }, "Foo"),
           navLink({ href: "#" }, "Bar"),
           navLink({ href: "#" }, "Baz")
-        ])
+        ]).orientation(Stacked)
       ]),
       demoSection("Messages", [
         message(["Default message"]),

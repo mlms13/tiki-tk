@@ -2,11 +2,36 @@
   clear: both;
   content: "";
   display: table;
+  background-color: #fff;
   list-style: none;
   margin-bottom: 0;
   padding-left: 0;
 }
-#ns.inline > .nav-item {
+#ns.inline .nav-item {
   float: left;
+}
+#ns.inline .nav-item + .nav-item {
   margin-left: 1rem;
+}
+#ns.tabs .nav-item + .nav-item,
+#ns.pills .nav-item + .nav-item {
+  margin-left: 0;
+}
+#ns.tabs .nav-link,
+#ns.pills .nav-link {
+  display: block;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+}
+#ns.tabs {
+  border-bottom: 1px solid #bbb;
+}
+#ns.tabs .nav-link {
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+  border: 1px solid transparent;
+  margin-bottom: -1px;
+}
+#ns.tabs .nav-link.active {
+  border-color: #bbb #bbb #fff;
 }
