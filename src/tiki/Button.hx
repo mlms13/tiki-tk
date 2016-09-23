@@ -4,11 +4,7 @@ import haxe.ds.Option;
 using thx.Options;
 using thx.Objects;
 
-class Button extends TikiElement<Button, {}> {
-
-  public function new(children)
-    super({}, new Map(), children);
-
+class Button extends TikiElement<Button> {
   override function render() {
     setStringAttribute("type", "button");
     return doom.html.Html.button(attributes, children);
