@@ -2,6 +2,7 @@ import doom.core.VNode;
 import doom.core.VNodes;
 import doom.html.Html.*;
 import Tiki.*;
+import js.Browser.*;
 
 class App extends doom.html.Component<{}> {
   override function render() {
@@ -21,50 +22,49 @@ class App extends doom.html.Component<{}> {
         fillerText(),
       ]),
       demoSection("Buttons", [
-        inlineExample([button({
-          type: Default,
-          click: function () {}
-        }, "Default")]),
-        inlineExample([button({
-          type: Primary,
-          click: function () {}
-        }, "Primary")]),
-        inlineExample([button({
-          type: Success,
-          click: function () {}
-        }, "Success")]),
-        inlineExample([button({
-          type: Warning,
-          click: function () {}
-        }, "Warning")]),
-        inlineExample([button({
-          type: Danger,
-          click: function () {}
-        }, "Danger")]),
+        inlineExample([button("Default")]),
+        inlineExample([button("Primary").style(Primary)]),
+        inlineExample([button("Success").style(Success)]),
+        inlineExample([button("Warning").style(Warning)]),
+        inlineExample([button("Danger").style(Danger)]),
+      ]),
+      demoSection("Hollow Buttons", [
+        inlineExample([button("Default").hollow()]),
+        inlineExample([button("Primary").style(Primary).hollow()]),
+        inlineExample([button("Success").style(Success).hollow()]),
+        inlineExample([button("Warning").style(Warning).hollow()]),
+        inlineExample([button("Danger").style(Danger).hollow()]),
+      ]),
+      demoSection("Disabled Buttons", [
+        inlineExample([button("Default").disabled()]),
+        inlineExample([button("Primary").style(Primary).disabled()]),
+        inlineExample([button("Success").style(Success).disabled()]),
+        inlineExample([button("Warning").style(Warning).disabled()]),
+        inlineExample([button("Danger").style(Danger).disabled()]),
       ]),
       demoSection("Basic Nav", [
-        nav({ layout: Inline }, [
+        nav({ orientation: Inline }, [
           navLink({ href: "#" }, "Foo"),
           navLink({ href: "#" }, "Bar"),
           navLink({ href: "#" }, "Baz")
         ])
       ]),
       demoSection("Nav Pills", [
-        nav({ layout: Pills }, [
+        nav({ style: Pills }, [
           navLink({ href: "#" }, "Foo"),
           navLink({ href: "#" }, "Bar"),
           navLink({ href: "#" }, "Baz")
         ])
       ]),
       demoSection("Nav Tabs", [
-        nav({ layout: Tabs }, [
+        nav({ style: Tabs }, [
           navLink({ href: "#" }, "Foo"),
           navLink({ href: "#" }, "Bar"),
           navLink({ href: "#" }, "Baz")
         ])
       ]),
       demoSection("Nav Stacked", [
-        nav({ stacked: true}, [
+        nav({ orientation: Stacked}, [
           navLink({ href: "#" }, "Foo"),
           navLink({ href: "#" }, "Bar"),
           navLink({ href: "#" }, "Baz")
@@ -72,10 +72,10 @@ class App extends doom.html.Component<{}> {
       ]),
       demoSection("Messages", [
         message(["Default message"]),
-        message({ type: Info }, ["Info message"]),
-        message({ type: Success }, ["Success message"]),
-        message({ type: Warning }, ["Warning message"]),
-        message({ type: Danger, dismissible : true }, ["Danger message with dismissible"])
+        message(["Info message"]).style(Info),
+        message(["Success message"]).style(Success),
+        message(["Warning message"]).style(Warning),
+        message(["Danger message with dismissible"]).style(Danger).dismissible(function() console.log("message closed"))
       ])
     ]);
   }

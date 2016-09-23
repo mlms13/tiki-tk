@@ -1,44 +1,49 @@
 package tiki;
 
 import doom.html.Html.*;
+import js.html.Element;
+import js.html.Event;
 using thx.Objects;
+import dots.Dom;
+import dots.EventHandler;
+import dots.Query;
+import tiki.TikiElement;
 
-class Message extends doom.html.Component<MessageProps> {
-  override function render() {
-    if(props.closed)
-      return dummy();
-    var prefix = if(props.dismissible == true) {
-      [
-        button(["type" => "button", "class" => "close", "aria-label" => "Close", "click" => close], [
-          span(["aria-hidden" => true], "×")
-        ])
-      ];
-    } else {
-      [];
-    }
-    return div(["class" => getClasses(classes(), props)], prefix.concat(children));
+class Message extends TikiElement<Message, {}> {
+  public function new(children) {
+    super({}, new Map(), children);
+    setStringAttribute("role", "message");
   }
 
-  function close() {
-    update(props.with(closed, true));
-  }
+  override function render()
+    return div(attributes, children);
 
-  static function getClasses(base: String, state: MessageProps): String {
-    var classes = [base];
-    switch state.type {
-      case Info: classes.push("info");
-      case Success: classes.push("success");
-      case Danger: classes.push("danger");
-      case Warning: classes.push("warning");
-      case null, Default: // nothing
+  public function style(st: MessageStyle)
+    return addClass(switch st {
+      case Info:    "info";
+      case Success: "success";
+      case Danger:  "danger";
+      case Warning: "warning";
+    });
+
+  public function dismissible(fn: EventHandler)
+    return prepend(
+      Tiki.button(span(["aria-hidden" => true], "×"))
+        .addClass("close")
+        .ariaLabel("Close")
+        .click(close(selector(), fn))
+    );
+
+  static function close(refClass: String, fn: EventHandler) {
+    return function(e: Event) {
+      e.preventDefault();
+      var message = Query.closest(cast e.target, refClass);
+      Dom.remove(message);
+      fn(e);
     };
-
-    return classes.join(" ");
   }
 }
 
-// role="alert" ?
-// .alert-link ?
 // support fading
 // .uk-alert-large for larger spacing?
 // big icons on the left: http://semantic-ui.com/collections/message.html
@@ -47,15 +52,8 @@ class Message extends doom.html.Component<MessageProps> {
 // attached http://semantic-ui.com/collections/message.html#attached
 // colored http://semantic-ui.com/collections/message.html#colored
 // size http://semantic-ui.com/collections/message.html#colored
-typedef MessageProps = {
-  ?closed: Bool,
-  ?type: MessageType,
-  ?dismissible: Bool,
-  ?onDismiss: Void -> Void
-}
 
-enum MessageType {
-  Default;
+enum MessageStyle {
   Info;
   Success;
   Warning;

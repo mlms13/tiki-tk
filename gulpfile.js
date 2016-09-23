@@ -60,8 +60,8 @@ gulp.task('build', ['tiki-stylus', 'tiki-components', 'demo-stylus', 'html']);
 gulp.task('watch', ['build'], function () {
   gulp.watch(['./demo/*.html'], ['html']);
   gulp.watch(['./demo/*.styl'], ['demo-stylus']);
-  gulp.watch(['./styl/**/*.styl'], ['tiki-stylus']);
-  gulp.watch(['./src/**/*.styl'], ['tiki-components']);
+  gulp.watch(['./styl/**/*.styl'], ['tiki-stylus', 'tiki-components']);
+  gulp.watch(['./src/**/*.styl'], ['tiki-stylus', 'tiki-components']);
 });
 
 gulp.task('default', ['watch']);
