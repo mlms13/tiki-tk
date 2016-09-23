@@ -5,12 +5,13 @@ import doom.core.VNodes;
 import dots.EventHandler;
 import js.html.Event;
 
-class TikiElement<ElementType: TikiElement<Dynamic, T>, T> extends doom.html.Component<T> {
+class TikiElement<ElementType: TikiElement<Dynamic>> extends doom.html.Renderable {
   var attributes: Map<String, AttributeValue>;
+  var children: VNodes;
 
-  public function new(props, attributes, children) {
-    super(props, children);
-    this.attributes = attributes;
+  public function new(children) {
+    this.children = children;
+    this.attributes = new Map();
     setStringAttribute("class", classes());
   }
 

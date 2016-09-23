@@ -9,9 +9,9 @@ import dots.EventHandler;
 import dots.Query;
 import tiki.TikiElement;
 
-class Message extends TikiElement<Message, {}> {
+class Message extends TikiElement<Message> {
   public function new(children) {
-    super({}, new Map(), children);
+    super(children);
     setStringAttribute("role", "message");
   }
 
@@ -32,6 +32,7 @@ class Message extends TikiElement<Message, {}> {
         .addClass("close")
         .ariaLabel("Close")
         .click(close(selector(), fn))
+        .render()
     );
 
   static function close(refClass: String, fn: EventHandler) {
