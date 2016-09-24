@@ -7,16 +7,13 @@ using thx.Objects;
 import dots.Dom;
 import dots.EventHandler;
 import dots.Query;
-import tiki.TikiElement;
+import tiki.TkElement;
 
-class Message extends TikiElement<Message> {
+class Message extends TkElement<Message> {
   public function new(children) {
-    super(children);
+    super("div", children);
     setStringAttribute("role", "message");
   }
-
-  override function render()
-    return div(attributes, children);
 
   public function style(st: MessageStyle)
     return addClass(switch st {
