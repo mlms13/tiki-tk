@@ -1,11 +1,10 @@
 import doom.core.VNode;
 import doom.core.VNodes;
-import doom.html.Html.*;
 import Tiki.*;
 import js.Browser.*;
 
 class App extends doom.html.Component<{}> {
-  override function render() {
+  override function render(): VNode {
     return article([
       demoSection("Typography", [
         h1("h1 heading"),
@@ -80,20 +79,18 @@ class App extends doom.html.Component<{}> {
     ]);
   }
 
-  function demoSection(title : String, children : VNodes) : VNode {
+  function demoSection(title: String, children: VNodes) {
     return section([
-      "class" => "demo-section"
-    ], [
-      h2([ "class" => "section-title" ], title),
-      div([ "class" => "section-body" ], children)
-    ]);
+      h2(title).addClass("section-title"),
+      div(children).addClass("section-body")
+    ]).addClass("demo-section");
   }
 
-  function inlineExample(children : VNodes) : VNode {
-    return div([ "class" => "example-inline"], children);
+  function inlineExample(children: VNodes) {
+    return div(children).addClass("example-inline");
   }
 
-  function fillerText() : VNode {
+  function fillerText() {
     return p("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
               sed hendrerit libero, et tempor orci. Nam facilisis neque at diam
               blandit, vitae lacinia erat imperdiet.");

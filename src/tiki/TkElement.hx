@@ -4,3 +4,5 @@ class TkElement<ElementType: TkElement<ElementType>> extends doom.html.Element<E
   public function active()
     return addClass("active");
 }
+
+class Element extends TkElement<Element> {}
