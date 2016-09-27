@@ -2,6 +2,8 @@ import doom.core.VNode;
 import doom.core.VNodes;
 import Tiki.*;
 import js.Browser.*;
+import thx.format.NumberFormat.integer;
+import thx.format.NumberFormat.fixed;
 
 class App extends doom.html.Component<{}> {
   override function render(): VNode {
@@ -75,6 +77,17 @@ class App extends doom.html.Component<{}> {
         message(["Success message"]).style(Success),
         message(["Warning message"]).style(Warning),
         message(["Danger message with dismissible"]).style(Danger).dismissible(function() console.log("message closed"))
+      ]),
+      demoSection("Tables", [
+        table(tableContent())
+          .addColumn(function(r): VNodes return r.city)
+          .addColumn(function(r): VNodes return r.state)
+            .header("state")
+          .addColumn(function(r): VNodes return integer(r.population))
+            .header("population")
+          .addColumn(function(r): VNodes return fixed(r.landArea, 1))
+            .header("area")
+          .table
       ])
     ]);
   }
@@ -95,4 +108,31 @@ class App extends doom.html.Component<{}> {
               sed hendrerit libero, et tempor orci. Nam facilisis neque at diam
               blandit, vitae lacinia erat imperdiet.");
   }
+
+  static function tableContent() return [
+    {
+      city: "Seattle",
+      state: "WA",
+      population: 652405,
+      landArea: 83.9
+    },
+    {
+      city: "New York",
+      state: "NY",
+      population: 8405837,
+      landArea: 302.6
+    },
+    {
+      city: "Boston",
+      state: "MA",
+      population: 645966,
+      landArea: 48.3
+    },
+    {
+      city: "Kansas City",
+      state: "MO",
+      population: 467007,
+      landArea: 315
+    }
+  ];
 }

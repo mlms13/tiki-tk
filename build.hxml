@@ -3,6 +3,7 @@
 -lib doom
 -lib dots
 -lib thx.core
+-lib thx.format
 
 Tiki
 tiki.Button

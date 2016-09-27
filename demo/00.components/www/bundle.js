@@ -97,6 +97,9 @@ var App = function(props,children) {
 	doom_html_Component.call(this,props,children);
 };
 App.__name__ = ["App"];
+App.tableContent = function() {
+	return [{ city : "Seattle", state : "WA", population : 652405, landArea : 83.9},{ city : "New York", state : "NY", population : 8405837, landArea : 302.6},{ city : "Boston", state : "MA", population : 645966, landArea : 48.3},{ city : "Kansas City", state : "MO", population : 467007, landArea : 315}];
+};
 App.__super__ = doom_html_Component;
 App.prototype = $extend(doom_html_Component.prototype,{
 	render: function() {
@@ -107,7 +110,15 @@ App.prototype = $extend(doom_html_Component.prototype,{
 			e.preventDefault();
 			f();
 		};
-		return doom_core_VNodeImpl.Lazy(($_=new tiki_Element("article",doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=this.demoSection("Typography",doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=new tiki_Element("h1",doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("h1 heading")])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.fillerText(),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=new tiki_Element("h2",doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("h2 heading")])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.fillerText(),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=new tiki_Element("h3",doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("h3 heading")])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.fillerText(),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=new tiki_Element("h4",doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("h4 heading")])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.fillerText(),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=new tiki_Element("h5",doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("h5 heading")])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.fillerText(),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=new tiki_Element("h6",doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("h6 heading")])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.fillerText(),$bind($_,$_.render)))])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.demoSection("Buttons",doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=this.inlineExample(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=new tiki_Button(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Default")])),$bind($_,$_.render)))])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.inlineExample(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=new tiki_Button(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Primary")])).style(tiki_ButtonStyle.Primary),$bind($_,$_.render)))])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.inlineExample(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=new tiki_Button(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Success")])).style(tiki_ButtonStyle.Success),$bind($_,$_.render)))])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.inlineExample(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=new tiki_Button(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Warning")])).style(tiki_ButtonStyle.Warning),$bind($_,$_.render)))])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.inlineExample(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=new tiki_Button(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Danger")])).style(tiki_ButtonStyle.Danger),$bind($_,$_.render)))])),$bind($_,$_.render)))])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.demoSection("Hollow Buttons",doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=this.inlineExample(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=new tiki_Button(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Default")])).hollow(),$bind($_,$_.render)))])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.inlineExample(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=new tiki_Button(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Primary")])).style(tiki_ButtonStyle.Primary).hollow(),$bind($_,$_.render)))])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.inlineExample(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=new tiki_Button(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Success")])).style(tiki_ButtonStyle.Success).hollow(),$bind($_,$_.render)))])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.inlineExample(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=new tiki_Button(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Warning")])).style(tiki_ButtonStyle.Warning).hollow(),$bind($_,$_.render)))])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.inlineExample(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=new tiki_Button(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Danger")])).style(tiki_ButtonStyle.Danger).hollow(),$bind($_,$_.render)))])),$bind($_,$_.render)))])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.demoSection("Disabled Buttons",doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=this.inlineExample(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=new tiki_Button(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Default")])).disabled(),$bind($_,$_.render)))])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.inlineExample(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=new tiki_Button(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Primary")])).style(tiki_ButtonStyle.Primary).disabled(),$bind($_,$_.render)))])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.inlineExample(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=new tiki_Button(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Success")])).style(tiki_ButtonStyle.Success).disabled(),$bind($_,$_.render)))])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.inlineExample(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=new tiki_Button(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Warning")])).style(tiki_ButtonStyle.Warning).disabled(),$bind($_,$_.render)))])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.inlineExample(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=new tiki_Button(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Danger")])).style(tiki_ButtonStyle.Danger).disabled(),$bind($_,$_.render)))])),$bind($_,$_.render)))])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.demoSection("Basic Nav",doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Comp(new tiki_Nav({ orientation : tiki_NavOrientation.Inline},[new tiki_NavLink({ href : "#"},doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Foo")])),new tiki_NavLink({ href : "#"},doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Bar")])),new tiki_NavLink({ href : "#"},doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Baz")]))]))])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.demoSection("Nav Pills",doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Comp(new tiki_Nav({ style : tiki_NavStyle.Pills},[new tiki_NavLink({ href : "#"},doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Foo")])),new tiki_NavLink({ href : "#"},doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Bar")])),new tiki_NavLink({ href : "#"},doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Baz")]))]))])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.demoSection("Nav Tabs",doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Comp(new tiki_Nav({ style : tiki_NavStyle.Tabs},[new tiki_NavLink({ href : "#"},doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Foo")])),new tiki_NavLink({ href : "#"},doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Bar")])),new tiki_NavLink({ href : "#"},doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Baz")]))]))])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.demoSection("Nav Stacked",doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Comp(new tiki_Nav({ orientation : tiki_NavOrientation.Stacked},[new tiki_NavLink({ href : "#"},doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Foo")])),new tiki_NavLink({ href : "#"},doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Bar")])),new tiki_NavLink({ href : "#"},doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Baz")]))]))])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.demoSection("Messages",doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=new tiki_Message(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Default message")])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=new tiki_Message(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Info message")])).style(tiki_MessageStyle.Info),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=new tiki_Message(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Success message")])).style(tiki_MessageStyle.Success),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=new tiki_Message(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Warning message")])).style(tiki_MessageStyle.Warning),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=new tiki_Message(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Danger message with dismissible")])).style(tiki_MessageStyle.Danger).dismissible(tmp),$bind($_,$_.render)))])),$bind($_,$_.render)))])),$bind($_,$_.render)));
+		return doom_core_VNodeImpl.Lazy(($_=new tiki_Element("article",doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=this.demoSection("Typography",doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=new tiki_Element("h1",doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("h1 heading")])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.fillerText(),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=new tiki_Element("h2",doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("h2 heading")])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.fillerText(),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=new tiki_Element("h3",doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("h3 heading")])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.fillerText(),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=new tiki_Element("h4",doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("h4 heading")])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.fillerText(),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=new tiki_Element("h5",doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("h5 heading")])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.fillerText(),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=new tiki_Element("h6",doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("h6 heading")])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.fillerText(),$bind($_,$_.render)))])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.demoSection("Buttons",doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=this.inlineExample(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=new tiki_Button(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Default")])),$bind($_,$_.render)))])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.inlineExample(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=new tiki_Button(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Primary")])).style(tiki_ButtonStyle.Primary),$bind($_,$_.render)))])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.inlineExample(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=new tiki_Button(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Success")])).style(tiki_ButtonStyle.Success),$bind($_,$_.render)))])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.inlineExample(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=new tiki_Button(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Warning")])).style(tiki_ButtonStyle.Warning),$bind($_,$_.render)))])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.inlineExample(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=new tiki_Button(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Danger")])).style(tiki_ButtonStyle.Danger),$bind($_,$_.render)))])),$bind($_,$_.render)))])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.demoSection("Hollow Buttons",doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=this.inlineExample(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=new tiki_Button(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Default")])).hollow(),$bind($_,$_.render)))])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.inlineExample(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=new tiki_Button(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Primary")])).style(tiki_ButtonStyle.Primary).hollow(),$bind($_,$_.render)))])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.inlineExample(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=new tiki_Button(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Success")])).style(tiki_ButtonStyle.Success).hollow(),$bind($_,$_.render)))])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.inlineExample(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=new tiki_Button(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Warning")])).style(tiki_ButtonStyle.Warning).hollow(),$bind($_,$_.render)))])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.inlineExample(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=new tiki_Button(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Danger")])).style(tiki_ButtonStyle.Danger).hollow(),$bind($_,$_.render)))])),$bind($_,$_.render)))])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.demoSection("Disabled Buttons",doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=this.inlineExample(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=new tiki_Button(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Default")])).disabled(),$bind($_,$_.render)))])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.inlineExample(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=new tiki_Button(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Primary")])).style(tiki_ButtonStyle.Primary).disabled(),$bind($_,$_.render)))])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.inlineExample(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=new tiki_Button(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Success")])).style(tiki_ButtonStyle.Success).disabled(),$bind($_,$_.render)))])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.inlineExample(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=new tiki_Button(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Warning")])).style(tiki_ButtonStyle.Warning).disabled(),$bind($_,$_.render)))])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.inlineExample(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=new tiki_Button(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Danger")])).style(tiki_ButtonStyle.Danger).disabled(),$bind($_,$_.render)))])),$bind($_,$_.render)))])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.demoSection("Basic Nav",doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Comp(new tiki_Nav({ orientation : tiki_NavOrientation.Inline},[new tiki_NavLink({ href : "#"},doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Foo")])),new tiki_NavLink({ href : "#"},doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Bar")])),new tiki_NavLink({ href : "#"},doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Baz")]))]))])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.demoSection("Nav Pills",doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Comp(new tiki_Nav({ style : tiki_NavStyle.Pills},[new tiki_NavLink({ href : "#"},doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Foo")])),new tiki_NavLink({ href : "#"},doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Bar")])),new tiki_NavLink({ href : "#"},doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Baz")]))]))])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.demoSection("Nav Tabs",doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Comp(new tiki_Nav({ style : tiki_NavStyle.Tabs},[new tiki_NavLink({ href : "#"},doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Foo")])),new tiki_NavLink({ href : "#"},doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Bar")])),new tiki_NavLink({ href : "#"},doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Baz")]))]))])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.demoSection("Nav Stacked",doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Comp(new tiki_Nav({ orientation : tiki_NavOrientation.Stacked},[new tiki_NavLink({ href : "#"},doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Foo")])),new tiki_NavLink({ href : "#"},doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Bar")])),new tiki_NavLink({ href : "#"},doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Baz")]))]))])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.demoSection("Messages",doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=new tiki_Message(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Default message")])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=new tiki_Message(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Info message")])).style(tiki_MessageStyle.Info),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=new tiki_Message(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Success message")])).style(tiki_MessageStyle.Success),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=new tiki_Message(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Warning message")])).style(tiki_MessageStyle.Warning),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=new tiki_Message(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Danger message with dismissible")])).style(tiki_MessageStyle.Danger).dismissible(tmp),$bind($_,$_.render)))])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.demoSection("Tables",doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Comp(new tiki_Table(App.tableContent()).addColumn(function(r) {
+			return doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text(r.city)]);
+		}).addColumn(function(r1) {
+			return doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text(r1.state)]);
+		}).header(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("state")])).addColumn(function(r2) {
+			return doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text(thx_format_NumberFormat.integer(r2.population))]);
+		}).header(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("population")])).addColumn(function(r3) {
+			return doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text(thx_format_NumberFormat.fixed(r3.landArea,1))]);
+		}).header(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("area")])).table)])),$bind($_,$_.render)))])),$bind($_,$_.render)));
 	}
 	,demoSection: function(title,children) {
 		return new tiki_Element("section",doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=new tiki_Element("h2",doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text(title)])).addClass("section-title"),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=new tiki_Element("div",children).addClass("section-body"),$bind($_,$_.render)))])).addClass("demo-section");
@@ -991,6 +1002,9 @@ Tiki.nav = function(p,children) {
 };
 Tiki.navLink = function(p,children) {
 	return new tiki_NavLink(p,children);
+};
+Tiki.table = function(data) {
+	return new tiki_Table(data);
 };
 Tiki.h1 = function(children) {
 	return new tiki_Element("h1",children);
@@ -9867,6 +9881,283 @@ thx_ValidationExtensions.appendVNels = function(target,items) {
 thx_ValidationExtensions.appendValidations = function(target,items) {
 	return thx_Arrays.reduce(items,thx_ValidationExtensions.appendValidation,target);
 };
+var thx_culture_DateFormatInfo = function(calendarWeekRuleIndex,calendarWeekRuleName,designatorAm,designatorPm,firstDayOfWeekIndex,firstDayOfWeekName,nameCalendar,nameCalendarNative,nameDays,nameDaysAbbreviated,nameDaysShortest,nameMonths,nameMonthsAbbreviated,nameMonthGenitives,nameMonthGenitivesAbbreviated,patternDateLong,patternDateShort,patternDateTimeFull,patternDateTimeSortable,patternMonthDay,patternRfc1123,patternTimeLong,patternTimeShort,patternUniversalSortable,patternYearMonth,separatorDate,separatorTime) {
+	this.calendarWeekRuleIndex = calendarWeekRuleIndex;
+	this.calendarWeekRuleName = calendarWeekRuleName;
+	this.designatorAm = designatorAm;
+	this.designatorPm = designatorPm;
+	this.firstDayOfWeekIndex = firstDayOfWeekIndex;
+	this.firstDayOfWeekName = firstDayOfWeekName;
+	this.nameCalendar = nameCalendar;
+	this.nameCalendarNative = nameCalendarNative;
+	this.nameDays = nameDays;
+	this.nameDaysAbbreviated = nameDaysAbbreviated;
+	this.nameDaysShortest = nameDaysShortest;
+	this.nameMonths = nameMonths;
+	this.nameMonthsAbbreviated = nameMonthsAbbreviated;
+	this.nameMonthGenitives = nameMonthGenitives;
+	this.nameMonthGenitivesAbbreviated = nameMonthGenitivesAbbreviated;
+	this.patternDateLong = patternDateLong;
+	this.patternDateShort = patternDateShort;
+	this.patternDateTimeFull = patternDateTimeFull;
+	this.patternDateTimeSortable = patternDateTimeSortable;
+	this.patternMonthDay = patternMonthDay;
+	this.patternRfc1123 = patternRfc1123;
+	this.patternTimeLong = patternTimeLong;
+	this.patternTimeShort = patternTimeShort;
+	this.patternUniversalSortable = patternUniversalSortable;
+	this.patternYearMonth = patternYearMonth;
+	this.separatorDate = separatorDate;
+	this.separatorTime = separatorTime;
+};
+thx_culture_DateFormatInfo.__name__ = ["thx","culture","DateFormatInfo"];
+thx_culture_DateFormatInfo.fromObject = function(o) {
+	return new thx_culture_DateFormatInfo(o.calendarWeekRuleIndex,o.calendarWeekRuleName,o.designatorAm,o.designatorPm,o.firstDayOfWeekIndex,o.firstDayOfWeekName,o.nameCalendar,o.nameCalendarNative,o.nameDays,o.nameDaysAbbreviated,o.nameDaysShortest,o.nameMonths,o.nameMonthsAbbreviated,o.nameMonthGenitives,o.nameMonthGenitivesAbbreviated,o.patternDateLong,o.patternDateShort,o.patternDateTimeFull,o.patternDateTimeSortable,o.patternMonthDay,o.patternRfc1123,o.patternTimeLong,o.patternTimeShort,o.patternUniversalSortable,o.patternYearMonth,o.separatorDate,o.separatorTime);
+};
+thx_culture_DateFormatInfo.prototype = {
+	calendarWeekRuleIndex: null
+	,calendarWeekRuleName: null
+	,designatorAm: null
+	,designatorPm: null
+	,firstDayOfWeekIndex: null
+	,firstDayOfWeekName: null
+	,nameCalendar: null
+	,nameCalendarNative: null
+	,nameDays: null
+	,nameDaysAbbreviated: null
+	,nameDaysShortest: null
+	,nameMonths: null
+	,nameMonthsAbbreviated: null
+	,nameMonthGenitives: null
+	,nameMonthGenitivesAbbreviated: null
+	,patternDateLong: null
+	,patternDateShort: null
+	,patternDateTimeFull: null
+	,patternDateTimeSortable: null
+	,patternMonthDay: null
+	,patternRfc1123: null
+	,patternTimeLong: null
+	,patternTimeShort: null
+	,patternUniversalSortable: null
+	,patternYearMonth: null
+	,separatorDate: null
+	,separatorTime: null
+	,toObject: function() {
+		return { calendarWeekRuleIndex : this.calendarWeekRuleIndex, calendarWeekRuleName : this.calendarWeekRuleName, designatorAm : this.designatorAm, designatorPm : this.designatorPm, firstDayOfWeekIndex : this.firstDayOfWeekIndex, firstDayOfWeekName : this.firstDayOfWeekName, nameCalendar : this.nameCalendar, nameCalendarNative : this.nameCalendarNative, nameDays : this.nameDays, nameDaysAbbreviated : this.nameDaysAbbreviated, nameDaysShortest : this.nameDaysShortest, nameMonths : this.nameMonths, nameMonthsAbbreviated : this.nameMonthsAbbreviated, nameMonthGenitives : this.nameMonthGenitives, nameMonthGenitivesAbbreviated : this.nameMonthGenitivesAbbreviated, patternDateLong : this.patternDateLong, patternDateShort : this.patternDateShort, patternDateTimeFull : this.patternDateTimeFull, patternDateTimeSortable : this.patternDateTimeSortable, patternMonthDay : this.patternMonthDay, patternRfc1123 : this.patternRfc1123, patternTimeLong : this.patternTimeLong, patternTimeShort : this.patternTimeShort, patternUniversalSortable : this.patternUniversalSortable, patternYearMonth : this.patternYearMonth, separatorDate : this.separatorDate, separatorTime : this.separatorTime};
+	}
+	,__class__: thx_culture_DateFormatInfo
+};
+var thx_culture_NumberFormatInfo = function(decimalDigitsCurrency,decimalDigitsNumber,decimalDigitsPercent,groupSizesCurrency,groupSizesNumber,groupSizesPercent,patternNegativeCurrency,patternNegativeNumber,patternNegativePercent,patternPositiveCurrency,patternPositivePercent,separatorDecimalCurrency,separatorDecimalNumber,separatorDecimalPercent,separatorGroupCurrency,separatorGroupNumber,separatorGroupPercent,signNegative,signPositive,symbolCurrency,symbolNaN,symbolNegativeInfinity,symbolPercent,symbolPermille,symbolPositiveInfinity) {
+	this.decimalDigitsCurrency = decimalDigitsCurrency;
+	this.decimalDigitsNumber = decimalDigitsNumber;
+	this.decimalDigitsPercent = decimalDigitsPercent;
+	this.groupSizesCurrency = groupSizesCurrency;
+	this.groupSizesNumber = groupSizesNumber;
+	this.groupSizesPercent = groupSizesPercent;
+	this.patternNegativeCurrency = patternNegativeCurrency;
+	this.patternNegativeNumber = patternNegativeNumber;
+	this.patternNegativePercent = patternNegativePercent;
+	this.patternPositiveCurrency = patternPositiveCurrency;
+	this.patternPositivePercent = patternPositivePercent;
+	this.separatorDecimalCurrency = separatorDecimalCurrency;
+	this.separatorDecimalNumber = separatorDecimalNumber;
+	this.separatorDecimalPercent = separatorDecimalPercent;
+	this.separatorGroupCurrency = separatorGroupCurrency;
+	this.separatorGroupNumber = separatorGroupNumber;
+	this.separatorGroupPercent = separatorGroupPercent;
+	this.signNegative = signNegative;
+	this.signPositive = signPositive;
+	this.symbolCurrency = symbolCurrency;
+	this.symbolNaN = symbolNaN;
+	this.symbolNegativeInfinity = symbolNegativeInfinity;
+	this.symbolPercent = symbolPercent;
+	this.symbolPermille = symbolPermille;
+	this.symbolPositiveInfinity = symbolPositiveInfinity;
+};
+thx_culture_NumberFormatInfo.__name__ = ["thx","culture","NumberFormatInfo"];
+thx_culture_NumberFormatInfo.fromObject = function(o) {
+	return new thx_culture_NumberFormatInfo(o.decimalDigitsCurrency,o.decimalDigitsNumber,o.decimalDigitsPercent,o.groupSizesCurrency,o.groupSizesNumber,o.groupSizesPercent,o.patternNegativeCurrency,o.patternNegativeNumber,o.patternNegativePercent,o.patternPositiveCurrency,o.patternPositivePercent,o.separatorDecimalCurrency,o.separatorDecimalNumber,o.separatorDecimalPercent,o.separatorGroupCurrency,o.separatorGroupNumber,o.separatorGroupPercent,o.signNegative,o.signPositive,o.symbolCurrency,o.symbolNaN,o.symbolNegativeInfinity,o.symbolPercent,o.symbolPermille,o.symbolPositiveInfinity);
+};
+thx_culture_NumberFormatInfo.prototype = {
+	decimalDigitsCurrency: null
+	,decimalDigitsNumber: null
+	,decimalDigitsPercent: null
+	,groupSizesCurrency: null
+	,groupSizesNumber: null
+	,groupSizesPercent: null
+	,patternNegativeCurrency: null
+	,patternNegativeNumber: null
+	,patternNegativePercent: null
+	,patternPositiveCurrency: null
+	,patternPositivePercent: null
+	,separatorDecimalCurrency: null
+	,separatorDecimalNumber: null
+	,separatorDecimalPercent: null
+	,separatorGroupCurrency: null
+	,separatorGroupNumber: null
+	,separatorGroupPercent: null
+	,signNegative: null
+	,signPositive: null
+	,symbolCurrency: null
+	,symbolNaN: null
+	,symbolNegativeInfinity: null
+	,symbolPercent: null
+	,symbolPermille: null
+	,symbolPositiveInfinity: null
+	,toObject: function() {
+		return { decimalDigitsCurrency : this.decimalDigitsCurrency, decimalDigitsNumber : this.decimalDigitsNumber, decimalDigitsPercent : this.decimalDigitsPercent, groupSizesCurrency : this.groupSizesCurrency, groupSizesNumber : this.groupSizesNumber, groupSizesPercent : this.groupSizesPercent, patternNegativeCurrency : this.patternNegativeCurrency, patternNegativeNumber : this.patternNegativeNumber, patternNegativePercent : this.patternNegativePercent, patternPositiveCurrency : this.patternPositiveCurrency, patternPositivePercent : this.patternPositivePercent, separatorDecimalCurrency : this.separatorDecimalCurrency, separatorDecimalNumber : this.separatorDecimalNumber, separatorDecimalPercent : this.separatorDecimalPercent, separatorGroupCurrency : this.separatorGroupCurrency, separatorGroupNumber : this.separatorGroupNumber, separatorGroupPercent : this.separatorGroupPercent, signNegative : this.signNegative, signPositive : this.signPositive, symbolCurrency : this.symbolCurrency, symbolNaN : this.symbolNaN, symbolNegativeInfinity : this.symbolNegativeInfinity, symbolPercent : this.symbolPercent, symbolPermille : this.symbolPermille, symbolPositiveInfinity : this.symbolPositiveInfinity};
+	}
+	,__class__: thx_culture_NumberFormatInfo
+};
+var thx_culture_Culture = function(code,dateTime,ietf,isNeutral,iso2,iso3,isRightToLeft,lcid,nameCalendar,nameEnglish,nameNative,nameRegionEnglish,nameRegionNative,number,separatorList,win3) {
+	this.code = code;
+	this.dateTime = dateTime;
+	this.ietf = ietf;
+	this.isNeutral = isNeutral;
+	this.iso2 = iso2;
+	this.iso3 = iso3;
+	this.isRightToLeft = isRightToLeft;
+	this.lcid = lcid;
+	this.nameCalendar = nameCalendar;
+	this.nameEnglish = nameEnglish;
+	this.nameNative = nameNative;
+	this.nameRegionEnglish = nameRegionEnglish;
+	this.nameRegionNative = nameRegionNative;
+	this.number = number;
+	this.separatorList = separatorList;
+	this.win3 = win3;
+};
+thx_culture_Culture.__name__ = ["thx","culture","Culture"];
+thx_culture_Culture.fromObject = function(o) {
+	var tmp;
+	if(null == o.dateTime) {
+		tmp = null;
+	} else {
+		var o1 = o.dateTime;
+		tmp = new thx_culture_DateFormatInfo(o1.calendarWeekRuleIndex,o1.calendarWeekRuleName,o1.designatorAm,o1.designatorPm,o1.firstDayOfWeekIndex,o1.firstDayOfWeekName,o1.nameCalendar,o1.nameCalendarNative,o1.nameDays,o1.nameDaysAbbreviated,o1.nameDaysShortest,o1.nameMonths,o1.nameMonthsAbbreviated,o1.nameMonthGenitives,o1.nameMonthGenitivesAbbreviated,o1.patternDateLong,o1.patternDateShort,o1.patternDateTimeFull,o1.patternDateTimeSortable,o1.patternMonthDay,o1.patternRfc1123,o1.patternTimeLong,o1.patternTimeShort,o1.patternUniversalSortable,o1.patternYearMonth,o1.separatorDate,o1.separatorTime);
+	}
+	var tmp1;
+	if(null == o.number) {
+		tmp1 = null;
+	} else {
+		var o2 = o.number;
+		tmp1 = new thx_culture_NumberFormatInfo(o2.decimalDigitsCurrency,o2.decimalDigitsNumber,o2.decimalDigitsPercent,o2.groupSizesCurrency,o2.groupSizesNumber,o2.groupSizesPercent,o2.patternNegativeCurrency,o2.patternNegativeNumber,o2.patternNegativePercent,o2.patternPositiveCurrency,o2.patternPositivePercent,o2.separatorDecimalCurrency,o2.separatorDecimalNumber,o2.separatorDecimalPercent,o2.separatorGroupCurrency,o2.separatorGroupNumber,o2.separatorGroupPercent,o2.signNegative,o2.signPositive,o2.symbolCurrency,o2.symbolNaN,o2.symbolNegativeInfinity,o2.symbolPercent,o2.symbolPermille,o2.symbolPositiveInfinity);
+	}
+	return new thx_culture_Culture(o.code,tmp,o.ietf,o.isNeutral,o.iso2,o.iso3,o.isRightToLeft,o.lcid,o.nameCalendar,o.nameEnglish,o.nameNative,o.nameRegionEnglish,o.nameRegionNative,tmp1,o.separatorList,o.win3);
+};
+thx_culture_Culture.register = function(culture) {
+	var code = "C:" + culture.code.toLowerCase();
+	var _this = thx_culture_Culture.cultures;
+	if(__map_reserved[code] != null?_this.existsReserved(code):_this.h.hasOwnProperty(code)) {
+		var _this1 = thx_culture_Culture.cultures;
+		if(__map_reserved[code] != null) {
+			return _this1.getReserved(code);
+		} else {
+			return _this1.h[code];
+		}
+	}
+	thx_culture_Culture.list.push(culture);
+	var _this2 = thx_culture_Culture.cultures;
+	if(__map_reserved[code] != null) {
+		_this2.setReserved(code,culture);
+	} else {
+		_this2.h[code] = culture;
+	}
+	var this1 = thx_culture_Culture.cultures;
+	var key = "I2:" + culture.iso2.toLowerCase();
+	var _this3 = this1;
+	if(__map_reserved[key] != null) {
+		_this3.setReserved(key,culture);
+	} else {
+		_this3.h[key] = culture;
+	}
+	var this2 = thx_culture_Culture.cultures;
+	var key1 = "I3:" + culture.iso3.toLowerCase();
+	var _this4 = this2;
+	if(__map_reserved[key1] != null) {
+		_this4.setReserved(key1,culture);
+	} else {
+		_this4.h[key1] = culture;
+	}
+	return culture;
+};
+thx_culture_Culture.getByCode = function(code) {
+	var this1 = thx_culture_Culture.cultures;
+	var key = "C:" + code.toLowerCase();
+	var _this = this1;
+	if(__map_reserved[key] != null) {
+		return _this.getReserved(key);
+	} else {
+		return _this.h[key];
+	}
+};
+thx_culture_Culture.getByIso2 = function(iso2) {
+	var this1 = thx_culture_Culture.cultures;
+	var key = "I2:" + iso2.toLowerCase();
+	var _this = this1;
+	if(__map_reserved[key] != null) {
+		return _this.getReserved(key);
+	} else {
+		return _this.h[key];
+	}
+};
+thx_culture_Culture.getByIso3 = function(iso3) {
+	var this1 = thx_culture_Culture.cultures;
+	var key = "I3:" + iso3.toLowerCase();
+	var _this = this1;
+	if(__map_reserved[key] != null) {
+		return _this.getReserved(key);
+	} else {
+		return _this.h[key];
+	}
+};
+thx_culture_Culture.iterator = function() {
+	return HxOverrides.iter(thx_culture_Culture.list);
+};
+thx_culture_Culture.getCodeKey = function(key) {
+	return "C:" + key.toLowerCase();
+};
+thx_culture_Culture.getIso2Key = function(key) {
+	return "I2:" + key.toLowerCase();
+};
+thx_culture_Culture.getIso3Key = function(key) {
+	return "I3:" + key.toLowerCase();
+};
+thx_culture_Culture.prototype = {
+	code: null
+	,dateTime: null
+	,ietf: null
+	,isNeutral: null
+	,iso2: null
+	,iso3: null
+	,isRightToLeft: null
+	,lcid: null
+	,nameCalendar: null
+	,nameDisplayEnglish: null
+	,nameDisplayNative: null
+	,nameEnglish: null
+	,nameNative: null
+	,nameRegionEnglish: null
+	,nameRegionNative: null
+	,number: null
+	,separatorList: null
+	,win3: null
+	,toObject: function() {
+		return { code : this.code, dateTime : null == this.dateTime?null:this.dateTime.toObject(), ietf : this.ietf, isNeutral : this.isNeutral, iso2 : this.iso2, iso3 : this.iso3, isRightToLeft : this.isRightToLeft, lcid : this.lcid, nameCalendar : this.nameCalendar, nameEnglish : this.nameEnglish, nameNative : this.nameNative, nameRegionEnglish : this.nameRegionEnglish, nameRegionNative : this.nameRegionNative, number : null == this.number?null:this.number.toObject(), separatorList : this.separatorList, win3 : this.win3};
+	}
+	,get_nameDisplayEnglish: function() {
+		return this.nameEnglish + (null == this.nameRegionEnglish?"":" (" + this.nameRegionEnglish + ")");
+	}
+	,get_nameDisplayNative: function() {
+		return this.nameNative + (null == this.nameRegionNative?"":" (" + this.nameRegionNative + ")");
+	}
+	,toString: function() {
+		return this.nameEnglish + (null == this.nameRegionEnglish?"":" (" + this.nameRegionEnglish + ")");
+	}
+	,__class__: thx_culture_Culture
+};
+var thx_culture_Pattern = function() { };
+thx_culture_Pattern.__name__ = ["thx","culture","Pattern"];
 var thx_error_AbstractMethod = function(posInfo) {
 	thx_Error.call(this,"method " + posInfo.className + "." + posInfo.methodName + "() is abstract",null,posInfo);
 };
@@ -9885,6 +10176,1043 @@ thx_error_ErrorWrapper.prototype = $extend(thx_Error.prototype,{
 	innerError: null
 	,__class__: thx_error_ErrorWrapper
 });
+var thx_format_Format = function() { };
+thx_format_Format.__name__ = ["thx","format","Format"];
+thx_format_Format.get_defaultCulture = function() {
+	if(null != thx_format_Format.defaultCulture) {
+		return thx_format_Format.defaultCulture;
+	} else {
+		return thx_culture_Culture.invariant;
+	}
+};
+thx_format_Format.set_defaultCulture = function(culture) {
+	thx_format_Format.defaultCulture = culture;
+	return thx_format_Format.get_defaultCulture();
+};
+var thx_format_NumberFormat = function() { };
+thx_format_NumberFormat.__name__ = ["thx","format","NumberFormat"];
+thx_format_NumberFormat.binary = function(f,significantDigits,culture) {
+	if(significantDigits == null) {
+		significantDigits = 1;
+	}
+	var nf = thx_format_NumberFormat.numberFormat(culture);
+	if(isNaN(f)) {
+		return nf.symbolNaN;
+	}
+	if(!isFinite(f)) {
+		if(f < 0) {
+			return nf.symbolNegativeInfinity;
+		} else {
+			return nf.symbolPositiveInfinity;
+		}
+	}
+	if(significantDigits == 0 && f == 0) {
+		return "";
+	} else {
+		return StringTools.lpad(thx_format_NumberFormat.toBase(f | 0,2,culture),"0",significantDigits);
+	}
+};
+thx_format_NumberFormat.currency = function(f,precision,symbol,culture) {
+	var nf = thx_format_NumberFormat.numberFormat(culture);
+	if(isNaN(f)) {
+		return nf.symbolNaN;
+	}
+	if(!isFinite(f)) {
+		if(f < 0) {
+			return nf.symbolNegativeInfinity;
+		} else {
+			return nf.symbolPositiveInfinity;
+		}
+	}
+	var t = null == precision?null:precision;
+	var tmp = StringTools.replace(f < 0?thx_culture_Pattern.currencyNegatives[nf.patternNegativeCurrency]:thx_culture_Pattern.currencyPositives[nf.patternPositiveCurrency],"n",thx_format_NumberFormat.value(f,t != null?t:nf.decimalDigitsCurrency,nf.groupSizesCurrency,nf.separatorGroupCurrency,nf.separatorDecimalCurrency));
+	var t1 = null == symbol?null:symbol;
+	return StringTools.replace(tmp,"$",t1 != null?t1:nf.symbolCurrency);
+};
+thx_format_NumberFormat.customFormat = function(f,pattern,culture) {
+	var nf = thx_format_NumberFormat.numberFormat(culture);
+	if(isNaN(f)) {
+		return nf.symbolNaN;
+	}
+	if(!isFinite(f)) {
+		if(f < 0) {
+			return nf.symbolNegativeInfinity;
+		} else {
+			return nf.symbolPositiveInfinity;
+		}
+	}
+	var isCurrency = thx_format_NumberFormat.hasSymbols(pattern,"$");
+	var isPercent = !isCurrency && thx_format_NumberFormat.hasSymbols(pattern,"%‰");
+	var groups = thx_format_NumberFormat.splitPattern(pattern,";");
+	if(groups.length > 3) {
+		throw new js__$Boot_HaxeError("invalid number of sections in \"" + pattern + "\"");
+	}
+	if(f < 0) {
+		if(null != groups[1]) {
+			return thx_format_NumberFormat.customFormatF(-f,groups[1],nf,isCurrency,isPercent);
+		} else {
+			return thx_format_NumberFormat.customFormatF(-f,"-" + groups[0],nf,isCurrency,isPercent);
+		}
+	} else if(f > 0) {
+		return thx_format_NumberFormat.customFormatF(f,groups[0],nf,isCurrency,isPercent);
+	} else {
+		var t;
+		if(null == groups) {
+			t = null;
+		} else {
+			var _1 = groups[2];
+			if(null == _1) {
+				t = null;
+			} else {
+				t = _1;
+			}
+		}
+		return thx_format_NumberFormat.customFormatF(0,t != null?t:groups[0],nf,isCurrency,isPercent);
+	}
+};
+thx_format_NumberFormat.decimal = function(f,significantDigits,culture) {
+	if(significantDigits == null) {
+		significantDigits = 1;
+	}
+	var nf = thx_format_NumberFormat.numberFormat(culture);
+	if(isNaN(f)) {
+		return nf.symbolNaN;
+	}
+	if(!isFinite(f)) {
+		if(f < 0) {
+			return nf.symbolNegativeInfinity;
+		} else {
+			return nf.symbolPositiveInfinity;
+		}
+	}
+	var formatted = thx_format_NumberFormat.value(f,0,[0],"","");
+	return (f < 0?nf.signNegative:"") + StringTools.lpad(formatted,"0",significantDigits);
+};
+thx_format_NumberFormat.exponential = function(f,precision,digits,symbol,culture) {
+	if(symbol == null) {
+		symbol = "e";
+	}
+	if(digits == null) {
+		digits = 3;
+	}
+	if(precision == null) {
+		precision = 6;
+	}
+	var nf = thx_format_NumberFormat.numberFormat(culture);
+	if(isNaN(f)) {
+		return nf.symbolNaN;
+	}
+	if(!isFinite(f)) {
+		if(f < 0) {
+			return nf.symbolNegativeInfinity;
+		} else {
+			return nf.symbolPositiveInfinity;
+		}
+	}
+	var info = thx_format_NumberFormat.exponentialInfo(f);
+	var tmp = thx_format_NumberFormat.number(info.f,precision,culture) + symbol;
+	var v = info.e;
+	return tmp + (info.e < 0?nf.signNegative:nf.signPositive) + StringTools.lpad("" + (v < 0?-v:v),"0",digits);
+};
+thx_format_NumberFormat.fixed = function(f,precision,culture) {
+	var nf = thx_format_NumberFormat.numberFormat(culture);
+	if(isNaN(f)) {
+		return nf.symbolNaN;
+	}
+	if(!isFinite(f)) {
+		if(f < 0) {
+			return nf.symbolNegativeInfinity;
+		} else {
+			return nf.symbolPositiveInfinity;
+		}
+	}
+	var t = null == precision?null:precision;
+	return StringTools.replace(f < 0?thx_culture_Pattern.numberNegatives[nf.patternNegativeNumber]:"n","n",thx_format_NumberFormat.value(f,t != null?t:nf.decimalDigitsNumber,[0],"",nf.separatorDecimalNumber));
+};
+thx_format_NumberFormat.format = function(f,pattern,culture) {
+	var specifier = pattern.substring(0,1);
+	var param = thx_format_NumberFormat.paramOrNull(pattern.substring(1));
+	switch(specifier) {
+	case "%":
+		return thx_format_NumberFormat.printf(f,pattern,culture);
+	case "C":case "c":
+		return thx_format_NumberFormat.currency(f,param,null,culture);
+	case "E":
+		return thx_format_NumberFormat.exponential(f,param,null,null,culture);
+	case "G":
+		return thx_format_NumberFormat.general(f,param,culture);
+	case "P":case "p":
+		return thx_format_NumberFormat.percent(f,param,culture);
+	case "X":
+		return thx_format_NumberFormat.hex(f,param,culture).toUpperCase();
+	case "D":case "d":
+		return thx_format_NumberFormat.decimal(f,param,culture);
+	case "e":
+		return thx_format_NumberFormat.exponential(f,param,null,null,culture).toLowerCase();
+	case "F":case "f":
+		return thx_format_NumberFormat.fixed(f,param,culture);
+	case "g":
+		return thx_format_NumberFormat.general(f,param,culture).toLowerCase();
+	case "N":case "n":
+		return thx_format_NumberFormat.number(f,param,culture);
+	case "R":case "r":
+		return "" + f;
+	case "x":
+		return thx_format_NumberFormat.hex(f,param,culture);
+	default:
+		return thx_format_NumberFormat.customFormat(f,pattern,culture);
+	}
+};
+thx_format_NumberFormat.general = function(f,significantDigits,culture) {
+	var e = thx_format_NumberFormat.exponential(f,significantDigits,null,null,culture);
+	var f1 = thx_format_NumberFormat.fixed(f,significantDigits,culture);
+	if(e.length < f1.length) {
+		return e;
+	} else {
+		return f1;
+	}
+};
+thx_format_NumberFormat.hex = function(f,significantDigits,culture) {
+	if(significantDigits == null) {
+		significantDigits = 1;
+	}
+	var nf = thx_format_NumberFormat.numberFormat(culture);
+	if(isNaN(f)) {
+		return nf.symbolNaN;
+	}
+	if(!isFinite(f)) {
+		if(f < 0) {
+			return nf.symbolNegativeInfinity;
+		} else {
+			return nf.symbolPositiveInfinity;
+		}
+	}
+	if(significantDigits == 0 && f == 0) {
+		return "";
+	} else {
+		return StringTools.lpad(thx_format_NumberFormat.toBase(f | 0,16,culture),"0",significantDigits);
+	}
+};
+thx_format_NumberFormat.integer = function(f,culture) {
+	var nf = thx_format_NumberFormat.numberFormat(culture);
+	if(isNaN(f)) {
+		return nf.symbolNaN;
+	}
+	if(!isFinite(f)) {
+		if(f < 0) {
+			return nf.symbolNegativeInfinity;
+		} else {
+			return nf.symbolPositiveInfinity;
+		}
+	}
+	return thx_format_NumberFormat.number(f,0,culture);
+};
+thx_format_NumberFormat.number = function(f,precision,culture) {
+	var nf = thx_format_NumberFormat.numberFormat(culture);
+	if(isNaN(f)) {
+		return nf.symbolNaN;
+	}
+	if(!isFinite(f)) {
+		if(f < 0) {
+			return nf.symbolNegativeInfinity;
+		} else {
+			return nf.symbolPositiveInfinity;
+		}
+	}
+	var t = null == precision?null:precision;
+	return StringTools.replace(f < 0?thx_culture_Pattern.numberNegatives[nf.patternNegativeNumber]:"n","n",thx_format_NumberFormat.value(f,t != null?t:nf.decimalDigitsNumber,nf.groupSizesNumber,nf.separatorGroupNumber,nf.separatorDecimalNumber));
+};
+thx_format_NumberFormat.octal = function(f,significantDigits,culture) {
+	if(significantDigits == null) {
+		significantDigits = 1;
+	}
+	var nf = thx_format_NumberFormat.numberFormat(culture);
+	if(isNaN(f)) {
+		return nf.symbolNaN;
+	}
+	if(!isFinite(f)) {
+		if(f < 0) {
+			return nf.symbolNegativeInfinity;
+		} else {
+			return nf.symbolPositiveInfinity;
+		}
+	}
+	if(significantDigits == 0 && f == 0) {
+		return "";
+	} else {
+		return StringTools.lpad(thx_format_NumberFormat.toBase(f | 0,8,culture),"0",significantDigits);
+	}
+};
+thx_format_NumberFormat.percent = function(f,decimals,culture) {
+	var nf = thx_format_NumberFormat.numberFormat(culture);
+	if(isNaN(f)) {
+		return nf.symbolNaN;
+	}
+	if(!isFinite(f)) {
+		if(f < 0) {
+			return nf.symbolNegativeInfinity;
+		} else {
+			return nf.symbolPositiveInfinity;
+		}
+	}
+	var t = null == decimals?null:decimals;
+	return thx_format_NumberFormat.unit(f * 100,t != null?t:nf.decimalDigitsPercent,nf.symbolPercent,culture);
+};
+thx_format_NumberFormat.permille = function(f,decimals,culture) {
+	var nf = thx_format_NumberFormat.numberFormat(culture);
+	if(isNaN(f)) {
+		return nf.symbolNaN;
+	}
+	if(!isFinite(f)) {
+		if(f < 0) {
+			return nf.symbolNegativeInfinity;
+		} else {
+			return nf.symbolPositiveInfinity;
+		}
+	}
+	var t = null == decimals?null:decimals;
+	return thx_format_NumberFormat.unit(f * 1000,t != null?t:nf.decimalDigitsPercent,nf.symbolPermille,culture);
+};
+thx_format_NumberFormat.printf = function(f,pattern,culture) {
+	if(!StringTools.startsWith(pattern,"%")) {
+		throw new js__$Boot_HaxeError("invalid printf term \"" + pattern + "\"");
+	}
+	var specifier = pattern.substring(pattern.length - 1);
+	var p = pattern.substring(1,pattern.length - 1).split(".");
+	var precision = null == p[1] || "" == p[1]?null:Std.parseInt(p[1]);
+	var justifyRight = true;
+	var negativeSignOnly = true;
+	var emptySpaceForSign = false;
+	var prefix = false;
+	var padding = " ";
+	var width = 0;
+	var flags = p[0];
+	while(flags.length > 0) {
+		var _g = flags.substring(0,1);
+		switch(_g) {
+		case " ":
+			emptySpaceForSign = true;
+			break;
+		case "#":
+			prefix = true;
+			break;
+		case "+":
+			negativeSignOnly = false;
+			break;
+		case "-":
+			justifyRight = false;
+			break;
+		case "0":
+			padding = "0";
+			break;
+		default:
+			if(thx_Ints.canParse(_g)) {
+				width = thx_Ints.parse(flags);
+				flags = "";
+				continue;
+			} else {
+				throw new js__$Boot_HaxeError("invalid flags " + flags);
+			}
+		}
+		flags = flags.substring(1);
+	}
+	var decorate = function(s,f1,p1,ns,ps) {
+		if(prefix) {
+			s = p1 + s;
+		}
+		if(f1 < 0) {
+			s = ns + s;
+		} else if(!negativeSignOnly) {
+			s = ps + s;
+		} else if(emptySpaceForSign) {
+			s = " " + s;
+		}
+		if(justifyRight) {
+			return StringTools.lpad(s,padding,width);
+		} else {
+			return StringTools.rpad(s,padding,width);
+		}
+	};
+	var nf = thx_format_NumberFormat.numberFormat(culture);
+	switch(specifier) {
+	case "%":
+		return decorate(thx_format_NumberFormat.fixed(Math.abs(f),precision,culture) + "%",f,"",nf.signNegative,nf.signPositive);
+	case "B":
+		var v = f | 0;
+		return decorate((v < 0?-v:v).toString(2),1,"B","","");
+	case "E":
+		return decorate(thx_format_NumberFormat.exponential(Math.abs(f),precision,0,"E",culture),f,"",nf.signNegative,nf.signPositive);
+	case "G":
+		var e = thx_format_NumberFormat.printf(f,"E",culture);
+		var f2 = thx_format_NumberFormat.printf(f,"f",culture);
+		if(e.length < f2.length) {
+			return e;
+		} else {
+			return f2;
+		}
+		break;
+	case "X":
+		return decorate(thx_format_NumberFormat.hex(Math.abs(f),precision,culture),f,"0X",nf.signNegative,nf.signPositive);
+	case "b":
+		var v1 = f | 0;
+		return decorate((v1 < 0?-v1:v1).toString(2),1,"b","","");
+	case "c":
+		var v2 = f | 0;
+		return decorate(String.fromCharCode(v2 < 0?-v2:v2),1,"","","");
+	case "d":case "i":
+		var _0 = precision;
+		var t = null == _0?null:_0;
+		return decorate(StringTools.lpad("" + Math.round(f),"0",t != null?t:0),f,"",nf.signNegative,nf.signPositive);
+	case "e":
+		return decorate(thx_format_NumberFormat.exponential(Math.abs(f),precision,0,"e",culture),f,"",nf.signNegative,nf.signPositive);
+	case "f":
+		return decorate(thx_format_NumberFormat.fixed(Math.abs(f),precision,culture),f,"",nf.signNegative,nf.signPositive);
+	case "g":
+		var e1 = thx_format_NumberFormat.printf(f,"e",culture);
+		var f3 = thx_format_NumberFormat.printf(f,"f",culture);
+		if(e1.length < f3.length) {
+			return e1;
+		} else {
+			return f3;
+		}
+		break;
+	case "o":
+		return decorate(thx_format_NumberFormat.octal(Math.abs(f),precision,culture),f,"0",nf.signNegative,nf.signPositive);
+	case "u":
+		return thx_format_NumberFormat.printf(Math.abs(f),"d",culture);
+	case "x":
+		return decorate(thx_format_NumberFormat.hex(Math.abs(f),precision,culture),f,"0x",nf.signNegative,nf.signPositive);
+	default:
+		throw new js__$Boot_HaxeError("invalid pattern \"" + pattern + "\"");
+	}
+};
+thx_format_NumberFormat.toBase = function(value,base,culture) {
+	var nf = thx_format_NumberFormat.numberFormat(culture);
+	return StringTools.replace(value.toString(base),"-",nf.signNegative);
+};
+thx_format_NumberFormat.unit = function(f,decimals,unitSymbol,culture) {
+	var nf = thx_format_NumberFormat.numberFormat(culture);
+	if(isNaN(f)) {
+		return nf.symbolNaN;
+	}
+	if(!isFinite(f)) {
+		if(f < 0) {
+			return nf.symbolNegativeInfinity;
+		} else {
+			return nf.symbolPositiveInfinity;
+		}
+	}
+	return StringTools.replace(StringTools.replace(f < 0?thx_culture_Pattern.percentNegatives[nf.patternNegativePercent]:thx_culture_Pattern.percentPositives[nf.patternPositivePercent],"n",thx_format_NumberFormat.value(f,decimals,nf.groupSizesPercent,nf.separatorGroupPercent,nf.separatorDecimalPercent)),"%",unitSymbol);
+};
+thx_format_NumberFormat.countSymbols = function(pattern,symbols) {
+	var i = 0;
+	var quote = 0;
+	var count = 0;
+	while(i < pattern.length) {
+		var _g = pattern.substring(i,i + 1);
+		switch(_g) {
+		case "\"":
+			switch(quote) {
+			case 0:
+				quote = 2;
+				break;
+			case 2:
+				quote = 0;
+				break;
+			default:
+			}
+			break;
+		case "'":
+			switch(quote) {
+			case 0:
+				quote = 1;
+				break;
+			case 1:
+				quote = 0;
+				break;
+			default:
+			}
+			break;
+		case "\\":
+			++i;
+			break;
+		default:
+			if(quote == 0) {
+				if(symbols.indexOf(_g) >= 0) {
+					++count;
+				}
+			}
+		}
+		++i;
+	}
+	return count;
+};
+thx_format_NumberFormat.customFormatDecimalFraction = function(d,pattern,nf) {
+	var buf = "";
+	var i = 0;
+	var quote = 0;
+	var p = d.split("");
+	while(i < pattern.length) {
+		var _g = pattern.substring(i,i + 1);
+		switch(_g) {
+		case "\"":
+			switch(quote) {
+			case 0:
+				quote = 2;
+				break;
+			case 1:
+				buf += _g;
+				break;
+			case 2:
+				quote = 0;
+				break;
+			default:
+				buf += _g;
+			}
+			break;
+		case "#":
+			switch(quote) {
+			case 0:
+				buf += p.length == 0?"":p.shift();
+				break;
+			case 1:case 2:
+				buf += _g;
+				break;
+			default:
+				buf += _g;
+			}
+			break;
+		case "$":
+			switch(quote) {
+			case 0:
+				buf += nf.symbolCurrency;
+				break;
+			case 1:case 2:
+				buf += _g;
+				break;
+			default:
+				buf += _g;
+			}
+			break;
+		case "%":
+			switch(quote) {
+			case 0:
+				buf += nf.symbolPercent;
+				break;
+			case 1:case 2:
+				buf += _g;
+				break;
+			default:
+				buf += _g;
+			}
+			break;
+		case "'":
+			switch(quote) {
+			case 0:
+				quote = 1;
+				break;
+			case 1:
+				quote = 0;
+				break;
+			case 2:
+				buf += _g;
+				break;
+			default:
+				buf += _g;
+			}
+			break;
+		case "0":
+			switch(quote) {
+			case 0:
+				buf += p.length == 0?"0":p.shift();
+				break;
+			case 1:case 2:
+				buf += _g;
+				break;
+			default:
+				buf += _g;
+			}
+			break;
+		case "\\":
+			++i;
+			buf += pattern.substring(i,i + 1);
+			break;
+		case "‰":
+			switch(quote) {
+			case 0:
+				buf += nf.symbolPermille;
+				break;
+			case 1:case 2:
+				buf += _g;
+				break;
+			default:
+				buf += _g;
+			}
+			break;
+		default:
+			switch(quote) {
+			case 1:case 2:
+				buf += _g;
+				break;
+			default:
+				buf += _g;
+			}
+		}
+		++i;
+	}
+	return buf;
+};
+thx_format_NumberFormat.customFormatF = function(f,pattern,nf,isCurrency,isPercent) {
+	if(isPercent) {
+		f *= thx_format_NumberFormat.hasSymbols(pattern,"‰")?1000:100;
+	}
+	var exp = thx_format_NumberFormat.splitPattern(pattern,"eE");
+	if(exp.length > 1) {
+		var info = thx_format_NumberFormat.exponentialInfo(f);
+		var symbol = pattern.substring(exp[0].length,exp[0].length + 1);
+		var forceSign = StringTools.startsWith(exp[1],"+");
+		if(forceSign || StringTools.startsWith(exp[1],"-")) {
+			exp[1] = exp[1].substring(1);
+		}
+		return thx_format_NumberFormat.customIntegerAndFraction(info.f,exp[0],nf,isCurrency,isPercent) + symbol + (info.e < 0?nf.signNegative:forceSign?nf.signPositive:"") + thx_format_NumberFormat.customFormatInteger("" + Math.abs(info.e),exp[1],nf,isCurrency,isPercent);
+	} else {
+		return thx_format_NumberFormat.customIntegerAndFraction(f,pattern,nf,isCurrency,isPercent);
+	}
+};
+thx_format_NumberFormat.customFormatInteger = function(v,pattern,nf,isCurrency,isPercent) {
+	var buf = [];
+	var i = 0;
+	var quote = 0;
+	var p = v.split("");
+	var lbuf = "";
+	var first = true;
+	var useGroups = false;
+	var zeroes = 0;
+	while(i < pattern.length) {
+		var _g = pattern.substring(i,i + 1);
+		switch(_g) {
+		case "\"":
+			switch(quote) {
+			case 0:
+				quote = 2;
+				break;
+			case 1:
+				lbuf += _g;
+				break;
+			case 2:
+				quote = 0;
+				buf.push(thx_format__$NumberFormat_CustomFormat.Literal(lbuf));
+				lbuf = "";
+				break;
+			default:
+				buf.push(thx_format__$NumberFormat_CustomFormat.Literal(_g));
+			}
+			break;
+		case "#":
+			switch(quote) {
+			case 0:
+				buf.push(thx_format__$NumberFormat_CustomFormat.Hash(first));
+				first = false;
+				break;
+			case 1:case 2:
+				lbuf += _g;
+				break;
+			default:
+				buf.push(thx_format__$NumberFormat_CustomFormat.Literal(_g));
+			}
+			break;
+		case "$":
+			switch(quote) {
+			case 0:
+				buf.push(thx_format__$NumberFormat_CustomFormat.Literal(nf.symbolCurrency));
+				break;
+			case 1:case 2:
+				lbuf += _g;
+				break;
+			default:
+				buf.push(thx_format__$NumberFormat_CustomFormat.Literal(_g));
+			}
+			break;
+		case "%":
+			switch(quote) {
+			case 0:
+				buf.push(thx_format__$NumberFormat_CustomFormat.Literal(nf.symbolPercent));
+				break;
+			case 1:case 2:
+				lbuf += _g;
+				break;
+			default:
+				buf.push(thx_format__$NumberFormat_CustomFormat.Literal(_g));
+			}
+			break;
+		case "'":
+			switch(quote) {
+			case 0:
+				quote = 1;
+				break;
+			case 1:
+				quote = 0;
+				buf.push(thx_format__$NumberFormat_CustomFormat.Literal(lbuf));
+				lbuf = "";
+				break;
+			case 2:
+				lbuf += _g;
+				break;
+			default:
+				buf.push(thx_format__$NumberFormat_CustomFormat.Literal(_g));
+			}
+			break;
+		case ",":
+			switch(quote) {
+			case 0:
+				useGroups = true;
+				break;
+			case 1:case 2:
+				lbuf += _g;
+				break;
+			default:
+				buf.push(thx_format__$NumberFormat_CustomFormat.Literal(_g));
+			}
+			break;
+		case "0":
+			switch(quote) {
+			case 0:
+				buf.push(thx_format__$NumberFormat_CustomFormat.Zero(first));
+				first = false;
+				++zeroes;
+				break;
+			case 1:case 2:
+				lbuf += _g;
+				break;
+			default:
+				buf.push(thx_format__$NumberFormat_CustomFormat.Literal(_g));
+			}
+			break;
+		case "\\":
+			++i;
+			buf.push(thx_format__$NumberFormat_CustomFormat.Literal(pattern.substring(i,i + 1)));
+			break;
+		case "‰":
+			switch(quote) {
+			case 0:
+				buf.push(thx_format__$NumberFormat_CustomFormat.Literal(nf.symbolPermille));
+				break;
+			case 1:case 2:
+				lbuf += _g;
+				break;
+			default:
+				buf.push(thx_format__$NumberFormat_CustomFormat.Literal(_g));
+			}
+			break;
+		default:
+			switch(quote) {
+			case 1:case 2:
+				lbuf += _g;
+				break;
+			default:
+				buf.push(thx_format__$NumberFormat_CustomFormat.Literal(_g));
+			}
+		}
+		++i;
+	}
+	if(lbuf.length > 0) {
+		buf.push(thx_format__$NumberFormat_CustomFormat.Literal(lbuf));
+	}
+	var _g1 = p.length;
+	var _g2 = zeroes;
+	while(_g1 < _g2) {
+		++_g1;
+		p.unshift("0");
+	}
+	if(useGroups) {
+		i = p.length - 1;
+		var groups = isCurrency?nf.groupSizesCurrency.slice():isPercent?nf.groupSizesPercent.slice():nf.groupSizesNumber.slice();
+		var group = groups.shift();
+		var pos = 0;
+		while(i >= 0) {
+			if(group == 0) {
+				break;
+			}
+			if(pos == group) {
+				p[i] += isCurrency?nf.separatorGroupCurrency:isPercent?nf.separatorGroupPercent:nf.separatorGroupNumber;
+				pos = 0;
+				if(groups.length > 0) {
+					group = groups.shift();
+				}
+			} else {
+				++pos;
+				--i;
+			}
+		}
+	}
+	buf.reverse();
+	var r = buf.map(function(_) {
+		switch(_[1]) {
+		case 0:
+			return _[2];
+		case 1:
+			if(p.length == 0) {
+				return "";
+			} else if(_[2]) {
+				return p.join("");
+			} else {
+				return p.pop();
+			}
+			break;
+		case 2:
+			if(_[2]) {
+				return p.join("");
+			} else {
+				return p.pop();
+			}
+			break;
+		}
+	});
+	r.reverse();
+	return r.join("");
+};
+thx_format_NumberFormat.customIntegerAndFraction = function(f,pattern,nf,isCurrency,isPercent) {
+	var p = thx_format_NumberFormat.splitPattern(pattern,".");
+	f /= Math.pow(1000,p[0].length - (p[0] = thx_Strings.trimCharsRight(p[0],",")).length);
+	if(p.length == 1) {
+		return thx_format_NumberFormat.customFormatInteger("" + Math.round(f),p[0],nf,isCurrency,isPercent);
+	} else {
+		f = thx_Floats.roundTo(f,thx_format_NumberFormat.countSymbols(p[1],"#0"));
+		var np = thx_format_NumberFormat.splitOnDecimalSeparator(f);
+		var tmp = thx_format_NumberFormat.customFormatInteger(np[0],p[0],nf,isCurrency,isPercent);
+		var t;
+		if(null == np) {
+			t = null;
+		} else {
+			var _1 = np[1];
+			if(null == _1) {
+				t = null;
+			} else {
+				t = _1;
+			}
+		}
+		return tmp + (isCurrency?nf.separatorDecimalCurrency:isPercent?nf.separatorDecimalPercent:nf.separatorDecimalNumber) + thx_format_NumberFormat.customFormatDecimalFraction(t != null?t:"0",p[1],nf);
+	}
+};
+thx_format_NumberFormat.exponentialInfo = function(f) {
+	var s = ("" + Math.abs(f)).toLowerCase();
+	var pose = s.indexOf("e");
+	var p;
+	var e;
+	if(pose > 0) {
+		p = s.substring(0,pose).split(".");
+		e = thx_Ints.parse(s.substring(pose + 1));
+	} else {
+		p = s.split(".").concat([""]);
+		e = 0;
+		if(p[0].length > 1) {
+			e = p[0].length - 1;
+			p[1] = p[0].substring(1) + p[1];
+			p[0] = p[0].substring(0,1);
+		} else if(p[0] == "0") {
+			e = -(1 + p[1].length - thx_Strings.trimCharsLeft(p[1],"0").length);
+			p[1] = p[1].substring(-e - 1);
+			p[0] = p[1].substring(0,1);
+			p[1] = p[1].substring(1);
+		}
+	}
+	return { e : e, f : (f < 0?-1:1) * parseFloat(p.slice(0,2).join("."))};
+};
+thx_format_NumberFormat.hasSymbols = function(pattern,symbols) {
+	var i = 0;
+	var quote = 0;
+	while(i < pattern.length) {
+		var _g = pattern.substring(i,i + 1);
+		switch(_g) {
+		case "\"":
+			switch(quote) {
+			case 0:
+				quote = 2;
+				break;
+			case 2:
+				quote = 0;
+				break;
+			default:
+			}
+			break;
+		case "'":
+			switch(quote) {
+			case 0:
+				quote = 1;
+				break;
+			case 1:
+				quote = 0;
+				break;
+			default:
+			}
+			break;
+		case "\\":
+			++i;
+			break;
+		default:
+			if(quote == 0) {
+				if(symbols.indexOf(_g) >= 0) {
+					return true;
+				}
+			}
+		}
+		++i;
+	}
+	return false;
+};
+thx_format_NumberFormat.intPart = function(s,groupSizes,groupSeparator) {
+	var buf = [];
+	var sizes = groupSizes.slice();
+	var size = sizes.shift();
+	while(s.length > 0) if(size == 0) {
+		buf.unshift(s);
+		s = "";
+	} else if(s.length > size) {
+		buf.unshift(s.substring(s.length - size));
+		s = s.substring(0,s.length - size);
+		if(sizes.length > 0) {
+			size = sizes.shift();
+		}
+	} else {
+		buf.unshift(s);
+		s = "";
+	}
+	return buf.join(groupSeparator);
+};
+thx_format_NumberFormat.numberFormat = function(culture) {
+	if(null != culture && null != culture.number) {
+		return culture.number;
+	} else {
+		return thx_format_Format.get_defaultCulture().number;
+	}
+};
+thx_format_NumberFormat.pad = function(s,len,round) {
+	var _0 = s;
+	var t = null == _0?null:_0;
+	if(t != null) {
+		s = t;
+	} else {
+		s = "";
+	}
+	if(len > 0 && s.length > len) {
+		if(round) {
+			return s.substring(0,len - 1) + (Std.parseInt(s.substring(len - 1,len)) + (Std.parseInt(s.substring(len,len + 1)) >= 5?1:0));
+		} else {
+			return s.substring(0,len);
+		}
+	} else {
+		return StringTools.rpad(s,"0",len);
+	}
+};
+thx_format_NumberFormat.paramOrNull = function(param) {
+	if(param.length == 0) {
+		return null;
+	} else {
+		return Std.parseInt(param);
+	}
+};
+thx_format_NumberFormat.splitOnDecimalSeparator = function(f) {
+	var p = ("" + f).split(".");
+	var i = p[0];
+	var _0 = p;
+	var t;
+	if(null == _0) {
+		t = null;
+	} else {
+		var _1 = _0[1];
+		if(null == _1) {
+			t = null;
+		} else {
+			t = _1;
+		}
+	}
+	var d = (t != null?t:"").toLowerCase();
+	if(d.indexOf("e") >= 0) {
+		p = d.split("e");
+		d = p[0];
+		var e = thx_Ints.parse(p[1]);
+		if(e < 0) {
+			d = StringTools.rpad("","0",-e - 1) + i + d;
+			i = "0";
+		} else {
+			var s = i + d;
+			d = s.substring(e + 1);
+			i = thx_format_NumberFormat.pad(s,e + 1,false);
+		}
+	}
+	if(d.length > 0) {
+		return [i,d];
+	} else {
+		return [i];
+	}
+};
+thx_format_NumberFormat.splitPattern = function(pattern,separator) {
+	var pos = [];
+	var i = 0;
+	var quote = 0;
+	while(i < pattern.length) {
+		var _g = pattern.substring(i,i + 1);
+		switch(_g) {
+		case "\"":
+			switch(quote) {
+			case 0:
+				quote = 2;
+				break;
+			case 2:
+				quote = 0;
+				break;
+			default:
+			}
+			break;
+		case "'":
+			switch(quote) {
+			case 0:
+				quote = 1;
+				break;
+			case 1:
+				quote = 0;
+				break;
+			default:
+			}
+			break;
+		case "\\":
+			++i;
+			break;
+		default:
+			if(quote == 0) {
+				if(separator.indexOf(_g) >= 0) {
+					pos.push(i);
+				}
+			}
+		}
+		++i;
+	}
+	var buf = [];
+	var prev = 0;
+	var _g1 = 0;
+	while(_g1 < pos.length) {
+		var p = pos[_g1];
+		++_g1;
+		buf.push(pattern.substring(prev,p));
+		prev = p + 1;
+	}
+	buf.push(pattern.substring(prev));
+	return buf;
+};
+thx_format_NumberFormat.value = function(f,precision,groupSizes,groupSeparator,decimalSeparator) {
+	f = Math.abs(thx_Floats.roundTo(f,precision));
+	var p = thx_format_NumberFormat.splitOnDecimalSeparator(f);
+	var buf = [];
+	buf.push(thx_format_NumberFormat.intPart(p[0],groupSizes,groupSeparator));
+	if(precision > 0) {
+		buf.push(thx_format_NumberFormat.pad(p[1],precision,true));
+	}
+	return buf.join(decimalSeparator);
+};
+var thx_format__$NumberFormat_CustomFormat = { __ename__ : ["thx","format","_NumberFormat","CustomFormat"], __constructs__ : ["Literal","Hash","Zero"] };
+thx_format__$NumberFormat_CustomFormat.Literal = function(s) { var $x = ["Literal",0,s]; $x.__enum__ = thx_format__$NumberFormat_CustomFormat; return $x; };
+thx_format__$NumberFormat_CustomFormat.Hash = function(first) { var $x = ["Hash",1,first]; $x.__enum__ = thx_format__$NumberFormat_CustomFormat; return $x; };
+thx_format__$NumberFormat_CustomFormat.Zero = function(first) { var $x = ["Zero",2,first]; $x.__enum__ = thx_format__$NumberFormat_CustomFormat; return $x; };
 var thx_fp__$Map_Map_$Impl_$ = {};
 thx_fp__$Map_Map_$Impl_$.__name__ = ["thx","fp","_Map","Map_Impl_"];
 thx_fp__$Map_Map_$Impl_$.empty = function() {
@@ -10414,6 +11742,98 @@ tiki_NavLink.prototype = $extend(doom_html_Component.prototype,{
 	}
 	,__class__: tiki_NavLink
 });
+var tiki_TkComponent = function(props,children) {
+	doom_html_Component.call(this,props,children);
+};
+tiki_TkComponent.__name__ = ["tiki","TkComponent"];
+tiki_TkComponent.__super__ = doom_html_Component;
+tiki_TkComponent.prototype = $extend(doom_html_Component.prototype,{
+	classes: function() {
+		return "tiki_tk-component";
+	}
+	,__class__: tiki_TkComponent
+});
+var tiki_Table = function(props,children) {
+	this.columns = [];
+	tiki_TkComponent.call(this,props,children);
+};
+tiki_Table.__name__ = ["tiki","Table"];
+tiki_Table.__super__ = tiki_TkComponent;
+tiki_Table.prototype = $extend(tiki_TkComponent.prototype,{
+	columns: null
+	,addColumn: function(cell) {
+		var col = new tiki_Column(this,cell);
+		this.columns.push(col);
+		return col;
+	}
+	,render: function() {
+		var _gthis = this;
+		return doom_core__$VNode_VNode_$Impl_$.el("table",null,doom_core__$VNodes_VNodes_$Impl_$.children([doom_core__$VNode_VNode_$Impl_$.el("thead",null,doom_core__$VNodes_VNodes_$Impl_$.children([doom_core__$VNode_VNode_$Impl_$.el("tr",null,doom_core__$VNodes_VNodes_$Impl_$.children(this.columns.map(function(column) {
+			var _g = column.headerCell;
+			switch(_g[1]) {
+			case 0:
+				var _g1 = new haxe_ds_StringMap();
+				var value = doom_core__$AttributeValue_AttributeValue_$Impl_$.fromString("align-center");
+				if(__map_reserved["class"] != null) {
+					_g1.setReserved("class",value);
+				} else {
+					_g1.h["class"] = value;
+				}
+				return doom_core__$VNode_VNode_$Impl_$.el("th",_g1,_g[2]);
+			case 1:
+				return doom_core__$VNode_VNode_$Impl_$.el("th",null,null);
+			}
+		})))])),doom_core__$VNode_VNode_$Impl_$.el("tbody",null,doom_core__$VNodes_VNodes_$Impl_$.children(this.props.map(function(row) {
+			return doom_core__$VNode_VNode_$Impl_$.el("tr",null,doom_core__$VNodes_VNodes_$Impl_$.children(_gthis.columns.map(function(column1) {
+				return doom_core__$VNode_VNode_$Impl_$.el("td",null,column1.cell(row));
+			})));
+		})))]));
+	}
+	,classes: function() {
+		return "tiki_table tiki_tk-component";
+	}
+	,__class__: tiki_Table
+});
+var tiki_Column = function(table,cell) {
+	this.table = table;
+	this.cell = cell;
+	this.headerCell = haxe_ds_Option.None;
+	this.align = tiki_CellAlign.Left;
+};
+tiki_Column.__name__ = ["tiki","Column"];
+tiki_Column.prototype = {
+	table: null
+	,cell: null
+	,headerCell: null
+	,align: null
+	,addColumn: function(cell) {
+		return this.table.addColumn(cell);
+	}
+	,header: function(cell) {
+		this.headerCell = haxe_ds_Option.Some(cell);
+		return this;
+	}
+	,left: function() {
+		this.align = tiki_CellAlign.Left;
+		return this;
+	}
+	,center: function() {
+		this.align = tiki_CellAlign.Center;
+		return this;
+	}
+	,right: function() {
+		this.align = tiki_CellAlign.Right;
+		return this;
+	}
+	,__class__: tiki_Column
+};
+var tiki_CellAlign = { __ename__ : ["tiki","CellAlign"], __constructs__ : ["Left","Right","Center"] };
+tiki_CellAlign.Left = ["Left",0];
+tiki_CellAlign.Left.__enum__ = tiki_CellAlign;
+tiki_CellAlign.Right = ["Right",1];
+tiki_CellAlign.Right.__enum__ = tiki_CellAlign;
+tiki_CellAlign.Center = ["Center",2];
+tiki_CellAlign.Center.__enum__ = tiki_CellAlign;
 var tiki_Element = function(tag,children) {
 	tiki_TkElement.call(this,tag,children);
 };
@@ -10442,6 +11862,8 @@ Bool.__ename__ = ["Bool"];
 var Class = { __name__ : ["Class"]};
 var Enum = { };
 var __map_reserved = {}
+thx_culture_Culture.cultures = new haxe_ds_StringMap();
+thx_culture_Culture.list = [];
 DateTools.DAYS_OF_MONTH = [31,28,31,30,31,30,31,31,30,31,30,31];
 doom_html_Render.defaultNamespaces = (function($this) {
 	var $r;
@@ -11055,6 +12477,15 @@ thx_Strings.STRIPTAGS = new EReg("</?[a-z]+[^>]*>","gi");
 thx_Strings.WSG = new EReg("[ \t\r\n]+","g");
 thx_Strings.SPLIT_LINES = new EReg("\r\n|\n\r|\n|\r","g");
 thx_Strings.CANONICALIZE_LINES = new EReg("\r\n|\n\r|\r","g");
+thx_culture_DateFormatInfo.invariant = new thx_culture_DateFormatInfo(0,"FirstDay","AM","PM",0,"Sunday","Gregorian",null,["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],["Su","Mo","Tu","We","Th","Fr","Sa"],["January","February","March","April","May","June","July","August","September","October","November","December",""],["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec",""],["January","February","March","April","May","June","July","August","September","October","November","December",""],["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec",""],"dddd, dd MMMM yyyy","MM/dd/yyyy","dddd, dd MMMM yyyy HH:mm:ss","yyyy'-'MM'-'dd'T'HH':'mm':'ss","MMMM dd","ddd, dd MMM yyyy HH':'mm':'ss 'GMT'","HH:mm:ss","HH:mm","yyyy'-'MM'-'dd HH':'mm':'ss'Z'","yyyy MMMM","/",":");
+thx_culture_NumberFormatInfo.invariant = new thx_culture_NumberFormatInfo(2,2,2,[3],[3],[3],0,1,0,0,0,".",".",".",",",",",",","-","+","¤","NaN","-Infinity","%","‰","Infinity");
+thx_culture_Culture.invariant = new thx_culture_Culture("",thx_culture_DateFormatInfo.invariant,"",false,"iv","IVL",false,127,"Gregorian","Invariant Language","Invariant Language","Invariant Country","Invariant Country",thx_culture_NumberFormatInfo.invariant,",","IVL");
+thx_culture_Pattern.currencyNegatives = ["($n)","-$n","$-n","$n-","(n$)","-n$","n-$","n$-","-n $","-$ n","n $-","$ n-","$ -n","n- $","($ n)","(n $)"];
+thx_culture_Pattern.currencyPositives = ["$n","n$","$ n","n $"];
+thx_culture_Pattern.numberNegatives = ["(n)","-n","- n","n-","n -"];
+thx_culture_Pattern.percentNegatives = ["-n %","-n%","-%n","%-n","%n-","n-%","n%-","-%n","n %-","% n-","% -n","n- %"];
+thx_culture_Pattern.percentPositives = ["n %","n%","%n","% n"];
+thx_format_NumberFormat.BASE = "0123456789abcdefghijklmnopqrstuvwxyz";
 thx_fp__$Map_Map_$Impl_$.delta = 5;
 thx_fp__$Map_Map_$Impl_$.ratio = 2;
 Main.main();
