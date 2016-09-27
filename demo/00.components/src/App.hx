@@ -75,6 +75,15 @@ class App extends doom.html.Component<{}> {
         message(["Success message"]).style(Success),
         message(["Warning message"]).style(Warning),
         message(["Danger message with dismissible"]).style(Danger).dismissible(function() console.log("message closed"))
+      ]),
+      demoSection("Menu", [
+        menu([
+          menuLabel("Heading"),
+          menuAction("Open...", function () {}),
+          menuAction("Save As...").disabled(),
+          menuSeparator(),
+          menuAction("Exit", function () {js.Browser.window.close(); })
+        ])
       ])
     ]);
   }
