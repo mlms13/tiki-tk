@@ -1745,6 +1745,41 @@ doom_html_Element.prototype = {
 	,addClass: function(c) {
 		return this.appendStringAttribute("class",c);
 	}
+	,removeClass: function(c) {
+		return this.filterClass(function(cls) {
+			return cls != c;
+		});
+	}
+	,filterClass: function(f) {
+		var _g = this.attributes.get("class");
+		if(_g == null) {
+			return this;
+		} else {
+			switch(_g[1]) {
+			case 0:case 2:
+				return this;
+			case 1:
+				var classes = _g[2];
+				var nclasses = classes.split(" ").filter(f).join(" ");
+				if(nclasses != classes) {
+					return this;
+				} else {
+					return this.setStringAttribute("class",nclasses);
+				}
+				break;
+			}
+		}
+	}
+	,addNSClass: function(ns,c) {
+		this.removeNSClass(ns);
+		return this.addClass("" + ns + "-" + c);
+	}
+	,removeNSClass: function(ns) {
+		ns = "" + ns + "-";
+		return this.filterClass(function(cls) {
+			return !StringTools.startsWith(cls,ns);
+		});
+	}
 	,disabled: function() {
 		return this.enableAttribute("disabled");
 	}
@@ -10145,10 +10180,7 @@ var tiki_TkElement = function(tag,children) {
 tiki_TkElement.__name__ = ["tiki","TkElement"];
 tiki_TkElement.__super__ = doom_html_Element;
 tiki_TkElement.prototype = $extend(doom_html_Element.prototype,{
-	active: function() {
-		return this.addClass("active");
-	}
-	,classes: function() {
+	classes: function() {
 		return "";
 	}
 	,__class__: tiki_TkElement
@@ -10222,13 +10254,6 @@ var tiki_Message = function(children) {
 	this.setStringAttribute("role","message");
 };
 tiki_Message.__name__ = ["tiki","Message"];
-tiki_Message.close = function(refClass,fn) {
-	return function(e) {
-		e.preventDefault();
-		dots_Dom.remove(dots_Query.closest(e.target,refClass));
-		fn(e);
-	};
-};
 tiki_Message.__super__ = tiki_TkElement;
 tiki_Message.prototype = $extend(tiki_TkElement.prototype,{
 	style: function(st) {
@@ -10257,7 +10282,7 @@ tiki_Message.prototype = $extend(tiki_TkElement.prototype,{
 		} else {
 			_g.h["aria-hidden"] = value;
 		}
-		return this.prepend(doom_core__$VNodes_VNodes_$Impl_$.children([new tiki_Button(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core__$VNode_VNode_$Impl_$.el("span",_g,doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("×")]))])).addClass("close").ariaLabel("Close").click(tiki_Message.close(this.selector(),fn)).render()]));
+		return this.prepend(doom_core__$VNodes_VNodes_$Impl_$.children([new tiki_Button(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core__$VNode_VNode_$Impl_$.el("span",_g,doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("×")]))])).addClass("close").ariaLabel("Close").click(fn).render()]));
 	}
 	,classes: function() {
 		return "tiki_message";

@@ -28,18 +28,9 @@ class Message extends TkElement<Message> {
       Tiki.button(span(["aria-hidden" => true], "×"))
         .addClass("close")
         .ariaLabel("Close")
-        .click(close(selector(), fn))
+        .click(fn)
         .render()
     );
-
-  static function close(refClass: String, fn: EventHandler) {
-    return function(e: Event) {
-      e.preventDefault();
-      var message = Query.closest(cast e.target, refClass);
-      Dom.remove(message);
-      fn(e);
-    };
-  }
 }
 
 enum MessageStyle {
