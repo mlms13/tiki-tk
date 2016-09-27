@@ -1635,6 +1635,133 @@ doom_html_Attributes.removeAttribute = function(el,name) {
 };
 var doom_html_Css = function() { };
 doom_html_Css.__name__ = ["doom","html","Css"];
+var doom_html_Element = function(tag,children) {
+	this.tag = tag;
+	this.children = null == children?doom_core__$VNodes_VNodes_$Impl_$.children([]):children;
+	this.attributes = new haxe_ds_StringMap();
+	this.setStringAttribute("class",this.classes());
+};
+doom_html_Element.__name__ = ["doom","html","Element"];
+doom_html_Element.__interfaces__ = [doom_core_Renderable];
+doom_html_Element.prototype = {
+	children: null
+	,attributes: null
+	,tag: null
+	,render: function() {
+		return doom_core__$VNode_VNode_$Impl_$.el(this.tag,this.attributes,this.children);
+	}
+	,classes: function() {
+		return "";
+	}
+	,selector: function() {
+		var parts = StringTools.trim(this.classes()).split(" ").filter(function(cls) {
+			return cls != "";
+		});
+		if(parts.length == 0) {
+			return "";
+		}
+		return parts.map(function(part) {
+			return "." + part;
+		}).join("");
+	}
+	,setBoolAttribute: function(name,val) {
+		var this1 = this.attributes;
+		var value = doom_core__$AttributeValue_AttributeValue_$Impl_$.fromBool(val);
+		var _this = this1;
+		if(__map_reserved[name] != null) {
+			_this.setReserved(name,value);
+		} else {
+			_this.h[name] = value;
+		}
+		return this;
+	}
+	,enableAttribute: function(name) {
+		return this.setBoolAttribute(name,true);
+	}
+	,disableAttribute: function(name) {
+		return this.setBoolAttribute(name,false);
+	}
+	,setStringAttribute: function(name,val) {
+		var this1 = this.attributes;
+		var value = doom_core__$AttributeValue_AttributeValue_$Impl_$.fromString(val);
+		var _this = this1;
+		if(__map_reserved[name] != null) {
+			_this.setReserved(name,value);
+		} else {
+			_this.h[name] = value;
+		}
+		return this;
+	}
+	,appendStringAttribute: function(name,val) {
+		var _g = this.attributes.get(name);
+		if(_g == null) {
+			return this.setStringAttribute(name,val);
+		} else {
+			switch(_g[1]) {
+			case 0:case 2:
+				return this.setStringAttribute(name,val);
+			case 1:
+				return this.setStringAttribute(name,_g[2] + " " + val);
+			}
+		}
+	}
+	,setEventAttribute: function(name,val) {
+		var value = doom_core_AttributeValueImpl.EventAttribute(val);
+		var _this = this.attributes;
+		if(__map_reserved[name] != null) {
+			_this.setReserved(name,value);
+		} else {
+			_this.h[name] = value;
+		}
+		return this;
+	}
+	,appendEventAttribute: function(name,fn) {
+		var _g = this.attributes.get(name);
+		if(_g == null) {
+			return this.setEventAttribute(name,fn);
+		} else {
+			switch(_g[1]) {
+			case 0:case 1:
+				return this.setEventAttribute(name,fn);
+			case 2:
+				var f = _g[2];
+				return this.setEventAttribute(name,function(e) {
+					f(e);
+					fn(e);
+				});
+			}
+		}
+	}
+	,click: function(fn) {
+		return this.appendEventAttribute("click",fn);
+	}
+	,ariaLabel: function(value) {
+		return this.setStringAttribute("aria-label",value);
+	}
+	,role: function(value) {
+		return this.setStringAttribute("role",value);
+	}
+	,addClass: function(c) {
+		return this.appendStringAttribute("class",c);
+	}
+	,disabled: function() {
+		return this.enableAttribute("disabled");
+	}
+	,prepend: function(children) {
+		return this.setChildren(doom_core__$VNodes_VNodes_$Impl_$.children(children.concat(this.children)));
+	}
+	,append: function(children) {
+		return this.setChildren(doom_core__$VNodes_VNodes_$Impl_$.children(this.children.concat(children)));
+	}
+	,setChildren: function(children) {
+		this.children = children;
+		return this;
+	}
+	,self: function() {
+		return this;
+	}
+	,__class__: doom_html_Element
+};
 var doom_html_Html = function() { };
 doom_html_Html.__name__ = ["doom","html","Html"];
 doom_html_Html.a = function(attributes,children) {
@@ -2016,29 +2143,6 @@ doom_html_Html.dummy = function(text) {
 };
 doom_html_Html.comp = function(comp) {
 	return doom_core_VNodeImpl.Comp(comp);
-};
-var doom_html_Renderable = function() { };
-doom_html_Renderable.__name__ = ["doom","html","Renderable"];
-doom_html_Renderable.__interfaces__ = [doom_core_Renderable];
-doom_html_Renderable.prototype = {
-	classes: function() {
-		return "";
-	}
-	,selector: function() {
-		var parts = StringTools.trim(this.classes()).split(" ").filter(function(cls) {
-			return cls != "";
-		});
-		if(parts.length == 0) {
-			return "";
-		}
-		return parts.map(function(part) {
-			return "." + part;
-		}).join("");
-	}
-	,render: function() {
-		throw new thx_error_AbstractMethod({ fileName : "Renderable.hx", lineNumber : 18, className : "doom.html.Renderable", methodName : "render"});
-	}
-	,__class__: doom_html_Renderable
 };
 var dots_AttributeType = { __ename__ : ["dots","AttributeType"], __constructs__ : ["BooleanAttribute","Property","BooleanProperty","OverloadedBooleanAttribute","NumericAttribute","PositiveNumericAttribute","SideEffectProperty"] };
 dots_AttributeType.BooleanAttribute = ["BooleanAttribute",0];
@@ -10034,131 +10138,28 @@ var thx_fp_MapImpl = { __ename__ : ["thx","fp","MapImpl"], __constructs__ : ["Ti
 thx_fp_MapImpl.Tip = ["Tip",0];
 thx_fp_MapImpl.Tip.__enum__ = thx_fp_MapImpl;
 thx_fp_MapImpl.Bin = function(size,key,value,lhs,rhs) { var $x = ["Bin",1,size,key,value,lhs,rhs]; $x.__enum__ = thx_fp_MapImpl; return $x; };
-var tiki_TikiElement = function(children) {
-	this.children = children;
-	this.attributes = new haxe_ds_StringMap();
-	this.setStringAttribute("class",this.classes());
+var tiki_TkElement = function(tag,children) {
+	doom_html_Element.call(this,tag,children);
 };
-tiki_TikiElement.__name__ = ["tiki","TikiElement"];
-tiki_TikiElement.__super__ = doom_html_Renderable;
-tiki_TikiElement.prototype = $extend(doom_html_Renderable.prototype,{
-	attributes: null
-	,children: null
-	,self: function() {
-		return this;
-	}
-	,setBoolAttribute: function(name,val) {
-		var this1 = this.attributes;
-		var value = doom_core__$AttributeValue_AttributeValue_$Impl_$.fromBool(val);
-		var _this = this1;
-		if(__map_reserved[name] != null) {
-			_this.setReserved(name,value);
-		} else {
-			_this.h[name] = value;
-		}
-		return this;
-	}
-	,enableAttribute: function(name) {
-		return this.setBoolAttribute(name,true);
-	}
-	,disableAttribute: function(name) {
-		return this.setBoolAttribute(name,false);
-	}
-	,setStringAttribute: function(name,val) {
-		var this1 = this.attributes;
-		var value = doom_core__$AttributeValue_AttributeValue_$Impl_$.fromString(val);
-		var _this = this1;
-		if(__map_reserved[name] != null) {
-			_this.setReserved(name,value);
-		} else {
-			_this.h[name] = value;
-		}
-		return this;
-	}
-	,appendStringAttribute: function(name,val) {
-		var _g = this.attributes.get(name);
-		if(_g == null) {
-			return this.setStringAttribute(name,val);
-		} else {
-			switch(_g[1]) {
-			case 0:case 2:
-				return this.setStringAttribute(name,val);
-			case 1:
-				return this.setStringAttribute(name,_g[2] + " " + val);
-			}
-		}
-	}
-	,setEventAttribute: function(name,val) {
-		var value = doom_core_AttributeValueImpl.EventAttribute(val);
-		var _this = this.attributes;
-		if(__map_reserved[name] != null) {
-			_this.setReserved(name,value);
-		} else {
-			_this.h[name] = value;
-		}
-		return this;
-	}
-	,appendEventAttribute: function(name,fn) {
-		var _g = this.attributes.get(name);
-		if(_g == null) {
-			return this.setEventAttribute(name,fn);
-		} else {
-			switch(_g[1]) {
-			case 0:case 1:
-				return this.setEventAttribute(name,fn);
-			case 2:
-				var f = _g[2];
-				return this.setEventAttribute(name,function(e) {
-					f(e);
-					fn(e);
-				});
-			}
-		}
-	}
-	,click: function(fn) {
-		return this.appendEventAttribute("click",fn);
-	}
-	,ariaLabel: function(value) {
-		return this.setStringAttribute("aria-label",value);
-	}
-	,role: function(value) {
-		return this.setStringAttribute("role",value);
-	}
-	,addClass: function(c) {
-		return this.appendStringAttribute("class",c);
-	}
-	,active: function() {
+tiki_TkElement.__name__ = ["tiki","TkElement"];
+tiki_TkElement.__super__ = doom_html_Element;
+tiki_TkElement.prototype = $extend(doom_html_Element.prototype,{
+	active: function() {
 		return this.addClass("active");
-	}
-	,disabled: function() {
-		return this.enableAttribute("disabled");
-	}
-	,prepend: function(children) {
-		return this.setChildren(doom_core__$VNodes_VNodes_$Impl_$.children(children.concat(this.children)));
-	}
-	,append: function(children) {
-		return this.setChildren(doom_core__$VNodes_VNodes_$Impl_$.children(this.children.concat(children)));
-	}
-	,setChildren: function(children) {
-		this.children = children;
-		return this;
 	}
 	,classes: function() {
 		return "";
 	}
-	,__class__: tiki_TikiElement
+	,__class__: tiki_TkElement
 });
 var tiki_Button = function(children) {
-	tiki_TikiElement.call(this,children);
+	tiki_TkElement.call(this,"button",children);
+	this.setStringAttribute("type","button");
 };
 tiki_Button.__name__ = ["tiki","Button"];
-tiki_Button.__super__ = tiki_TikiElement;
-tiki_Button.prototype = $extend(tiki_TikiElement.prototype,{
-	render: function() {
-		this.setStringAttribute("type","button");
-		return doom_core__$VNode_VNode_$Impl_$.el("button",this.attributes,this.children);
-	}
-	,style: function(s) {
+tiki_Button.__super__ = tiki_TkElement;
+tiki_Button.prototype = $extend(tiki_TkElement.prototype,{
+	style: function(s) {
 		var tmp;
 		switch(s[1]) {
 		case 0:
@@ -10216,7 +10217,7 @@ tiki_ButtonSize.Medium.__enum__ = tiki_ButtonSize;
 tiki_ButtonSize.Large = ["Large",2];
 tiki_ButtonSize.Large.__enum__ = tiki_ButtonSize;
 var tiki_Message = function(children) {
-	tiki_TikiElement.call(this,children);
+	tiki_TkElement.call(this,"div",children);
 	this.setStringAttribute("role","message");
 };
 tiki_Message.__name__ = ["tiki","Message"];
@@ -10227,12 +10228,9 @@ tiki_Message.close = function(refClass,fn) {
 		fn(e);
 	};
 };
-tiki_Message.__super__ = tiki_TikiElement;
-tiki_Message.prototype = $extend(tiki_TikiElement.prototype,{
-	render: function() {
-		return doom_core__$VNode_VNode_$Impl_$.el("div",this.attributes,this.children);
-	}
-	,style: function(st) {
+tiki_Message.__super__ = tiki_TkElement;
+tiki_Message.prototype = $extend(tiki_TkElement.prototype,{
+	style: function(st) {
 		var tmp;
 		switch(st[1]) {
 		case 0:
