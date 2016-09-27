@@ -80,14 +80,20 @@ class App extends doom.html.Component<{}> {
       ]),
       demoSection("Tables", [
         table(tableContent())
-          .addColumn(function(r): VNodes return r.city)
-          .addColumn(function(r): VNodes return r.state)
+          .column(function(r): VNodes return "X")
+            .emptyHeader()
+            .header("X")
+          .column(function(r): VNodes return r.city)
+            .emptyHeader().rowspan(2)
+          .column(function(r): VNodes return r.state)
+            .emptyHeader()
             .header("state")
-          .addColumn(function(r): VNodes return integer(r.population))
+          .column(function(r): VNodes return integer(r.population))
+            .header("numbers").colspan(2)
             .header("population")
-          .addColumn(function(r): VNodes return fixed(r.landArea, 1))
+          .column(function(r): VNodes return fixed(r.landArea, 1))
+            .noHeader()
             .header("area")
-          .table
       ])
     ]);
   }
