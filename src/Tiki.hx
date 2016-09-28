@@ -12,7 +12,10 @@ class Tiki {
   public inline static function button(children: VNodes) return new Button(children);
   public inline static function nav(p : NavProps, children : Array<NavLink>) return new Nav(p, children);
   public inline static function navLink(p : NavLinkProps, children: VNodes) return new NavLink(p, children);
+
   public inline static function table<T>(data: Array<T>) return new Table(data);
+  public inline static function cell<T>(children: VNodes) return new Cell(TData(children));
+  public inline static function cellh<T>(children: VNodes) return new Cell(THead(children));
 
   public inline static function h1(children: VNodes): Element return new Element("h1", children);
   public inline static function h2(children: VNodes): Element return new Element("h2", children);

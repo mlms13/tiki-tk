@@ -7,10 +7,16 @@ import doom.html.Html.*;
 import haxe.ds.Option;
 using thx.Arrays;
 
-class Table<Row> extends TkComponent<TableProps<Row>> {
+class Table<Row> extends TkElement<Table<Row>> {
+  var rows: Array<Row>;
+  public function new(rows: Array<Row>) {
+    super("table", []);
+    this.rows = rows;
+  }
+
   var columns: Array<Column<Row>> = [];
   var currentColumn = -1;
-  public function column(cell: Row -> VNodes) {
+  public function column(cell: Row -> Cell) {
     if(null != columns[++currentColumn])
       return columns[currentColumn];
     var col = new Column(this, cell);
@@ -38,9 +44,9 @@ class Table<Row> extends TkComponent<TableProps<Row>> {
           };
         })
       )]),
-      tbody(props.map(function(row) {
-        return tr(columns.map(function(column) {
-          return td(column.cell(row));
+      tbody(rows.map(function(row) {
+        return tr(columns.map(function(column): VNode {
+          return column.cell(row);
         }));
       }))
     ]);
@@ -51,19 +57,43 @@ class Table<Row> extends TkComponent<TableProps<Row>> {
   }
 }
 
+class Cell extends TkElement<Cell> {
+  public function new(kind: CellKind) {
+    switch kind {
+      case TData(content): super("td", content);
+      case THead(content): super("th", content);
+    }
+  }
+
+  public function colspan(columns: Int) {
+    if(columns < 1) columns = 1;
+    return setStringAttribute("colspan", '$columns');
+  }
+
+  public function rowspan(rows: Int) {
+    if(rows < 1) rows = 1;
+    return setStringAttribute("rowspan", '$rows');
+  }
+}
+
+enum CellKind {
+  TData(content: VNodes);
+  THead(content: VNodes);
+}
+
 class Column<Row> implements Renderable {
   public var table(default, null): Table<Row>;
-  public var cell(default, null): Row -> VNodes;
+  public var cell(default, null): Row -> Cell;
   public var headerCells(default, null): Array<HeaderCell<Row>>;
-  public var align(default, null): CellAlign;
-  public function new(table: Table<Row>, cell: Row -> VNodes) {
+  // public var align(default, null): CellAlign;
+  public function new(table: Table<Row>, cell: Row -> Cell) {
     this.table = table;
     this.cell = cell;
     this.headerCells = [];
-    this.align = Left;
+    // this.align = Left;
   }
 
-  public function column(cell: Row -> VNodes)
+  public function column(cell: Row -> Cell)
     return table.column(cell);
 
   public function header(cell: VNodes) {
@@ -94,28 +124,14 @@ class HeaderCell<Row> implements Renderable {
   public var type(default, null): HeaderType;
   public var spanCols(default, null): Int = 1;
   public var spanRows(default, null): Int = 1;
-  public var align(default, null): CellAlign;
+  // public var align(default, null): CellAlign;
   public function new(table, parent, type) {
     this.table = table;
     this.parent = parent;
     this.type = type;
-    align = Center;
+    // align = Center;
   }
 
-  public function left() {
-    align = Left;
-    return this;
-  }
-
-  public function center() {
-    align = Center;
-    return this;
-  }
-
-  public function right() {
-    align = Right;
-    return this;
-  }
 
   public function colspan(columns: Int) {
     if(columns < 1) columns = 1;
@@ -138,7 +154,7 @@ class HeaderCell<Row> implements Renderable {
   public function emptyHeader()
     return parent.emptyHeader();
 
-  public function column(cell: Row -> VNodes)
+  public function column(cell: Row -> Cell)
     return table.column(cell);
 
   public function render()
@@ -149,12 +165,4 @@ enum HeaderType {
   None;
   Empty;
   Content(vnodes: VNodes);
-}
-
-typedef TableProps<Row> = Array<Row>;
-
-enum CellAlign {
-  Left;
-  Right;
-  Center;
 }
