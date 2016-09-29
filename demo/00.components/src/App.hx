@@ -79,21 +79,29 @@ class App extends doom.html.Component<{}> {
         message(["Danger message with dismissible"]).style(Danger).dismissible(function() console.log("message closed"))
       ]),
       demoSection("Tables", [
-        table(tableContent())
-          .column(function(r) return cell("x"))
-            .emptyHeader()
-            .header("x")
-          .column(function(r) return cell(r.city))
-            .emptyHeader().rowspan(2)
-          .column(function(r) return cell(r.state))
-            .emptyHeader()
-            .header("state")
-          .column(function(r) return cell(integer(r.population)))
-            .header("numbers").colspan(2)
-            .header("population")
-          .column(function(r) return cell(fixed(r.landArea, 1)))
-            .noHeader()
-            .header("area")
+        table(
+          tcaption(),
+          colgroup(),
+          thead(),
+          tfoot(),
+          tbody()
+        )
+        // table(tableContent())
+        //   .column(function(r) return cell("x"))
+        //     .emptyHeader()
+        //     .header("x")
+        //   .column(function(r) return cell(r.city))
+        //     .emptyHeader()
+        //     .rowspan(2)
+        //   .column(function(r) return cell(r.state))
+        //     .emptyHeader()
+        //     .header("state")
+        //   .column(function(r) return cell(integer(r.population)))
+        //     .header("numbers").colspan(2)
+        //     .header("population")
+        //   .column(function(r) return cell(fixed(r.landArea, 1)))
+        //     .noHeader()
+        //     .header("area")
       ])
     ]);
   }

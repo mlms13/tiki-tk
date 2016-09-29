@@ -110,17 +110,7 @@ App.prototype = $extend(doom_html_Component.prototype,{
 			e.preventDefault();
 			f();
 		};
-		return doom_core_VNodeImpl.Lazy(($_=new tiki_Element("article",doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=this.demoSection("Typography",doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=new tiki_Element("h1",doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("h1 heading")])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.fillerText(),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=new tiki_Element("h2",doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("h2 heading")])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.fillerText(),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=new tiki_Element("h3",doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("h3 heading")])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.fillerText(),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=new tiki_Element("h4",doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("h4 heading")])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.fillerText(),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=new tiki_Element("h5",doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("h5 heading")])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.fillerText(),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=new tiki_Element("h6",doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("h6 heading")])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.fillerText(),$bind($_,$_.render)))])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.demoSection("Buttons",doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=this.inlineExample(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=new tiki_Button(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Default")])),$bind($_,$_.render)))])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.inlineExample(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=new tiki_Button(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Primary")])).style(tiki_ButtonStyle.Primary),$bind($_,$_.render)))])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.inlineExample(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=new tiki_Button(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Success")])).style(tiki_ButtonStyle.Success),$bind($_,$_.render)))])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.inlineExample(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=new tiki_Button(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Warning")])).style(tiki_ButtonStyle.Warning),$bind($_,$_.render)))])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.inlineExample(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=new tiki_Button(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Danger")])).style(tiki_ButtonStyle.Danger),$bind($_,$_.render)))])),$bind($_,$_.render)))])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.demoSection("Hollow Buttons",doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=this.inlineExample(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=new tiki_Button(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Default")])).hollow(),$bind($_,$_.render)))])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.inlineExample(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=new tiki_Button(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Primary")])).style(tiki_ButtonStyle.Primary).hollow(),$bind($_,$_.render)))])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.inlineExample(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=new tiki_Button(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Success")])).style(tiki_ButtonStyle.Success).hollow(),$bind($_,$_.render)))])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.inlineExample(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=new tiki_Button(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Warning")])).style(tiki_ButtonStyle.Warning).hollow(),$bind($_,$_.render)))])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.inlineExample(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=new tiki_Button(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Danger")])).style(tiki_ButtonStyle.Danger).hollow(),$bind($_,$_.render)))])),$bind($_,$_.render)))])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.demoSection("Disabled Buttons",doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=this.inlineExample(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=new tiki_Button(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Default")])).disabled(),$bind($_,$_.render)))])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.inlineExample(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=new tiki_Button(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Primary")])).style(tiki_ButtonStyle.Primary).disabled(),$bind($_,$_.render)))])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.inlineExample(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=new tiki_Button(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Success")])).style(tiki_ButtonStyle.Success).disabled(),$bind($_,$_.render)))])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.inlineExample(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=new tiki_Button(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Warning")])).style(tiki_ButtonStyle.Warning).disabled(),$bind($_,$_.render)))])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.inlineExample(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=new tiki_Button(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Danger")])).style(tiki_ButtonStyle.Danger).disabled(),$bind($_,$_.render)))])),$bind($_,$_.render)))])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.demoSection("Basic Nav",doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Comp(new tiki_Nav({ orientation : tiki_NavOrientation.Inline},[new tiki_NavLink({ href : "#"},doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Foo")])),new tiki_NavLink({ href : "#"},doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Bar")])),new tiki_NavLink({ href : "#"},doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Baz")]))]))])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.demoSection("Nav Pills",doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Comp(new tiki_Nav({ style : tiki_NavStyle.Pills},[new tiki_NavLink({ href : "#"},doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Foo")])),new tiki_NavLink({ href : "#"},doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Bar")])),new tiki_NavLink({ href : "#"},doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Baz")]))]))])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.demoSection("Nav Tabs",doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Comp(new tiki_Nav({ style : tiki_NavStyle.Tabs},[new tiki_NavLink({ href : "#"},doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Foo")])),new tiki_NavLink({ href : "#"},doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Bar")])),new tiki_NavLink({ href : "#"},doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Baz")]))]))])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.demoSection("Nav Stacked",doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Comp(new tiki_Nav({ orientation : tiki_NavOrientation.Stacked},[new tiki_NavLink({ href : "#"},doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Foo")])),new tiki_NavLink({ href : "#"},doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Bar")])),new tiki_NavLink({ href : "#"},doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Baz")]))]))])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.demoSection("Messages",doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=new tiki_Message(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Default message")])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=new tiki_Message(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Info message")])).style(tiki_MessageStyle.Info),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=new tiki_Message(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Success message")])).style(tiki_MessageStyle.Success),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=new tiki_Message(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Warning message")])).style(tiki_MessageStyle.Warning),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=new tiki_Message(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Danger message with dismissible")])).style(tiki_MessageStyle.Danger).dismissible(tmp),$bind($_,$_.render)))])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.demoSection("Tables",doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=new tiki_Table(App.tableContent()).column(function(r) {
-			return new tiki_Cell(tiki_CellKind.TData(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("x")])));
-		}).emptyHeader().header(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("x")])).column(function(r1) {
-			return new tiki_Cell(tiki_CellKind.TData(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text(r1.city)])));
-		}).emptyHeader().rowspan(2).column(function(r2) {
-			return new tiki_Cell(tiki_CellKind.TData(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text(r2.state)])));
-		}).emptyHeader().header(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("state")])).column(function(r3) {
-			return new tiki_Cell(tiki_CellKind.TData(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text(thx_format_NumberFormat.integer(r3.population))])));
-		}).header(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("numbers")])).colspan(2).header(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("population")])).column(function(r4) {
-			return new tiki_Cell(tiki_CellKind.TData(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text(thx_format_NumberFormat.fixed(r4.landArea,1))])));
-		}).noHeader().header(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("area")])),$bind($_,$_.render)))])),$bind($_,$_.render)))])),$bind($_,$_.render)));
+		return doom_core_VNodeImpl.Lazy(($_=new tiki_Element("article",doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=this.demoSection("Typography",doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=new tiki_Element("h1",doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("h1 heading")])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.fillerText(),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=new tiki_Element("h2",doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("h2 heading")])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.fillerText(),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=new tiki_Element("h3",doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("h3 heading")])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.fillerText(),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=new tiki_Element("h4",doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("h4 heading")])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.fillerText(),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=new tiki_Element("h5",doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("h5 heading")])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.fillerText(),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=new tiki_Element("h6",doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("h6 heading")])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.fillerText(),$bind($_,$_.render)))])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.demoSection("Buttons",doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=this.inlineExample(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=new tiki_Button(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Default")])),$bind($_,$_.render)))])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.inlineExample(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=new tiki_Button(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Primary")])).style(tiki_ButtonStyle.Primary),$bind($_,$_.render)))])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.inlineExample(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=new tiki_Button(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Success")])).style(tiki_ButtonStyle.Success),$bind($_,$_.render)))])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.inlineExample(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=new tiki_Button(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Warning")])).style(tiki_ButtonStyle.Warning),$bind($_,$_.render)))])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.inlineExample(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=new tiki_Button(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Danger")])).style(tiki_ButtonStyle.Danger),$bind($_,$_.render)))])),$bind($_,$_.render)))])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.demoSection("Hollow Buttons",doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=this.inlineExample(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=new tiki_Button(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Default")])).hollow(),$bind($_,$_.render)))])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.inlineExample(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=new tiki_Button(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Primary")])).style(tiki_ButtonStyle.Primary).hollow(),$bind($_,$_.render)))])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.inlineExample(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=new tiki_Button(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Success")])).style(tiki_ButtonStyle.Success).hollow(),$bind($_,$_.render)))])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.inlineExample(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=new tiki_Button(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Warning")])).style(tiki_ButtonStyle.Warning).hollow(),$bind($_,$_.render)))])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.inlineExample(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=new tiki_Button(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Danger")])).style(tiki_ButtonStyle.Danger).hollow(),$bind($_,$_.render)))])),$bind($_,$_.render)))])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.demoSection("Disabled Buttons",doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=this.inlineExample(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=new tiki_Button(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Default")])).disabled(),$bind($_,$_.render)))])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.inlineExample(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=new tiki_Button(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Primary")])).style(tiki_ButtonStyle.Primary).disabled(),$bind($_,$_.render)))])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.inlineExample(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=new tiki_Button(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Success")])).style(tiki_ButtonStyle.Success).disabled(),$bind($_,$_.render)))])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.inlineExample(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=new tiki_Button(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Warning")])).style(tiki_ButtonStyle.Warning).disabled(),$bind($_,$_.render)))])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.inlineExample(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=new tiki_Button(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Danger")])).style(tiki_ButtonStyle.Danger).disabled(),$bind($_,$_.render)))])),$bind($_,$_.render)))])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.demoSection("Basic Nav",doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Comp(new tiki_Nav({ orientation : tiki_NavOrientation.Inline},[new tiki_NavLink({ href : "#"},doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Foo")])),new tiki_NavLink({ href : "#"},doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Bar")])),new tiki_NavLink({ href : "#"},doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Baz")]))]))])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.demoSection("Nav Pills",doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Comp(new tiki_Nav({ style : tiki_NavStyle.Pills},[new tiki_NavLink({ href : "#"},doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Foo")])),new tiki_NavLink({ href : "#"},doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Bar")])),new tiki_NavLink({ href : "#"},doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Baz")]))]))])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.demoSection("Nav Tabs",doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Comp(new tiki_Nav({ style : tiki_NavStyle.Tabs},[new tiki_NavLink({ href : "#"},doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Foo")])),new tiki_NavLink({ href : "#"},doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Bar")])),new tiki_NavLink({ href : "#"},doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Baz")]))]))])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.demoSection("Nav Stacked",doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Comp(new tiki_Nav({ orientation : tiki_NavOrientation.Stacked},[new tiki_NavLink({ href : "#"},doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Foo")])),new tiki_NavLink({ href : "#"},doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Bar")])),new tiki_NavLink({ href : "#"},doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Baz")]))]))])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.demoSection("Messages",doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=new tiki_Message(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Default message")])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=new tiki_Message(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Info message")])).style(tiki_MessageStyle.Info),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=new tiki_Message(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Success message")])).style(tiki_MessageStyle.Success),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=new tiki_Message(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Warning message")])).style(tiki_MessageStyle.Warning),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=new tiki_Message(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Danger message with dismissible")])).style(tiki_MessageStyle.Danger).dismissible(tmp),$bind($_,$_.render)))])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.demoSection("Tables",doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=Tiki.table(new tiki_TableCaption(),new tiki_ColGroup(),null,new tiki_TableHead(),new tiki_TableFoot(),new tiki_TableBody()),$bind($_,$_.render)))])),$bind($_,$_.render)))])),$bind($_,$_.render)));
 	}
 	,demoSection: function(title,children) {
 		return new tiki_Element("section",doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=new tiki_Element("h2",doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text(title)])).addClass("section-title"),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=new tiki_Element("div",children).addClass("section-body"),$bind($_,$_.render)))])).addClass("demo-section");
@@ -1005,14 +995,24 @@ Tiki.nav = function(p,children) {
 Tiki.navLink = function(p,children) {
 	return new tiki_NavLink(p,children);
 };
-Tiki.table = function(data) {
-	return new tiki_Table(data);
+Tiki.table = function(caption,colgroup,colgroups,thead,tfoot,tbody,tbodies) {
+	var tmp = thx_Options.toArray(null == colgroup?haxe_ds_Option.None:haxe_ds_Option.Some(colgroup)).concat(null == colgroups?[]:colgroups);
+	return new tiki_Table({ caption : null == caption?haxe_ds_Option.None:haxe_ds_Option.Some(caption), colgroups : tmp, thead : null == thead?haxe_ds_Option.None:haxe_ds_Option.Some(thead), tfoot : null == tfoot?haxe_ds_Option.None:haxe_ds_Option.Some(tfoot), tbodies : thx_Options.toArray(null == tbody?haxe_ds_Option.None:haxe_ds_Option.Some(tbody)).concat(null == tbodies?[]:tbodies)});
 };
-Tiki.cell = function(children) {
-	return new tiki_Cell(tiki_CellKind.TData(children));
+Tiki.tcaption = function() {
+	return new tiki_TableCaption();
 };
-Tiki.cellh = function(children) {
-	return new tiki_Cell(tiki_CellKind.THead(children));
+Tiki.colgroup = function() {
+	return new tiki_ColGroup();
+};
+Tiki.tbody = function() {
+	return new tiki_TableBody();
+};
+Tiki.tfoot = function() {
+	return new tiki_TableFoot();
+};
+Tiki.thead = function() {
+	return new tiki_TableHead();
 };
 Tiki.h1 = function(children) {
 	return new tiki_Element("h1",children);
@@ -11798,223 +11798,107 @@ tiki_NavLink.prototype = $extend(doom_html_Component.prototype,{
 	}
 	,__class__: tiki_NavLink
 });
-var tiki_Table = function(rows) {
-	this.currentColumn = -1;
-	this.columns = [];
-	tiki_TkElement.call(this,"table",doom_core__$VNodes_VNodes_$Impl_$.children([]));
-	this.rows = rows;
+var tiki_Table = function(contents) {
+	tiki_TkElement.call(this,"table",doom_core__$VNodes_VNodes_$Impl_$.children([].map(function(child) {
+		return doom_core_VNodeImpl.Lazy($bind(child,child.render));
+	})));
 };
 tiki_Table.__name__ = ["tiki","Table"];
-tiki_Table.spanAttr = function(v) {
-	if(v <= 1) {
-		return null;
-	} else {
-		return "" + v;
-	}
-};
 tiki_Table.__super__ = tiki_TkElement;
 tiki_Table.prototype = $extend(tiki_TkElement.prototype,{
-	rows: null
-	,columns: null
-	,currentColumn: null
-	,column: function(cell) {
-		if(null != this.columns[++this.currentColumn]) {
-			return this.columns[this.currentColumn];
-		}
-		var col = new tiki_Column(this,cell);
-		this.columns[this.currentColumn] = col;
-		return col;
-	}
-	,render: function() {
-		var _gthis = this;
-		var maxHead = thx_ArrayInts.max(this.columns.map(function(c) {
-			return c.headerCells.length;
-		}));
-		var _g3 = [];
-		var _g5 = 0;
-		while(_g5 < maxHead) _g3.push(doom_core__$VNode_VNode_$Impl_$.el("tr",null,doom_core__$VNodes_VNodes_$Impl_$.children(this.columns.map((function(i) {
-			return function(column) {
-				var cell = column.headerCells[i[0]];
-				if(null == cell) {
-					return null;
-				}
-				var _g6 = cell.type;
-				if(_g6 == null) {
-					return null;
-				} else {
-					switch(_g6[1]) {
-					case 0:
-						return null;
-					case 1:
-						var _g61 = new haxe_ds_StringMap();
-						var value = doom_core__$AttributeValue_AttributeValue_$Impl_$.fromString(tiki_Table.spanAttr(cell.spanRows));
-						if(__map_reserved.rowspan != null) {
-							_g61.setReserved("rowspan",value);
-						} else {
-							_g61.h["rowspan"] = value;
-						}
-						var value1 = doom_core__$AttributeValue_AttributeValue_$Impl_$.fromString(tiki_Table.spanAttr(cell.spanCols));
-						if(__map_reserved.colspan != null) {
-							_g61.setReserved("colspan",value1);
-						} else {
-							_g61.h["colspan"] = value1;
-						}
-						return doom_core__$VNode_VNode_$Impl_$.el("th",_g61,null);
-					case 2:
-						var _g62 = new haxe_ds_StringMap();
-						var value2 = doom_core__$AttributeValue_AttributeValue_$Impl_$.fromString("align-center");
-						if(__map_reserved["class"] != null) {
-							_g62.setReserved("class",value2);
-						} else {
-							_g62.h["class"] = value2;
-						}
-						var value3 = doom_core__$AttributeValue_AttributeValue_$Impl_$.fromString(tiki_Table.spanAttr(cell.spanRows));
-						if(__map_reserved.rowspan != null) {
-							_g62.setReserved("rowspan",value3);
-						} else {
-							_g62.h["rowspan"] = value3;
-						}
-						var value4 = doom_core__$AttributeValue_AttributeValue_$Impl_$.fromString(tiki_Table.spanAttr(cell.spanCols));
-						if(__map_reserved.colspan != null) {
-							_g62.setReserved("colspan",value4);
-						} else {
-							_g62.h["colspan"] = value4;
-						}
-						return doom_core__$VNode_VNode_$Impl_$.el("th",_g62,_g6[2]);
-					}
-				}
-			};
-		})([_g5++])))));
-		return doom_core__$VNode_VNode_$Impl_$.el("table",null,doom_core__$VNodes_VNodes_$Impl_$.children([doom_core__$VNode_VNode_$Impl_$.el("thead",null,doom_core__$VNodes_VNodes_$Impl_$.children(_g3)),doom_core__$VNode_VNode_$Impl_$.el("tbody",null,doom_core__$VNodes_VNodes_$Impl_$.children(this.rows.map(function(row) {
-			return doom_core__$VNode_VNode_$Impl_$.el("tr",null,doom_core__$VNodes_VNodes_$Impl_$.children(_gthis.columns.map(function(column1) {
-				return doom_core_VNodeImpl.Lazy(($_=column1.cell(row),$bind($_,$_.render)));
-			})));
-		})))]));
-	}
-	,classes: function() {
+	classes: function() {
 		return "tiki_table";
 	}
 	,__class__: tiki_Table
 });
-var tiki_Cell = function(kind) {
-	switch(kind[1]) {
-	case 0:
-		tiki_TkElement.call(this,"td",kind[2]);
-		break;
-	case 1:
-		tiki_TkElement.call(this,"th",kind[2]);
-		break;
-	}
+var tiki_TableCaption = function() {
+	tiki_TkElement.call(this,"caption",doom_core__$VNodes_VNodes_$Impl_$.children([]));
 };
-tiki_Cell.__name__ = ["tiki","Cell"];
-tiki_Cell.__super__ = tiki_TkElement;
-tiki_Cell.prototype = $extend(tiki_TkElement.prototype,{
-	colspan: function(columns) {
-		if(columns < 1) {
-			columns = 1;
-		}
-		return this.setStringAttribute("colspan","" + columns);
+tiki_TableCaption.__name__ = ["tiki","TableCaption"];
+tiki_TableCaption.__super__ = tiki_TkElement;
+tiki_TableCaption.prototype = $extend(tiki_TkElement.prototype,{
+	classes: function() {
+		return "tiki_table-caption";
 	}
-	,rowspan: function(rows) {
-		if(rows < 1) {
-			rows = 1;
-		}
-		return this.setStringAttribute("rowspan","" + rows);
-	}
-	,classes: function() {
-		return "tiki_cell";
-	}
-	,__class__: tiki_Cell
+	,__class__: tiki_TableCaption
 });
-var tiki_CellKind = { __ename__ : ["tiki","CellKind"], __constructs__ : ["TData","THead"] };
-tiki_CellKind.TData = function(content) { var $x = ["TData",0,content]; $x.__enum__ = tiki_CellKind; return $x; };
-tiki_CellKind.THead = function(content) { var $x = ["THead",1,content]; $x.__enum__ = tiki_CellKind; return $x; };
-var tiki_Column = function(table,cell) {
-	this.table = table;
-	this.cell = cell;
-	this.headerCells = [];
+var tiki_ColGroup = function() {
+	tiki_TkElement.call(this,"colgroup",doom_core__$VNodes_VNodes_$Impl_$.children([]));
 };
-tiki_Column.__name__ = ["tiki","Column"];
-tiki_Column.__interfaces__ = [doom_core_Renderable];
-tiki_Column.prototype = {
-	table: null
-	,cell: null
-	,headerCells: null
-	,column: function(cell) {
-		return this.table.column(cell);
+tiki_ColGroup.__name__ = ["tiki","ColGroup"];
+tiki_ColGroup.__super__ = tiki_TkElement;
+tiki_ColGroup.prototype = $extend(tiki_TkElement.prototype,{
+	classes: function() {
+		return "tiki_col-group";
 	}
-	,header: function(cell) {
-		var header = new tiki_HeaderCell(this.table,this,tiki_HeaderType.Content(cell));
-		this.headerCells.push(header);
-		return header;
-	}
-	,noHeader: function() {
-		var header = new tiki_HeaderCell(this.table,this,tiki_HeaderType.None);
-		this.headerCells.push(header);
-		return header;
-	}
-	,emptyHeader: function() {
-		var header = new tiki_HeaderCell(this.table,this,tiki_HeaderType.Empty);
-		this.headerCells.push(header);
-		return header;
-	}
-	,render: function() {
-		return this.table.render();
-	}
-	,__class__: tiki_Column
+	,__class__: tiki_ColGroup
+});
+var tiki_TableContainer = function(tag,children) {
+	tiki_TkElement.call(this,tag,children);
 };
-var tiki_HeaderCell = function(table,parent,type) {
-	this.spanRows = 1;
-	this.spanCols = 1;
-	this.table = table;
-	this.parent = parent;
-	this.type = type;
+tiki_TableContainer.__name__ = ["tiki","TableContainer"];
+tiki_TableContainer.__super__ = tiki_TkElement;
+tiki_TableContainer.prototype = $extend(tiki_TkElement.prototype,{
+	classes: function() {
+		return "tiki_table-container";
+	}
+	,__class__: tiki_TableContainer
+});
+var tiki_TableHead = function() {
+	tiki_TableContainer.call(this,"thead",doom_core__$VNodes_VNodes_$Impl_$.children([]));
 };
-tiki_HeaderCell.__name__ = ["tiki","HeaderCell"];
-tiki_HeaderCell.__interfaces__ = [doom_core_Renderable];
-tiki_HeaderCell.prototype = {
-	table: null
-	,parent: null
-	,type: null
-	,spanCols: null
-	,spanRows: null
-	,colspan: function(columns) {
-		if(columns < 1) {
-			columns = 1;
-		}
-		this.spanCols = columns;
-		return this;
+tiki_TableHead.__name__ = ["tiki","TableHead"];
+tiki_TableHead.__super__ = tiki_TableContainer;
+tiki_TableHead.prototype = $extend(tiki_TableContainer.prototype,{
+	classes: function() {
+		return "tiki_table-head tiki_table-container";
 	}
-	,rowspan: function(rows) {
-		if(rows < 1) {
-			rows = 1;
-		}
-		this.spanRows = rows;
-		return this;
-	}
-	,header: function(cell) {
-		return this.parent.header(cell);
-	}
-	,noHeader: function() {
-		return this.parent.noHeader();
-	}
-	,emptyHeader: function() {
-		return this.parent.emptyHeader();
-	}
-	,column: function(cell) {
-		return this.table.column(cell);
-	}
-	,render: function() {
-		return this.table.render();
-	}
-	,__class__: tiki_HeaderCell
+	,__class__: tiki_TableHead
+});
+var tiki_TableFoot = function() {
+	tiki_TableContainer.call(this,"tfoot",doom_core__$VNodes_VNodes_$Impl_$.children([]));
 };
-var tiki_HeaderType = { __ename__ : ["tiki","HeaderType"], __constructs__ : ["None","Empty","Content"] };
-tiki_HeaderType.None = ["None",0];
-tiki_HeaderType.None.__enum__ = tiki_HeaderType;
-tiki_HeaderType.Empty = ["Empty",1];
-tiki_HeaderType.Empty.__enum__ = tiki_HeaderType;
-tiki_HeaderType.Content = function(vnodes) { var $x = ["Content",2,vnodes]; $x.__enum__ = tiki_HeaderType; return $x; };
+tiki_TableFoot.__name__ = ["tiki","TableFoot"];
+tiki_TableFoot.__super__ = tiki_TableContainer;
+tiki_TableFoot.prototype = $extend(tiki_TableContainer.prototype,{
+	classes: function() {
+		return "tiki_table-foot tiki_table-container";
+	}
+	,__class__: tiki_TableFoot
+});
+var tiki_TableBody = function() {
+	tiki_TableContainer.call(this,"tbody",doom_core__$VNodes_VNodes_$Impl_$.children([]));
+};
+tiki_TableBody.__name__ = ["tiki","TableBody"];
+tiki_TableBody.__super__ = tiki_TableContainer;
+tiki_TableBody.prototype = $extend(tiki_TableContainer.prototype,{
+	classes: function() {
+		return "tiki_table-body tiki_table-container";
+	}
+	,__class__: tiki_TableBody
+});
+var tiki_TableRow = function(tag,children) {
+	tiki_TkElement.call(this,tag,children);
+};
+tiki_TableRow.__name__ = ["tiki","TableRow"];
+tiki_TableRow.__super__ = tiki_TkElement;
+tiki_TableRow.prototype = $extend(tiki_TkElement.prototype,{
+	classes: function() {
+		return "tiki_table-row";
+	}
+	,__class__: tiki_TableRow
+});
+var tiki_TableCell = function(tag,children) {
+	tiki_TkElement.call(this,tag,children);
+};
+tiki_TableCell.__name__ = ["tiki","TableCell"];
+tiki_TableCell.__super__ = tiki_TkElement;
+tiki_TableCell.prototype = $extend(tiki_TkElement.prototype,{
+	classes: function() {
+		return "tiki_table-cell";
+	}
+	,__class__: tiki_TableCell
+});
 var tiki_Element = function(tag,children) {
 	tiki_TkElement.call(this,tag,children);
 };
