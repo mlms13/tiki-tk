@@ -184,66 +184,61 @@
   background-color: #f9fafb;
   font-weight: bold;
 }
-.tiki_table thead tr:first-child>th:first-child {
+.tiki_table thead tr:first-child > :first-child {
   border-radius: 3px 0 0 0;
 }
-.tiki_table thead tr:first-child>th:last-child {
+.tiki_table thead tr:first-child > :last-child {
   border-radius: 0 3px 0 0;
 }
-.tiki_table thead tr:first-child>th:only-child {
+.tiki_table thead tr:first-child > :only-child {
   border-radius: 3px 3px 0 0;
 }
-.tiki_table tfoot tr:last-child>th:first-child {
+.tiki_table tfoot tr:last-child > :first-child {
   border-radius: 0 0 0 3px;
 }
-.tiki_table tfoot tr:last-child>th:last-child {
+.tiki_table tfoot tr:last-child > :last-child {
   border-radius: 0 0 3px 0;
 }
-.tiki_table tfoot tr:first-child>th:only-child {
+.tiki_table tfoot tr:first-child > :only-child {
   border-radius: 0 0 3px 3px;
 }
-.tiki_table thead th,
-.tiki_table tfoot th,
-.tiki_table thead td,
-.tiki_table tfoot td {
-  padding: 0.85rem 0.5rem;
+.tiki_table thead > tr > *,
+.tiki_table tfoot > tr > * {
+  padding: 0.6rem 0.4rem;
 }
-.tiki_table tbody th,
-.tiki_table tbody td {
-  padding: 0.5rem;
-}
-.tiki_table tbody td,
-.tiki_table tbody th {
+.tiki_table tbody > tr > * {
+  padding: 0.4rem;
   border-left: 1px solid #eee;
   border-top: 1px solid #eee;
+}
+.tiki_table tbody > tr:first-child > * {
+  border-top: 1px solid #ddd;
 }
 .tiki_table thead td,
 .tiki_table thead th,
 .tiki_table tfoot td,
 .tiki_table tfoot th {
-  border-left: 1px solid #ddd;
+  border-left: 1px solid #eee;
   border-top: 1px solid #ddd;
 }
-.tiki_table thead tr>th:first-child,
-.tiki_table tfoot tr>th:first-child,
-.tiki_table tbody tr>th:first-child,
-.tiki_table thead tr>td:first-child,
-.tiki_table tfoot tr>td:first-child,
-.tiki_table tbody tr>td:first-child {
+.tiki_table thead tr > :first-child,
+.tiki_table tfoot tr > :first-child,
+.tiki_table tbody tr > :first-child {
   border-left: none;
 }
 .tiki_table thead tr:first-child>th,
 .tiki_table thead tr:first-child>td {
   border-top: none;
 }
-.tiki_table tbody:first-child>tr:first-child>th,
-.tiki_table tbody:first-child>tr:first-child>td,
-.tiki_table tfoot:first-child>tr:first-child>th,
-.tiki_table tfoot:first-child>tr:first-child>td {
+.tiki_table tbody:first-child > tr:first-child > *,
+.tiki_table tfoot:first-child > tr:first-child > * {
   border-top: none;
 }
-.tiki_table tbody>tr>th:first-child {
+.tiki_table tbody > tr > th:first-child {
   text-align: left;
+}
+.tiki_table tbody > tr > th:last-child {
+  text-align: right;
 }
 .tiki_table.collapsing {
   width: auto;
@@ -255,47 +250,32 @@
 .tiki_table.plain tfoot th {
   background-color: transparent;
 }
-.tiki_table.plain.frameless thead>tr:first-child>th,
-.tiki_table.plain.frameless thead>tr:first-child>td,
-.tiki_table.plain.frameless tbody:first-child>tr:first-child>th,
-.tiki_table.plain.frameless tbody:first-child>tr:first-child>td,
-.tiki_table.plain.frameless tfoot:first-child>tr:first-child>th,
-.tiki_table.plain.frameless tfoot:first-child>tr:first-child>td {
+.tiki_table.plain.frameless thead > tr:first-child > *,
+.tiki_table.plain.frameless tbody:first-child > tr:first-child > *,
+.tiki_table.plain.frameless tfoot:first-child > tr:first-child > * {
   padding-top: 0;
 }
-.tiki_table.plain.frameless thead>tr>th:first-child,
-.tiki_table.plain.frameless thead>tr>td:first-child,
-.tiki_table.plain.frameless tbody>tr>th:first-child,
-.tiki_table.plain.frameless tbody>tr>td:first-child,
-.tiki_table.plain.frameless tfoot>tr>th:first-child,
-.tiki_table.plain.frameless tfoot>tr>td:first-child {
+.tiki_table.plain.frameless thead > tr > :first-child,
+.tiki_table.plain.frameless tbody > tr > :first-child,
+.tiki_table.plain.frameless tfoot > tr > :first-child {
   padding-left: 0;
 }
-.tiki_table.plain.frameless thead>tr>th:last-child,
-.tiki_table.plain.frameless thead>tr>td:last-child,
-.tiki_table.plain.frameless tbody>tr>th:last-child,
-.tiki_table.plain.frameless tbody>tr>td:last-child,
-.tiki_table.plain.frameless tfoot>tr>th:last-child,
-.tiki_table.plain.frameless tfoot>tr>td:last-child {
+.tiki_table.plain.frameless thead > tr > :last-child,
+.tiki_table.plain.frameless tbody > tr > :last-child,
+.tiki_table.plain.frameless tfoot > tr > :last-child {
   padding-right: 0;
 }
-.tiki_table.plain.frameless thead:last-child>tr:last-child>th,
-.tiki_table.plain.frameless thead:last-child>tr:last-child>td,
-.tiki_table.plain.frameless tbody:last-child>tr:last-child>th,
-.tiki_table.plain.frameless tbody:last-child>tr:last-child>td,
-.tiki_table.plain.frameless tfoot>tr:last-child>th,
-.tiki_table.plain.frameless tfoot>tr:last-child>td {
+.tiki_table.plain.frameless thead:last-child > tr:last-child > *,
+.tiki_table.plain.frameless tfoot + :not(tbody) > tr:last-child > *,
+.tiki_table.plain.frameless tfoot > tr:last-child > * {
   padding-bottom: 0;
 }
-.tiki_table.compact thead th,
-.tiki_table.compact tfoot th,
-.tiki_table.compact thead td,
-.tiki_table.compact tfoot td {
-  padding: 0.425rem 0.25rem;
+.tiki_table.compact thead > tr > *,
+.tiki_table.compact tfoot > tr > * {
+  padding: 0.3rem 0.2rem;
 }
-.tiki_table.compact tbody th,
-.tiki_table.compact tbody td {
-  padding: 0.25rem;
+.tiki_table.compact tbody > tr > * {
+  padding: 0.2rem;
 }
 .tiki_nav {
   clear: both;

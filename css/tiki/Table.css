@@ -12,66 +12,61 @@
   background-color: #f9fafb;
   font-weight: bold;
 }
-#ns thead tr:first-child>th:first-child {
+#ns thead tr:first-child > :first-child {
   border-radius: 3px 0 0 0;
 }
-#ns thead tr:first-child>th:last-child {
+#ns thead tr:first-child > :last-child {
   border-radius: 0 3px 0 0;
 }
-#ns thead tr:first-child>th:only-child {
+#ns thead tr:first-child > :only-child {
   border-radius: 3px 3px 0 0;
 }
-#ns tfoot tr:last-child>th:first-child {
+#ns tfoot tr:last-child > :first-child {
   border-radius: 0 0 0 3px;
 }
-#ns tfoot tr:last-child>th:last-child {
+#ns tfoot tr:last-child > :last-child {
   border-radius: 0 0 3px 0;
 }
-#ns tfoot tr:first-child>th:only-child {
+#ns tfoot tr:first-child > :only-child {
   border-radius: 0 0 3px 3px;
 }
-#ns thead th,
-#ns tfoot th,
-#ns thead td,
-#ns tfoot td {
-  padding: 0.85rem 0.5rem;
+#ns thead > tr > *,
+#ns tfoot > tr > * {
+  padding: 0.6rem 0.4rem;
 }
-#ns tbody th,
-#ns tbody td {
-  padding: 0.5rem;
-}
-#ns tbody td,
-#ns tbody th {
+#ns tbody > tr > * {
+  padding: 0.4rem;
   border-left: 1px solid #eee;
   border-top: 1px solid #eee;
+}
+#ns tbody > tr:first-child > * {
+  border-top: 1px solid #ddd;
 }
 #ns thead td,
 #ns thead th,
 #ns tfoot td,
 #ns tfoot th {
-  border-left: 1px solid #ddd;
+  border-left: 1px solid #eee;
   border-top: 1px solid #ddd;
 }
-#ns thead tr>th:first-child,
-#ns tfoot tr>th:first-child,
-#ns tbody tr>th:first-child,
-#ns thead tr>td:first-child,
-#ns tfoot tr>td:first-child,
-#ns tbody tr>td:first-child {
+#ns thead tr > :first-child,
+#ns tfoot tr > :first-child,
+#ns tbody tr > :first-child {
   border-left: none;
 }
 #ns thead tr:first-child>th,
 #ns thead tr:first-child>td {
   border-top: none;
 }
-#ns tbody:first-child>tr:first-child>th,
-#ns tbody:first-child>tr:first-child>td,
-#ns tfoot:first-child>tr:first-child>th,
-#ns tfoot:first-child>tr:first-child>td {
+#ns tbody:first-child > tr:first-child > *,
+#ns tfoot:first-child > tr:first-child > * {
   border-top: none;
 }
-#ns tbody>tr>th:first-child {
+#ns tbody > tr > th:first-child {
   text-align: left;
+}
+#ns tbody > tr > th:last-child {
+  text-align: right;
 }
 #ns.collapsing {
   width: auto;
@@ -83,45 +78,30 @@
 #ns.plain tfoot th {
   background-color: transparent;
 }
-#ns.plain.frameless thead>tr:first-child>th,
-#ns.plain.frameless thead>tr:first-child>td,
-#ns.plain.frameless tbody:first-child>tr:first-child>th,
-#ns.plain.frameless tbody:first-child>tr:first-child>td,
-#ns.plain.frameless tfoot:first-child>tr:first-child>th,
-#ns.plain.frameless tfoot:first-child>tr:first-child>td {
+#ns.plain.frameless thead > tr:first-child > *,
+#ns.plain.frameless tbody:first-child > tr:first-child > *,
+#ns.plain.frameless tfoot:first-child > tr:first-child > * {
   padding-top: 0;
 }
-#ns.plain.frameless thead>tr>th:first-child,
-#ns.plain.frameless thead>tr>td:first-child,
-#ns.plain.frameless tbody>tr>th:first-child,
-#ns.plain.frameless tbody>tr>td:first-child,
-#ns.plain.frameless tfoot>tr>th:first-child,
-#ns.plain.frameless tfoot>tr>td:first-child {
+#ns.plain.frameless thead > tr > :first-child,
+#ns.plain.frameless tbody > tr > :first-child,
+#ns.plain.frameless tfoot > tr > :first-child {
   padding-left: 0;
 }
-#ns.plain.frameless thead>tr>th:last-child,
-#ns.plain.frameless thead>tr>td:last-child,
-#ns.plain.frameless tbody>tr>th:last-child,
-#ns.plain.frameless tbody>tr>td:last-child,
-#ns.plain.frameless tfoot>tr>th:last-child,
-#ns.plain.frameless tfoot>tr>td:last-child {
+#ns.plain.frameless thead > tr > :last-child,
+#ns.plain.frameless tbody > tr > :last-child,
+#ns.plain.frameless tfoot > tr > :last-child {
   padding-right: 0;
 }
-#ns.plain.frameless thead:last-child>tr:last-child>th,
-#ns.plain.frameless thead:last-child>tr:last-child>td,
-#ns.plain.frameless tbody:last-child>tr:last-child>th,
-#ns.plain.frameless tbody:last-child>tr:last-child>td,
-#ns.plain.frameless tfoot>tr:last-child>th,
-#ns.plain.frameless tfoot>tr:last-child>td {
+#ns.plain.frameless thead:last-child > tr:last-child > *,
+#ns.plain.frameless tfoot + :not(tbody) > tr:last-child > *,
+#ns.plain.frameless tfoot > tr:last-child > * {
   padding-bottom: 0;
 }
-#ns.compact thead th,
-#ns.compact tfoot th,
-#ns.compact thead td,
-#ns.compact tfoot td {
-  padding: 0.425rem 0.25rem;
+#ns.compact thead > tr > *,
+#ns.compact tfoot > tr > * {
+  padding: 0.3rem 0.2rem;
 }
-#ns.compact tbody th,
-#ns.compact tbody td {
-  padding: 0.25rem;
+#ns.compact tbody > tr > * {
+  padding: 0.2rem;
 }
