@@ -8,6 +8,8 @@ $table-border-radius = $border-radius
 $table-margin = 1rem 0
 $table-padding-hor = 0.5rem
 $table-padding-vert = 0.85rem
+$table-compact-padding-hor = $table-padding-hor / 2
+$table-compact-padding-vert = $table-padding-vert / 2
 $table-font-weight = bold
 
 #ns
@@ -75,8 +77,63 @@ $table-font-weight = bold
   thead tr:first-child>td
     border-top: none
 
-  tbody:first-child> tr:first-child>th,
-  tbody:first-child> tr:first-child>td
-  tfoot:first-child> tr:first-child>th,
-  tfoot:first-child> tr:first-child>td
+  tbody:first-child>tr:first-child>th,
+  tbody:first-child>tr:first-child>td
+  tfoot:first-child>tr:first-child>th,
+  tfoot:first-child>tr:first-child>td
     border-top: none
+
+  tbody>tr>th:first-child
+    text-align: left
+
+  // MODIFIERS
+  &.collapsing
+    width: auto
+
+  &.frameless
+    border: none
+
+  &.plain
+    thead th,
+    tfoot th
+      background-color: transparent
+
+  &.plain.frameless
+    thead>tr:first-child>th,
+    thead>tr:first-child>td,
+    tbody:first-child>tr:first-child>th,
+    tbody:first-child>tr:first-child>td,
+    tfoot:first-child>tr:first-child>th,
+    tfoot:first-child>tr:first-child>td // TODO
+      padding-top: 0
+    thead>tr>th:first-child,
+    thead>tr>td:first-child,
+    tbody>tr>th:first-child,
+    tbody>tr>td:first-child,
+    tfoot>tr>th:first-child,
+    tfoot>tr>td:first-child
+      padding-left: 0
+    thead>tr>th:last-child,
+    thead>tr>td:last-child,
+    tbody>tr>th:last-child,
+    tbody>tr>td:last-child,
+    tfoot>tr>th:last-child,
+    tfoot>tr>td:last-child
+      padding-right: 0
+    thead:last-child>tr:last-child>th,
+    thead:last-child>tr:last-child>td,
+    tbody:last-child>tr:last-child>th,
+    tbody:last-child>tr:last-child>td,
+    tfoot>tr:last-child>th,
+    tfoot>tr:last-child>td // TODO
+      padding-bottom: 0
+
+  &.compact
+    thead th,
+    tfoot th,
+    thead td,
+    tfoot td
+      padding: $table-compact-padding-vert $table-compact-padding-hor
+    tbody th,
+    tbody td
+      padding: $table-compact-padding-hor

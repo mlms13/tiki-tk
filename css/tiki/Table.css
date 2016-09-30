@@ -64,9 +64,64 @@
 #ns thead tr:first-child>td {
   border-top: none;
 }
-#ns tbody:first-child> tr:first-child>th,
-#ns tbody:first-child> tr:first-child>td,
-#ns tfoot:first-child> tr:first-child>th,
-#ns tfoot:first-child> tr:first-child>td {
+#ns tbody:first-child>tr:first-child>th,
+#ns tbody:first-child>tr:first-child>td,
+#ns tfoot:first-child>tr:first-child>th,
+#ns tfoot:first-child>tr:first-child>td {
   border-top: none;
+}
+#ns tbody>tr>th:first-child {
+  text-align: left;
+}
+#ns.collapsing {
+  width: auto;
+}
+#ns.frameless {
+  border: none;
+}
+#ns.plain thead th,
+#ns.plain tfoot th {
+  background-color: transparent;
+}
+#ns.plain.frameless thead>tr:first-child>th,
+#ns.plain.frameless thead>tr:first-child>td,
+#ns.plain.frameless tbody:first-child>tr:first-child>th,
+#ns.plain.frameless tbody:first-child>tr:first-child>td,
+#ns.plain.frameless tfoot:first-child>tr:first-child>th,
+#ns.plain.frameless tfoot:first-child>tr:first-child>td {
+  padding-top: 0;
+}
+#ns.plain.frameless thead>tr>th:first-child,
+#ns.plain.frameless thead>tr>td:first-child,
+#ns.plain.frameless tbody>tr>th:first-child,
+#ns.plain.frameless tbody>tr>td:first-child,
+#ns.plain.frameless tfoot>tr>th:first-child,
+#ns.plain.frameless tfoot>tr>td:first-child {
+  padding-left: 0;
+}
+#ns.plain.frameless thead>tr>th:last-child,
+#ns.plain.frameless thead>tr>td:last-child,
+#ns.plain.frameless tbody>tr>th:last-child,
+#ns.plain.frameless tbody>tr>td:last-child,
+#ns.plain.frameless tfoot>tr>th:last-child,
+#ns.plain.frameless tfoot>tr>td:last-child {
+  padding-right: 0;
+}
+#ns.plain.frameless thead:last-child>tr:last-child>th,
+#ns.plain.frameless thead:last-child>tr:last-child>td,
+#ns.plain.frameless tbody:last-child>tr:last-child>th,
+#ns.plain.frameless tbody:last-child>tr:last-child>td,
+#ns.plain.frameless tfoot>tr:last-child>th,
+#ns.plain.frameless tfoot>tr:last-child>td {
+  padding-bottom: 0;
+}
+#ns.compact thead th,
+#ns.compact tfoot th,
+#ns.compact thead td,
+#ns.compact tfoot td {
+  padding: 0.425rem 0.25rem;
+}
+#ns.compact tbody th,
+#ns.compact tbody td {
+  padding: 0.25rem;
 }

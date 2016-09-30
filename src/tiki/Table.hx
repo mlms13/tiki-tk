@@ -19,6 +19,18 @@ class Table extends TkElement<Table> {
             .concat(contents.tbodies.map(function(v): VNode return v));
     super("table", children.map(function(child): VNode return child));
   }
+
+  public function collapsing()
+    return addClass("collapsing");
+
+  public function frameless()
+    return addClass("frameless");
+
+  public function plain()
+    return addClass("plain");
+
+  public function compact()
+    return addClass("compact");
 }
 
 class TableCaption extends TkElement<TableCaption> {

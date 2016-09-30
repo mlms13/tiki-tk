@@ -236,11 +236,66 @@
 .tiki_table thead tr:first-child>td {
   border-top: none;
 }
-.tiki_table tbody:first-child> tr:first-child>th,
-.tiki_table tbody:first-child> tr:first-child>td,
-.tiki_table tfoot:first-child> tr:first-child>th,
-.tiki_table tfoot:first-child> tr:first-child>td {
+.tiki_table tbody:first-child>tr:first-child>th,
+.tiki_table tbody:first-child>tr:first-child>td,
+.tiki_table tfoot:first-child>tr:first-child>th,
+.tiki_table tfoot:first-child>tr:first-child>td {
   border-top: none;
+}
+.tiki_table tbody>tr>th:first-child {
+  text-align: left;
+}
+.tiki_table.collapsing {
+  width: auto;
+}
+.tiki_table.frameless {
+  border: none;
+}
+.tiki_table.plain thead th,
+.tiki_table.plain tfoot th {
+  background-color: transparent;
+}
+.tiki_table.plain.frameless thead>tr:first-child>th,
+.tiki_table.plain.frameless thead>tr:first-child>td,
+.tiki_table.plain.frameless tbody:first-child>tr:first-child>th,
+.tiki_table.plain.frameless tbody:first-child>tr:first-child>td,
+.tiki_table.plain.frameless tfoot:first-child>tr:first-child>th,
+.tiki_table.plain.frameless tfoot:first-child>tr:first-child>td {
+  padding-top: 0;
+}
+.tiki_table.plain.frameless thead>tr>th:first-child,
+.tiki_table.plain.frameless thead>tr>td:first-child,
+.tiki_table.plain.frameless tbody>tr>th:first-child,
+.tiki_table.plain.frameless tbody>tr>td:first-child,
+.tiki_table.plain.frameless tfoot>tr>th:first-child,
+.tiki_table.plain.frameless tfoot>tr>td:first-child {
+  padding-left: 0;
+}
+.tiki_table.plain.frameless thead>tr>th:last-child,
+.tiki_table.plain.frameless thead>tr>td:last-child,
+.tiki_table.plain.frameless tbody>tr>th:last-child,
+.tiki_table.plain.frameless tbody>tr>td:last-child,
+.tiki_table.plain.frameless tfoot>tr>th:last-child,
+.tiki_table.plain.frameless tfoot>tr>td:last-child {
+  padding-right: 0;
+}
+.tiki_table.plain.frameless thead:last-child>tr:last-child>th,
+.tiki_table.plain.frameless thead:last-child>tr:last-child>td,
+.tiki_table.plain.frameless tbody:last-child>tr:last-child>th,
+.tiki_table.plain.frameless tbody:last-child>tr:last-child>td,
+.tiki_table.plain.frameless tfoot>tr:last-child>th,
+.tiki_table.plain.frameless tfoot>tr:last-child>td {
+  padding-bottom: 0;
+}
+.tiki_table.compact thead th,
+.tiki_table.compact tfoot th,
+.tiki_table.compact thead td,
+.tiki_table.compact tfoot td {
+  padding: 0.425rem 0.25rem;
+}
+.tiki_table.compact tbody th,
+.tiki_table.compact tbody td {
+  padding: 0.25rem;
 }
 .tiki_nav {
   clear: both;
