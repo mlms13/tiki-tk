@@ -149,9 +149,6 @@ class App extends doom.html.Component<{}> {
           thead([
             tr([th("city"), th("state").center(), th("population").right(), th("land area").right()])
           ]),
-          tfoot([
-            tr([th([]), th("totals:").right(), th(int(10171215)).right(), th(num(749.8, 1)).right()])
-          ]),
           tbody([
             tr([th("Seattle"),     td("WA").center(), td(int(652405)).right(),  td(num(83.9, 1)).right()]),
             tr([th("New York"),    td("NY").center(), td(int(8405837)).right(), td(num(302.6, 1)).right()]),
