@@ -1,94 +1,70 @@
 package tiki;
 
 import doom.core.VNode;
+import doom.core.VNodes;
 import haxe.ds.Option;
 using thx.Options;
 
 class Table extends TkElement<Table> {
   public function new(contents: {
     caption: Option<TableCaption>,
-    colgroups: Array<ColGroup>,
     thead: Option<TableHead>,
     tfoot: Option<TableFoot>,
     tbodies: Array<TableBody>,
-  }) {// , children: Array<TableRow>
-    var children: Array<TkElement<Dynamic>> = [];
+  }) {
+    var children =
+          (contents.caption.toArray().map(function(v): VNode return v))
+            .concat(contents.thead.toArray().map(function(v): VNode return v))
+            .concat(contents.tfoot.toArray().map(function(v): VNode return v))
+            .concat(contents.tbodies.map(function(v): VNode return v));
     super("table", children.map(function(child): VNode return child));
   }
-
-  // var dropdown = Tiki.dropdown()
-  //       .addAction(...)
-  //       .when(cond, fn(_.addAction(exit)));
-  //
-  // actions.reduce(function(dd, item) {
-  //   if(item.cond)
-  //     return dd.addAction(item.exit);
-  //   return dd;
-  // }, Tiki.dropdown());
-  //
-  // if(cond)
-  //   dropdown.addAction(exit)
-  //
-  // var dropdown = Tiki.dropdown()
-  //                   .addAction(...)
-  //                   .addAction(exit)
-
-    // super("table", children.map(function(child: Array<TableContent>): VNode return child));
 }
 
 class TableCaption extends TkElement<TableCaption> {
-  public function new() {
-    super("caption", []);
-  }
-}
-class ColGroup extends TkElement<ColGroup> {
-  public function new() {
-    super("colgroup", []);
-  }
+  public function new(children)
+    super("caption", children);
 }
 class TableContainer<ElementType: TkElement<ElementType>> extends TkElement<ElementType> {}
 class TableHead extends TableContainer<TableHead> {
-  public function new() {
-    super("thead", []);
+  public function new(rows: Array<TableRow>) {
+    super("thead", rows.map(function(v): VNode return v));
   }
 }
 class TableFoot extends TableContainer<TableFoot> {
-  public function new() {
-    super("tfoot", []);
+  public function new(rows: Array<TableRow>) {
+    super("tfoot", rows.map(function(v): VNode return v));
   }
 }
 class TableBody extends TableContainer<TableBody> {
-  public function new() {
-    super("tbody", []);
+  public function new(rows: Array<TableRow>) {
+    super("tbody", rows.map(function(v): VNode return v));
   }
 }
 
-// table.caption.appendWTF();
-// table.tbody.appendWTF();
-
-
-// class TableRowContainer extends TkElement<TableContant> {
-//
-// }
-
-/*
-
-?caption
-*colgroup
-?thead
-?tfoot
-?tbody
-
-*/
-
-
-
 class TableRow extends TkElement<TableRow> {
-
+  public function new(cells: Array<TableCell<Dynamic>>)
+    super("tr", cells.map(function(v): VNode return v));
 }
 
-class TableCell extends TkElement<TableCell> {
+class TableCell<TableCell: TkElement<TableCell>> extends TkElement<TableCell> {
+  public function rowspan(rows: Int)
+    return setStringAttribute("rowspan", '${rows < 1 ? 1 : rows}');
+  public function colspan(cols: Int)
+    return setStringAttribute("colspan", '${cols < 1 ? 1 : cols}');
+}
 
+class TableDataCell extends TableCell<TableDataCell> {
+  public function new(children: VNodes)
+    super("td", children);
+
+  public function headers(ids: Array<String>)
+    return setStringAttribute("headers", '${ids.join(" ")}');
+}
+
+class TableHeaderCell extends TableCell<TableHeaderCell> {
+  public function new(children: VNodes)
+    super("th", children);
 }
 
 // import doom.core.Renderable;
@@ -147,31 +123,7 @@ class TableCell extends TkElement<TableCell> {
 //     return v <= 1 ? null : '$v';
 //   }
 // }
-//
-// class Cell extends TkElement<Cell> {
-//   public function new(kind: CellKind) {
-//     switch kind {
-//       case TData(content): super("td", content);
-//       case THead(content): super("th", content);
-//     }
-//   }
-//
-//   public function colspan(columns: Int) {
-//     if(columns < 1) columns = 1;
-//     return setStringAttribute("colspan", '$columns');
-//   }
-//
-//   public function rowspan(rows: Int) {
-//     if(rows < 1) rows = 1;
-//     return setStringAttribute("rowspan", '$rows');
-//   }
-// }
-//
-// enum CellKind {
-//   TData(content: VNodes);
-//   THead(content: VNodes);
-// }
-//
+
 // class Column<Row> implements Renderable {
 //   public var table(default, null): Table<Row>;
 //   public var cell(default, null): Row -> Cell;
@@ -204,49 +156,6 @@ class TableCell extends TkElement<TableCell> {
 //     headerCells.push(header);
 //     return header;
 //   }
-//
-//   public function render()
-//     return table.render();
-// }
-//
-// class HeaderCell<Row> implements Renderable {
-//   public var table(default, null): Table<Row>;
-//   public var parent(default, null): Column<Row>;
-//   public var type(default, null): HeaderType;
-//   public var spanCols(default, null): Int = 1;
-//   public var spanRows(default, null): Int = 1;
-//   // public var align(default, null): CellAlign;
-//   public function new(table, parent, type) {
-//     this.table = table;
-//     this.parent = parent;
-//     this.type = type;
-//     // align = Center;
-//   }
-//
-//
-//   public function colspan(columns: Int) {
-//     if(columns < 1) columns = 1;
-//     spanCols = columns;
-//     return this;
-//   }
-//
-//   public function rowspan(rows: Int) {
-//     if(rows < 1) rows = 1;
-//     spanRows = rows;
-//     return this;
-//   }
-//
-//   public function header(cell: VNodes)
-//     return parent.header(cell);
-//
-//   public function noHeader()
-//     return parent.noHeader();
-//
-//   public function emptyHeader()
-//     return parent.emptyHeader();
-//
-//   public function column(cell: Row -> Cell)
-//     return table.column(cell);
 //
 //   public function render()
 //     return table.render();

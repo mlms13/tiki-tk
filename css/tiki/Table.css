@@ -1,0 +1,72 @@
+#ns {
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin: 1rem 0;
+}
+#ns thead th,
+#ns tfoot th {
+  background-color: #f9fafb;
+  font-weight: bold;
+}
+#ns thead tr:first-child>th:first-child {
+  border-radius: 3px 0 0 0;
+}
+#ns thead tr:first-child>th:last-child {
+  border-radius: 0 3px 0 0;
+}
+#ns thead tr:first-child>th:only-child {
+  border-radius: 3px 3px 0 0;
+}
+#ns tfoot tr:last-child>th:first-child {
+  border-radius: 0 0 0 3px;
+}
+#ns tfoot tr:last-child>th:last-child {
+  border-radius: 0 0 3px 0;
+}
+#ns tfoot tr:first-child>th:only-child {
+  border-radius: 0 0 3px 3px;
+}
+#ns thead th,
+#ns tfoot th,
+#ns thead td,
+#ns tfoot td {
+  padding: 0.85rem 0.5rem;
+}
+#ns tbody th,
+#ns tbody td {
+  padding: 0.5rem;
+}
+#ns tbody td,
+#ns tbody th {
+  border-left: 1px solid #eee;
+  border-top: 1px solid #eee;
+}
+#ns thead td,
+#ns thead th,
+#ns tfoot td,
+#ns tfoot th {
+  border-left: 1px solid #ddd;
+  border-top: 1px solid #ddd;
+}
+#ns thead tr>th:first-child,
+#ns tfoot tr>th:first-child,
+#ns tbody tr>th:first-child,
+#ns thead tr>td:first-child,
+#ns tfoot tr>td:first-child,
+#ns tbody tr>td:first-child {
+  border-left: none;
+}
+#ns thead tr:first-child>th,
+#ns thead tr:first-child>td {
+  border-top: none;
+}
+#ns tbody:first-child> tr:first-child>th,
+#ns tbody:first-child> tr:first-child>td,
+#ns tfoot:first-child> tr:first-child>th,
+#ns tfoot:first-child> tr:first-child>td {
+  border-top: none;
+}

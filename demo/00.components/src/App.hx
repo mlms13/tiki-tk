@@ -80,28 +80,29 @@ class App extends doom.html.Component<{}> {
       ]),
       demoSection("Tables", [
         table(
-          tcaption(),
-          colgroup(),
-          thead(),
-          tfoot(),
-          tbody()
+          tcaption("some caption here"),
+          thead([
+            tr([th([]).colspan(2),         th("numbers").center().colspan(2)]),
+            tr([th("city"), th("state").center(), th("population").right(), th("land area").right()])
+          ]),
+          tfoot([
+            tr([th([]), th("totals:").right(), th(int(10171215)).right(), th(num(749.8, 1)).right()])
+          ]),
+          tbody([
+            tr([th("Seattle"),     td("WA").center(), td(int(652405)).right(),  td(num(83.9, 1)).right()]),
+            tr([th("New York"),    td("NY").center(), td(int(8405837)).right(), td(num(302.6, 1)).right()]),
+            tr([th("Boston"),      td("MA").center(), td(int(645966)).right(),  td(num(48.3, 1)).right()]),
+            tr([th("Kansas City"), td("MO").center(), td(int(467007)).right(),  td(num(315.0, 1)).right()]),
+          ])
+        ),
+        table(
+          tbody([
+            tr([th("Seattle"),     td("WA").center(), td(int(652405)).right(),  td(num(83.9, 1)).right()]),
+            tr([th("New York"),    td("NY").center(), td(int(8405837)).right(), td(num(302.6, 1)).right()]),
+            tr([th("Boston"),      td("MA").center(), td(int(645966)).right(),  td(num(48.3, 1)).right()]),
+            tr([th("Kansas City"), td("MO").center(), td(int(467007)).right(),  td(num(315.0, 1)).right()]),
+          ])
         )
-        // table(tableContent())
-        //   .column(function(r) return cell("x"))
-        //     .emptyHeader()
-        //     .header("x")
-        //   .column(function(r) return cell(r.city))
-        //     .emptyHeader()
-        //     .rowspan(2)
-        //   .column(function(r) return cell(r.state))
-        //     .emptyHeader()
-        //     .header("state")
-        //   .column(function(r) return cell(integer(r.population)))
-        //     .header("numbers").colspan(2)
-        //     .header("population")
-        //   .column(function(r) return cell(fixed(r.landArea, 1)))
-        //     .noHeader()
-        //     .header("area")
       ])
     ]);
   }
@@ -123,30 +124,47 @@ class App extends doom.html.Component<{}> {
               blandit, vitae lacinia erat imperdiet.");
   }
 
-  static function tableContent() return [
-    {
-      city: "Seattle",
-      state: "WA",
-      population: 652405,
-      landArea: 83.9
-    },
-    {
-      city: "New York",
-      state: "NY",
-      population: 8405837,
-      landArea: 302.6
-    },
-    {
-      city: "Boston",
-      state: "MA",
-      population: 645966,
-      landArea: 48.3
-    },
-    {
-      city: "Kansas City",
-      state: "MO",
-      population: 467007,
-      landArea: 315
-    }
-  ];
+  // static function tableContent() return [
+  //   {
+  //     city: "Seattle",
+  //     state: "WA",
+  //     population: 652405,
+  //     landArea: 83.9
+  //   },
+  //   {
+  //     city: "New York",
+  //     state: "NY",
+  //     population: 8405837,
+  //     landArea: 302.6
+  //   },
+  //   {
+  //     city: "Boston",
+  //     state: "MA",
+  //     population: 645966,
+  //     landArea: 48.3
+  //   },
+  //   {
+  //     city: "Kansas City",
+  //     state: "MO",
+  //     population: 467007,
+  //     landArea: 315
+  //   }
+  // ];
+
+  // table(tableContent())
+  //   .column(function(r) return cell("x"))
+  //     .emptyHeader()
+  //     .header("x")
+  //   .column(function(r) return cell(r.city))
+  //     .emptyHeader()
+  //     .rowspan(2)
+  //   .column(function(r) return cell(r.state))
+  //     .emptyHeader()
+  //     .header("state")
+  //   .column(function(r) return cell(integer(r.population)))
+  //     .header("numbers").colspan(2)
+  //     .header("population")
+  //   .column(function(r) return cell(fixed(r.landArea, 1)))
+  //     .noHeader()
+  //     .header("area")
 }

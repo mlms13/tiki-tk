@@ -1,61 +1,11 @@
-.tiki_message {
-  border-width: 1px;
-  border-style: solid;
-  border-radius: 3px;
-  background-color: #fcfcfc;
-  color: #444;
-  border-color: #eee;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  margin-bottom: 1rem;
+.tiki_tk-element.align-right {
+  text-align: right;
 }
-.tiki_message .close {
-  position: relative;
-  top: -0.6rem;
-  right: -0.75rem;
-  color: #fff;
-  padding: 0;
-  cursor: pointer;
-  background: transparent;
-  border: transparent;
-  -webkit-appearance: none;
-  float: right;
-  font-size: 1.75rem;
-  font-weight: 700;
-  line-height: 1;
-  text-shadow: 0 0 1px #000;
-  opacity: 0.8;
-  box-shadow: none;
+.tiki_tk-element.align-left {
+  text-align: left;
 }
-.tiki_message .close:not([disabled]):active,
-.tiki_message .close:not([disabled]):hover,
-.tiki_message .close:not([disabled]):focus {
-  background-color: transparent;
-  border-color: transparent;
-  opacity: 1;
-  box-shadow: none;
-}
-.tiki_message.info {
-  background-color: #cfecf5;
-  color: #17586b;
-  border-color: #6ec6e0;
-}
-.tiki_message.success {
-  background-color: #d1f5d4;
-  color: #187120;
-  border-color: #74e27d;
-}
-.tiki_message.warning {
-  background-color: #faead4;
-  color: #925a11;
-  border-color: #f0bf7f;
-}
-.tiki_message.danger {
-  background-color: #f8d6d4;
-  color: #841c17;
-  border-color: #e9847f;
+.tiki_tk-element.align-center {
+  text-align: center;
 }
 .tiki_button {
   border-width: 1px;
@@ -219,4 +169,147 @@
 .tiki_button.danger.hollow:focus {
   border-color: #da3229;
   background-color: #f8d6d4;
+}
+.tiki_table {
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin: 1rem 0;
+}
+.tiki_table thead th,
+.tiki_table tfoot th {
+  background-color: #f9fafb;
+  font-weight: bold;
+}
+.tiki_table thead tr:first-child>th:first-child {
+  border-radius: 3px 0 0 0;
+}
+.tiki_table thead tr:first-child>th:last-child {
+  border-radius: 0 3px 0 0;
+}
+.tiki_table thead tr:first-child>th:only-child {
+  border-radius: 3px 3px 0 0;
+}
+.tiki_table tfoot tr:last-child>th:first-child {
+  border-radius: 0 0 0 3px;
+}
+.tiki_table tfoot tr:last-child>th:last-child {
+  border-radius: 0 0 3px 0;
+}
+.tiki_table tfoot tr:first-child>th:only-child {
+  border-radius: 0 0 3px 3px;
+}
+.tiki_table thead th,
+.tiki_table tfoot th,
+.tiki_table thead td,
+.tiki_table tfoot td {
+  padding: 0.85rem 0.5rem;
+}
+.tiki_table tbody th,
+.tiki_table tbody td {
+  padding: 0.5rem;
+}
+.tiki_table tbody td,
+.tiki_table tbody th {
+  border-left: 1px solid #eee;
+  border-top: 1px solid #eee;
+}
+.tiki_table thead td,
+.tiki_table thead th,
+.tiki_table tfoot td,
+.tiki_table tfoot th {
+  border-left: 1px solid #ddd;
+  border-top: 1px solid #ddd;
+}
+.tiki_table thead tr>th:first-child,
+.tiki_table tfoot tr>th:first-child,
+.tiki_table tbody tr>th:first-child,
+.tiki_table thead tr>td:first-child,
+.tiki_table tfoot tr>td:first-child,
+.tiki_table tbody tr>td:first-child {
+  border-left: none;
+}
+.tiki_table thead tr:first-child>th,
+.tiki_table thead tr:first-child>td {
+  border-top: none;
+}
+.tiki_table tbody:first-child> tr:first-child>th,
+.tiki_table tbody:first-child> tr:first-child>td,
+.tiki_table tfoot:first-child> tr:first-child>th,
+.tiki_table tfoot:first-child> tr:first-child>td {
+  border-top: none;
+}
+.tiki_nav {
+  clear: both;
+  content: "";
+  display: table;
+  list-style: none;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+.tiki_nav.inline > .nav-item {
+  float: left;
+  margin-left: 1rem;
+}
+.tiki_message {
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 3px;
+  background-color: #fcfcfc;
+  color: #444;
+  border-color: #eee;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+.tiki_message .close {
+  position: relative;
+  top: -0.6rem;
+  right: -0.75rem;
+  color: #fff;
+  padding: 0;
+  cursor: pointer;
+  background: transparent;
+  border: transparent;
+  -webkit-appearance: none;
+  float: right;
+  font-size: 1.75rem;
+  font-weight: 700;
+  line-height: 1;
+  text-shadow: 0 0 1px #000;
+  opacity: 0.8;
+  box-shadow: none;
+}
+.tiki_message .close:not([disabled]):active,
+.tiki_message .close:not([disabled]):hover,
+.tiki_message .close:not([disabled]):focus {
+  background-color: transparent;
+  border-color: transparent;
+  opacity: 1;
+  box-shadow: none;
+}
+.tiki_message.info {
+  background-color: #cfecf5;
+  color: #17586b;
+  border-color: #6ec6e0;
+}
+.tiki_message.success {
+  background-color: #d1f5d4;
+  color: #187120;
+  border-color: #74e27d;
+}
+.tiki_message.warning {
+  background-color: #faead4;
+  color: #925a11;
+  border-color: #f0bf7f;
+}
+.tiki_message.danger {
+  background-color: #f8d6d4;
+  color: #841c17;
+  border-color: #e9847f;
 }
