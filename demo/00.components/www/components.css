@@ -170,12 +170,70 @@
   border-color: #da3229;
   background-color: #f8d6d4;
 }
+.tiki_box-element {
+  border-width: 1px;
+  border-style: solid;
+  border-color: transparent;
+}
+.tiki_box-element.info {
+  background-color: #cfecf5;
+  color: #17586b;
+  border-color: #6ec6e0;
+}
+.tiki_box-element.success {
+  background-color: #d1f5d4;
+  color: #187120;
+  border-color: #74e27d;
+}
+.tiki_box-element.warning {
+  background-color: #faead4;
+  color: #925a11;
+  border-color: #f0bf7f;
+}
+.tiki_box-element.danger {
+  background-color: #f8d6d4;
+  color: #841c17;
+  border-color: #e9847f;
+}
+.tiki_box-element.info.inverted {
+  background-color: #17586b;
+  color: #6ec6e0;
+  border-color: #cfecf5;
+}
+.tiki_box-element.success.inverted {
+  background-color: #187120;
+  color: #74e27d;
+  border-color: #d1f5d4;
+}
+.tiki_box-element.warning.inverted {
+  background-color: #925a11;
+  color: #f0bf7f;
+  border-color: #faead4;
+}
+.tiki_box-element.danger.inverted {
+  background-color: #841c17;
+  color: #e9847f;
+  border-color: #f8d6d4;
+}
+.tiki_box-element.contrast {
+  color: #000;
+}
+.tiki_box-element.contrast.inverted {
+  color: #fff;
+}
+.tiki_box-element.hollow {
+  background-color: #fff;
+}
+.tiki_box-element.spacer {
+  visibility: hidden;
+}
 .tiki_table {
   width: 100%;
   background-color: #fff;
   border-collapse: separate;
   border-spacing: 0;
   margin: 1rem 0;
+  border-radius: 3px 3px 3px 3px;
 }
 .tiki_table thead > tr > th,
 .tiki_table tfoot > tr > th {
@@ -322,8 +380,6 @@
   margin-left: 1rem;
 }
 .tiki_message {
-  border-width: 1px;
-  border-style: solid;
   border-radius: 3px;
   background-color: #fcfcfc;
   color: #444;
@@ -359,24 +415,4 @@
   border-color: transparent;
   opacity: 1;
   box-shadow: none;
-}
-.tiki_message.info {
-  background-color: #cfecf5;
-  color: #17586b;
-  border-color: #6ec6e0;
-}
-.tiki_message.success {
-  background-color: #d1f5d4;
-  color: #187120;
-  border-color: #74e27d;
-}
-.tiki_message.warning {
-  background-color: #faead4;
-  color: #925a11;
-  border-color: #f0bf7f;
-}
-.tiki_message.danger {
-  background-color: #f8d6d4;
-  color: #841c17;
-  border-color: #e9847f;
 }

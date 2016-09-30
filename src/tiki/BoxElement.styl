@@ -1,0 +1,57 @@
+@import "variables"
+
+#ns
+  border-width $btn-border-width
+  border-style solid
+  border-color transparent
+  &.info
+    background-color $message-info-bg
+    color $message-info-color
+    border-color $message-info-border
+
+  &.success
+    background-color $message-success-bg
+    color $message-success-color
+    border-color $message-success-border
+
+  &.warning
+    background-color $message-warning-bg
+    color $message-warning-color
+    border-color $message-warning-border
+
+  &.danger
+    background-color $message-danger-bg
+    color $message-danger-color
+    border-color $message-danger-border
+
+  &.info.inverted
+    background-color $message-info-color
+    color $message-info-border
+    border-color $message-info-bg
+
+  &.success.inverted
+    background-color $message-success-color
+    color $message-success-border
+    border-color $message-success-bg
+
+  &.warning.inverted
+    background-color $message-warning-color
+    color $message-warning-border
+    border-color $message-warning-bg
+
+  &.danger.inverted
+    background-color $message-danger-color
+    color $message-danger-border
+    border-color $message-danger-bg
+
+  &.contrast
+    color: #000
+
+  &.contrast.inverted
+    color: #fff
+
+  &.hollow
+    background-color: #fff
+
+  &.spacer
+    visibility: hidden

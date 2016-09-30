@@ -5,7 +5,7 @@ import doom.core.VNodes;
 import haxe.ds.Option;
 using thx.Options;
 
-class Table extends TkElement<Table> {
+class Table extends BoxElement<Table> {
   public function new(contents: {
     caption: Option<TableCaption>,
     thead: Option<TableHead>,
@@ -59,7 +59,7 @@ class TableRow extends TkElement<TableRow> {
     super("tr", cells.map(function(v): VNode return v));
 }
 
-class TableCell<TableCell: TkElement<TableCell>> extends TkElement<TableCell> {
+class TableCell<ElementType: TableCell<ElementType>> extends BoxElement<ElementType> {
   public function rowspan(rows: Int)
     return setStringAttribute("rowspan", '${rows < 1 ? 1 : rows}');
   public function colspan(cols: Int)

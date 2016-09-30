@@ -1,0 +1,57 @@
+#ns {
+  border-width: 1px;
+  border-style: solid;
+  border-color: transparent;
+}
+#ns.info {
+  background-color: #cfecf5;
+  color: #17586b;
+  border-color: #6ec6e0;
+}
+#ns.success {
+  background-color: #d1f5d4;
+  color: #187120;
+  border-color: #74e27d;
+}
+#ns.warning {
+  background-color: #faead4;
+  color: #925a11;
+  border-color: #f0bf7f;
+}
+#ns.danger {
+  background-color: #f8d6d4;
+  color: #841c17;
+  border-color: #e9847f;
+}
+#ns.info.inverted {
+  background-color: #17586b;
+  color: #6ec6e0;
+  border-color: #cfecf5;
+}
+#ns.success.inverted {
+  background-color: #187120;
+  color: #74e27d;
+  border-color: #d1f5d4;
+}
+#ns.warning.inverted {
+  background-color: #925a11;
+  color: #f0bf7f;
+  border-color: #faead4;
+}
+#ns.danger.inverted {
+  background-color: #841c17;
+  color: #e9847f;
+  border-color: #f8d6d4;
+}
+#ns.contrast {
+  color: #000;
+}
+#ns.contrast.inverted {
+  color: #fff;
+}
+#ns.hollow {
+  background-color: #fff;
+}
+#ns.spacer {
+  visibility: hidden;
+}
