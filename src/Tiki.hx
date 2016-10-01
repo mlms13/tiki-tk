@@ -18,6 +18,7 @@ class Tiki {
   public inline static function nav(p : NavProps, children : Array<NavLink>) return new Nav(p, children);
   public inline static function navLink(p : NavLinkProps, children: VNodes) return new NavLink(p, children);
 
+  // Table Elements
   public static function table(?caption: TableCaption, ?thead: TableHead, ?tfoot: TableFoot, ?tbody: TableBody, ?tbodies: Array<TableBody>)
     return new Table({
       caption: Options.ofValue(caption),
@@ -36,9 +37,12 @@ class Tiki {
   // public inline static function cell(children: VNodes) return new Cell(TData(children));
   // public inline static function cellh(children: VNodes) return new Cell(THead(children));
 
-  // formatting elements
+  // Formatting Elements
   public inline static function num(value: Float, ?significantDigits: Int) return new Number({ value: value, format: thx.format.NumberFormat.number.bind(_, significantDigits, _), culture: defaultCulture });
   public inline static function int(value: Float, ?significantDigits: Int) return new Number({ value: value, format: thx.format.NumberFormat.integer, culture: defaultCulture });
+
+  // Misc Elements
+  public inline static function ribbon(children) return new Ribbon(children);
 
   // Keep? Remove? Make a class for each? group into common classes (eg. headers for h1,h2...) ?
   public inline static function h1(children: VNodes): Element return new Element("h1", children);

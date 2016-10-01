@@ -1,13 +1,17 @@
 package tiki;
 
 class BoxElement<ElementType: BoxElement<ElementType>> extends TkElement<ElementType> {
-  public function style(st: BoxStyle)
-    return addClass(switch st {
-      case Info:    "info";
-      case Success: "success";
-      case Danger:  "danger";
-      case Warning: "warning";
-    });
+  public function info()
+    return addClass("styled info");
+
+  public function success()
+    return addClass("styled success");
+
+  public function danger()
+    return addClass("styled danger");
+
+  public function warning()
+    return addClass("styled warning");
 
   public function contrast()
     return addClass("contrast");

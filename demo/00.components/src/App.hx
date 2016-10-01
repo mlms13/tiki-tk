@@ -73,54 +73,100 @@ class App extends doom.html.Component<{}> {
       ]),
       demoSection("Messages", [
         message(["Default message"]),
-        message(["Info message"]).style(Info),
-        message(["Success message"]).style(Success),
-        message(["Success message hollow"]).style(Success).hollow(),
-        message(["Success message contrast"]).style(Success).contrast(),
-        message(["Success message inverted"]).style(Success).inverted(),
-        message(["Success message inverted / contrast"]).style(Success).inverted().contrast(),
-        message(["Success message hollow / contrast"]).style(Success).hollow().contrast(),
-        message(["Warning message"]).style(Warning),
-        message(["Danger message with dismissible"]).style(Danger).dismissible(function() console.log("message closed"))
+        message(["Info message"]).info(),
+        message(["Success message"]).success(),
+        message(["Success message hollow"]).success().hollow(),
+        message(["Success message contrast"]).success().contrast(),
+        message(["Success message inverted"]).success().inverted(),
+        message(["Success message inverted / contrast"]).success().inverted().contrast(),
+        message(["Success message hollow / contrast"]).success().hollow().contrast(),
+        message(["Warning message"]).warning(),
+        message(["Danger message with dismissible"]).danger().dismissible(function() console.log("message closed"))
       ]),
       demoSection("Tables", [
         table(
           tcaption("some caption here"),
           thead([
-            tr([th([]).colspan(2),       th("numbers").center().colspan(2)]),
-            tr([th("city"),              th("state").center(),  th("population").right(),                th("land area").right()])
+            tr([
+              th([]).colspan(2),
+              th("numbers").center().colspan(2)]),
+            tr([th("city"),
+              th("state").center(),
+              th("population").right(),
+              th("land area").right()])
           ]),
           tfoot([
-            tr([th([]),                  th("totals:").right(), th(int(10171215)).right(),               th(num(749.8, 1)).right()])
+            tr([
+              th([]),
+              th("totals:").right(),
+              th(int(10171215)).right(),
+              th(num(749.8, 1)).right()])
           ]),
           tbody([
-            tr([th("Seattle"),           td("WA").center(),     td(int(652405)).right(),                 td(num(83.9, 1)).right()]),
-            tr([th("New York").style(Success)
-                .contrast().inverted(),  td("NY").center(),     td(int(8405837)).right().style(Warning), td(num(302.6, 1)).right()]),
-            tr([th("Boston"),            td("MA").center(),     td(int(645966)).right(),                 td(num(48.3, 1)).right().style(Danger)]),
-            tr([th("Kansas City"),       td("MO").center(),     td(int(467007)).right().style(Info),     td(num(315.0, 1)).right()]),
+            tr([
+              th(ribbon("Seattle")),
+              td("WA").center(),
+              td(int(652405)).right(),
+              td(num(83.9, 1)).right()]),
+            tr([
+              th("New York").success().contrast().inverted(),
+              td("NY").center(),
+              td(int(8405837)).right().warning(),
+              td(num(302.6, 1)).right()]),
+            tr([
+              th("Boston"),
+              td("MA").center(),
+              td(int(645966)).right(),
+              td(num(48.3, 1)).right().danger()]),
+            tr([
+              th("Kansas City"),
+              td("MO").center(),
+              td(int(467007)).right().info(),
+              td(num(315.0, 1)).right()]),
           ])
         ),
         table(
           tbody([
-            tr([th("Seattle"),     td("WA").center(), td(int(652405)).right(),  td(num(83.9, 1)).right()]),
-            tr([th("New York"),    td("NY").center(), td(int(8405837)).right(), td(num(302.6, 1)).right()]),
-            tr([th("Boston")
-              .hollow()
-              .style(Danger),      td("MA").center(), td(int(645966)).right(),  td(num(48.3, 1)).right()]),
-            tr([th("Kansas City"), td("MO").center(), td(int(467007)).right(),  td(num(315.0, 1)).right()]),
+            tr([
+              th("Seattle"),
+              td("WA").center(),
+              td(int(652405)).right(),
+              td(num(83.9, 1)).right()]),
+            tr([
+              th("New York"),
+              td("NY").center(),
+              td(int(8405837)).right(),
+              td(num(302.6, 1)).right()]),
+            tr([
+              th("Boston").hollow().danger(),
+              td("MA").center(),
+              td(int(645966)).right(),
+              td(num(48.3, 1)).right()]),
+            tr([
+              th("Kansas City"),
+              td("MO").center(),
+              td(int(467007)).right(),
+              td(num(315.0, 1)).right()]),
           ])
         ),
         table(
           thead([
-            tr([th("city"), th("state").center(), th("population").right(), th("land area").right()])
+            tr([
+              th("city"),
+              th("state").center(),
+              th("population").right(),
+              th("land area").right()])
           ]),
           tfoot([
-            tr([th([]), th("totals:").right(), th(int(10171215)).right(), th(num(749.8, 1)).right()])
+            tr([
+              th([]),
+              th("totals:").right(),
+              th(int(10171215)).right(),
+              th(num(749.8, 1)).right()])
           ]),
           tbody([
             tr([th("Seattle"),     td("WA").center(), td(int(652405)).right(),  td(num(83.9, 1)).right()]),
-            tr([th("New York"),    td("NY").center(), td(int(8405837)).right(), td(num(302.6, 1)).right()]),
+            tr([th("New York"),    td(ribbon("NY")).center(), td(int(8405837)).right(), td(num(302.6, 1)).right()]),
             tr([th("Boston"),      td("MA").center(), td(int(645966)).right(),  td(num(48.3, 1)).right()]),
             tr([th("Kansas City"), td("MO").center(), td(int(467007)).right(),  td(num(315.0, 1)).right()]),
           ])
@@ -159,7 +205,7 @@ class App extends doom.html.Component<{}> {
           ]),
           tbody([
             tr([th("Seattle"),     td("WA").center(), td(int(652405)).right(),  td(num(83.9, 1)).right()]),
-            tr([th("New York"),    td("NY").center(), td(int(8405837)).right().style(Success), td(num(302.6, 1)).right()]),
+            tr([th("New York"),    td("NY").center(), td(int(8405837)).right().success(), td(num(302.6, 1)).right()]),
             tr([th("Boston"),      td("MA").center(), td(int(645966)).right(),  td(num(48.3, 1)).right()]),
             tr([th("Kansas City"), td("MO").center(), td(int(467007)).right(),  td(num(315.0, 1)).right()]),
           ])
@@ -170,11 +216,11 @@ class App extends doom.html.Component<{}> {
           ]),
           tbody([
             tr([th("Seattle"),     td("WA").center(), td(int(652405)).right(),  td(num(83.9, 1)).right()]),
-            tr([th("New York"),    td("NY").center(), td(int(8405837)).right().style(Success), td(num(302.6, 1)).right()]),
+            tr([th("New York"),    td("NY").center(), td(int(8405837)).right().success(), td(num(302.6, 1)).right()]),
             tr([th("Boston"),      td("MA").center(), td(int(645966)).right(),  td(num(48.3, 1)).right()]),
             tr([th("Kansas City"), td("MO").center(), td(int(467007)).right(),  td(num(315.0, 1)).right()]),
           ])
-        ).style(Danger)
+        ).danger()
       ])
     ]);
   }
