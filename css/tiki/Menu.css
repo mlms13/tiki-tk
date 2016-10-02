@@ -1,0 +1,12 @@
+#ns {
+  list-style: none;
+  margin-bottom: 0;
+  padding-left: 0;
+  float: left;
+  background-color: #fff;
+  border: 1px solid #bbb;
+  border-radius: 3px;
+  box-shadow: 1px 1px 0px rgba(0,0,0,0.15);
+  color: #333;
+  padding: 0.25rem 0;
+}

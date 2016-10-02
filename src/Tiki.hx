@@ -1,5 +1,6 @@
 import tiki.Button;
 import tiki.Menu;
+import tiki.MenuItem;
 import tiki.Message;
 import tiki.Nav;
 import tiki.NavLink;
@@ -16,8 +17,8 @@ class Tiki {
   public inline static function menuSeparator() return new MenuItem(Separator);
   public inline static function menuAction(children: VNodes, ?fn: EventHandler) return new MenuItem(Action(children, Options.ofValue(fn)));
   public inline static function menuLabel(children: VNodes) return new MenuItem(Label(children));
-  public inline static function nav(p : NavProps, children : Array<NavLink>) return new Nav(p, children);
-  public inline static function navLink(p : NavLinkProps, children: VNodes) return new NavLink(p, children);
+  public inline static function nav(children: Array<NavLink>) return new Nav(children);
+  public inline static function navLink(p : NavLinkProps, children) return new NavLink(p, children);
 
   public inline static function h1(children: VNodes): Element return new Element("h1", children);
   public inline static function h2(children: VNodes): Element return new Element("h2", children);

@@ -24,8 +24,7 @@
 #ns:not([disabled]):focus {
   box-shadow: 0 0 0 3px rgba(238,238,238,0.25);
 }
-#ns:not([disabled]):active,
-#ns:not([disabled]).active {
+#ns:not([disabled]):active {
   border-color: #d6d6d6;
   box-shadow: inset 0 1px 2px rgba(0,0,0,0.2);
 }
@@ -44,8 +43,7 @@
   outline: 0;
   text-decoration: none;
 }
-#ns:active,
-#ns.active {
+#ns:active {
   background-image: none;
   outline: 0;
 }
@@ -68,8 +66,7 @@
 #ns.primary:not([disabled]):focus {
   box-shadow: 0 0 0 3px rgba(38,147,179,0.25);
 }
-#ns.primary:not([disabled]):active,
-#ns.primary:not([disabled]).active {
+#ns.primary:not([disabled]):active {
   border-color: #2284a1;
   box-shadow: inset 0 1px 2px rgba(0,0,0,0.2);
 }
@@ -96,8 +93,7 @@
 #ns.success:not([disabled]):focus {
   box-shadow: 0 0 0 3px rgba(40,189,53,0.25);
 }
-#ns.success:not([disabled]):active,
-#ns.success:not([disabled]).active {
+#ns.success:not([disabled]):active {
   border-color: #24aa30;
   box-shadow: inset 0 1px 2px rgba(0,0,0,0.2);
 }
@@ -124,8 +120,7 @@
 #ns.warning:not([disabled]):focus {
   box-shadow: 0 0 0 3px rgba(230,149,41,0.25);
 }
-#ns.warning:not([disabled]):active,
-#ns.warning:not([disabled]).active {
+#ns.warning:not([disabled]):active {
   border-color: #da881a;
   box-shadow: inset 0 1px 2px rgba(0,0,0,0.2);
 }
@@ -152,8 +147,7 @@
 #ns.danger:not([disabled]):focus {
   box-shadow: 0 0 0 3px rgba(218,50,41,0.25);
 }
-#ns.danger:not([disabled]):active,
-#ns.danger:not([disabled]).active {
+#ns.danger:not([disabled]):active {
   border-color: #c72b22;
   box-shadow: inset 0 1px 2px rgba(0,0,0,0.2);
 }

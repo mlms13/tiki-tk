@@ -1,0 +1,26 @@
+@import "variables"
+
+#ns
+  padding $menu-item-padding
+
+  &.menu-action
+    background-color $menu-item-action-bg
+    color $menu-item-action-color
+    cursor pointer
+
+    &:hover
+      background-color $menu-item-action-hover-bg
+
+    &.disabled
+      background-color $menu-item-disabled-bg
+      cursor $cursor-disabled
+      opacity 0.5
+
+  &.menu-label
+    background-color $menu-item-label-bg
+    color $menu-item-label-color
+
+  &.menu-separator
+    border-bottom $menu-separator-border
+    margin $menu-separator-margin
+    padding $menu-separator-padding
