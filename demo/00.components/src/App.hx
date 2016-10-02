@@ -78,7 +78,7 @@ class App extends doom.html.Component<{}> {
       ]),
       demoSection("Menu", [
         menu([
-          menuLabel("Heading"),
+          menuLabel(h6("Heading")),
           menuAction("Open...", function () {}),
           menuAction("Save As...").disabled(),
           menuSeparator(),

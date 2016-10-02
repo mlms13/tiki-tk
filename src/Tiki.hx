@@ -1,5 +1,6 @@
 import tiki.Button;
 import tiki.Menu;
+import tiki.MenuItem;
 import tiki.Message;
 import tiki.Nav;
 import tiki.NavLink;

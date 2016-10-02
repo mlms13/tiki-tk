@@ -1,11 +1,13 @@
 #ns {
-  clear: both;
-  content: "";
-  display: table;
   background-color: #fff;
   list-style: none;
   margin-bottom: 0;
   padding-left: 0;
+}
+#ns::after {
+  clear: both;
+  content: "";
+  display: table;
 }
 #ns .nav-link {
   color: #2693b3;

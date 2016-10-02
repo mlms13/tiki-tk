@@ -19,6 +19,11 @@ section .section-title {
 section .section-body {
   padding: 20px;
 }
+section .section-body::after {
+  clear: both;
+  content: "";
+  display: table;
+}
 section .example-inline {
   display: inline-block;
   margin-right: 10px;

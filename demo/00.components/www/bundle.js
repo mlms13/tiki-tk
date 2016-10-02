@@ -122,7 +122,7 @@ App.prototype = $extend(doom_html_Component.prototype,{
 			f();
 		};
 		var tmp14 = doom_core_VNodeImpl.Lazy(($_=this.demoSection("Messages",doom_core__$VNodes_VNodes_$Impl_$.children([tmp8,tmp9,tmp10,tmp11,doom_core_VNodeImpl.Lazy(($_=tmp12.style(tiki_MessageStyle.Danger).dismissible(tmp13),$bind($_,$_.render)))])),$bind($_,$_.render)));
-		var tmp15 = new tiki_MenuItem(tiki_MenuItemKind.Label(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Heading")])));
+		var tmp15 = new tiki_MenuItem(tiki_MenuItemKind.Label(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=new tiki_Element("h6",doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Heading")])),$bind($_,$_.render)))])));
 		var children = doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Open...")]);
 		var fn = function(e1) {
 			e1.preventDefault();
