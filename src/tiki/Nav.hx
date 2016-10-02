@@ -2,9 +2,9 @@ package tiki;
 
 import doom.html.Html;
 
-class Nav extends TikiElement<Nav> {
+class Nav extends TkElement<Nav> {
   public function new(children: Array<NavLink>) {
-    super(children.map(function (c) {
+    super("nav", children.map(function (c) {
       return Html.li(["class" => "nav-item"], c);
     }));
   }
