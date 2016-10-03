@@ -1,6 +1,4 @@
 #ns {
-  border-width: 1px;
-  border-style: solid;
   border-radius: 3px;
   background-color: #fcfcfc;
   color: #444;
@@ -36,24 +34,4 @@
   border-color: transparent;
   opacity: 1;
   box-shadow: none;
-}
-#ns.info {
-  background-color: #cfecf5;
-  color: #17586b;
-  border-color: #6ec6e0;
-}
-#ns.success {
-  background-color: #d1f5d4;
-  color: #187120;
-  border-color: #74e27d;
-}
-#ns.warning {
-  background-color: #faead4;
-  color: #925a11;
-  border-color: #f0bf7f;
-}
-#ns.danger {
-  background-color: #f8d6d4;
-  color: #841c17;
-  border-color: #e9847f;
 }

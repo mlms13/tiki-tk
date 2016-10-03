@@ -1,3 +1,209 @@
+.tiki_tk-element.align-right {
+  text-align: right;
+}
+.tiki_tk-element.align-left {
+  text-align: left;
+}
+.tiki_tk-element.align-center {
+  text-align: center;
+}
+.tiki_box-element {
+  border-width: 1px;
+  border-style: solid;
+  border-color: transparent;
+}
+.tiki_box-element.info {
+  background-color: #cfecf5;
+  color: #17586b;
+  border-color: #6ec6e0;
+}
+.tiki_box-element.success {
+  background-color: #d1f5d4;
+  color: #187120;
+  border-color: #74e27d;
+}
+.tiki_box-element.warning {
+  background-color: #faead4;
+  color: #925a11;
+  border-color: #f0bf7f;
+}
+.tiki_box-element.danger {
+  background-color: #f8d6d4;
+  color: #841c17;
+  border-color: #e9847f;
+}
+.tiki_box-element.info.inverted {
+  background-color: #17586b;
+  color: #6ec6e0;
+  border-color: #cfecf5;
+}
+.tiki_box-element.success.inverted {
+  background-color: #187120;
+  color: #74e27d;
+  border-color: #d1f5d4;
+}
+.tiki_box-element.warning.inverted {
+  background-color: #925a11;
+  color: #f0bf7f;
+  border-color: #faead4;
+}
+.tiki_box-element.danger.inverted {
+  background-color: #841c17;
+  color: #e9847f;
+  border-color: #f8d6d4;
+}
+.tiki_box-element.contrast {
+  color: #000;
+}
+.tiki_box-element.contrast.inverted {
+  color: #fff;
+}
+.tiki_box-element.hollow {
+  background-color: #fff;
+}
+.tiki_box-element.spacer {
+  visibility: hidden;
+}
+.tiki_table {
+  width: 100%;
+  background-color: #fff;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin: 1rem 0;
+  border-radius: 3px 3px 3px 3px;
+}
+.tiki_table thead > tr > th,
+.tiki_table tfoot > tr > th {
+  background-color: #f9fafb;
+  font-weight: bold;
+}
+.tiki_table thead > tr:first-child > :first-child {
+  border-radius: 3px 0 0 0;
+}
+.tiki_table thead > tr:first-child > :last-child {
+  border-radius: 0 3px 0 0;
+}
+.tiki_table thead > tr:first-child > :only-child {
+  border-radius: 3px 3px 0 0;
+}
+.tiki_table tfoot > tr:last-child > :first-child {
+  border-radius: 0 0 0 3px;
+}
+.tiki_table tfoot > tr:last-child > :last-child {
+  border-radius: 0 0 3px 0;
+}
+.tiki_table tfoot > tr:first-child > :only-child {
+  border-radius: 0 0 3px 3px;
+}
+.tiki_table thead > tr > *,
+.tiki_table tfoot > tr > * {
+  padding: 0.6rem 0.4rem;
+}
+.tiki_table tbody > tr > * {
+  padding: 0.3rem 0.4rem;
+  border-left: 1px solid #eee;
+  border-top: 1px solid #eee;
+}
+.tiki_table tbody > tr:first-child > * {
+  border-top: 1px solid #ddd;
+}
+.tiki_table thead > tr > *,
+.tiki_table tfoot > tr > * {
+  border-left: 1px solid #eee;
+  border-top: 1px solid #ddd;
+}
+.tiki_table thead:last-child > tr:last-child > *,
+.tiki_table tbody:last-child > tr:last-child > *,
+.tiki_table tfoot > tr:last-child > * {
+  border-bottom: 1px solid #ddd;
+}
+.tiki_table thead > tr > :first-child,
+.tiki_table tbody > tr > :first-child,
+.tiki_table tfoot > tr > :first-child {
+  border-left: 1px solid #ddd;
+}
+.tiki_table thead > tr > :last-child,
+.tiki_table tbody > tr > :last-child,
+.tiki_table tfoot > tr > :last-child {
+  border-right: 1px solid #ddd;
+}
+.tiki_table tfoot + tbody:last-child > tr:last-child > * {
+  border-bottom: none;
+}
+.tiki_table tbody > tr > th:first-child {
+  text-align: left;
+}
+.tiki_table tbody > tr > th:last-child {
+  text-align: right;
+}
+.tiki_table.collapsing {
+  width: auto;
+}
+.tiki_table.frameless thead > tr > :first-child,
+.tiki_table.frameless tbody > tr > :first-child,
+.tiki_table.frameless tfoot > tr > :first-child {
+  border-left: none;
+}
+.tiki_table.frameless thead > tr > :last-child,
+.tiki_table.frameless tbody > tr > :last-child,
+.tiki_table.frameless tfoot > tr > :last-child {
+  border-right: none;
+}
+.tiki_table.frameless thead > tr:first-child > * {
+  border-top: none;
+}
+.tiki_table.frameless thead:only-child > tr:last-child > * {
+  border-bottom: none;
+}
+.tiki_table.frameless tfoot > tr:last-child > * {
+  border-bottom: none;
+}
+.tiki_table.frameless tfoot:only-child > tr:last-child > * {
+  border-top: none;
+}
+.tiki_table.frameless tbody:first-child > tr:first-child > * {
+  border-top: none;
+}
+.tiki_table.frameless tfoot > tr > :last-child {
+  border-right: none;
+}
+.tiki_table.frameless :not(tfoot) + tbody:last-child > tr:last-child > * {
+  border-bottom: none;
+}
+.tiki_table.frameless tbody:only-child > tr:last-child > * {
+  border-bottom: none;
+}
+.tiki_table.plain thead th,
+.tiki_table.plain tfoot th {
+  background-color: transparent;
+}
+.tiki_table.plain.frameless thead > tr:first-child > *,
+.tiki_table.plain.frameless tbody:first-child > tr:first-child > *,
+.tiki_table.plain.frameless tfoot:first-child > tr:first-child > * {
+  padding-top: 0;
+}
+.tiki_table.plain.frameless thead > tr > :first-child,
+.tiki_table.plain.frameless tbody > tr > :first-child,
+.tiki_table.plain.frameless tfoot > tr > :first-child {
+  padding-left: 0;
+}
+.tiki_table.plain.frameless thead > tr > :last-child,
+.tiki_table.plain.frameless tbody > tr > :last-child,
+.tiki_table.plain.frameless tfoot > tr > :last-child {
+  padding-right: 0;
+}
+.tiki_table.plain.frameless thead:last-child > tr:last-child > *,
+.tiki_table.plain.frameless tfoot + :not(tbody) > tr:last-child > *,
+.tiki_table.plain.frameless tfoot > tr:last-child > * {
+  padding-bottom: 0;
+}
+.tiki_table.compact thead > tr > *,
+.tiki_table.compact tfoot > tr > * {
+  padding: 0.3rem 0.2rem;
+}
+.tiki_table.compact tbody > tr > * {
+  padding: 0.15rem 0.2rem;
+}
 .tiki_nav {
   background-color: #fff;
   list-style: none;
@@ -50,8 +256,6 @@
   color: #fff;
 }
 .tiki_message {
-  border-width: 1px;
-  border-style: solid;
   border-radius: 3px;
   background-color: #fcfcfc;
   color: #444;
@@ -87,26 +291,6 @@
   border-color: transparent;
   opacity: 1;
   box-shadow: none;
-}
-.tiki_message.info {
-  background-color: #cfecf5;
-  color: #17586b;
-  border-color: #6ec6e0;
-}
-.tiki_message.success {
-  background-color: #d1f5d4;
-  color: #187120;
-  border-color: #74e27d;
-}
-.tiki_message.warning {
-  background-color: #faead4;
-  color: #925a11;
-  border-color: #f0bf7f;
-}
-.tiki_message.danger {
-  background-color: #f8d6d4;
-  color: #841c17;
-  border-color: #e9847f;
 }
 .tiki_menu-item {
   padding: 0.25rem 2rem;
@@ -307,4 +491,25 @@
 .tiki_button.danger.hollow:focus {
   border-color: #da3229;
   background-color: #f8d6d4;
+}
+.tiki_ribbon {
+  left: -1.6rem;
+  position: relative;
+  border-radius: 0.3rem 0.3rem 0.3rem 0;
+  display: inline-block;
+  line-height: 1;
+  background-color: #e0e0e0;
+  padding: 0.5rem 0.9rem;
+  color: rgba(0,0,0,0.6);
+  box-shadow: 1px 2px 4px rgba(0,0,0,0.25);
+}
+.tiki_ribbon:after {
+  position: absolute;
+  content: '';
+  top: 100%;
+  left: 0;
+  border-style: solid;
+  border-width: 0 1.2em 0.6em 0;
+  border-color: transparent;
+  border-right-color: #c0c0c0;
 }

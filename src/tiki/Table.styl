@@ -1,0 +1,146 @@
+@import "variables"
+
+$table-background = #FFF
+$table-head-background = #F9FAFB
+$table-border = 1px solid #ddd
+$table-light-border = 1px solid #eee
+$table-border-radius = $border-radius
+$table-margin = 1rem 0
+$table-padding-hor = 0.4rem
+$table-padding-vert = 0.3rem
+$table-large-padding-vert = 0.6rem
+$table-compact-padding-hor = $table-padding-hor / 2
+$table-compact-large-padding-vert = $table-large-padding-vert / 2
+$table-compact-padding-vert = $table-padding-vert / 2
+$table-font-weight = bold
+
+#ns
+  width: 100%
+  background-color: $table-background
+  border-collapse: separate
+  border-spacing: 0
+  margin: $table-margin
+  border-radius: $table-border-radius $table-border-radius $table-border-radius $table-border-radius
+
+  thead > tr > th,
+  tfoot > tr > th
+    background-color: $table-head-background
+    font-weight: $table-font-weight
+
+  thead > tr:first-child > :first-child
+    border-radius: $table-border-radius 0 0 0
+
+  thead > tr:first-child > :last-child
+    border-radius: 0 $table-border-radius 0 0
+
+  thead > tr:first-child > :only-child
+    border-radius: $table-border-radius $table-border-radius 0 0
+
+  tfoot > tr:last-child > :first-child
+    border-radius: 0 0 0 $table-border-radius
+
+  tfoot > tr:last-child > :last-child
+    border-radius: 0 0 $table-border-radius 0
+
+  tfoot > tr:first-child > :only-child
+    border-radius: 0 0 $table-border-radius $table-border-radius
+
+  thead > tr > *,
+  tfoot > tr > *
+    padding: $table-large-padding-vert $table-padding-hor
+  tbody > tr > *
+    padding: $table-padding-vert $table-padding-hor
+    border-left: $table-light-border
+    border-top: $table-light-border
+  tbody > tr:first-child > *
+    border-top: $table-border
+
+  thead > tr > *,
+  tfoot > tr > *
+    border-left: $table-light-border
+    border-top: $table-border
+
+  thead:last-child > tr:last-child > *,
+  tbody:last-child > tr:last-child > *,
+  tfoot > tr:last-child > *
+    border-bottom: $table-border
+
+  thead > tr > :first-child,
+  tbody > tr > :first-child,
+  tfoot > tr > :first-child
+    border-left: $table-border
+
+  thead > tr > :last-child,
+  tbody > tr > :last-child,
+  tfoot > tr > :last-child
+    border-right: $table-border
+
+  tfoot + tbody:last-child > tr:last-child > *
+    border-bottom: none
+
+  tbody > tr > th:first-child
+    text-align: left
+
+  tbody > tr > th:last-child
+    text-align: right
+
+  // MODIFIERS
+  &.collapsing
+    width: auto
+
+  &.frameless
+    thead > tr > :first-child
+    tbody > tr > :first-child
+    tfoot > tr > :first-child
+      border-left: none
+    thead > tr > :last-child
+    tbody > tr > :last-child
+    tfoot > tr > :last-child
+      border-right: none
+
+    thead > tr:first-child > *
+      border-top: none
+    thead:only-child > tr:last-child > *
+      border-bottom: none
+    tfoot > tr:last-child > *
+      border-bottom: none
+    tfoot:only-child > tr:last-child > *
+      border-top: none
+    tbody:first-child > tr:first-child > *
+      border-top: none
+    tfoot > tr > :last-child
+      border-right: none
+    :not(tfoot) + tbody:last-child > tr:last-child > *
+      border-bottom: none
+    tbody:only-child > tr:last-child > *
+      border-bottom: none
+
+  &.plain
+    thead th,
+    tfoot th
+      background-color: transparent
+
+  &.plain.frameless
+    thead > tr:first-child > *,
+    tbody:first-child > tr:first-child > *,
+    tfoot:first-child > tr:first-child > *
+      padding-top: 0
+    thead > tr > :first-child,
+    tbody > tr > :first-child,
+    tfoot > tr > :first-child
+      padding-left: 0
+    thead > tr > :last-child,
+    tbody > tr > :last-child,
+    tfoot > tr > :last-child
+      padding-right: 0
+    thead:last-child > tr:last-child > *,
+    tfoot + :not(tbody) > tr:last-child > *,
+    tfoot > tr:last-child > * // TODO
+      padding-bottom: 0
+
+  &.compact
+    thead > tr > *,
+    tfoot > tr > *
+      padding: $table-compact-large-padding-vert $table-compact-padding-hor
+    tbody > tr > *
+      padding: $table-compact-padding-vert $table-compact-padding-hor
