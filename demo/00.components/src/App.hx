@@ -1,6 +1,7 @@
 import doom.core.VNode;
 import doom.core.VNodes;
 import Tiki.*;
+import tiki.DropdownMenu; // TODO: move this to Tiki.*
 import js.Browser.*;
 import thx.format.NumberFormat.integer;
 import thx.format.NumberFormat.fixed;
@@ -230,6 +231,17 @@ class App extends doom.html.Component<{}> {
           menuSeparator(),
           menuAction("Exit", function () {js.Browser.window.close(); })
         ])
+      ]),
+      demoSection("Dropdown Menu", [
+        new DropdownMenu({ isOpen: false, change: function (_) {} },
+          button("Click me please!"),
+          menu([
+            menuLabel(h6("Heading")),
+            menuAction("Open...", function () {}),
+            menuAction("Save As...").disabled(),
+            menuSeparator(),
+            menuAction("Exit", function () {js.Browser.window.close(); })
+        ]))
       ])
     ]);
   }
