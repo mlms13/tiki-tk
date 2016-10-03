@@ -1,0 +1,25 @@
+#ns {
+  padding: 0.25rem 2rem;
+}
+#ns.menu-action {
+  background-color: #fff;
+  color: #333;
+  cursor: pointer;
+}
+#ns.menu-action:hover {
+  background-color: #eee;
+}
+#ns.menu-action.disabled {
+  background-color: #fff;
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+#ns.menu-label {
+  background-color: #fff;
+  color: #333;
+}
+#ns.menu-separator {
+  border-bottom: 1px solid #eee;
+  margin: 0.25rem 0;
+  padding: 0;
+}

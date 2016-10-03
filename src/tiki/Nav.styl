@@ -3,11 +3,49 @@
 
 #ns
   clearfix()
+  background-color $nav-bg
   list-style none
   margin-bottom 0
   padding-left 0
 
+  .nav-link
+    color $nav-link-color
+
   &.inline
-    > .nav-item
+    .nav-item
       float left
+
+    .nav-item + .nav-item
       margin-left $floated-margin-left
+
+  &.tabs
+  &.pills
+    .nav-item + .nav-item
+      margin-left 0
+
+    .nav-link
+      display block
+      padding $nav-link-block-padding-y $nav-link-block-padding-x
+      text-decoration none
+
+  &.tabs
+    border-bottom $tab-border-width solid $tab-border-bottom-color
+
+    .nav-link
+      border-top-right-radius $border-radius
+      border-top-left-radius $border-radius
+      border $tab-border-width solid transparent
+      margin-bottom 0 - $tab-border-width
+
+      &.active
+        background-color $tab-active-bg
+        border-color $tab-active-border-color
+        color $tab-active-color
+
+  &.pills
+    .nav-link
+      border-radius $border-radius
+
+      &.active
+        background-color $pill-active-bg
+        color $pill-active-color

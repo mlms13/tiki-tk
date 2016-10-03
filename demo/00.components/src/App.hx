@@ -44,32 +44,32 @@ class App extends doom.html.Component<{}> {
         inlineExample([button("Danger").style(Danger).disabled()]),
       ]),
       demoSection("Basic Nav", [
-        nav({ orientation: Inline }, [
+        nav([
           navLink({ href: "#" }, "Foo"),
           navLink({ href: "#" }, "Bar"),
           navLink({ href: "#" }, "Baz")
-        ])
-      ]),
-      demoSection("Nav Pills", [
-        nav({ style: Pills }, [
-          navLink({ href: "#" }, "Foo"),
-          navLink({ href: "#" }, "Bar"),
-          navLink({ href: "#" }, "Baz")
-        ])
+        ]).orientation(Inline)
       ]),
       demoSection("Nav Tabs", [
-        nav({ style: Tabs }, [
-          navLink({ href: "#" }, "Foo"),
+        nav([
+          navLink({ active: true, href: "#" }, "Foo"),
           navLink({ href: "#" }, "Bar"),
           navLink({ href: "#" }, "Baz")
-        ])
+        ]).orientation(Inline).style(Tabs)
+      ]),
+      demoSection("Nav Pills", [
+        nav([
+          navLink({ href: "#" }, "Foo"),
+          navLink({ active: true, href: "#" }, "Bar"),
+          navLink({ href: "#" }, "Baz")
+        ]).orientation(Inline).style(Pills)
       ]),
       demoSection("Nav Stacked", [
-        nav({ orientation: Stacked}, [
+        nav([
           navLink({ href: "#" }, "Foo"),
           navLink({ href: "#" }, "Bar"),
-          navLink({ href: "#" }, "Baz")
-        ])
+          navLink({ active: true, href: "#" }, "Baz")
+        ]).orientation(Stacked).style(Pills)
       ]),
       demoSection("Messages", [
         message(["Default message"]),
@@ -221,6 +221,15 @@ class App extends doom.html.Component<{}> {
             tr([th("Kansas City"), td("MO").center(), td(int(467007)).right(),  td(num(315.0, 1)).right()]),
           ])
         ).danger()
+      ]),
+      demoSection("Menu", [
+        menu([
+          menuLabel(h6("Heading")),
+          menuAction("Open...", function () {}),
+          menuAction("Save As...").disabled(),
+          menuSeparator(),
+          menuAction("Exit", function () {js.Browser.window.close(); })
+        ])
       ])
     ]);
   }
@@ -241,48 +250,4 @@ class App extends doom.html.Component<{}> {
               sed hendrerit libero, et tempor orci. Nam facilisis neque at diam
               blandit, vitae lacinia erat imperdiet.");
   }
-
-  // static function tableContent() return [
-  //   {
-  //     city: "Seattle",
-  //     state: "WA",
-  //     population: 652405,
-  //     landArea: 83.9
-  //   },
-  //   {
-  //     city: "New York",
-  //     state: "NY",
-  //     population: 8405837,
-  //     landArea: 302.6
-  //   },
-  //   {
-  //     city: "Boston",
-  //     state: "MA",
-  //     population: 645966,
-  //     landArea: 48.3
-  //   },
-  //   {
-  //     city: "Kansas City",
-  //     state: "MO",
-  //     population: 467007,
-  //     landArea: 315
-  //   }
-  // ];
-
-  // table(tableContent())
-  //   .column(function(r) return cell("x"))
-  //     .emptyHeader()
-  //     .header("x")
-  //   .column(function(r) return cell(r.city))
-  //     .emptyHeader()
-  //     .rowspan(2)
-  //   .column(function(r) return cell(r.state))
-  //     .emptyHeader()
-  //     .header("state")
-  //   .column(function(r) return cell(integer(r.population)))
-  //     .header("numbers").colspan(2)
-  //     .header("population")
-  //   .column(function(r) return cell(fixed(r.landArea, 1)))
-  //     .noHeader()
-  //     .header("area")
 }

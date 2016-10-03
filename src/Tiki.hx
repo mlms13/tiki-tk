@@ -1,22 +1,29 @@
 import tiki.*;
+import tiki.Button;
+import tiki.Menu;
+import tiki.MenuItem;
 import tiki.Message;
 import tiki.Nav;
 import tiki.NavLink;
 import tiki.Table;
 import tiki.TkElement;
+import dots.EventHandler;
 import doom.core.VNodes;
 using thx.Nulls;
 using thx.Options;
 import thx.culture.Culture;
-
 
 class Tiki {
   public static var defaultCulture: Culture = thx.culture.Embed.culture("en-us");
 
   public inline static function message(children: VNodes) return new Message(children);
   public inline static function button(children: VNodes) return new Button(children);
-  public inline static function nav(p : NavProps, children : Array<NavLink>) return new Nav(p, children);
-  public inline static function navLink(p : NavLinkProps, children: VNodes) return new NavLink(p, children);
+  public inline static function menu(children: Array<MenuItem>) return new Menu(children);
+  public inline static function menuSeparator() return new MenuItem(Separator);
+  public inline static function menuAction(children: VNodes, ?fn: EventHandler) return new MenuItem(Action(children, Options.ofValue(fn)));
+  public inline static function menuLabel(children: VNodes) return new MenuItem(Label(children));
+  public inline static function nav(children: Array<NavLink>) return new Nav(children);
+  public inline static function navLink(p : NavLinkProps, children) return new NavLink(p, children);
 
   // Table Elements
   public static function table(?caption: TableCaption, ?thead: TableHead, ?tfoot: TableFoot, ?tbody: TableBody, ?tbodies: Array<TableBody>)

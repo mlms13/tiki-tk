@@ -10,7 +10,7 @@ class NavLink extends doom.html.Component<NavLinkProps> {
   }
 
   static function getClasses(base: String,  state: NavLinkProps): String {
-    var classes = [base];
+    var classes = [base, "nav-link"];
 
     if (state.active == true)
       classes.push("active");
