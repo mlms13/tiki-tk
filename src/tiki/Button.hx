@@ -10,36 +10,18 @@ class Button extends TkElement<Button> {
     setStringAttribute("type", "button");
   }
 
-  public function style(s: ButtonStyle) {
-    return addClass(switch s {
-      case Primary: "primary";
-      case Success: "success";
-      case Warning: "warning";
-      case Danger: "danger";
-    });
-  }
-
-  public function size(s: ButtonSize) {
-    return addClass(switch s {
-      case Small : "small";
-      case Medium : "";
-      case Large : "large";
-    });
-  }
+  public function primary()
+    return addNSClass("style", "primary");
+  public function success()
+    return addNSClass("style", "success");
+  public function warning()
+    return addNSClass("style", "warning");
+  public function danger()
+    return addNSClass("style", "danger");
 
   public function hollow()
     return addClass("hollow");
-}
 
-enum ButtonStyle {
-  Primary;
-  Success;
-  Warning;
-  Danger;
-}
-
-enum ButtonSize {
-  Small;
-  Medium;
-  Large;
+  public function compact()
+    return addClass("compact");
 }

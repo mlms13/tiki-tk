@@ -117,7 +117,7 @@ App.prototype = $extend(doom_html_Component.prototype,{
 			e2.preventDefault();
 			f1();
 		};
-		return doom_core_VNodeImpl.Lazy(($_=new tiki_Element("article",doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=this.demoSection("Typography",doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=new tiki_Element("h1",doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("h1 heading")])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.fillerText(),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=new tiki_Element("h2",doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("h2 heading")])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.fillerText(),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=new tiki_Element("h3",doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("h3 heading")])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.fillerText(),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=new tiki_Element("h4",doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("h4 heading")])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.fillerText(),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=new tiki_Element("h5",doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("h5 heading")])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.fillerText(),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=new tiki_Element("h6",doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("h6 heading")])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.fillerText(),$bind($_,$_.render)))])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.demoSection("Buttons",doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=this.inlineExample(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=new tiki_Button(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Default")])),$bind($_,$_.render)))])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.inlineExample(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=new tiki_Button(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Primary")])).style(tiki_ButtonStyle.Primary),$bind($_,$_.render)))])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.inlineExample(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=new tiki_Button(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Success")])).style(tiki_ButtonStyle.Success),$bind($_,$_.render)))])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.inlineExample(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=new tiki_Button(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Warning")])).style(tiki_ButtonStyle.Warning),$bind($_,$_.render)))])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.inlineExample(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=new tiki_Button(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Danger")])).style(tiki_ButtonStyle.Danger),$bind($_,$_.render)))])),$bind($_,$_.render)))])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.demoSection("Hollow Buttons",doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=this.inlineExample(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=new tiki_Button(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Default")])).hollow(),$bind($_,$_.render)))])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.inlineExample(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=new tiki_Button(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Primary")])).style(tiki_ButtonStyle.Primary).hollow(),$bind($_,$_.render)))])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.inlineExample(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=new tiki_Button(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Success")])).style(tiki_ButtonStyle.Success).hollow(),$bind($_,$_.render)))])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.inlineExample(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=new tiki_Button(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Warning")])).style(tiki_ButtonStyle.Warning).hollow(),$bind($_,$_.render)))])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.inlineExample(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=new tiki_Button(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Danger")])).style(tiki_ButtonStyle.Danger).hollow(),$bind($_,$_.render)))])),$bind($_,$_.render)))])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.demoSection("Disabled Buttons",doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=this.inlineExample(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=new tiki_Button(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Default")])).disabled(),$bind($_,$_.render)))])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.inlineExample(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=new tiki_Button(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Primary")])).style(tiki_ButtonStyle.Primary).disabled(),$bind($_,$_.render)))])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.inlineExample(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=new tiki_Button(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Success")])).style(tiki_ButtonStyle.Success).disabled(),$bind($_,$_.render)))])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.inlineExample(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=new tiki_Button(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Warning")])).style(tiki_ButtonStyle.Warning).disabled(),$bind($_,$_.render)))])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.inlineExample(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=new tiki_Button(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Danger")])).style(tiki_ButtonStyle.Danger).disabled(),$bind($_,$_.render)))])),$bind($_,$_.render)))])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.demoSection("Basic Nav",doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=new tiki_Nav([new tiki_NavLink({ href : "#"},doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Foo")])),new tiki_NavLink({ href : "#"},doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Bar")])),new tiki_NavLink({ href : "#"},doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Baz")]))]).orientation(tiki_NavOrientation.Inline),$bind($_,$_.render)))])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.demoSection("Nav Tabs",doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=new tiki_Nav([new tiki_NavLink({ active : true, href : "#"},doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Foo")])),new tiki_NavLink({ href : "#"},doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Bar")])),new tiki_NavLink({ href : "#"},doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Baz")]))]).orientation(tiki_NavOrientation.Inline).style(tiki_NavStyle.Tabs),$bind($_,$_.render)))])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.demoSection("Nav Pills",doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=new tiki_Nav([new tiki_NavLink({ href : "#"},doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Foo")])),new tiki_NavLink({ active : true, href : "#"},doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Bar")])),new tiki_NavLink({ href : "#"},doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Baz")]))]).orientation(tiki_NavOrientation.Inline).style(tiki_NavStyle.Pills),$bind($_,$_.render)))])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.demoSection("Nav Stacked",doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=new tiki_Nav([new tiki_NavLink({ href : "#"},doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Foo")])),new tiki_NavLink({ href : "#"},doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Bar")])),new tiki_NavLink({ active : true, href : "#"},doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Baz")]))]).orientation(tiki_NavOrientation.Stacked).style(tiki_NavStyle.Pills),$bind($_,$_.render)))])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.demoSection("Messages",doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=new tiki_Message(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Default message")])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=new tiki_Message(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Info message")])).info(),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=new tiki_Message(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Success message")])).success(),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=new tiki_Message(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Success message hollow")])).success().hollow(),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=new tiki_Message(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Success message contrast")])).success().contrast(),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=new tiki_Message(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Success message inverted")])).success().inverted(),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=new tiki_Message(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Success message inverted / contrast")])).success().inverted().contrast(),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=new tiki_Message(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Success message hollow / contrast")])).success().hollow().contrast(),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=new tiki_Message(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Warning message")])).warning(),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=new tiki_Message(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Danger message with dismissible")])).danger().dismissible(tmp),$bind($_,$_.render)))])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.demoSection("Tables",doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=Tiki.table(new tiki_TableCaption(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("some caption here")])),new tiki_TableHead([new tiki_TableRow([new tiki_TableHeaderCell(doom_core__$VNodes_VNodes_$Impl_$.children([])).colspan(2),new tiki_TableHeaderCell(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("numbers")])).center().colspan(2)]),new tiki_TableRow([new tiki_TableHeaderCell(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("city")])),new tiki_TableHeaderCell(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("state")])).center(),new tiki_TableHeaderCell(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("population")])).right(),new tiki_TableHeaderCell(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("land area")])).right()])]),new tiki_TableFoot([new tiki_TableRow([new tiki_TableHeaderCell(doom_core__$VNodes_VNodes_$Impl_$.children([])),new tiki_TableHeaderCell(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("totals:")])).right(),new tiki_TableHeaderCell(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=new tiki_Number({ value : 10171215, format : thx_format_NumberFormat.integer, culture : Tiki.defaultCulture}),$bind($_,$_.render)))])).right(),new tiki_TableHeaderCell(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=new tiki_Number({ value : 749.8, format : function(f2,a2) {
+		return doom_core_VNodeImpl.Lazy(($_=new tiki_Element("article",doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=this.demoSection("Typography",doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=new tiki_Element("h1",doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("h1 heading")])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.fillerText(),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=new tiki_Element("h2",doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("h2 heading")])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.fillerText(),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=new tiki_Element("h3",doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("h3 heading")])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.fillerText(),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=new tiki_Element("h4",doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("h4 heading")])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.fillerText(),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=new tiki_Element("h5",doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("h5 heading")])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.fillerText(),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=new tiki_Element("h6",doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("h6 heading")])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.fillerText(),$bind($_,$_.render)))])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.demoSection("Buttons",doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=this.inlineExample(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=new tiki_Button(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Default")])),$bind($_,$_.render)))])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.inlineExample(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=new tiki_Button(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Primary")])).primary(),$bind($_,$_.render)))])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.inlineExample(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=new tiki_Button(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Success")])).success(),$bind($_,$_.render)))])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.inlineExample(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=new tiki_Button(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Warning")])).warning(),$bind($_,$_.render)))])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.inlineExample(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=new tiki_Button(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Danger")])).danger(),$bind($_,$_.render)))])),$bind($_,$_.render)))])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.demoSection("Hollow Buttons",doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=this.inlineExample(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=new tiki_Button(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Default")])).hollow(),$bind($_,$_.render)))])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.inlineExample(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=new tiki_Button(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Primary")])).primary().hollow(),$bind($_,$_.render)))])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.inlineExample(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=new tiki_Button(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Success")])).success().hollow(),$bind($_,$_.render)))])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.inlineExample(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=new tiki_Button(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Warning")])).warning().hollow(),$bind($_,$_.render)))])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.inlineExample(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=new tiki_Button(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Danger")])).danger().hollow(),$bind($_,$_.render)))])),$bind($_,$_.render)))])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.demoSection("Disabled Buttons",doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=this.inlineExample(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=new tiki_Button(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Default")])).disabled(),$bind($_,$_.render)))])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.inlineExample(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=new tiki_Button(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Primary")])).primary().disabled(),$bind($_,$_.render)))])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.inlineExample(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=new tiki_Button(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Success")])).success().disabled(),$bind($_,$_.render)))])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.inlineExample(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=new tiki_Button(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Warning")])).warning().disabled(),$bind($_,$_.render)))])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.inlineExample(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=new tiki_Button(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Danger")])).danger().disabled(),$bind($_,$_.render)))])),$bind($_,$_.render)))])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.demoSection("Button Sizes",doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=this.inlineExample(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=new tiki_Button(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("mini")])).mini(),$bind($_,$_.render)))])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.inlineExample(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=new tiki_Button(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("tiny")])).tiny(),$bind($_,$_.render)))])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.inlineExample(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=new tiki_Button(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("small")])).small(),$bind($_,$_.render)))])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.inlineExample(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=new tiki_Button(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("medium")])),$bind($_,$_.render)))])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.inlineExample(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=new tiki_Button(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("large")])).large(),$bind($_,$_.render)))])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.inlineExample(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=new tiki_Button(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("big")])).big(),$bind($_,$_.render)))])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.inlineExample(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=new tiki_Button(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("huge")])).huge(),$bind($_,$_.render)))])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.inlineExample(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=new tiki_Button(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("massive")])).massive(),$bind($_,$_.render)))])),$bind($_,$_.render)))])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.demoSection("Button Sizes - Compact",doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=this.inlineExample(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=new tiki_Button(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("mini")])).mini().compact(),$bind($_,$_.render)))])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.inlineExample(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=new tiki_Button(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("tiny")])).tiny().compact(),$bind($_,$_.render)))])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.inlineExample(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=new tiki_Button(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("small")])).small().compact(),$bind($_,$_.render)))])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.inlineExample(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=new tiki_Button(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("medium")])).compact(),$bind($_,$_.render)))])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.inlineExample(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=new tiki_Button(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("large")])).large().compact(),$bind($_,$_.render)))])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.inlineExample(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=new tiki_Button(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("big")])).big().compact(),$bind($_,$_.render)))])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.inlineExample(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=new tiki_Button(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("huge")])).huge().compact(),$bind($_,$_.render)))])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.inlineExample(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=new tiki_Button(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("massive")])).massive().compact(),$bind($_,$_.render)))])),$bind($_,$_.render)))])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.demoSection("Basic Nav",doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=new tiki_Nav([new tiki_NavLink({ href : "#"},doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Foo")])),new tiki_NavLink({ href : "#"},doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Bar")])),new tiki_NavLink({ href : "#"},doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Baz")]))]).orientation(tiki_NavOrientation.Inline),$bind($_,$_.render)))])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.demoSection("Nav Tabs",doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=new tiki_Nav([new tiki_NavLink({ active : true, href : "#"},doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Foo")])),new tiki_NavLink({ href : "#"},doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Bar")])),new tiki_NavLink({ href : "#"},doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Baz")]))]).orientation(tiki_NavOrientation.Inline).style(tiki_NavStyle.Tabs),$bind($_,$_.render)))])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.demoSection("Nav Pills",doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=new tiki_Nav([new tiki_NavLink({ href : "#"},doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Foo")])),new tiki_NavLink({ active : true, href : "#"},doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Bar")])),new tiki_NavLink({ href : "#"},doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Baz")]))]).orientation(tiki_NavOrientation.Inline).style(tiki_NavStyle.Pills),$bind($_,$_.render)))])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.demoSection("Nav Stacked",doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=new tiki_Nav([new tiki_NavLink({ href : "#"},doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Foo")])),new tiki_NavLink({ href : "#"},doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Bar")])),new tiki_NavLink({ active : true, href : "#"},doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Baz")]))]).orientation(tiki_NavOrientation.Stacked).style(tiki_NavStyle.Pills),$bind($_,$_.render)))])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.demoSection("Messages",doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=new tiki_Message(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Default message")])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=new tiki_Message(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Info message")])).info(),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=new tiki_Message(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Success message")])).success(),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=new tiki_Message(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Success message hollow")])).success().hollow(),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=new tiki_Message(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Success message contrast")])).success().contrast(),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=new tiki_Message(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Success message inverted")])).success().inverted(),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=new tiki_Message(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Success message inverted / contrast")])).success().inverted().contrast(),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=new tiki_Message(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Success message hollow / contrast")])).success().hollow().contrast(),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=new tiki_Message(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Warning message")])).warning(),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=new tiki_Message(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Danger message with dismissible")])).danger().dismissible(tmp),$bind($_,$_.render)))])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.demoSection("Tables",doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=Tiki.table(new tiki_TableCaption(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("some caption here")])),new tiki_TableHead([new tiki_TableRow([new tiki_TableHeaderCell(doom_core__$VNodes_VNodes_$Impl_$.children([])).colspan(2),new tiki_TableHeaderCell(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("numbers")])).center().colspan(2)]),new tiki_TableRow([new tiki_TableHeaderCell(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("city")])),new tiki_TableHeaderCell(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("state")])).center(),new tiki_TableHeaderCell(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("population")])).right(),new tiki_TableHeaderCell(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("land area")])).right()])]),new tiki_TableFoot([new tiki_TableRow([new tiki_TableHeaderCell(doom_core__$VNodes_VNodes_$Impl_$.children([])),new tiki_TableHeaderCell(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("totals:")])).right(),new tiki_TableHeaderCell(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=new tiki_Number({ value : 10171215, format : thx_format_NumberFormat.integer, culture : Tiki.defaultCulture}),$bind($_,$_.render)))])).right(),new tiki_TableHeaderCell(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=new tiki_Number({ value : 749.8, format : function(f2,a2) {
 			return thx_format_NumberFormat.number(f2,1,a2);
 		}, culture : Tiki.defaultCulture}),$bind($_,$_.render)))])).right()])]),new tiki_TableBody([new tiki_TableRow([new tiki_TableHeaderCell(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=new tiki_Ribbon(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Seattle")])),$bind($_,$_.render)))])),new tiki_TableDataCell(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("WA")])).center(),new tiki_TableDataCell(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=new tiki_Number({ value : 652405, format : thx_format_NumberFormat.integer, culture : Tiki.defaultCulture}),$bind($_,$_.render)))])).right(),new tiki_TableDataCell(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=new tiki_Number({ value : 83.9, format : function(f3,a21) {
 			return thx_format_NumberFormat.number(f3,1,a21);
@@ -181,7 +181,7 @@ App.prototype = $extend(doom_html_Component.prototype,{
 			return thx_format_NumberFormat.number(f32,1,a230);
 		}, culture : Tiki.defaultCulture}),$bind($_,$_.render)))])).right()]),new tiki_TableRow([new tiki_TableHeaderCell(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Kansas City")])),new tiki_TableDataCell(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("MO")])).center(),new tiki_TableDataCell(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=new tiki_Number({ value : 467007, format : thx_format_NumberFormat.integer, culture : Tiki.defaultCulture}),$bind($_,$_.render)))])).right(),new tiki_TableDataCell(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=new tiki_Number({ value : 315.0, format : function(f33,a231) {
 			return thx_format_NumberFormat.number(f33,1,a231);
-		}, culture : Tiki.defaultCulture}),$bind($_,$_.render)))])).right()])])).danger(),$bind($_,$_.render)))])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.demoSection("Menu",doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=new tiki_Menu([new tiki_MenuItem(tiki_MenuItemKind.Label(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=new tiki_Element("h6",doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Heading")])),$bind($_,$_.render)))]))),new tiki_MenuItem(tiki_MenuItemKind.Action(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Open...")]),null == fn?haxe_ds_Option.None:haxe_ds_Option.Some(fn))),new tiki_MenuItem(tiki_MenuItemKind.Action(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Save As...")]),haxe_ds_Option.None)).disabled(),new tiki_MenuItem(tiki_MenuItemKind.Separator),new tiki_MenuItem(tiki_MenuItemKind.Action(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Exit")]),null == fn1?haxe_ds_Option.None:haxe_ds_Option.Some(fn1)))]),$bind($_,$_.render)))])),$bind($_,$_.render)))])),$bind($_,$_.render)));
+		}, culture : Tiki.defaultCulture}),$bind($_,$_.render)))])).right()])])).danger(),$bind($_,$_.render)))])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.demoSection("Icons",doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=tiki_FontAwesome.twitter(),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=tiki_FontAwesome.foursquare(),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=tiki_FontAwesome.thumbsUp(),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=new tiki_Button(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=tiki_FontAwesome.android(),$bind($_,$_.render)))])),$bind($_,$_.render)))])),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=this.demoSection("Menu",doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=new tiki_Menu([new tiki_MenuItem(tiki_MenuItemKind.Label(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=new tiki_Element("h6",doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Heading")])),$bind($_,$_.render)))]))),new tiki_MenuItem(tiki_MenuItemKind.Action(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Open...")]),null == fn?haxe_ds_Option.None:haxe_ds_Option.Some(fn))),new tiki_MenuItem(tiki_MenuItemKind.Action(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Save As...")]),haxe_ds_Option.None)).disabled(),new tiki_MenuItem(tiki_MenuItemKind.Separator),new tiki_MenuItem(tiki_MenuItemKind.Action(doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text("Exit")]),null == fn1?haxe_ds_Option.None:haxe_ds_Option.Some(fn1)))]),$bind($_,$_.render)))])),$bind($_,$_.render)))])),$bind($_,$_.render)));
 	}
 	,demoSection: function(title,children) {
 		return new tiki_Element("section",doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Lazy(($_=new tiki_Element("h2",doom_core__$VNodes_VNodes_$Impl_$.children([doom_core_VNodeImpl.Text(title)])).addClass("section-title"),$bind($_,$_.render))),doom_core_VNodeImpl.Lazy(($_=new tiki_Element("div",children).addClass("section-body"),$bind($_,$_.render)))])).addClass("demo-section");
@@ -1388,6 +1388,9 @@ Tiki["int"] = function(value,significantDigits) {
 };
 Tiki.ribbon = function(children) {
 	return new tiki_Ribbon(children);
+};
+Tiki.icon = function(iconClass) {
+	return new tiki_Icon(iconClass);
 };
 Tiki.h1 = function(children) {
 	return new tiki_Element("h1",children);
@@ -11646,7 +11649,31 @@ var tiki_TkElement = function(tag,children) {
 tiki_TkElement.__name__ = ["tiki","TkElement"];
 tiki_TkElement.__super__ = doom_html_Element;
 tiki_TkElement.prototype = $extend(doom_html_Element.prototype,{
-	left: function() {
+	mini: function() {
+		return this.addNSClass("size","mini");
+	}
+	,tiny: function() {
+		return this.addNSClass("size","tiny");
+	}
+	,small: function() {
+		return this.addNSClass("size","small");
+	}
+	,medium: function() {
+		return this.addNSClass("size","medium");
+	}
+	,large: function() {
+		return this.addNSClass("size","large");
+	}
+	,big: function() {
+		return this.addNSClass("size","big");
+	}
+	,huge: function() {
+		return this.addNSClass("size","huge");
+	}
+	,massive: function() {
+		return this.addNSClass("size","massive");
+	}
+	,left: function() {
 		return this.addNSClass("align","left");
 	}
 	,right: function() {
@@ -11741,63 +11768,2253 @@ var tiki_Button = function(children) {
 tiki_Button.__name__ = ["tiki","Button"];
 tiki_Button.__super__ = tiki_TkElement;
 tiki_Button.prototype = $extend(tiki_TkElement.prototype,{
-	style: function(s) {
-		var tmp;
-		switch(s[1]) {
-		case 0:
-			tmp = "primary";
-			break;
-		case 1:
-			tmp = "success";
-			break;
-		case 2:
-			tmp = "warning";
-			break;
-		case 3:
-			tmp = "danger";
-			break;
-		}
-		return this.addClass(tmp);
+	primary: function() {
+		return this.addNSClass("style","primary");
 	}
-	,size: function(s) {
-		var tmp;
-		switch(s[1]) {
-		case 0:
-			tmp = "small";
-			break;
-		case 1:
-			tmp = "";
-			break;
-		case 2:
-			tmp = "large";
-			break;
-		}
-		return this.addClass(tmp);
+	,success: function() {
+		return this.addNSClass("style","success");
+	}
+	,warning: function() {
+		return this.addNSClass("style","warning");
+	}
+	,danger: function() {
+		return this.addNSClass("style","danger");
 	}
 	,hollow: function() {
 		return this.addClass("hollow");
+	}
+	,compact: function() {
+		return this.addClass("compact");
 	}
 	,classes: function() {
 		return "tiki_button tiki_tk-element";
 	}
 	,__class__: tiki_Button
 });
-var tiki_ButtonStyle = { __ename__ : ["tiki","ButtonStyle"], __constructs__ : ["Primary","Success","Warning","Danger"] };
-tiki_ButtonStyle.Primary = ["Primary",0];
-tiki_ButtonStyle.Primary.__enum__ = tiki_ButtonStyle;
-tiki_ButtonStyle.Success = ["Success",1];
-tiki_ButtonStyle.Success.__enum__ = tiki_ButtonStyle;
-tiki_ButtonStyle.Warning = ["Warning",2];
-tiki_ButtonStyle.Warning.__enum__ = tiki_ButtonStyle;
-tiki_ButtonStyle.Danger = ["Danger",3];
-tiki_ButtonStyle.Danger.__enum__ = tiki_ButtonStyle;
-var tiki_ButtonSize = { __ename__ : ["tiki","ButtonSize"], __constructs__ : ["Small","Medium","Large"] };
-tiki_ButtonSize.Small = ["Small",0];
-tiki_ButtonSize.Small.__enum__ = tiki_ButtonSize;
-tiki_ButtonSize.Medium = ["Medium",1];
-tiki_ButtonSize.Medium.__enum__ = tiki_ButtonSize;
-tiki_ButtonSize.Large = ["Large",2];
-tiki_ButtonSize.Large.__enum__ = tiki_ButtonSize;
+var tiki_FontAwesome = function() { };
+tiki_FontAwesome.__name__ = ["tiki","FontAwesome"];
+tiki_FontAwesome.adjust = function() {
+	return new tiki_Icon("fa fa-adjust");
+};
+tiki_FontAwesome.adn = function() {
+	return new tiki_Icon("fa fa-adn");
+};
+tiki_FontAwesome.alignCenter = function() {
+	return new tiki_Icon("fa fa-align-center");
+};
+tiki_FontAwesome.alignJustify = function() {
+	return new tiki_Icon("fa fa-align-justify");
+};
+tiki_FontAwesome.alignLeft = function() {
+	return new tiki_Icon("fa fa-align-left");
+};
+tiki_FontAwesome.alignRight = function() {
+	return new tiki_Icon("fa fa-align-right");
+};
+tiki_FontAwesome.amazon = function() {
+	return new tiki_Icon("fa fa-amazon");
+};
+tiki_FontAwesome.ambulance = function() {
+	return new tiki_Icon("fa fa-ambulance");
+};
+tiki_FontAwesome.americanSignLanguageInterpreting = function() {
+	return new tiki_Icon("fa fa-american-sign-language-interpreting");
+};
+tiki_FontAwesome.anchor = function() {
+	return new tiki_Icon("fa fa-anchor");
+};
+tiki_FontAwesome.android = function() {
+	return new tiki_Icon("fa fa-android");
+};
+tiki_FontAwesome.angellist = function() {
+	return new tiki_Icon("fa fa-angellist");
+};
+tiki_FontAwesome.angleDoubleDown = function() {
+	return new tiki_Icon("fa fa-angle-double-down");
+};
+tiki_FontAwesome.angleDoubleLeft = function() {
+	return new tiki_Icon("fa fa-angle-double-left");
+};
+tiki_FontAwesome.angleDoubleRight = function() {
+	return new tiki_Icon("fa fa-angle-double-right");
+};
+tiki_FontAwesome.angleDoubleUp = function() {
+	return new tiki_Icon("fa fa-angle-double-up");
+};
+tiki_FontAwesome.angleDown = function() {
+	return new tiki_Icon("fa fa-angle-down");
+};
+tiki_FontAwesome.angleLeft = function() {
+	return new tiki_Icon("fa fa-angle-left");
+};
+tiki_FontAwesome.angleRight = function() {
+	return new tiki_Icon("fa fa-angle-right");
+};
+tiki_FontAwesome.angleUp = function() {
+	return new tiki_Icon("fa fa-angle-up");
+};
+tiki_FontAwesome.apple = function() {
+	return new tiki_Icon("fa fa-apple");
+};
+tiki_FontAwesome.archive = function() {
+	return new tiki_Icon("fa fa-archive");
+};
+tiki_FontAwesome.areaChart = function() {
+	return new tiki_Icon("fa fa-area-chart");
+};
+tiki_FontAwesome.arrowCircleDown = function() {
+	return new tiki_Icon("fa fa-arrow-circle-down");
+};
+tiki_FontAwesome.arrowCircleLeft = function() {
+	return new tiki_Icon("fa fa-arrow-circle-left");
+};
+tiki_FontAwesome.arrowCircleODown = function() {
+	return new tiki_Icon("fa fa-arrow-circle-o-down");
+};
+tiki_FontAwesome.arrowCircleOLeft = function() {
+	return new tiki_Icon("fa fa-arrow-circle-o-left");
+};
+tiki_FontAwesome.arrowCircleORight = function() {
+	return new tiki_Icon("fa fa-arrow-circle-o-right");
+};
+tiki_FontAwesome.arrowCircleOUp = function() {
+	return new tiki_Icon("fa fa-arrow-circle-o-up");
+};
+tiki_FontAwesome.arrowCircleRight = function() {
+	return new tiki_Icon("fa fa-arrow-circle-right");
+};
+tiki_FontAwesome.arrowCircleUp = function() {
+	return new tiki_Icon("fa fa-arrow-circle-up");
+};
+tiki_FontAwesome.arrowDown = function() {
+	return new tiki_Icon("fa fa-arrow-down");
+};
+tiki_FontAwesome.arrowLeft = function() {
+	return new tiki_Icon("fa fa-arrow-left");
+};
+tiki_FontAwesome.arrowRight = function() {
+	return new tiki_Icon("fa fa-arrow-right");
+};
+tiki_FontAwesome.arrows = function() {
+	return new tiki_Icon("fa fa-arrows");
+};
+tiki_FontAwesome.arrowsAlt = function() {
+	return new tiki_Icon("fa fa-arrows-alt");
+};
+tiki_FontAwesome.arrowsH = function() {
+	return new tiki_Icon("fa fa-arrows-h");
+};
+tiki_FontAwesome.arrowsV = function() {
+	return new tiki_Icon("fa fa-arrows-v");
+};
+tiki_FontAwesome.arrowUp = function() {
+	return new tiki_Icon("fa fa-arrow-up");
+};
+tiki_FontAwesome.aslInterpreting = function() {
+	return new tiki_Icon("fa fa-asl-interpreting");
+};
+tiki_FontAwesome.assistiveListeningSystems = function() {
+	return new tiki_Icon("fa fa-assistive-listening-systems");
+};
+tiki_FontAwesome.asterisk = function() {
+	return new tiki_Icon("fa fa-asterisk");
+};
+tiki_FontAwesome.at = function() {
+	return new tiki_Icon("fa fa-at");
+};
+tiki_FontAwesome.audioDescription = function() {
+	return new tiki_Icon("fa fa-audio-description");
+};
+tiki_FontAwesome.automobile = function() {
+	return new tiki_Icon("fa fa-automobile");
+};
+tiki_FontAwesome.backward = function() {
+	return new tiki_Icon("fa fa-backward");
+};
+tiki_FontAwesome.balanceScale = function() {
+	return new tiki_Icon("fa fa-balance-scale");
+};
+tiki_FontAwesome.ban = function() {
+	return new tiki_Icon("fa fa-ban");
+};
+tiki_FontAwesome.bank = function() {
+	return new tiki_Icon("fa fa-bank");
+};
+tiki_FontAwesome.barChart = function() {
+	return new tiki_Icon("fa fa-bar-chart");
+};
+tiki_FontAwesome.barChartO = function() {
+	return new tiki_Icon("fa fa-bar-chart-o");
+};
+tiki_FontAwesome.barcode = function() {
+	return new tiki_Icon("fa fa-barcode");
+};
+tiki_FontAwesome.bars = function() {
+	return new tiki_Icon("fa fa-bars");
+};
+tiki_FontAwesome.battery0 = function() {
+	return new tiki_Icon("fa fa-battery-0");
+};
+tiki_FontAwesome.battery1 = function() {
+	return new tiki_Icon("fa fa-battery-1");
+};
+tiki_FontAwesome.battery2 = function() {
+	return new tiki_Icon("fa fa-battery-2");
+};
+tiki_FontAwesome.battery3 = function() {
+	return new tiki_Icon("fa fa-battery-3");
+};
+tiki_FontAwesome.battery4 = function() {
+	return new tiki_Icon("fa fa-battery-4");
+};
+tiki_FontAwesome.batteryEmpty = function() {
+	return new tiki_Icon("fa fa-battery-empty");
+};
+tiki_FontAwesome.batteryFull = function() {
+	return new tiki_Icon("fa fa-battery-full");
+};
+tiki_FontAwesome.batteryHalf = function() {
+	return new tiki_Icon("fa fa-battery-half");
+};
+tiki_FontAwesome.batteryQuarter = function() {
+	return new tiki_Icon("fa fa-battery-quarter");
+};
+tiki_FontAwesome.batteryThreeQuarters = function() {
+	return new tiki_Icon("fa fa-battery-three-quarters");
+};
+tiki_FontAwesome.bed = function() {
+	return new tiki_Icon("fa fa-bed");
+};
+tiki_FontAwesome.beer = function() {
+	return new tiki_Icon("fa fa-beer");
+};
+tiki_FontAwesome.behance = function() {
+	return new tiki_Icon("fa fa-behance");
+};
+tiki_FontAwesome.behanceSquare = function() {
+	return new tiki_Icon("fa fa-behance-square");
+};
+tiki_FontAwesome.bell = function() {
+	return new tiki_Icon("fa fa-bell");
+};
+tiki_FontAwesome.bellO = function() {
+	return new tiki_Icon("fa fa-bell-o");
+};
+tiki_FontAwesome.bellSlash = function() {
+	return new tiki_Icon("fa fa-bell-slash");
+};
+tiki_FontAwesome.bellSlashO = function() {
+	return new tiki_Icon("fa fa-bell-slash-o");
+};
+tiki_FontAwesome.bicycle = function() {
+	return new tiki_Icon("fa fa-bicycle");
+};
+tiki_FontAwesome.binoculars = function() {
+	return new tiki_Icon("fa fa-binoculars");
+};
+tiki_FontAwesome.birthdayCake = function() {
+	return new tiki_Icon("fa fa-birthday-cake");
+};
+tiki_FontAwesome.bitbucket = function() {
+	return new tiki_Icon("fa fa-bitbucket");
+};
+tiki_FontAwesome.bitbucketSquare = function() {
+	return new tiki_Icon("fa fa-bitbucket-square");
+};
+tiki_FontAwesome.bitcoin = function() {
+	return new tiki_Icon("fa fa-bitcoin");
+};
+tiki_FontAwesome.blackTie = function() {
+	return new tiki_Icon("fa fa-black-tie");
+};
+tiki_FontAwesome.blind = function() {
+	return new tiki_Icon("fa fa-blind");
+};
+tiki_FontAwesome.bluetooth = function() {
+	return new tiki_Icon("fa fa-bluetooth");
+};
+tiki_FontAwesome.bluetoothB = function() {
+	return new tiki_Icon("fa fa-bluetooth-b");
+};
+tiki_FontAwesome.bold = function() {
+	return new tiki_Icon("fa fa-bold");
+};
+tiki_FontAwesome.bolt = function() {
+	return new tiki_Icon("fa fa-bolt");
+};
+tiki_FontAwesome.bomb = function() {
+	return new tiki_Icon("fa fa-bomb");
+};
+tiki_FontAwesome.book = function() {
+	return new tiki_Icon("fa fa-book");
+};
+tiki_FontAwesome.bookmark = function() {
+	return new tiki_Icon("fa fa-bookmark");
+};
+tiki_FontAwesome.bookmarkO = function() {
+	return new tiki_Icon("fa fa-bookmark-o");
+};
+tiki_FontAwesome.braille = function() {
+	return new tiki_Icon("fa fa-braille");
+};
+tiki_FontAwesome.briefcase = function() {
+	return new tiki_Icon("fa fa-briefcase");
+};
+tiki_FontAwesome.btc = function() {
+	return new tiki_Icon("fa fa-btc");
+};
+tiki_FontAwesome.bug = function() {
+	return new tiki_Icon("fa fa-bug");
+};
+tiki_FontAwesome.building = function() {
+	return new tiki_Icon("fa fa-building");
+};
+tiki_FontAwesome.buildingO = function() {
+	return new tiki_Icon("fa fa-building-o");
+};
+tiki_FontAwesome.bullhorn = function() {
+	return new tiki_Icon("fa fa-bullhorn");
+};
+tiki_FontAwesome.bullseye = function() {
+	return new tiki_Icon("fa fa-bullseye");
+};
+tiki_FontAwesome.bus = function() {
+	return new tiki_Icon("fa fa-bus");
+};
+tiki_FontAwesome.buysellads = function() {
+	return new tiki_Icon("fa fa-buysellads");
+};
+tiki_FontAwesome.cab = function() {
+	return new tiki_Icon("fa fa-cab");
+};
+tiki_FontAwesome.calculator = function() {
+	return new tiki_Icon("fa fa-calculator");
+};
+tiki_FontAwesome.calendar = function() {
+	return new tiki_Icon("fa fa-calendar");
+};
+tiki_FontAwesome.calendarCheckO = function() {
+	return new tiki_Icon("fa fa-calendar-check-o");
+};
+tiki_FontAwesome.calendarMinusO = function() {
+	return new tiki_Icon("fa fa-calendar-minus-o");
+};
+tiki_FontAwesome.calendarO = function() {
+	return new tiki_Icon("fa fa-calendar-o");
+};
+tiki_FontAwesome.calendarPlusO = function() {
+	return new tiki_Icon("fa fa-calendar-plus-o");
+};
+tiki_FontAwesome.calendarTimesO = function() {
+	return new tiki_Icon("fa fa-calendar-times-o");
+};
+tiki_FontAwesome.camera = function() {
+	return new tiki_Icon("fa fa-camera");
+};
+tiki_FontAwesome.cameraRetro = function() {
+	return new tiki_Icon("fa fa-camera-retro");
+};
+tiki_FontAwesome.car = function() {
+	return new tiki_Icon("fa fa-car");
+};
+tiki_FontAwesome.caretDown = function() {
+	return new tiki_Icon("fa fa-caret-down");
+};
+tiki_FontAwesome.caretLeft = function() {
+	return new tiki_Icon("fa fa-caret-left");
+};
+tiki_FontAwesome.caretRight = function() {
+	return new tiki_Icon("fa fa-caret-right");
+};
+tiki_FontAwesome.caretSquareODown = function() {
+	return new tiki_Icon("fa fa-caret-square-o-down");
+};
+tiki_FontAwesome.caretSquareOLeft = function() {
+	return new tiki_Icon("fa fa-caret-square-o-left");
+};
+tiki_FontAwesome.caretSquareORight = function() {
+	return new tiki_Icon("fa fa-caret-square-o-right");
+};
+tiki_FontAwesome.caretSquareOUp = function() {
+	return new tiki_Icon("fa fa-caret-square-o-up");
+};
+tiki_FontAwesome.caretUp = function() {
+	return new tiki_Icon("fa fa-caret-up");
+};
+tiki_FontAwesome.cartArrowDown = function() {
+	return new tiki_Icon("fa fa-cart-arrow-down");
+};
+tiki_FontAwesome.cartPlus = function() {
+	return new tiki_Icon("fa fa-cart-plus");
+};
+tiki_FontAwesome.cc = function() {
+	return new tiki_Icon("fa fa-cc");
+};
+tiki_FontAwesome.ccAmex = function() {
+	return new tiki_Icon("fa fa-cc-amex");
+};
+tiki_FontAwesome.ccDinersClub = function() {
+	return new tiki_Icon("fa fa-cc-diners-club");
+};
+tiki_FontAwesome.ccDiscover = function() {
+	return new tiki_Icon("fa fa-cc-discover");
+};
+tiki_FontAwesome.ccJcb = function() {
+	return new tiki_Icon("fa fa-cc-jcb");
+};
+tiki_FontAwesome.ccMastercard = function() {
+	return new tiki_Icon("fa fa-cc-mastercard");
+};
+tiki_FontAwesome.ccPaypal = function() {
+	return new tiki_Icon("fa fa-cc-paypal");
+};
+tiki_FontAwesome.ccStripe = function() {
+	return new tiki_Icon("fa fa-cc-stripe");
+};
+tiki_FontAwesome.ccVisa = function() {
+	return new tiki_Icon("fa fa-cc-visa");
+};
+tiki_FontAwesome.certificate = function() {
+	return new tiki_Icon("fa fa-certificate");
+};
+tiki_FontAwesome.chain = function() {
+	return new tiki_Icon("fa fa-chain");
+};
+tiki_FontAwesome.chainBroken = function() {
+	return new tiki_Icon("fa fa-chain-broken");
+};
+tiki_FontAwesome.check = function() {
+	return new tiki_Icon("fa fa-check");
+};
+tiki_FontAwesome.checkCircle = function() {
+	return new tiki_Icon("fa fa-check-circle");
+};
+tiki_FontAwesome.checkCircleO = function() {
+	return new tiki_Icon("fa fa-check-circle-o");
+};
+tiki_FontAwesome.checkSquare = function() {
+	return new tiki_Icon("fa fa-check-square");
+};
+tiki_FontAwesome.checkSquareO = function() {
+	return new tiki_Icon("fa fa-check-square-o");
+};
+tiki_FontAwesome.chevronCircleDown = function() {
+	return new tiki_Icon("fa fa-chevron-circle-down");
+};
+tiki_FontAwesome.chevronCircleLeft = function() {
+	return new tiki_Icon("fa fa-chevron-circle-left");
+};
+tiki_FontAwesome.chevronCircleRight = function() {
+	return new tiki_Icon("fa fa-chevron-circle-right");
+};
+tiki_FontAwesome.chevronCircleUp = function() {
+	return new tiki_Icon("fa fa-chevron-circle-up");
+};
+tiki_FontAwesome.chevronDown = function() {
+	return new tiki_Icon("fa fa-chevron-down");
+};
+tiki_FontAwesome.chevronLeft = function() {
+	return new tiki_Icon("fa fa-chevron-left");
+};
+tiki_FontAwesome.chevronRight = function() {
+	return new tiki_Icon("fa fa-chevron-right");
+};
+tiki_FontAwesome.chevronUp = function() {
+	return new tiki_Icon("fa fa-chevron-up");
+};
+tiki_FontAwesome.child = function() {
+	return new tiki_Icon("fa fa-child");
+};
+tiki_FontAwesome.chrome = function() {
+	return new tiki_Icon("fa fa-chrome");
+};
+tiki_FontAwesome.circle = function() {
+	return new tiki_Icon("fa fa-circle");
+};
+tiki_FontAwesome.circleO = function() {
+	return new tiki_Icon("fa fa-circle-o");
+};
+tiki_FontAwesome.circleONotch = function() {
+	return new tiki_Icon("fa fa-circle-o-notch");
+};
+tiki_FontAwesome.circleThin = function() {
+	return new tiki_Icon("fa fa-circle-thin");
+};
+tiki_FontAwesome.clipboard = function() {
+	return new tiki_Icon("fa fa-clipboard");
+};
+tiki_FontAwesome.clockO = function() {
+	return new tiki_Icon("fa fa-clock-o");
+};
+tiki_FontAwesome.clone = function() {
+	return new tiki_Icon("fa fa-clone");
+};
+tiki_FontAwesome.close = function() {
+	return new tiki_Icon("fa fa-close");
+};
+tiki_FontAwesome.cloud = function() {
+	return new tiki_Icon("fa fa-cloud");
+};
+tiki_FontAwesome.cloudDownload = function() {
+	return new tiki_Icon("fa fa-cloud-download");
+};
+tiki_FontAwesome.cloudUpload = function() {
+	return new tiki_Icon("fa fa-cloud-upload");
+};
+tiki_FontAwesome.cny = function() {
+	return new tiki_Icon("fa fa-cny");
+};
+tiki_FontAwesome.code = function() {
+	return new tiki_Icon("fa fa-code");
+};
+tiki_FontAwesome.codeFork = function() {
+	return new tiki_Icon("fa fa-code-fork");
+};
+tiki_FontAwesome.codepen = function() {
+	return new tiki_Icon("fa fa-codepen");
+};
+tiki_FontAwesome.codiepie = function() {
+	return new tiki_Icon("fa fa-codiepie");
+};
+tiki_FontAwesome.coffee = function() {
+	return new tiki_Icon("fa fa-coffee");
+};
+tiki_FontAwesome.cog = function() {
+	return new tiki_Icon("fa fa-cog");
+};
+tiki_FontAwesome.cogs = function() {
+	return new tiki_Icon("fa fa-cogs");
+};
+tiki_FontAwesome.columns = function() {
+	return new tiki_Icon("fa fa-columns");
+};
+tiki_FontAwesome.comment = function() {
+	return new tiki_Icon("fa fa-comment");
+};
+tiki_FontAwesome.commenting = function() {
+	return new tiki_Icon("fa fa-commenting");
+};
+tiki_FontAwesome.commentingO = function() {
+	return new tiki_Icon("fa fa-commenting-o");
+};
+tiki_FontAwesome.commentO = function() {
+	return new tiki_Icon("fa fa-comment-o");
+};
+tiki_FontAwesome.comments = function() {
+	return new tiki_Icon("fa fa-comments");
+};
+tiki_FontAwesome.commentsO = function() {
+	return new tiki_Icon("fa fa-comments-o");
+};
+tiki_FontAwesome.compass = function() {
+	return new tiki_Icon("fa fa-compass");
+};
+tiki_FontAwesome.compress = function() {
+	return new tiki_Icon("fa fa-compress");
+};
+tiki_FontAwesome.connectdevelop = function() {
+	return new tiki_Icon("fa fa-connectdevelop");
+};
+tiki_FontAwesome.contao = function() {
+	return new tiki_Icon("fa fa-contao");
+};
+tiki_FontAwesome.copy = function() {
+	return new tiki_Icon("fa fa-copy");
+};
+tiki_FontAwesome.copyright = function() {
+	return new tiki_Icon("fa fa-copyright");
+};
+tiki_FontAwesome.creativeCommons = function() {
+	return new tiki_Icon("fa fa-creative-commons");
+};
+tiki_FontAwesome.creditCard = function() {
+	return new tiki_Icon("fa fa-credit-card");
+};
+tiki_FontAwesome.creditCardAlt = function() {
+	return new tiki_Icon("fa fa-credit-card-alt");
+};
+tiki_FontAwesome.crop = function() {
+	return new tiki_Icon("fa fa-crop");
+};
+tiki_FontAwesome.crosshairs = function() {
+	return new tiki_Icon("fa fa-crosshairs");
+};
+tiki_FontAwesome.css3 = function() {
+	return new tiki_Icon("fa fa-css3");
+};
+tiki_FontAwesome.cube = function() {
+	return new tiki_Icon("fa fa-cube");
+};
+tiki_FontAwesome.cubes = function() {
+	return new tiki_Icon("fa fa-cubes");
+};
+tiki_FontAwesome.cut = function() {
+	return new tiki_Icon("fa fa-cut");
+};
+tiki_FontAwesome.cutlery = function() {
+	return new tiki_Icon("fa fa-cutlery");
+};
+tiki_FontAwesome.dashboard = function() {
+	return new tiki_Icon("fa fa-dashboard");
+};
+tiki_FontAwesome.dashcube = function() {
+	return new tiki_Icon("fa fa-dashcube");
+};
+tiki_FontAwesome.database = function() {
+	return new tiki_Icon("fa fa-database");
+};
+tiki_FontAwesome.deaf = function() {
+	return new tiki_Icon("fa fa-deaf");
+};
+tiki_FontAwesome.deafness = function() {
+	return new tiki_Icon("fa fa-deafness");
+};
+tiki_FontAwesome.dedent = function() {
+	return new tiki_Icon("fa fa-dedent");
+};
+tiki_FontAwesome.delicious = function() {
+	return new tiki_Icon("fa fa-delicious");
+};
+tiki_FontAwesome.desktop = function() {
+	return new tiki_Icon("fa fa-desktop");
+};
+tiki_FontAwesome.deviantart = function() {
+	return new tiki_Icon("fa fa-deviantart");
+};
+tiki_FontAwesome.diamond = function() {
+	return new tiki_Icon("fa fa-diamond");
+};
+tiki_FontAwesome.digg = function() {
+	return new tiki_Icon("fa fa-digg");
+};
+tiki_FontAwesome.dollar = function() {
+	return new tiki_Icon("fa fa-dollar");
+};
+tiki_FontAwesome.dotCircleO = function() {
+	return new tiki_Icon("fa fa-dot-circle-o");
+};
+tiki_FontAwesome.download = function() {
+	return new tiki_Icon("fa fa-download");
+};
+tiki_FontAwesome.dribbble = function() {
+	return new tiki_Icon("fa fa-dribbble");
+};
+tiki_FontAwesome.dropbox = function() {
+	return new tiki_Icon("fa fa-dropbox");
+};
+tiki_FontAwesome.drupal = function() {
+	return new tiki_Icon("fa fa-drupal");
+};
+tiki_FontAwesome.edge = function() {
+	return new tiki_Icon("fa fa-edge");
+};
+tiki_FontAwesome.edit = function() {
+	return new tiki_Icon("fa fa-edit");
+};
+tiki_FontAwesome.eject = function() {
+	return new tiki_Icon("fa fa-eject");
+};
+tiki_FontAwesome.ellipsisH = function() {
+	return new tiki_Icon("fa fa-ellipsis-h");
+};
+tiki_FontAwesome.ellipsisV = function() {
+	return new tiki_Icon("fa fa-ellipsis-v");
+};
+tiki_FontAwesome.empire = function() {
+	return new tiki_Icon("fa fa-empire");
+};
+tiki_FontAwesome.envelope = function() {
+	return new tiki_Icon("fa fa-envelope");
+};
+tiki_FontAwesome.envelopeO = function() {
+	return new tiki_Icon("fa fa-envelope-o");
+};
+tiki_FontAwesome.envelopeSquare = function() {
+	return new tiki_Icon("fa fa-envelope-square");
+};
+tiki_FontAwesome.envira = function() {
+	return new tiki_Icon("fa fa-envira");
+};
+tiki_FontAwesome.eraser = function() {
+	return new tiki_Icon("fa fa-eraser");
+};
+tiki_FontAwesome.eur = function() {
+	return new tiki_Icon("fa fa-eur");
+};
+tiki_FontAwesome.euro = function() {
+	return new tiki_Icon("fa fa-euro");
+};
+tiki_FontAwesome.exchange = function() {
+	return new tiki_Icon("fa fa-exchange");
+};
+tiki_FontAwesome.exclamation = function() {
+	return new tiki_Icon("fa fa-exclamation");
+};
+tiki_FontAwesome.exclamationCircle = function() {
+	return new tiki_Icon("fa fa-exclamation-circle");
+};
+tiki_FontAwesome.exclamationTriangle = function() {
+	return new tiki_Icon("fa fa-exclamation-triangle");
+};
+tiki_FontAwesome.expand = function() {
+	return new tiki_Icon("fa fa-expand");
+};
+tiki_FontAwesome.expeditedssl = function() {
+	return new tiki_Icon("fa fa-expeditedssl");
+};
+tiki_FontAwesome.externalLink = function() {
+	return new tiki_Icon("fa fa-external-link");
+};
+tiki_FontAwesome.externalLinkSquare = function() {
+	return new tiki_Icon("fa fa-external-link-square");
+};
+tiki_FontAwesome.eye = function() {
+	return new tiki_Icon("fa fa-eye");
+};
+tiki_FontAwesome.eyedropper = function() {
+	return new tiki_Icon("fa fa-eyedropper");
+};
+tiki_FontAwesome.eyeSlash = function() {
+	return new tiki_Icon("fa fa-eye-slash");
+};
+tiki_FontAwesome.fa = function() {
+	return new tiki_Icon("fa fa-fa");
+};
+tiki_FontAwesome.facebook = function() {
+	return new tiki_Icon("fa fa-facebook");
+};
+tiki_FontAwesome.facebookF = function() {
+	return new tiki_Icon("fa fa-facebook-f");
+};
+tiki_FontAwesome.facebookOfficial = function() {
+	return new tiki_Icon("fa fa-facebook-official");
+};
+tiki_FontAwesome.facebookSquare = function() {
+	return new tiki_Icon("fa fa-facebook-square");
+};
+tiki_FontAwesome.fastBackward = function() {
+	return new tiki_Icon("fa fa-fast-backward");
+};
+tiki_FontAwesome.fastForward = function() {
+	return new tiki_Icon("fa fa-fast-forward");
+};
+tiki_FontAwesome.fax = function() {
+	return new tiki_Icon("fa fa-fax");
+};
+tiki_FontAwesome.feed = function() {
+	return new tiki_Icon("fa fa-feed");
+};
+tiki_FontAwesome.female = function() {
+	return new tiki_Icon("fa fa-female");
+};
+tiki_FontAwesome.fighterJet = function() {
+	return new tiki_Icon("fa fa-fighter-jet");
+};
+tiki_FontAwesome.file = function() {
+	return new tiki_Icon("fa fa-file");
+};
+tiki_FontAwesome.fileArchiveO = function() {
+	return new tiki_Icon("fa fa-file-archive-o");
+};
+tiki_FontAwesome.fileAudioO = function() {
+	return new tiki_Icon("fa fa-file-audio-o");
+};
+tiki_FontAwesome.fileCodeO = function() {
+	return new tiki_Icon("fa fa-file-code-o");
+};
+tiki_FontAwesome.fileExcelO = function() {
+	return new tiki_Icon("fa fa-file-excel-o");
+};
+tiki_FontAwesome.fileImageO = function() {
+	return new tiki_Icon("fa fa-file-image-o");
+};
+tiki_FontAwesome.fileMovieO = function() {
+	return new tiki_Icon("fa fa-file-movie-o");
+};
+tiki_FontAwesome.fileO = function() {
+	return new tiki_Icon("fa fa-file-o");
+};
+tiki_FontAwesome.filePdfO = function() {
+	return new tiki_Icon("fa fa-file-pdf-o");
+};
+tiki_FontAwesome.filePhotoO = function() {
+	return new tiki_Icon("fa fa-file-photo-o");
+};
+tiki_FontAwesome.filePictureO = function() {
+	return new tiki_Icon("fa fa-file-picture-o");
+};
+tiki_FontAwesome.filePowerpointO = function() {
+	return new tiki_Icon("fa fa-file-powerpoint-o");
+};
+tiki_FontAwesome.filesO = function() {
+	return new tiki_Icon("fa fa-files-o");
+};
+tiki_FontAwesome.fileSoundO = function() {
+	return new tiki_Icon("fa fa-file-sound-o");
+};
+tiki_FontAwesome.fileText = function() {
+	return new tiki_Icon("fa fa-file-text");
+};
+tiki_FontAwesome.fileTextO = function() {
+	return new tiki_Icon("fa fa-file-text-o");
+};
+tiki_FontAwesome.fileVideoO = function() {
+	return new tiki_Icon("fa fa-file-video-o");
+};
+tiki_FontAwesome.fileWordO = function() {
+	return new tiki_Icon("fa fa-file-word-o");
+};
+tiki_FontAwesome.fileZipO = function() {
+	return new tiki_Icon("fa fa-file-zip-o");
+};
+tiki_FontAwesome.film = function() {
+	return new tiki_Icon("fa fa-film");
+};
+tiki_FontAwesome.filter = function() {
+	return new tiki_Icon("fa fa-filter");
+};
+tiki_FontAwesome.fire = function() {
+	return new tiki_Icon("fa fa-fire");
+};
+tiki_FontAwesome.fireExtinguisher = function() {
+	return new tiki_Icon("fa fa-fire-extinguisher");
+};
+tiki_FontAwesome.firefox = function() {
+	return new tiki_Icon("fa fa-firefox");
+};
+tiki_FontAwesome.firstOrder = function() {
+	return new tiki_Icon("fa fa-first-order");
+};
+tiki_FontAwesome.flag = function() {
+	return new tiki_Icon("fa fa-flag");
+};
+tiki_FontAwesome.flagCheckered = function() {
+	return new tiki_Icon("fa fa-flag-checkered");
+};
+tiki_FontAwesome.flagO = function() {
+	return new tiki_Icon("fa fa-flag-o");
+};
+tiki_FontAwesome.flash = function() {
+	return new tiki_Icon("fa fa-flash");
+};
+tiki_FontAwesome.flask = function() {
+	return new tiki_Icon("fa fa-flask");
+};
+tiki_FontAwesome.flickr = function() {
+	return new tiki_Icon("fa fa-flickr");
+};
+tiki_FontAwesome.floppyO = function() {
+	return new tiki_Icon("fa fa-floppy-o");
+};
+tiki_FontAwesome.folder = function() {
+	return new tiki_Icon("fa fa-folder");
+};
+tiki_FontAwesome.folderO = function() {
+	return new tiki_Icon("fa fa-folder-o");
+};
+tiki_FontAwesome.folderOpen = function() {
+	return new tiki_Icon("fa fa-folder-open");
+};
+tiki_FontAwesome.folderOpenO = function() {
+	return new tiki_Icon("fa fa-folder-open-o");
+};
+tiki_FontAwesome.font = function() {
+	return new tiki_Icon("fa fa-font");
+};
+tiki_FontAwesome.fontAwesome = function() {
+	return new tiki_Icon("fa fa-font-awesome");
+};
+tiki_FontAwesome.fonticons = function() {
+	return new tiki_Icon("fa fa-fonticons");
+};
+tiki_FontAwesome.fortAwesome = function() {
+	return new tiki_Icon("fa fa-fort-awesome");
+};
+tiki_FontAwesome.forumbee = function() {
+	return new tiki_Icon("fa fa-forumbee");
+};
+tiki_FontAwesome.forward = function() {
+	return new tiki_Icon("fa fa-forward");
+};
+tiki_FontAwesome.foursquare = function() {
+	return new tiki_Icon("fa fa-foursquare");
+};
+tiki_FontAwesome.frownO = function() {
+	return new tiki_Icon("fa fa-frown-o");
+};
+tiki_FontAwesome.futbolO = function() {
+	return new tiki_Icon("fa fa-futbol-o");
+};
+tiki_FontAwesome.gamepad = function() {
+	return new tiki_Icon("fa fa-gamepad");
+};
+tiki_FontAwesome.gavel = function() {
+	return new tiki_Icon("fa fa-gavel");
+};
+tiki_FontAwesome.gbp = function() {
+	return new tiki_Icon("fa fa-gbp");
+};
+tiki_FontAwesome.ge = function() {
+	return new tiki_Icon("fa fa-ge");
+};
+tiki_FontAwesome.gear = function() {
+	return new tiki_Icon("fa fa-gear");
+};
+tiki_FontAwesome.gears = function() {
+	return new tiki_Icon("fa fa-gears");
+};
+tiki_FontAwesome.genderless = function() {
+	return new tiki_Icon("fa fa-genderless");
+};
+tiki_FontAwesome.getPocket = function() {
+	return new tiki_Icon("fa fa-get-pocket");
+};
+tiki_FontAwesome.gg = function() {
+	return new tiki_Icon("fa fa-gg");
+};
+tiki_FontAwesome.ggCircle = function() {
+	return new tiki_Icon("fa fa-gg-circle");
+};
+tiki_FontAwesome.gift = function() {
+	return new tiki_Icon("fa fa-gift");
+};
+tiki_FontAwesome.git = function() {
+	return new tiki_Icon("fa fa-git");
+};
+tiki_FontAwesome.github = function() {
+	return new tiki_Icon("fa fa-github");
+};
+tiki_FontAwesome.githubAlt = function() {
+	return new tiki_Icon("fa fa-github-alt");
+};
+tiki_FontAwesome.githubSquare = function() {
+	return new tiki_Icon("fa fa-github-square");
+};
+tiki_FontAwesome.gitlab = function() {
+	return new tiki_Icon("fa fa-gitlab");
+};
+tiki_FontAwesome.gitSquare = function() {
+	return new tiki_Icon("fa fa-git-square");
+};
+tiki_FontAwesome.gittip = function() {
+	return new tiki_Icon("fa fa-gittip");
+};
+tiki_FontAwesome.glass = function() {
+	return new tiki_Icon("fa fa-glass");
+};
+tiki_FontAwesome.glide = function() {
+	return new tiki_Icon("fa fa-glide");
+};
+tiki_FontAwesome.glideG = function() {
+	return new tiki_Icon("fa fa-glide-g");
+};
+tiki_FontAwesome.globe = function() {
+	return new tiki_Icon("fa fa-globe");
+};
+tiki_FontAwesome.google = function() {
+	return new tiki_Icon("fa fa-google");
+};
+tiki_FontAwesome.googlePlus = function() {
+	return new tiki_Icon("fa fa-google-plus");
+};
+tiki_FontAwesome.googlePlusCircle = function() {
+	return new tiki_Icon("fa fa-google-plus-circle");
+};
+tiki_FontAwesome.googlePlusOfficial = function() {
+	return new tiki_Icon("fa fa-google-plus-official");
+};
+tiki_FontAwesome.googlePlusSquare = function() {
+	return new tiki_Icon("fa fa-google-plus-square");
+};
+tiki_FontAwesome.googleWallet = function() {
+	return new tiki_Icon("fa fa-google-wallet");
+};
+tiki_FontAwesome.graduationCap = function() {
+	return new tiki_Icon("fa fa-graduation-cap");
+};
+tiki_FontAwesome.gratipay = function() {
+	return new tiki_Icon("fa fa-gratipay");
+};
+tiki_FontAwesome.group = function() {
+	return new tiki_Icon("fa fa-group");
+};
+tiki_FontAwesome.hackerNews = function() {
+	return new tiki_Icon("fa fa-hacker-news");
+};
+tiki_FontAwesome.handGrabO = function() {
+	return new tiki_Icon("fa fa-hand-grab-o");
+};
+tiki_FontAwesome.handLizardO = function() {
+	return new tiki_Icon("fa fa-hand-lizard-o");
+};
+tiki_FontAwesome.handODown = function() {
+	return new tiki_Icon("fa fa-hand-o-down");
+};
+tiki_FontAwesome.handOLeft = function() {
+	return new tiki_Icon("fa fa-hand-o-left");
+};
+tiki_FontAwesome.handORight = function() {
+	return new tiki_Icon("fa fa-hand-o-right");
+};
+tiki_FontAwesome.handOUp = function() {
+	return new tiki_Icon("fa fa-hand-o-up");
+};
+tiki_FontAwesome.handPaperO = function() {
+	return new tiki_Icon("fa fa-hand-paper-o");
+};
+tiki_FontAwesome.handPeaceO = function() {
+	return new tiki_Icon("fa fa-hand-peace-o");
+};
+tiki_FontAwesome.handPointerO = function() {
+	return new tiki_Icon("fa fa-hand-pointer-o");
+};
+tiki_FontAwesome.handRockO = function() {
+	return new tiki_Icon("fa fa-hand-rock-o");
+};
+tiki_FontAwesome.handScissorsO = function() {
+	return new tiki_Icon("fa fa-hand-scissors-o");
+};
+tiki_FontAwesome.handSpockO = function() {
+	return new tiki_Icon("fa fa-hand-spock-o");
+};
+tiki_FontAwesome.handStopO = function() {
+	return new tiki_Icon("fa fa-hand-stop-o");
+};
+tiki_FontAwesome.hardOfHearing = function() {
+	return new tiki_Icon("fa fa-hard-of-hearing");
+};
+tiki_FontAwesome.hashtag = function() {
+	return new tiki_Icon("fa fa-hashtag");
+};
+tiki_FontAwesome.hddO = function() {
+	return new tiki_Icon("fa fa-hdd-o");
+};
+tiki_FontAwesome.header = function() {
+	return new tiki_Icon("fa fa-header");
+};
+tiki_FontAwesome.headphones = function() {
+	return new tiki_Icon("fa fa-headphones");
+};
+tiki_FontAwesome.heart = function() {
+	return new tiki_Icon("fa fa-heart");
+};
+tiki_FontAwesome.heartbeat = function() {
+	return new tiki_Icon("fa fa-heartbeat");
+};
+tiki_FontAwesome.heartO = function() {
+	return new tiki_Icon("fa fa-heart-o");
+};
+tiki_FontAwesome.history = function() {
+	return new tiki_Icon("fa fa-history");
+};
+tiki_FontAwesome.home = function() {
+	return new tiki_Icon("fa fa-home");
+};
+tiki_FontAwesome.hotel = function() {
+	return new tiki_Icon("fa fa-hotel");
+};
+tiki_FontAwesome.hourglass = function() {
+	return new tiki_Icon("fa fa-hourglass");
+};
+tiki_FontAwesome.hourglass1 = function() {
+	return new tiki_Icon("fa fa-hourglass-1");
+};
+tiki_FontAwesome.hourglass2 = function() {
+	return new tiki_Icon("fa fa-hourglass-2");
+};
+tiki_FontAwesome.hourglass3 = function() {
+	return new tiki_Icon("fa fa-hourglass-3");
+};
+tiki_FontAwesome.hourglassEnd = function() {
+	return new tiki_Icon("fa fa-hourglass-end");
+};
+tiki_FontAwesome.hourglassHalf = function() {
+	return new tiki_Icon("fa fa-hourglass-half");
+};
+tiki_FontAwesome.hourglassO = function() {
+	return new tiki_Icon("fa fa-hourglass-o");
+};
+tiki_FontAwesome.hourglassStart = function() {
+	return new tiki_Icon("fa fa-hourglass-start");
+};
+tiki_FontAwesome.houzz = function() {
+	return new tiki_Icon("fa fa-houzz");
+};
+tiki_FontAwesome.html5 = function() {
+	return new tiki_Icon("fa fa-html5");
+};
+tiki_FontAwesome.iCursor = function() {
+	return new tiki_Icon("fa fa-i-cursor");
+};
+tiki_FontAwesome.ils = function() {
+	return new tiki_Icon("fa fa-ils");
+};
+tiki_FontAwesome.image = function() {
+	return new tiki_Icon("fa fa-image");
+};
+tiki_FontAwesome.inbox = function() {
+	return new tiki_Icon("fa fa-inbox");
+};
+tiki_FontAwesome.indent = function() {
+	return new tiki_Icon("fa fa-indent");
+};
+tiki_FontAwesome.industry = function() {
+	return new tiki_Icon("fa fa-industry");
+};
+tiki_FontAwesome.info = function() {
+	return new tiki_Icon("fa fa-info");
+};
+tiki_FontAwesome.infoCircle = function() {
+	return new tiki_Icon("fa fa-info-circle");
+};
+tiki_FontAwesome.inr = function() {
+	return new tiki_Icon("fa fa-inr");
+};
+tiki_FontAwesome.instagram = function() {
+	return new tiki_Icon("fa fa-instagram");
+};
+tiki_FontAwesome.institution = function() {
+	return new tiki_Icon("fa fa-institution");
+};
+tiki_FontAwesome.internetExplorer = function() {
+	return new tiki_Icon("fa fa-internet-explorer");
+};
+tiki_FontAwesome.intersex = function() {
+	return new tiki_Icon("fa fa-intersex");
+};
+tiki_FontAwesome.ioxhost = function() {
+	return new tiki_Icon("fa fa-ioxhost");
+};
+tiki_FontAwesome.italic = function() {
+	return new tiki_Icon("fa fa-italic");
+};
+tiki_FontAwesome.joomla = function() {
+	return new tiki_Icon("fa fa-joomla");
+};
+tiki_FontAwesome.jpy = function() {
+	return new tiki_Icon("fa fa-jpy");
+};
+tiki_FontAwesome.jsfiddle = function() {
+	return new tiki_Icon("fa fa-jsfiddle");
+};
+tiki_FontAwesome.key = function() {
+	return new tiki_Icon("fa fa-key");
+};
+tiki_FontAwesome.keyboardO = function() {
+	return new tiki_Icon("fa fa-keyboard-o");
+};
+tiki_FontAwesome.krw = function() {
+	return new tiki_Icon("fa fa-krw");
+};
+tiki_FontAwesome.language = function() {
+	return new tiki_Icon("fa fa-language");
+};
+tiki_FontAwesome.laptop = function() {
+	return new tiki_Icon("fa fa-laptop");
+};
+tiki_FontAwesome.lastfm = function() {
+	return new tiki_Icon("fa fa-lastfm");
+};
+tiki_FontAwesome.lastfmSquare = function() {
+	return new tiki_Icon("fa fa-lastfm-square");
+};
+tiki_FontAwesome.leaf = function() {
+	return new tiki_Icon("fa fa-leaf");
+};
+tiki_FontAwesome.leanpub = function() {
+	return new tiki_Icon("fa fa-leanpub");
+};
+tiki_FontAwesome.legal = function() {
+	return new tiki_Icon("fa fa-legal");
+};
+tiki_FontAwesome.lemonO = function() {
+	return new tiki_Icon("fa fa-lemon-o");
+};
+tiki_FontAwesome.levelDown = function() {
+	return new tiki_Icon("fa fa-level-down");
+};
+tiki_FontAwesome.levelUp = function() {
+	return new tiki_Icon("fa fa-level-up");
+};
+tiki_FontAwesome.lifeBouy = function() {
+	return new tiki_Icon("fa fa-life-bouy");
+};
+tiki_FontAwesome.lifeBuoy = function() {
+	return new tiki_Icon("fa fa-life-buoy");
+};
+tiki_FontAwesome.lifeRing = function() {
+	return new tiki_Icon("fa fa-life-ring");
+};
+tiki_FontAwesome.lifeSaver = function() {
+	return new tiki_Icon("fa fa-life-saver");
+};
+tiki_FontAwesome.lightbulbO = function() {
+	return new tiki_Icon("fa fa-lightbulb-o");
+};
+tiki_FontAwesome.lineChart = function() {
+	return new tiki_Icon("fa fa-line-chart");
+};
+tiki_FontAwesome.link = function() {
+	return new tiki_Icon("fa fa-link");
+};
+tiki_FontAwesome.linkedin = function() {
+	return new tiki_Icon("fa fa-linkedin");
+};
+tiki_FontAwesome.linkedinSquare = function() {
+	return new tiki_Icon("fa fa-linkedin-square");
+};
+tiki_FontAwesome.linux = function() {
+	return new tiki_Icon("fa fa-linux");
+};
+tiki_FontAwesome.list = function() {
+	return new tiki_Icon("fa fa-list");
+};
+tiki_FontAwesome.listAlt = function() {
+	return new tiki_Icon("fa fa-list-alt");
+};
+tiki_FontAwesome.listOl = function() {
+	return new tiki_Icon("fa fa-list-ol");
+};
+tiki_FontAwesome.listUl = function() {
+	return new tiki_Icon("fa fa-list-ul");
+};
+tiki_FontAwesome.locationArrow = function() {
+	return new tiki_Icon("fa fa-location-arrow");
+};
+tiki_FontAwesome.lock = function() {
+	return new tiki_Icon("fa fa-lock");
+};
+tiki_FontAwesome.logo500px = function() {
+	return new tiki_Icon("fa fa-500px");
+};
+tiki_FontAwesome.longArrowDown = function() {
+	return new tiki_Icon("fa fa-long-arrow-down");
+};
+tiki_FontAwesome.longArrowLeft = function() {
+	return new tiki_Icon("fa fa-long-arrow-left");
+};
+tiki_FontAwesome.longArrowRight = function() {
+	return new tiki_Icon("fa fa-long-arrow-right");
+};
+tiki_FontAwesome.longArrowUp = function() {
+	return new tiki_Icon("fa fa-long-arrow-up");
+};
+tiki_FontAwesome.lowVision = function() {
+	return new tiki_Icon("fa fa-low-vision");
+};
+tiki_FontAwesome.magic = function() {
+	return new tiki_Icon("fa fa-magic");
+};
+tiki_FontAwesome.magnet = function() {
+	return new tiki_Icon("fa fa-magnet");
+};
+tiki_FontAwesome.mailForward = function() {
+	return new tiki_Icon("fa fa-mail-forward");
+};
+tiki_FontAwesome.mailReply = function() {
+	return new tiki_Icon("fa fa-mail-reply");
+};
+tiki_FontAwesome.mailReplyAll = function() {
+	return new tiki_Icon("fa fa-mail-reply-all");
+};
+tiki_FontAwesome.male = function() {
+	return new tiki_Icon("fa fa-male");
+};
+tiki_FontAwesome.map = function() {
+	return new tiki_Icon("fa fa-map");
+};
+tiki_FontAwesome.mapMarker = function() {
+	return new tiki_Icon("fa fa-map-marker");
+};
+tiki_FontAwesome.mapO = function() {
+	return new tiki_Icon("fa fa-map-o");
+};
+tiki_FontAwesome.mapPin = function() {
+	return new tiki_Icon("fa fa-map-pin");
+};
+tiki_FontAwesome.mapSigns = function() {
+	return new tiki_Icon("fa fa-map-signs");
+};
+tiki_FontAwesome.mars = function() {
+	return new tiki_Icon("fa fa-mars");
+};
+tiki_FontAwesome.marsDouble = function() {
+	return new tiki_Icon("fa fa-mars-double");
+};
+tiki_FontAwesome.marsStroke = function() {
+	return new tiki_Icon("fa fa-mars-stroke");
+};
+tiki_FontAwesome.marsStrokeH = function() {
+	return new tiki_Icon("fa fa-mars-stroke-h");
+};
+tiki_FontAwesome.marsStrokeV = function() {
+	return new tiki_Icon("fa fa-mars-stroke-v");
+};
+tiki_FontAwesome.maxcdn = function() {
+	return new tiki_Icon("fa fa-maxcdn");
+};
+tiki_FontAwesome.meanpath = function() {
+	return new tiki_Icon("fa fa-meanpath");
+};
+tiki_FontAwesome.medium = function() {
+	return new tiki_Icon("fa fa-medium");
+};
+tiki_FontAwesome.mehO = function() {
+	return new tiki_Icon("fa fa-meh-o");
+};
+tiki_FontAwesome.mercury = function() {
+	return new tiki_Icon("fa fa-mercury");
+};
+tiki_FontAwesome.microphone = function() {
+	return new tiki_Icon("fa fa-microphone");
+};
+tiki_FontAwesome.microphoneSlash = function() {
+	return new tiki_Icon("fa fa-microphone-slash");
+};
+tiki_FontAwesome.minus = function() {
+	return new tiki_Icon("fa fa-minus");
+};
+tiki_FontAwesome.minusCircle = function() {
+	return new tiki_Icon("fa fa-minus-circle");
+};
+tiki_FontAwesome.minusSquare = function() {
+	return new tiki_Icon("fa fa-minus-square");
+};
+tiki_FontAwesome.minusSquareO = function() {
+	return new tiki_Icon("fa fa-minus-square-o");
+};
+tiki_FontAwesome.mixcloud = function() {
+	return new tiki_Icon("fa fa-mixcloud");
+};
+tiki_FontAwesome.mobile = function() {
+	return new tiki_Icon("fa fa-mobile");
+};
+tiki_FontAwesome.mobilePhone = function() {
+	return new tiki_Icon("fa fa-mobile-phone");
+};
+tiki_FontAwesome.modx = function() {
+	return new tiki_Icon("fa fa-modx");
+};
+tiki_FontAwesome.money = function() {
+	return new tiki_Icon("fa fa-money");
+};
+tiki_FontAwesome.moonO = function() {
+	return new tiki_Icon("fa fa-moon-o");
+};
+tiki_FontAwesome.mortarBoard = function() {
+	return new tiki_Icon("fa fa-mortar-board");
+};
+tiki_FontAwesome.motorcycle = function() {
+	return new tiki_Icon("fa fa-motorcycle");
+};
+tiki_FontAwesome.mousePointer = function() {
+	return new tiki_Icon("fa fa-mouse-pointer");
+};
+tiki_FontAwesome.music = function() {
+	return new tiki_Icon("fa fa-music");
+};
+tiki_FontAwesome.navicon = function() {
+	return new tiki_Icon("fa fa-navicon");
+};
+tiki_FontAwesome.neuter = function() {
+	return new tiki_Icon("fa fa-neuter");
+};
+tiki_FontAwesome.newspaperO = function() {
+	return new tiki_Icon("fa fa-newspaper-o");
+};
+tiki_FontAwesome.objectGroup = function() {
+	return new tiki_Icon("fa fa-object-group");
+};
+tiki_FontAwesome.objectUngroup = function() {
+	return new tiki_Icon("fa fa-object-ungroup");
+};
+tiki_FontAwesome.odnoklassniki = function() {
+	return new tiki_Icon("fa fa-odnoklassniki");
+};
+tiki_FontAwesome.odnoklassnikiSquare = function() {
+	return new tiki_Icon("fa fa-odnoklassniki-square");
+};
+tiki_FontAwesome.opencart = function() {
+	return new tiki_Icon("fa fa-opencart");
+};
+tiki_FontAwesome.openid = function() {
+	return new tiki_Icon("fa fa-openid");
+};
+tiki_FontAwesome.opera = function() {
+	return new tiki_Icon("fa fa-opera");
+};
+tiki_FontAwesome.optinMonster = function() {
+	return new tiki_Icon("fa fa-optin-monster");
+};
+tiki_FontAwesome.outdent = function() {
+	return new tiki_Icon("fa fa-outdent");
+};
+tiki_FontAwesome.pagelines = function() {
+	return new tiki_Icon("fa fa-pagelines");
+};
+tiki_FontAwesome.paintBrush = function() {
+	return new tiki_Icon("fa fa-paint-brush");
+};
+tiki_FontAwesome.paperclip = function() {
+	return new tiki_Icon("fa fa-paperclip");
+};
+tiki_FontAwesome.paperPlane = function() {
+	return new tiki_Icon("fa fa-paper-plane");
+};
+tiki_FontAwesome.paperPlaneO = function() {
+	return new tiki_Icon("fa fa-paper-plane-o");
+};
+tiki_FontAwesome.paragraph = function() {
+	return new tiki_Icon("fa fa-paragraph");
+};
+tiki_FontAwesome.paste = function() {
+	return new tiki_Icon("fa fa-paste");
+};
+tiki_FontAwesome.pause = function() {
+	return new tiki_Icon("fa fa-pause");
+};
+tiki_FontAwesome.pauseCircle = function() {
+	return new tiki_Icon("fa fa-pause-circle");
+};
+tiki_FontAwesome.pauseCircleO = function() {
+	return new tiki_Icon("fa fa-pause-circle-o");
+};
+tiki_FontAwesome.paw = function() {
+	return new tiki_Icon("fa fa-paw");
+};
+tiki_FontAwesome.paypal = function() {
+	return new tiki_Icon("fa fa-paypal");
+};
+tiki_FontAwesome.pencil = function() {
+	return new tiki_Icon("fa fa-pencil");
+};
+tiki_FontAwesome.pencilSquare = function() {
+	return new tiki_Icon("fa fa-pencil-square");
+};
+tiki_FontAwesome.pencilSquareO = function() {
+	return new tiki_Icon("fa fa-pencil-square-o");
+};
+tiki_FontAwesome.percent = function() {
+	return new tiki_Icon("fa fa-percent");
+};
+tiki_FontAwesome.phone = function() {
+	return new tiki_Icon("fa fa-phone");
+};
+tiki_FontAwesome.phoneSquare = function() {
+	return new tiki_Icon("fa fa-phone-square");
+};
+tiki_FontAwesome.photo = function() {
+	return new tiki_Icon("fa fa-photo");
+};
+tiki_FontAwesome.pictureO = function() {
+	return new tiki_Icon("fa fa-picture-o");
+};
+tiki_FontAwesome.pieChart = function() {
+	return new tiki_Icon("fa fa-pie-chart");
+};
+tiki_FontAwesome.piedPiper = function() {
+	return new tiki_Icon("fa fa-pied-piper");
+};
+tiki_FontAwesome.piedPiperAlt = function() {
+	return new tiki_Icon("fa fa-pied-piper-alt");
+};
+tiki_FontAwesome.piedPiperPp = function() {
+	return new tiki_Icon("fa fa-pied-piper-pp");
+};
+tiki_FontAwesome.pinterest = function() {
+	return new tiki_Icon("fa fa-pinterest");
+};
+tiki_FontAwesome.pinterestP = function() {
+	return new tiki_Icon("fa fa-pinterest-p");
+};
+tiki_FontAwesome.pinterestSquare = function() {
+	return new tiki_Icon("fa fa-pinterest-square");
+};
+tiki_FontAwesome.plane = function() {
+	return new tiki_Icon("fa fa-plane");
+};
+tiki_FontAwesome.play = function() {
+	return new tiki_Icon("fa fa-play");
+};
+tiki_FontAwesome.playCircle = function() {
+	return new tiki_Icon("fa fa-play-circle");
+};
+tiki_FontAwesome.playCircleO = function() {
+	return new tiki_Icon("fa fa-play-circle-o");
+};
+tiki_FontAwesome.plug = function() {
+	return new tiki_Icon("fa fa-plug");
+};
+tiki_FontAwesome.plus = function() {
+	return new tiki_Icon("fa fa-plus");
+};
+tiki_FontAwesome.plusCircle = function() {
+	return new tiki_Icon("fa fa-plus-circle");
+};
+tiki_FontAwesome.plusSquare = function() {
+	return new tiki_Icon("fa fa-plus-square");
+};
+tiki_FontAwesome.plusSquareO = function() {
+	return new tiki_Icon("fa fa-plus-square-o");
+};
+tiki_FontAwesome.powerOff = function() {
+	return new tiki_Icon("fa fa-power-off");
+};
+tiki_FontAwesome.print = function() {
+	return new tiki_Icon("fa fa-print");
+};
+tiki_FontAwesome.productHunt = function() {
+	return new tiki_Icon("fa fa-product-hunt");
+};
+tiki_FontAwesome.puzzlePiece = function() {
+	return new tiki_Icon("fa fa-puzzle-piece");
+};
+tiki_FontAwesome.qq = function() {
+	return new tiki_Icon("fa fa-qq");
+};
+tiki_FontAwesome.qrcode = function() {
+	return new tiki_Icon("fa fa-qrcode");
+};
+tiki_FontAwesome.question = function() {
+	return new tiki_Icon("fa fa-question");
+};
+tiki_FontAwesome.questionCircle = function() {
+	return new tiki_Icon("fa fa-question-circle");
+};
+tiki_FontAwesome.questionCircleO = function() {
+	return new tiki_Icon("fa fa-question-circle-o");
+};
+tiki_FontAwesome.quoteLeft = function() {
+	return new tiki_Icon("fa fa-quote-left");
+};
+tiki_FontAwesome.quoteRight = function() {
+	return new tiki_Icon("fa fa-quote-right");
+};
+tiki_FontAwesome.ra = function() {
+	return new tiki_Icon("fa fa-ra");
+};
+tiki_FontAwesome.random = function() {
+	return new tiki_Icon("fa fa-random");
+};
+tiki_FontAwesome.rebel = function() {
+	return new tiki_Icon("fa fa-rebel");
+};
+tiki_FontAwesome.recycle = function() {
+	return new tiki_Icon("fa fa-recycle");
+};
+tiki_FontAwesome.reddit = function() {
+	return new tiki_Icon("fa fa-reddit");
+};
+tiki_FontAwesome.redditAlien = function() {
+	return new tiki_Icon("fa fa-reddit-alien");
+};
+tiki_FontAwesome.redditSquare = function() {
+	return new tiki_Icon("fa fa-reddit-square");
+};
+tiki_FontAwesome.refresh = function() {
+	return new tiki_Icon("fa fa-refresh");
+};
+tiki_FontAwesome.registered = function() {
+	return new tiki_Icon("fa fa-registered");
+};
+tiki_FontAwesome.remove = function() {
+	return new tiki_Icon("fa fa-remove");
+};
+tiki_FontAwesome.renren = function() {
+	return new tiki_Icon("fa fa-renren");
+};
+tiki_FontAwesome.reorder = function() {
+	return new tiki_Icon("fa fa-reorder");
+};
+tiki_FontAwesome.repeat = function() {
+	return new tiki_Icon("fa fa-repeat");
+};
+tiki_FontAwesome.reply = function() {
+	return new tiki_Icon("fa fa-reply");
+};
+tiki_FontAwesome.replyAll = function() {
+	return new tiki_Icon("fa fa-reply-all");
+};
+tiki_FontAwesome.resistance = function() {
+	return new tiki_Icon("fa fa-resistance");
+};
+tiki_FontAwesome.retweet = function() {
+	return new tiki_Icon("fa fa-retweet");
+};
+tiki_FontAwesome.rmb = function() {
+	return new tiki_Icon("fa fa-rmb");
+};
+tiki_FontAwesome.road = function() {
+	return new tiki_Icon("fa fa-road");
+};
+tiki_FontAwesome.rocket = function() {
+	return new tiki_Icon("fa fa-rocket");
+};
+tiki_FontAwesome.rotateLeft = function() {
+	return new tiki_Icon("fa fa-rotate-left");
+};
+tiki_FontAwesome.rotateRight = function() {
+	return new tiki_Icon("fa fa-rotate-right");
+};
+tiki_FontAwesome.rouble = function() {
+	return new tiki_Icon("fa fa-rouble");
+};
+tiki_FontAwesome.rss = function() {
+	return new tiki_Icon("fa fa-rss");
+};
+tiki_FontAwesome.rssSquare = function() {
+	return new tiki_Icon("fa fa-rss-square");
+};
+tiki_FontAwesome.rub = function() {
+	return new tiki_Icon("fa fa-rub");
+};
+tiki_FontAwesome.ruble = function() {
+	return new tiki_Icon("fa fa-ruble");
+};
+tiki_FontAwesome.rupee = function() {
+	return new tiki_Icon("fa fa-rupee");
+};
+tiki_FontAwesome.safari = function() {
+	return new tiki_Icon("fa fa-safari");
+};
+tiki_FontAwesome.save = function() {
+	return new tiki_Icon("fa fa-save");
+};
+tiki_FontAwesome.scissors = function() {
+	return new tiki_Icon("fa fa-scissors");
+};
+tiki_FontAwesome.scribd = function() {
+	return new tiki_Icon("fa fa-scribd");
+};
+tiki_FontAwesome.search = function() {
+	return new tiki_Icon("fa fa-search");
+};
+tiki_FontAwesome.searchMinus = function() {
+	return new tiki_Icon("fa fa-search-minus");
+};
+tiki_FontAwesome.searchPlus = function() {
+	return new tiki_Icon("fa fa-search-plus");
+};
+tiki_FontAwesome.sellsy = function() {
+	return new tiki_Icon("fa fa-sellsy");
+};
+tiki_FontAwesome.send = function() {
+	return new tiki_Icon("fa fa-send");
+};
+tiki_FontAwesome.sendO = function() {
+	return new tiki_Icon("fa fa-send-o");
+};
+tiki_FontAwesome.server = function() {
+	return new tiki_Icon("fa fa-server");
+};
+tiki_FontAwesome.share = function() {
+	return new tiki_Icon("fa fa-share");
+};
+tiki_FontAwesome.shareAlt = function() {
+	return new tiki_Icon("fa fa-share-alt");
+};
+tiki_FontAwesome.shareAltSquare = function() {
+	return new tiki_Icon("fa fa-share-alt-square");
+};
+tiki_FontAwesome.shareSquare = function() {
+	return new tiki_Icon("fa fa-share-square");
+};
+tiki_FontAwesome.shareSquareO = function() {
+	return new tiki_Icon("fa fa-share-square-o");
+};
+tiki_FontAwesome.shekel = function() {
+	return new tiki_Icon("fa fa-shekel");
+};
+tiki_FontAwesome.sheqel = function() {
+	return new tiki_Icon("fa fa-sheqel");
+};
+tiki_FontAwesome.shield = function() {
+	return new tiki_Icon("fa fa-shield");
+};
+tiki_FontAwesome.ship = function() {
+	return new tiki_Icon("fa fa-ship");
+};
+tiki_FontAwesome.shirtsinbulk = function() {
+	return new tiki_Icon("fa fa-shirtsinbulk");
+};
+tiki_FontAwesome.shoppingBag = function() {
+	return new tiki_Icon("fa fa-shopping-bag");
+};
+tiki_FontAwesome.shoppingBasket = function() {
+	return new tiki_Icon("fa fa-shopping-basket");
+};
+tiki_FontAwesome.shoppingCart = function() {
+	return new tiki_Icon("fa fa-shopping-cart");
+};
+tiki_FontAwesome.signal = function() {
+	return new tiki_Icon("fa fa-signal");
+};
+tiki_FontAwesome.signIn = function() {
+	return new tiki_Icon("fa fa-sign-in");
+};
+tiki_FontAwesome.signing = function() {
+	return new tiki_Icon("fa fa-signing");
+};
+tiki_FontAwesome.signLanguage = function() {
+	return new tiki_Icon("fa fa-sign-language");
+};
+tiki_FontAwesome.signOut = function() {
+	return new tiki_Icon("fa fa-sign-out");
+};
+tiki_FontAwesome.simplybuilt = function() {
+	return new tiki_Icon("fa fa-simplybuilt");
+};
+tiki_FontAwesome.sitemap = function() {
+	return new tiki_Icon("fa fa-sitemap");
+};
+tiki_FontAwesome.skyatlas = function() {
+	return new tiki_Icon("fa fa-skyatlas");
+};
+tiki_FontAwesome.skype = function() {
+	return new tiki_Icon("fa fa-skype");
+};
+tiki_FontAwesome.slack = function() {
+	return new tiki_Icon("fa fa-slack");
+};
+tiki_FontAwesome.sliders = function() {
+	return new tiki_Icon("fa fa-sliders");
+};
+tiki_FontAwesome.slideshare = function() {
+	return new tiki_Icon("fa fa-slideshare");
+};
+tiki_FontAwesome.smileO = function() {
+	return new tiki_Icon("fa fa-smile-o");
+};
+tiki_FontAwesome.snapchat = function() {
+	return new tiki_Icon("fa fa-snapchat");
+};
+tiki_FontAwesome.snapchatGhost = function() {
+	return new tiki_Icon("fa fa-snapchat-ghost");
+};
+tiki_FontAwesome.snapchatSquare = function() {
+	return new tiki_Icon("fa fa-snapchat-square");
+};
+tiki_FontAwesome.soccerBallO = function() {
+	return new tiki_Icon("fa fa-soccer-ball-o");
+};
+tiki_FontAwesome.sort = function() {
+	return new tiki_Icon("fa fa-sort");
+};
+tiki_FontAwesome.sortAlphaAsc = function() {
+	return new tiki_Icon("fa fa-sort-alpha-asc");
+};
+tiki_FontAwesome.sortAlphaDesc = function() {
+	return new tiki_Icon("fa fa-sort-alpha-desc");
+};
+tiki_FontAwesome.sortAmountAsc = function() {
+	return new tiki_Icon("fa fa-sort-amount-asc");
+};
+tiki_FontAwesome.sortAmountDesc = function() {
+	return new tiki_Icon("fa fa-sort-amount-desc");
+};
+tiki_FontAwesome.sortAsc = function() {
+	return new tiki_Icon("fa fa-sort-asc");
+};
+tiki_FontAwesome.sortDesc = function() {
+	return new tiki_Icon("fa fa-sort-desc");
+};
+tiki_FontAwesome.sortDown = function() {
+	return new tiki_Icon("fa fa-sort-down");
+};
+tiki_FontAwesome.sortNumericAsc = function() {
+	return new tiki_Icon("fa fa-sort-numeric-asc");
+};
+tiki_FontAwesome.sortNumericDesc = function() {
+	return new tiki_Icon("fa fa-sort-numeric-desc");
+};
+tiki_FontAwesome.sortUp = function() {
+	return new tiki_Icon("fa fa-sort-up");
+};
+tiki_FontAwesome.soundcloud = function() {
+	return new tiki_Icon("fa fa-soundcloud");
+};
+tiki_FontAwesome.spaceShuttle = function() {
+	return new tiki_Icon("fa fa-space-shuttle");
+};
+tiki_FontAwesome.spinner = function() {
+	return new tiki_Icon("fa fa-spinner");
+};
+tiki_FontAwesome.spoon = function() {
+	return new tiki_Icon("fa fa-spoon");
+};
+tiki_FontAwesome.spotify = function() {
+	return new tiki_Icon("fa fa-spotify");
+};
+tiki_FontAwesome.square = function() {
+	return new tiki_Icon("fa fa-square");
+};
+tiki_FontAwesome.squareO = function() {
+	return new tiki_Icon("fa fa-square-o");
+};
+tiki_FontAwesome.stackExchange = function() {
+	return new tiki_Icon("fa fa-stack-exchange");
+};
+tiki_FontAwesome.stackOverflow = function() {
+	return new tiki_Icon("fa fa-stack-overflow");
+};
+tiki_FontAwesome.star = function() {
+	return new tiki_Icon("fa fa-star");
+};
+tiki_FontAwesome.starHalf = function() {
+	return new tiki_Icon("fa fa-star-half");
+};
+tiki_FontAwesome.starHalfEmpty = function() {
+	return new tiki_Icon("fa fa-star-half-empty");
+};
+tiki_FontAwesome.starHalfFull = function() {
+	return new tiki_Icon("fa fa-star-half-full");
+};
+tiki_FontAwesome.starHalfO = function() {
+	return new tiki_Icon("fa fa-star-half-o");
+};
+tiki_FontAwesome.starO = function() {
+	return new tiki_Icon("fa fa-star-o");
+};
+tiki_FontAwesome.steam = function() {
+	return new tiki_Icon("fa fa-steam");
+};
+tiki_FontAwesome.steamSquare = function() {
+	return new tiki_Icon("fa fa-steam-square");
+};
+tiki_FontAwesome.stepBackward = function() {
+	return new tiki_Icon("fa fa-step-backward");
+};
+tiki_FontAwesome.stepForward = function() {
+	return new tiki_Icon("fa fa-step-forward");
+};
+tiki_FontAwesome.stickyNote = function() {
+	return new tiki_Icon("fa fa-sticky-note");
+};
+tiki_FontAwesome.stickyNoteO = function() {
+	return new tiki_Icon("fa fa-sticky-note-o");
+};
+tiki_FontAwesome.stop = function() {
+	return new tiki_Icon("fa fa-stop");
+};
+tiki_FontAwesome.stopCircle = function() {
+	return new tiki_Icon("fa fa-stop-circle");
+};
+tiki_FontAwesome.stopCircleO = function() {
+	return new tiki_Icon("fa fa-stop-circle-o");
+};
+tiki_FontAwesome.streetView = function() {
+	return new tiki_Icon("fa fa-street-view");
+};
+tiki_FontAwesome.strikethrough = function() {
+	return new tiki_Icon("fa fa-strikethrough");
+};
+tiki_FontAwesome.stumbleupon = function() {
+	return new tiki_Icon("fa fa-stumbleupon");
+};
+tiki_FontAwesome.stumbleuponCircle = function() {
+	return new tiki_Icon("fa fa-stumbleupon-circle");
+};
+tiki_FontAwesome.subscript = function() {
+	return new tiki_Icon("fa fa-subscript");
+};
+tiki_FontAwesome.subway = function() {
+	return new tiki_Icon("fa fa-subway");
+};
+tiki_FontAwesome.suitcase = function() {
+	return new tiki_Icon("fa fa-suitcase");
+};
+tiki_FontAwesome.sunO = function() {
+	return new tiki_Icon("fa fa-sun-o");
+};
+tiki_FontAwesome.superscript = function() {
+	return new tiki_Icon("fa fa-superscript");
+};
+tiki_FontAwesome.support = function() {
+	return new tiki_Icon("fa fa-support");
+};
+tiki_FontAwesome.table = function() {
+	return new tiki_Icon("fa fa-table");
+};
+tiki_FontAwesome.tablet = function() {
+	return new tiki_Icon("fa fa-tablet");
+};
+tiki_FontAwesome.tachometer = function() {
+	return new tiki_Icon("fa fa-tachometer");
+};
+tiki_FontAwesome.tag = function() {
+	return new tiki_Icon("fa fa-tag");
+};
+tiki_FontAwesome.tags = function() {
+	return new tiki_Icon("fa fa-tags");
+};
+tiki_FontAwesome.tasks = function() {
+	return new tiki_Icon("fa fa-tasks");
+};
+tiki_FontAwesome.taxi = function() {
+	return new tiki_Icon("fa fa-taxi");
+};
+tiki_FontAwesome.television = function() {
+	return new tiki_Icon("fa fa-television");
+};
+tiki_FontAwesome.tencentWeibo = function() {
+	return new tiki_Icon("fa fa-tencent-weibo");
+};
+tiki_FontAwesome.terminal = function() {
+	return new tiki_Icon("fa fa-terminal");
+};
+tiki_FontAwesome.textHeight = function() {
+	return new tiki_Icon("fa fa-text-height");
+};
+tiki_FontAwesome.textWidth = function() {
+	return new tiki_Icon("fa fa-text-width");
+};
+tiki_FontAwesome.th = function() {
+	return new tiki_Icon("fa fa-th");
+};
+tiki_FontAwesome.themeisle = function() {
+	return new tiki_Icon("fa fa-themeisle");
+};
+tiki_FontAwesome.thLarge = function() {
+	return new tiki_Icon("fa fa-th-large");
+};
+tiki_FontAwesome.thList = function() {
+	return new tiki_Icon("fa fa-th-list");
+};
+tiki_FontAwesome.thumbsDown = function() {
+	return new tiki_Icon("fa fa-thumbs-down");
+};
+tiki_FontAwesome.thumbsODown = function() {
+	return new tiki_Icon("fa fa-thumbs-o-down");
+};
+tiki_FontAwesome.thumbsOUp = function() {
+	return new tiki_Icon("fa fa-thumbs-o-up");
+};
+tiki_FontAwesome.thumbsUp = function() {
+	return new tiki_Icon("fa fa-thumbs-up");
+};
+tiki_FontAwesome.thumbTack = function() {
+	return new tiki_Icon("fa fa-thumb-tack");
+};
+tiki_FontAwesome.ticket = function() {
+	return new tiki_Icon("fa fa-ticket");
+};
+tiki_FontAwesome.times = function() {
+	return new tiki_Icon("fa fa-times");
+};
+tiki_FontAwesome.timesCircle = function() {
+	return new tiki_Icon("fa fa-times-circle");
+};
+tiki_FontAwesome.timesCircleO = function() {
+	return new tiki_Icon("fa fa-times-circle-o");
+};
+tiki_FontAwesome.tint = function() {
+	return new tiki_Icon("fa fa-tint");
+};
+tiki_FontAwesome.toggleDown = function() {
+	return new tiki_Icon("fa fa-toggle-down");
+};
+tiki_FontAwesome.toggleLeft = function() {
+	return new tiki_Icon("fa fa-toggle-left");
+};
+tiki_FontAwesome.toggleOff = function() {
+	return new tiki_Icon("fa fa-toggle-off");
+};
+tiki_FontAwesome.toggleOn = function() {
+	return new tiki_Icon("fa fa-toggle-on");
+};
+tiki_FontAwesome.toggleRight = function() {
+	return new tiki_Icon("fa fa-toggle-right");
+};
+tiki_FontAwesome.toggleUp = function() {
+	return new tiki_Icon("fa fa-toggle-up");
+};
+tiki_FontAwesome.trademark = function() {
+	return new tiki_Icon("fa fa-trademark");
+};
+tiki_FontAwesome.train = function() {
+	return new tiki_Icon("fa fa-train");
+};
+tiki_FontAwesome.transgender = function() {
+	return new tiki_Icon("fa fa-transgender");
+};
+tiki_FontAwesome.transgenderAlt = function() {
+	return new tiki_Icon("fa fa-transgender-alt");
+};
+tiki_FontAwesome.trash = function() {
+	return new tiki_Icon("fa fa-trash");
+};
+tiki_FontAwesome.trashO = function() {
+	return new tiki_Icon("fa fa-trash-o");
+};
+tiki_FontAwesome.tree = function() {
+	return new tiki_Icon("fa fa-tree");
+};
+tiki_FontAwesome.trello = function() {
+	return new tiki_Icon("fa fa-trello");
+};
+tiki_FontAwesome.tripadvisor = function() {
+	return new tiki_Icon("fa fa-tripadvisor");
+};
+tiki_FontAwesome.trophy = function() {
+	return new tiki_Icon("fa fa-trophy");
+};
+tiki_FontAwesome.truck = function() {
+	return new tiki_Icon("fa fa-truck");
+};
+tiki_FontAwesome.tryIcon = function() {
+	return new tiki_Icon("fa fa-try");
+};
+tiki_FontAwesome.tty = function() {
+	return new tiki_Icon("fa fa-tty");
+};
+tiki_FontAwesome.tumblr = function() {
+	return new tiki_Icon("fa fa-tumblr");
+};
+tiki_FontAwesome.tumblrSquare = function() {
+	return new tiki_Icon("fa fa-tumblr-square");
+};
+tiki_FontAwesome.turkishLira = function() {
+	return new tiki_Icon("fa fa-turkish-lira");
+};
+tiki_FontAwesome.tv = function() {
+	return new tiki_Icon("fa fa-tv");
+};
+tiki_FontAwesome.twitch = function() {
+	return new tiki_Icon("fa fa-twitch");
+};
+tiki_FontAwesome.twitter = function() {
+	return new tiki_Icon("fa fa-twitter");
+};
+tiki_FontAwesome.twitterSquare = function() {
+	return new tiki_Icon("fa fa-twitter-square");
+};
+tiki_FontAwesome.umbrella = function() {
+	return new tiki_Icon("fa fa-umbrella");
+};
+tiki_FontAwesome.underline = function() {
+	return new tiki_Icon("fa fa-underline");
+};
+tiki_FontAwesome.undo = function() {
+	return new tiki_Icon("fa fa-undo");
+};
+tiki_FontAwesome.universalAccess = function() {
+	return new tiki_Icon("fa fa-universal-access");
+};
+tiki_FontAwesome.university = function() {
+	return new tiki_Icon("fa fa-university");
+};
+tiki_FontAwesome.unlink = function() {
+	return new tiki_Icon("fa fa-unlink");
+};
+tiki_FontAwesome.unlock = function() {
+	return new tiki_Icon("fa fa-unlock");
+};
+tiki_FontAwesome.unlockAlt = function() {
+	return new tiki_Icon("fa fa-unlock-alt");
+};
+tiki_FontAwesome.unsorted = function() {
+	return new tiki_Icon("fa fa-unsorted");
+};
+tiki_FontAwesome.upload = function() {
+	return new tiki_Icon("fa fa-upload");
+};
+tiki_FontAwesome.usb = function() {
+	return new tiki_Icon("fa fa-usb");
+};
+tiki_FontAwesome.usd = function() {
+	return new tiki_Icon("fa fa-usd");
+};
+tiki_FontAwesome.user = function() {
+	return new tiki_Icon("fa fa-user");
+};
+tiki_FontAwesome.userPlus = function() {
+	return new tiki_Icon("fa fa-user-plus");
+};
+tiki_FontAwesome.users = function() {
+	return new tiki_Icon("fa fa-users");
+};
+tiki_FontAwesome.userSecret = function() {
+	return new tiki_Icon("fa fa-user-secret");
+};
+tiki_FontAwesome.userTimes = function() {
+	return new tiki_Icon("fa fa-user-times");
+};
+tiki_FontAwesome.venus = function() {
+	return new tiki_Icon("fa fa-venus");
+};
+tiki_FontAwesome.venusDouble = function() {
+	return new tiki_Icon("fa fa-venus-double");
+};
+tiki_FontAwesome.venusMars = function() {
+	return new tiki_Icon("fa fa-venus-mars");
+};
+tiki_FontAwesome.viacoin = function() {
+	return new tiki_Icon("fa fa-viacoin");
+};
+tiki_FontAwesome.viadeo = function() {
+	return new tiki_Icon("fa fa-viadeo");
+};
+tiki_FontAwesome.viadeoSquare = function() {
+	return new tiki_Icon("fa fa-viadeo-square");
+};
+tiki_FontAwesome.videoCamera = function() {
+	return new tiki_Icon("fa fa-video-camera");
+};
+tiki_FontAwesome.vimeo = function() {
+	return new tiki_Icon("fa fa-vimeo");
+};
+tiki_FontAwesome.vimeoSquare = function() {
+	return new tiki_Icon("fa fa-vimeo-square");
+};
+tiki_FontAwesome.vine = function() {
+	return new tiki_Icon("fa fa-vine");
+};
+tiki_FontAwesome.vk = function() {
+	return new tiki_Icon("fa fa-vk");
+};
+tiki_FontAwesome.volumeControlPhone = function() {
+	return new tiki_Icon("fa fa-volume-control-phone");
+};
+tiki_FontAwesome.volumeDown = function() {
+	return new tiki_Icon("fa fa-volume-down");
+};
+tiki_FontAwesome.volumeOff = function() {
+	return new tiki_Icon("fa fa-volume-off");
+};
+tiki_FontAwesome.volumeUp = function() {
+	return new tiki_Icon("fa fa-volume-up");
+};
+tiki_FontAwesome.warning = function() {
+	return new tiki_Icon("fa fa-warning");
+};
+tiki_FontAwesome.wechat = function() {
+	return new tiki_Icon("fa fa-wechat");
+};
+tiki_FontAwesome.weibo = function() {
+	return new tiki_Icon("fa fa-weibo");
+};
+tiki_FontAwesome.weixin = function() {
+	return new tiki_Icon("fa fa-weixin");
+};
+tiki_FontAwesome.whatsapp = function() {
+	return new tiki_Icon("fa fa-whatsapp");
+};
+tiki_FontAwesome.wheelchair = function() {
+	return new tiki_Icon("fa fa-wheelchair");
+};
+tiki_FontAwesome.wheelchairAlt = function() {
+	return new tiki_Icon("fa fa-wheelchair-alt");
+};
+tiki_FontAwesome.wifi = function() {
+	return new tiki_Icon("fa fa-wifi");
+};
+tiki_FontAwesome.wikipediaW = function() {
+	return new tiki_Icon("fa fa-wikipedia-w");
+};
+tiki_FontAwesome.windows = function() {
+	return new tiki_Icon("fa fa-windows");
+};
+tiki_FontAwesome.won = function() {
+	return new tiki_Icon("fa fa-won");
+};
+tiki_FontAwesome.wordpress = function() {
+	return new tiki_Icon("fa fa-wordpress");
+};
+tiki_FontAwesome.wpbeginner = function() {
+	return new tiki_Icon("fa fa-wpbeginner");
+};
+tiki_FontAwesome.wpforms = function() {
+	return new tiki_Icon("fa fa-wpforms");
+};
+tiki_FontAwesome.wrench = function() {
+	return new tiki_Icon("fa fa-wrench");
+};
+tiki_FontAwesome.xing = function() {
+	return new tiki_Icon("fa fa-xing");
+};
+tiki_FontAwesome.xingSquare = function() {
+	return new tiki_Icon("fa fa-xing-square");
+};
+tiki_FontAwesome.yahoo = function() {
+	return new tiki_Icon("fa fa-yahoo");
+};
+tiki_FontAwesome.yc = function() {
+	return new tiki_Icon("fa fa-yc");
+};
+tiki_FontAwesome.yCombinator = function() {
+	return new tiki_Icon("fa fa-y-combinator");
+};
+tiki_FontAwesome.yCombinatorSquare = function() {
+	return new tiki_Icon("fa fa-y-combinator-square");
+};
+tiki_FontAwesome.ycSquare = function() {
+	return new tiki_Icon("fa fa-yc-square");
+};
+tiki_FontAwesome.yelp = function() {
+	return new tiki_Icon("fa fa-yelp");
+};
+tiki_FontAwesome.yen = function() {
+	return new tiki_Icon("fa fa-yen");
+};
+tiki_FontAwesome.yoast = function() {
+	return new tiki_Icon("fa fa-yoast");
+};
+tiki_FontAwesome.youtube = function() {
+	return new tiki_Icon("fa fa-youtube");
+};
+tiki_FontAwesome.youtubePlay = function() {
+	return new tiki_Icon("fa fa-youtube-play");
+};
+tiki_FontAwesome.youtubeSquare = function() {
+	return new tiki_Icon("fa fa-youtube-square");
+};
+var tiki_TkEmptyElement = function(tag) {
+	doom_html_EmptyElement.call(this,tag);
+};
+tiki_TkEmptyElement.__name__ = ["tiki","TkEmptyElement"];
+tiki_TkEmptyElement.__super__ = doom_html_EmptyElement;
+tiki_TkEmptyElement.prototype = $extend(doom_html_EmptyElement.prototype,{
+	mini: function() {
+		return this.addNSClass("size","mini");
+	}
+	,tiny: function() {
+		return this.addNSClass("size","tiny");
+	}
+	,small: function() {
+		return this.addNSClass("size","small");
+	}
+	,medium: function() {
+		return this.addNSClass("size","medium");
+	}
+	,large: function() {
+		return this.addNSClass("size","large");
+	}
+	,big: function() {
+		return this.addNSClass("size","big");
+	}
+	,huge: function() {
+		return this.addNSClass("size","huge");
+	}
+	,massive: function() {
+		return this.addNSClass("size","massive");
+	}
+	,classes: function() {
+		return "tiki_tk-empty-element";
+	}
+	,__class__: tiki_TkEmptyElement
+});
+var tiki_Icon = function(iconClass) {
+	tiki_TkEmptyElement.call(this,"i");
+	this.addClass(iconClass);
+};
+tiki_Icon.__name__ = ["tiki","Icon"];
+tiki_Icon.__super__ = tiki_TkEmptyElement;
+tiki_Icon.prototype = $extend(tiki_TkEmptyElement.prototype,{
+	classes: function() {
+		return "tiki_icon tiki_tk-empty-element";
+	}
+	,__class__: tiki_Icon
+});
 var tiki_Menu = function(children) {
 	tiki_TkElement.call(this,"ul",doom_core__$VNodes_VNodes_$Impl_$.children(children.map(function(_) {
 		return doom_core_VNodeImpl.Lazy($bind(_,_.render));
@@ -11973,17 +14190,6 @@ tiki_NavLink.prototype = $extend(doom_html_Component.prototype,{
 		return "tiki_nav-link";
 	}
 	,__class__: tiki_NavLink
-});
-var tiki_TkEmptyElement = function(tag) {
-	doom_html_EmptyElement.call(this,tag);
-};
-tiki_TkEmptyElement.__name__ = ["tiki","TkEmptyElement"];
-tiki_TkEmptyElement.__super__ = doom_html_EmptyElement;
-tiki_TkEmptyElement.prototype = $extend(doom_html_EmptyElement.prototype,{
-	classes: function() {
-		return "tiki_tk-empty-element";
-	}
-	,__class__: tiki_TkEmptyElement
 });
 var tiki_Number = function(options) {
 	this.options = options;

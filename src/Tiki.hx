@@ -50,6 +50,7 @@ class Tiki {
 
   // Misc Elements
   public inline static function ribbon(children) return new Ribbon(children);
+  public inline static function icon(iconClass: String) return new Icon(iconClass);
 
   // Keep? Remove? Make a class for each? group into common classes (eg. headers for h1,h2...) ?
   public inline static function h1(children: VNodes): Element return new Element("h1", children);

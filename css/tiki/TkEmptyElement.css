@@ -1,0 +1,24 @@
+#ns .size-mini {
+  font-size: 0.6rem;
+}
+#ns .size-tiny {
+  font-size: 0.75rem;
+}
+#ns .size-small {
+  font-size: 0.9rem;
+}
+#ns .size-medium {
+  font-size: 1rem;
+}
+#ns .size-large {
+  font-size: 1.2rem;
+}
+#ns .size-big {
+  font-size: 1.4rem;
+}
+#ns .size-huge {
+  font-size: 1.6rem;
+}
+#ns .size-massive {
+  font-size: 2rem;
+}

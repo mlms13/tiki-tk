@@ -1,6 +1,9 @@
 @import "variables"
 @import "mixins"
 
+$compact-padding-x = $btn-padding-x / 2
+$compact-padding-y = $btn-padding-y / 2
+
 #ns
   border-width $btn-border-width
   border-style solid
@@ -34,22 +37,25 @@
     cursor $cursor-disabled
     opacity 0.5
 
-  &.primary
+  &.compact
+    padding $compact-padding-y $compact-padding-x
+
+  &.style-primary
     button-variant($btn-primary-color, $btn-primary-bg, $btn-primary-border)
     &.hollow
       button-variant-hollow($primary)
 
-  &.success
+  &.style-success
     button-variant($btn-success-color, $btn-success-bg, $btn-success-border)
     &.hollow
       button-variant-hollow($success)
 
-  &.warning
+  &.style-warning
     button-variant($btn-warning-color, $btn-warning-bg, $btn-warning-border)
     &.hollow
       button-variant-hollow($warning)
 
-  &.danger
+  &.style-danger
     button-variant($btn-danger-color, $btn-danger-bg, $btn-danger-border)
     &.hollow
       button-variant-hollow($danger)

@@ -1,5 +1,6 @@
 import doom.core.VNode;
 import doom.core.VNodes;
+import tiki.FontAwesome.*;
 import Tiki.*;
 import js.Browser.*;
 import thx.format.NumberFormat.integer;
@@ -24,24 +25,44 @@ class App extends doom.html.Component<{}> {
       ]),
       demoSection("Buttons", [
         inlineExample([button("Default")]),
-        inlineExample([button("Primary").style(Primary)]),
-        inlineExample([button("Success").style(Success)]),
-        inlineExample([button("Warning").style(Warning)]),
-        inlineExample([button("Danger").style(Danger)]),
+        inlineExample([button("Primary").primary()]),
+        inlineExample([button("Success").success()]),
+        inlineExample([button("Warning").warning()]),
+        inlineExample([button("Danger").danger()]),
       ]),
       demoSection("Hollow Buttons", [
         inlineExample([button("Default").hollow()]),
-        inlineExample([button("Primary").style(Primary).hollow()]),
-        inlineExample([button("Success").style(Success).hollow()]),
-        inlineExample([button("Warning").style(Warning).hollow()]),
-        inlineExample([button("Danger").style(Danger).hollow()]),
+        inlineExample([button("Primary").primary().hollow()]),
+        inlineExample([button("Success").success().hollow()]),
+        inlineExample([button("Warning").warning().hollow()]),
+        inlineExample([button("Danger").danger().hollow()]),
       ]),
       demoSection("Disabled Buttons", [
         inlineExample([button("Default").disabled()]),
-        inlineExample([button("Primary").style(Primary).disabled()]),
-        inlineExample([button("Success").style(Success).disabled()]),
-        inlineExample([button("Warning").style(Warning).disabled()]),
-        inlineExample([button("Danger").style(Danger).disabled()]),
+        inlineExample([button("Primary").primary().disabled()]),
+        inlineExample([button("Success").success().disabled()]),
+        inlineExample([button("Warning").warning().disabled()]),
+        inlineExample([button("Danger").danger().disabled()]),
+      ]),
+      demoSection("Button Sizes", [
+        inlineExample([button("mini").mini()]),
+        inlineExample([button("tiny").tiny()]),
+        inlineExample([button("small").small()]),
+        inlineExample([button("medium")]), // equivalent to .medium
+        inlineExample([button("large").large()]),
+        inlineExample([button("big").big()]),
+        inlineExample([button("huge").huge()]),
+        inlineExample([button("massive").massive()]),
+      ]),
+      demoSection("Button Sizes - Compact", [
+        inlineExample([button("mini").mini().compact()]),
+        inlineExample([button("tiny").tiny().compact()]),
+        inlineExample([button("small").small().compact()]),
+        inlineExample([button("medium").compact()]), // equivalent to .medium
+        inlineExample([button("large").large().compact()]),
+        inlineExample([button("big").big().compact()]),
+        inlineExample([button("huge").huge().compact()]),
+        inlineExample([button("massive").massive().compact()]),
       ]),
       demoSection("Basic Nav", [
         nav([
@@ -221,6 +242,12 @@ class App extends doom.html.Component<{}> {
             tr([th("Kansas City"), td("MO").center(), td(int(467007)).right(),  td(num(315.0, 1)).right()]),
           ])
         ).danger()
+      ]),
+      demoSection("Icons", [
+        twitter(),
+        foursquare(),
+        thumbsUp(),
+        button(android())
       ]),
       demoSection("Menu", [
         menu([
