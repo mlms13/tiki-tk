@@ -38,7 +38,7 @@ class DropdownMenu extends TkComponent<DropdownMenuState> {
       bodyElement.style.display = "none";
     }
 
-    this.element.
+    // this.element.offsetTop...
   }
 
   override function willUnmount() {
@@ -47,9 +47,6 @@ class DropdownMenu extends TkComponent<DropdownMenuState> {
 
   override function render(): doom.core.VNode {
     return button;
-    // return props.isOpen ?
-    //   div([button.render(), menu.render()]) :
-    //   button.render();
   }
 }
 
